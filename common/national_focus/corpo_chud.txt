@@ -1,0 +1,663 @@
+focus_tree = {
+    id = corpo_chud
+    default = no
+    country = {
+        factor = 0
+        modifier = {
+            add = 1000
+            tag = YAN
+        }
+    }
+    continuous_focus_position = { x = 800 y = 0 }
+
+    focus = {
+        id = second_voc_summit
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -4
+        y = 0
+        cost = 12
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ins_science
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 2
+        y = 2
+        cost = 10
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ins_science1
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 2
+        y = 4
+        cost = 10
+        prerequisite = { focus = ins_science }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ins_ind
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -1
+        y = 2
+        cost = 10
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ins_science2
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 2
+        y = 6
+        cost = 10
+        prerequisite = { focus = ins_science }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ins_science3
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 2
+        y = 8
+        cost = 10
+        prerequisite = { focus = ins_science }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ins_science4
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 2
+        y = 10
+        cost = 10
+        prerequisite = { focus = ins_science }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ins_science5
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 2
+        y = 12
+        cost = 10
+        prerequisite = { focus = ins_science4 }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ins_cul
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -4
+        y = 2
+        cost = 10
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ins_war
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 5
+        y = 2
+        cost = 10
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = priv_army
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 8
+        y = 2
+        cost = 10
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = priv_air
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 11
+        y = 2
+        cost = 10
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = Priv_navy
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 14
+        y = 2
+        cost = 10
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ins_ind1
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -1
+        y = 4
+        cost = 10
+        prerequisite = { focus = ins_ind }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ins_ind2
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -1
+        y = 6
+        cost = 10
+        prerequisite = { focus = ins_ind1 }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ins_ind3
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -1
+        y = 8
+        cost = 10
+        prerequisite = { focus = ins_ind2 }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ins_ind4
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -1
+        y = 10
+        cost = 10
+        prerequisite = { focus = ins_ind3 }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ins_ind5
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -1
+        y = 12
+        cost = 10
+        prerequisite = { focus = ins_ind4 }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ins_cul1
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -4
+        y = 4
+        cost = 10
+        prerequisite = { focus = ins_cul }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ins_war1
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 5
+        y = 4
+        cost = 10
+        prerequisite = { focus = ins_war }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = priv_army1
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 8
+        y = 4
+        cost = 10
+        prerequisite = { focus = priv_army }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = priv_air1
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 11
+        y = 4
+        cost = 10
+        prerequisite = { focus = priv_air }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = Priv_navy1
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 14
+        y = 4
+        cost = 10
+        prerequisite = { focus = Priv_navy }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ins_cul2
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -4
+        y = 6
+        cost = 10
+        prerequisite = { focus = ins_cul1 }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ins_war2
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 5
+        y = 6
+        cost = 10
+        prerequisite = { focus = ins_war }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = priv_army2
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 8
+        y = 6
+        cost = 10
+        prerequisite = { focus = priv_army }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = priv_air2
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 11
+        y = 6
+        cost = 10
+        prerequisite = { focus = priv_air1 }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = Priv_navy2
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 14
+        y = 6
+        cost = 10
+        prerequisite = { focus = Priv_navy1 }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ins_cul3
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -4
+        y = 8
+        cost = 10
+        prerequisite = { focus = ins_cul2 }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ins_war3
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 5
+        y = 8
+        cost = 10
+        prerequisite = { focus = ins_war }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = priv_army3
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 8
+        y = 8
+        cost = 10
+        prerequisite = { focus = priv_army }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = priv_air3
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 11
+        y = 8
+        cost = 10
+        prerequisite = { focus = priv_air2 }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = Priv_navy3
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 14
+        y = 8
+        cost = 10
+        prerequisite = { focus = Priv_navy2 }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ins_cul4
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -4
+        y = 10
+        cost = 10
+        prerequisite = { focus = ins_cul3 }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ins_war4
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 5
+        y = 10
+        cost = 10
+        prerequisite = { focus = ins_war }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = priv_army4
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 8
+        y = 10
+        cost = 10
+        prerequisite = { focus = priv_army }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = priv_air4
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 11
+        y = 10
+        cost = 10
+        prerequisite = { focus = priv_air3 }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = Priv_navy4
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 14
+        y = 10
+        cost = 10
+        prerequisite = { focus = Priv_navy3 }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ins_cul5
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -4
+        y = 12
+        cost = 10
+        prerequisite = { focus = ins_cul4 }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ins_war5
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 5
+        y = 12
+        cost = 10
+        prerequisite = { focus = ins_war }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = priv_army5
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 8
+        y = 12
+        cost = 10
+        prerequisite = { focus = priv_army }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = priv_air5
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 11
+        y = 12
+        cost = 10
+        prerequisite = { focus = priv_air4 }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = Priv_navy5
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 14
+        y = 12
+        cost = 10
+        prerequisite = { focus = Priv_navy4 }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = voc_sane_radical_endgame
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -1
+        y = 0
+        cost = 10
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}

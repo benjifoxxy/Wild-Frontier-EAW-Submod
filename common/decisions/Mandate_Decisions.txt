@@ -1,0 +1,62 @@
+
+
+YAN_VOC_Mandate_Development_Decisions = {
+
+    VOC_Mandate_Backstory_1 = {
+        icon = generic_civil_war
+        cost = 0
+        allowed = {
+            original_tag = YAN
+
+        }
+        visible = {
+
+        }
+        complete_effect = {
+            custom_trigger_tooltip = {
+                tooltip = Decision_Cannot_Be_Reversed_tt
+                clr_country_flag = VOC_Mandate_Development_Decisions_Flag
+            }
+        }
+    }
+
+    VOC_Mandate_Backstory_2 = {
+        icon = generic_civil_war
+        cost = 0
+        allowed = {
+            original_tag = YAN
+
+        }
+        visible = {
+
+        }
+
+    }
+
+    VOC_Mandate_Backstory_3 = {
+        icon = generic_civil_war
+        cost = 0
+        allowed = {
+            original_tag = YAN
+
+        }
+        visible = {
+            original_tag = YAN
+        }
+    }
+
+
+    VOC_Mandate_Backstory_4 = {
+        icon = generic_civil_war
+        cost = 0
+        allowed = {
+            original_tag = YAN
+
+        }
+        visible = {
+            original_tag =  YAN
+
+        }
+
+    }
+}

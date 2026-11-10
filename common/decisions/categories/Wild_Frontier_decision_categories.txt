@@ -1,0 +1,120 @@
+YAN_Debug_Decisions = {
+    icon = generic_civil_war
+    priority = 100000
+    allowed = {
+        original_tag = YAN
+    }
+    visible = {
+        is_debug = yes
+    }
+}
+
+Cubanacan_Anger_Decisions = {
+    icon = generic_civil_war
+    priority = 1010
+    desc = Cubanacan_Anger_Decisions.desc
+    allowed = {
+        original_tag = YAN
+    }
+    visible = {
+        AND = {
+            has_country_flag = Cubanacan_Anger_Decisions_Enable
+            NOT = { has_country_flag = Cubanacan_Anger_Decisions_Complete }
+        }
+    }
+    visible_when_empty = yes
+    on_map_area = {
+        state = 1160
+        name = Cuban_Anger_Map_Area_tt
+    }
+}
+
+YAN_VOC_Mandate_Development_Decisions = {
+    icon = generic_civil_war
+    priority = 1000
+    allowed = {
+        original_tag = YAN
+
+    }
+    visible = {
+        has_country_flag = VOC_Mandate_Development_Decisions_Flag
+    }
+}
+
+FZS_CW_Decisions = {
+    icon = generic_civil_war
+    desc = FZS_CW_Decisions.desc
+    priority = 999
+    allowed = {
+        original_tag = YAN
+
+    }
+
+    visible = {
+        has_country_flag = FZS_Civil_War_Cat_Enable
+    }
+}
+
+Storm_Kingdom_Investment_Decisions = {
+    icon = generic_civil_war
+    priority = 700
+    allowed = {
+        original_tag = YAN
+    }
+    visible = {
+        has_country_flag = SK_Invest_Decision_Cat_Activate
+    }
+    on_map_area = {
+        state = 982 983 984 985 1025 1024 978 979 980 981 1026 1027 1028 1140 1033 1034 1035 1031 1032 294 1029 220 1030 
+        name = Storm_Kingdom_Map_Area_tt
+    
+    }
+}
+
+Saddle_Arabia_Investment_Decisions = {
+    icon = generic_civil_war
+    priority = 600
+    allowed = {
+        original_tag = YAN
+    }
+    visible = {
+        has_country_flag = SA_Invest_Decision_Cat_Activate
+    }
+    on_map_area = {
+        state = 868 869 866 864 863 862 865 870 871 867 859 861 858 857 856 851 849 855 854 853 841 840 842 848 847 839 838 837 
+        name = Saddle_Arabica_Map_Area_tt
+        
+    }
+}
+
+Chisimbi_Crisis_Investment_Decisions = {
+    icon = generic_civil_war
+    priority = 800
+    allowed = {
+        original_tag = YAN
+    }
+    visible = {
+        has_country_flag = CC_Invest_Decision_Cat_Activate
+    }
+    on_map_area = {
+        state = 911 912 913 915 193 329 910 909 921 934 908 907 906 922 920 1129 1128 1127 1132 1131 1130 914 916 919 917 918
+        name = Chisimbi_Crisis_Map_Area_tt
+    }
+}
+
+South_Zone_Investment_Decisions = {
+    icon = generic_civil_war
+    priority = 900
+    allowed = {
+        original_tag = YAN
+    }
+    visible = {
+        has_country_flag = SI_Invest_Decision_Cat_Activate
+    }
+    on_map_area = {
+        state = 1139 1149 1148 1146 1192 1145 1150 1144 1141 1142 1143 1153 1190 1152 1154 1155
+        name = South_Zone_Map_Area_tt
+        
+    }
+}
+

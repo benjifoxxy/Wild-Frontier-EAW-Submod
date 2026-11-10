@@ -1,0 +1,250 @@
+
+
+Cubanacan_Anger_Decisions = { # hidden events increase anger automatically.
+
+    Cubanacan_Anger_Mission = {
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        days_mission_timeout = 30
+        days_re_enable = 18000
+        available = {
+            always = no
+        }
+        activation = {
+            always = no
+        }
+
+        timeout_effect = {
+            hidden_effect = {
+                country_event = { id = debugCubanacan.1 }
+                country_event = { id = debugCubanacan.2 }
+                clamp_variable = {
+                    var = Cuban_Anger
+                    min = 0
+                    max = 100
+                }                
+            }
+            ai_will_do = {
+                factor = 0
+            }
+            priority = 1000
+            complete_effect = {
+
+            }
+        }
+    }
+
+    Cubanacan_Decision_1 = { # build in cubanacan
+
+        cost = 50
+        allowed = {
+            original_tag = YAN
+        }
+        days_remove = 21
+        days_re_enable = 120
+        complete_effect = {
+            custom_effect_tooltip = Cuban_Decision_1_tt
+            hidden_effect = {
+
+                1160 = {
+                    random_list = {
+                        33 = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                            subtract_from_variable = { Cuban_Anger = 10 }
+                            add_to_variable = { Cuban_Actions = 1 }
+                        }
+                        33 = {
+                            add_extra_state_shared_building_slots = 1
+                            add_building_construction = {
+                                type = arms_factory
+                                level = 1
+                                instant_build = yes
+                            }
+                            subtract_from_variable = { Cuban_Anger = 10 }
+                            add_to_variable = { Cuban_Actions = 1 }
+                        }
+                        33 = {
+                            add_building_construction = {
+                                type = infrastructure
+                                level = 1
+                                instant_build = yes
+                            }
+                            subtract_from_variable = { Cuban_Anger = 10 }
+                            add_to_variable = { Cuban_Actions = 1 }
+                        }
+                        1 = {
+                            add_extra_state_shared_building_slots = 2
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+                            add_building_construction = {
+                                type = arms_factory
+                                level = 1
+                                instant_build = yes
+                            }
+                            add_building_construction = {
+                                type = infrastructure
+                                level = 1
+                                instant_build = yes
+                            }
+                            subtract_from_variable = { Cuban_Anger = 30 }
+                            add_to_variable = { Cuban_Actions = 3 }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+
+
+    Cubanacan_Decision_2 = { # provide food aid to cubanacan
+
+        cost = 25
+        allowed = {
+            original_tag = YAN
+        }
+        days_remove = 7
+        days_re_enable = 21
+        complete_effect = {
+            hidden_effect = {
+                subtract_from_variable = { Cuban_Anger = 10 }
+                add_to_variable = { Cuban_Actions = 1 }
+            }
+            add_timed_idea = {
+                idea = YAN_PUL_Food_Aid_Idea
+                days = 14
+            }
+        }
+
+    }
+
+    Cubanacan_Decision_3 = { # reparations to the relatives families
+
+        cost = 25
+        allowed = {
+            original_tag = YAN
+        }
+        days_remove = 7
+        days_re_enable = 21
+        complete_effect = {
+            hidden_effect = {
+                subtract_from_variable = { Cuban_Anger = 10 }
+                add_to_variable = { Cuban_Actions = 1 }
+            }
+            add_timed_idea = {
+                idea = YAN_PUL_Reparations_Idea
+                days = 14
+            }
+        }
+    }
+
+Cubanacan_Decision_4 = { # Call in a favour from Cleo
+
+        cost = 0
+        allowed = {
+            original_tag = YAN
+        }
+        days_remove = 7
+        days_re_enable = 19000
+        fire_only_once = yes
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = We_Have_Cleo_Favour_tt
+                AND = {
+                    has_country_flag = Cleo_Favour_Available
+                    NOT = { has_country_flag = Cubanacan_Cleo_Favour_Used }
+                }
+            }
+        }
+        complete_effect = {
+            custom_effect_tooltip = We_Will_Use_Cleo_Favour_tt
+            hidden_effect = {
+                clr_country_flag = Cleo_Favour_Available
+                subtract_from_variable = { Cuban_Anger = 30 }
+                add_to_variable = { Cuban_Actions = 4 }
+                set_country_flag = Cubanacan_Cleo_Favour_Used
+            }
+        }
+    }
+    
+
+    Cubanacan_Decision_5 = { # false flag attack
+        cost = 0
+        allowed = {
+            original_tag = YAN
+        }
+        days_remove = 7
+        days_re_enable = 19000
+        visible = {
+            check_variable = {
+                Cuban_Anger > 40
+            }
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = YAN_Cuban_Stage_False_Incident
+                IF = {
+                    check_variable = {
+                        Cuban_Anger > 80
+                    }
+                }
+            }
+        }
+        complete_effect = {
+            add_stability = -0.1
+            add_political_power = -50
+            country_event = { id = Cuban.1 }
+        }
+
+    }
+
+
+    Cubanacan_Decision_6 = { # Come to a new compromise (ends the chain)
+
+        cost = 50
+        allowed = {
+            original_tag = YAN
+        }
+        days_remove = 7
+        days_re_enable = 19000
+        visible = {
+            always = yes
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = YAN_Cubanacan_Compromise_Taken_10_Decisions_tt
+                AND = {
+                    check_variable = {
+                        Cuban_Anger < 5
+                    }
+                    check_variable = {
+                        Cuban_Actions > 9
+                    }
+                }
+            }
+        }
+        complete_effect = {
+            custom_trigger_tooltip = {
+                tooltip = YAN_Cubanacan_Compromise_Completed_tt
+                set_country_flag = Cubanacan_Anger_Decisions_Completed
+            }
+            add_stability = 0.1
+            add_political_power = 100
+            country_event = { id = Cuban.2 }
+        }
+    }
+
+}

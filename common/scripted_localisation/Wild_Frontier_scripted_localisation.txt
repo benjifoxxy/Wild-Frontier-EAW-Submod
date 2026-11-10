@@ -1,0 +1,252 @@
+
+defined_text = {
+    name = Get_Ikvus_Happiness
+
+    text = {
+        trigger = { check_variable = { Ikvus_CW_Happiness = 0 } }
+        localization_key = Ikvus_Happiness_0
+    }
+        text = {
+        trigger = { check_variable = { Ikvus_CW_Happiness = 1 } }
+        localization_key = Ikvus_Happiness_1
+    }
+        text = {
+        trigger = { check_variable = { Ikvus_CW_Happiness = 2 } }
+        localization_key = Ikvus_Happiness_2
+    }
+        text = {
+        trigger = { check_variable = { Ikvus_CW_Happiness = 3 } }
+        localization_key = Ikvus_Happiness_3
+    }
+        text = {
+        trigger = { check_variable = { Ikvus_CW_Happiness = 4 } }
+        localization_key = Ikvus_Happiness_4
+    }
+        text = {
+        trigger = { check_variable = { Ikvus_CW_Happiness = 5 } }
+        localization_key = Ikvus_Happiness_5
+    }
+            text = {
+        trigger = { check_variable = { Ikvus_CW_Happiness = 6 } }
+        localization_key = Ikvus_Happiness_6
+    }
+            text = {
+        trigger = { check_variable = { Ikvus_CW_Happiness = 7 } }
+        localization_key = Ikvus_Happiness_7
+    }
+            text = {
+        trigger = { check_variable = { Ikvus_CW_Happiness = 8 } }
+        localization_key = Ikvus_Happiness_8
+    }
+            text = {
+        trigger = { check_variable = { Ikvus_CW_Happiness = 9 } }
+        localization_key = Ikvus_Happiness_9
+    }
+            text = {
+        trigger = { check_variable = { Ikvus_CW_Happiness = 10 } }
+        localization_key = Ikvus_Happiness_10
+    }
+}
+
+defined_text = {
+    name = Get_Faisal_Happiness
+
+    text = {
+        trigger = { check_variable = { Faisal_CW_Happiness = 0 } }
+        localization_key = Faisal_Happiness_0
+    }
+        text = {
+        trigger = { check_variable = { Faisal_CW_Happiness = 1 } }
+        localization_key = Faisal_Happiness_1
+    }
+        text = {
+        trigger = { check_variable = { Faisal_CW_Happiness = 2 } }
+        localization_key = Faisal_Happiness_2
+    }
+        text = {
+        trigger = { check_variable = { Faisal_CW_Happiness = 3 } }
+        localization_key = Faisal_Happiness_3
+    }
+        text = {
+        trigger = { check_variable = { Faisal_CW_Happiness = 4 } }
+        localization_key = Faisal_Happiness_4
+    }
+        text = {
+        trigger = { check_variable = { Faisal_CW_Happiness = 5 } }
+        localization_key = Faisal_Happiness_5
+    }
+            text = {
+        trigger = { check_variable = { Faisal_CW_Happiness = 6 } }
+        localization_key = Faisal_Happiness_6
+    }
+            text = {
+        trigger = { check_variable = { Faisal_CW_Happiness = 7 } }
+        localization_key = Faisal_Happiness_7
+    }
+            text = {
+        trigger = { check_variable = { Faisal_CW_Happiness = 8 } }
+        localization_key = Faisal_Happiness_8
+    }
+            text = {
+        trigger = { check_variable = { Faisal_CW_Happiness = 9 } }
+        localization_key = Faisal_Happiness_9
+    }
+            text = {
+        trigger = { check_variable = { Faisal_CW_Happiness = 10 } }
+        localization_key = Faisal_Happiness_10
+    }
+}
+
+defined_text = {
+    name = Get_Imba_Zaru_Happiness
+
+    text = {
+        trigger = { check_variable = { Prince_CW_Happiness = 0 } }
+        localization_key = Prince_Happiness_0
+    }
+    text = {
+        trigger = { check_variable = { Prince_CW_Happiness = 1 } }
+        localization_key = Prince_Happiness_1
+    }
+    text = {
+        trigger = { check_variable = { Prince_CW_Happiness = 2 } }
+        localization_key = Prince_Happiness_2
+    }
+    text = {
+        trigger = { check_variable = { Prince_CW_Happiness = 3 } }
+        localization_key = Prince_Happiness_3
+    }
+    text = {
+        trigger = { check_variable = { Prince_CW_Happiness = 4 } }
+        localization_key = Prince_Happiness_4
+    }
+    text = {
+        trigger = { check_variable = { Prince_CW_Happiness = 5 } }
+        localization_key = Prince_Happiness_5
+    }
+}
+
+defined_text = {
+    name = Get_GFS_Griff_Happiness
+
+    text = {
+        trigger = { check_variable = { Griff_CW_Happiness = 0 } }
+        localization_key = Griff_CW_Happiness_0
+    }
+    text = {
+        trigger = { check_variable = { Griff_CW_Happiness = 1 } }
+        localization_key = Griff_CW_Happiness_1
+    }
+    text = {
+        trigger = { check_variable = { Griff_CW_Happiness = 2 } }
+        localization_key = Griff_CW_Happiness_2
+    }
+    text = {
+        trigger = { check_variable = { Griff_CW_Happiness = 3 } }
+        localization_key = Griff_CW_Happiness_3
+    }
+    text = {
+        trigger = { check_variable = { Griff_CW_Happiness = 4 } }
+        localization_key = Griff_CW_Happiness_4
+    }
+    text = {
+        trigger = { check_variable = { Griff_CW_Happiness = 5 } }
+        localization_key = Griff_CW_Happiness_5        
+    }
+}
+
+defined_text = {
+    name = Get_SA_CW_LW_Stashes
+
+    text = {
+        trigger = { check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Light_Weapons = 0 } }
+        localization_key = SA_CW_LW_Stash_0
+    }
+    text = {
+        trigger = { check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Light_Weapons = 1 } }
+        localization_key = SA_CW_LW_Stash_1
+    }
+    text = {
+        trigger = { check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Light_Weapons = 2 } }
+        localization_key = SA_CW_LW_Stash_2
+    }
+    text = {
+        trigger = { check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Light_Weapons = 3 } }
+        localization_key = SA_CW_LW_Stash_3
+    }
+    text = {
+        trigger = { check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Light_Weapons = 4 } }
+        localization_key = SA_CW_LW_Stash_4
+    }
+    text = {
+        trigger = { check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Light_Weapons = 5 } }
+        localization_key = SA_CW_LW_Stash_5
+    }
+    text = {
+        localization_key = SA_CW_LW_Stash_0
+    }
+}
+
+defined_text = {
+    name = Get_SA_CW_HW_Stashes
+
+    text = {
+        trigger = { check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Heavy_Weapons = 0 } }
+        localization_key = SA_CW_HW_Stash_0
+    }
+    text = {
+        trigger = { check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Heavy_Weapons = 1 } }
+        localization_key = SA_CW_HW_Stash_1
+    }
+    text = {
+        trigger = { check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Heavy_Weapons = 2 } }
+        localization_key = SA_CW_HW_Stash_2
+    }
+    text = {
+        trigger = { check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Heavy_Weapons = 3 } }
+        localization_key = SA_CW_HW_Stash_3
+    }
+    text = {
+        trigger = { check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Heavy_Weapons = 4 } }
+        localization_key = SA_CW_HW_Stash_4
+    }
+    text = {
+        trigger = { check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Heavy_Weapons = 5 } }
+        localization_key = SA_CW_HW_Stash_5
+    }
+    text = {
+        localization_key = SA_CW_HW_Stash_0
+    }
+}
+
+defined_text = {
+    name = Get_SA_CW_LV_Stashes
+
+    text = {
+        trigger = { check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Mobile_Vehicles = 0 } }
+        localization_key = SA_CW_LV_Stash_0
+    }
+    text = {
+        trigger = { check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Mobile_Vehicles = 1 } }
+        localization_key = SA_CW_LV_Stash_1
+    }
+    text = {
+        trigger = { check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Mobile_Vehicles = 2 } }
+        localization_key = SA_CW_LV_Stash_2
+    }
+    text = {
+        trigger = { check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Mobile_Vehicles = 3 } }
+        localization_key = SA_CW_LV_Stash_3
+    }
+    text = {
+        trigger = { check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Mobile_Vehicles = 4 } }
+        localization_key = SA_CW_LV_Stash_4
+    }
+    text = {
+        trigger = { check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Mobile_Vehicles = 5 } }
+        localization_key = SA_CW_LV_Stash_5
+    }
+    text = {
+        localization_key = SA_CW_LV_Stash_0
+    }
+}

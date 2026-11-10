@@ -1,0 +1,201 @@
+
+
+South_Zone_Investment_Decisions = { # TAG - UBE -
+
+    South_Zone_Investiture_1 = { # Situation on the Ground introductory event
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        fire_only_once = yes
+        complete_effect = {
+            set_country_flag = SZ_Decision_Flag_A
+        }
+    }
+
+    South_Zone_Investiture_2 = { # Boreasgrotte
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            has_country_flag = SZ_Decision_Flag_A
+        }
+        fire_only_once = yes
+        complete_effect = {
+            set_country_flag = SZ_Decision_Flag_B
+        }
+
+    }
+
+    South_Zone_Investiture_3 = { # Weijamardstadt
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            AND = {
+                has_country_flag = SZ_Decision_Flag_A
+                has_country_flag = SZ_Decision_Flag_B
+            }
+        }
+        fire_only_once = yes
+        complete_effect = {
+
+        }
+
+    }
+
+    South_Zone_Investiture_4 = { # sponsor industry in the colony
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            has_country_flag = SZ_Decision_Flag_A
+        }
+        fire_only_once = no
+        complete_effect = {
+
+        }
+    }
+
+    South_Zone_Investiture_5 = { # joint training exercise
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            has_country_flag = SZ_Decision_Flag_A
+        }
+        fire_only_once = no
+        complete_effect = {
+
+        }
+    }
+
+    South_Zone_Investiture_6 = { # further security for tourism
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            has_country_flag = SZ_Decision_Flag_A
+        }
+        fire_only_once = yes
+        complete_effect = {
+
+        }
+    }
+
+    South_Zone_Investiture_7 = { # investigate corruption part 1 enables other corruption decisions
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            has_country_flag = SZ_Decision_Flag_A
+        }
+        fire_only_once = yes
+        complete_effect = {
+            set_country_flag = SZ_Decision_Flag_C
+        }
+    }
+
+    South_Zone_Investiture_8 = { # investigate corruption part 2 - investigate corruption
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            AND = {
+                has_country_flag = SZ_Decision_Flag_A
+                has_country_flag = SZ_Decision_Flag_C
+            }
+        }
+        fire_only_once = yes
+        complete_effect = {
+            set_country_flag = SZ_Decision_Flag_D
+        }
+    }
+
+    South_Zone_Investiture_9 = { # investigate corruption part 3 - investigate corruption
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            AND = {
+                has_country_flag = SZ_Decision_Flag_A
+                has_country_flag = SZ_Decision_Flag_C
+                has_country_flag = SZ_Decision_Flag_D
+            }
+        }
+        fire_only_once = yes
+        complete_effect = {
+            set_country_flag = SZ_Decision_Flag_E
+        }
+    }
+
+    South_Zone_Investiture_10 = { # investigate corruption part 4 - investigate corruption
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            AND = {
+                has_country_flag = SZ_Decision_Flag_A
+                has_country_flag = SZ_Decision_Flag_C
+                has_country_flag = SZ_Decision_Flag_D
+                has_country_flag = SZ_Decision_Flag_E
+            }
+        }
+        fire_only_once = yes
+        complete_effect = {
+            set_country_flag = SZ_Decision_Cat_Corruption_Completed
+        }
+    }
+
+    South_Zone_Investiture_11 = { # final decision to complete the category
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            AND = {
+                has_country_flag = SZ_Decision_Flag_A
+                has_country_flag = SZ_Decision_Flag_C
+                has_country_flag = SZ_Decision_Flag_D
+                has_country_flag = SZ_Decision_Flag_E
+                has_country_flag = SZ_Decision_Cat_Corruption_Completed
+            }
+        }
+        fire_only_once = no
+        complete_effect = {
+            custom_effect_tooltip = Complete_SK_CW_Category_tt
+            hidden_effect = { set_global_flag = South_Zone_Crisis_Resolved }
+        }
+    }
+}

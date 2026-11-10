@@ -1,0 +1,535 @@
+focus_tree = {
+    id = All_is_fine_kek
+    default = no
+    country = {
+        factor = 0
+        modifier = {
+            add = 1000
+            tag = YAN
+        }
+    }
+
+    continuous_focus_position = { x = 1100 y = 0 }
+
+    initial_show_position = { x = 0 y = 0 }
+
+    focus = {
+        id = YAN_jewel_south
+        icon = GFX_Focus_Jewel
+        x = 2
+        y = 0
+        cost = 1.2
+        cancelable = no
+        allow_branch = {
+            NOT = { has_completed_focus = YAN_Pay_Our_Respects }
+        }
+        select_effect = {
+            country_event = { id = zebstart.2 days = 1 }
+            IF = {
+                limit = {
+                    NOT = {
+                        has_global_flag = debug_Startup_Event_2_fired
+                    }
+                }
+                set_country_flag = debugFlagStartup
+                country_event = { id = debug_Wild_Frontier_Startup.2 hours = 1 }
+            }
+        }
+        completion_reward = {
+            custom_effect_tooltip = southern_jewel_tt
+            hidden_effect = {
+                clr_country_flag = Player_Selected_Country_Other_Than_YAN
+                clr_global_flag = debugFlagStartup
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Out_West
+        icon = GFX_Focus_west_pinkie
+        x = 0
+        y = 1
+        cost = 2
+        prerequisite = { focus = YAN_jewel_south }
+        available = {
+            has_completed_focus = YAN_Zeb_Volk
+        }
+        cancelable = no
+        select_effect = {
+            country_event = { id = zebstart.17 }
+            goto_province = 20259
+        }
+        completion_reward = {
+            custom_effect_tooltip = Out_West_Reward_Explanation_tt
+            hidden_effect = {
+                country_event = { id = zebstart.9 }
+                country_event = { id = zebstart.16 days = 14 }
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Day_Beakavia
+        icon = GFX_Focus_king_meme
+        x = 2
+        y = 1
+        cost = 0.9
+        prerequisite = { focus = YAN_jewel_south }
+        cancelable = no
+        completion_reward = {
+            country_event = { id = zebstart.4 }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Burea
+        icon = GFX_goal_skull_treaty2
+        x = -2
+        y = 2
+        cost = 1
+        prerequisite = { focus = YAN_Out_West }
+        cancelable = no
+        completion_reward = {
+            country_event = { id = zebstart.10 }
+            hidden_effect = {
+                goto_province = 16229
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Observe_East
+        icon = GFX_Focus_trixie
+        x = 4
+        y = 1
+        cost = 2
+        cancelable = no
+        prerequisite = { focus = YAN_jewel_south }
+        available = {
+            has_completed_focus = YAN_Zeb_Volk
+            has_completed_focus = YAN_Out_West
+        }
+        completion_reward = {
+            country_event = { id = zebstart.13 }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Sambovato1
+        icon = GFX_goal_generic_medicine_bottle
+        x = 0
+        y = 3
+        cost = 1
+        cancelable = no
+        prerequisite = { focus = YAN_Burea }
+        select_effect = {
+            country_event = { id = zebstart.11 days = 1 }
+        }
+        completion_reward = {
+            custom_effect_tooltip = Review_Sambo_1_tt
+            hidden_effect = {
+                if = {
+                    limit = {
+                        has_completed_focus = YAN_Fragrance_Connection
+                    }
+                    mark_focus_tree_layout_dirty = yes
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Compromise
+        icon = GFX_goal_agrarian_reform
+        x = 2
+        y = 2
+        cost = 0.9
+        cancelable = no
+        prerequisite = { focus = YAN_Day_Beakavia }
+        completion_reward = {
+            country_event = { id = zebstart.7 }
+            hidden_effect = {
+                goto_province = 20096
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Expand_BSF
+        icon = GFX_Focus_Octaviamerc
+        x = 6
+        y = 2
+        cost = 1
+        cancelable = no
+        prerequisite = { focus = YAN_Observe_East }
+        completion_reward = {
+            country_event = { id = zebstart.14 }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Fragrance_Connection
+        icon = GFX_goal_KIR_hoof
+        x = 4
+        y = 3
+        cost = 2
+        cancelable = no
+        prerequisite = { focus = YAN_Expand_BSF }
+        completion_reward = {
+            country_event = { id = zebstart.15 }
+            hidden_effect = {
+                if = {
+                    limit = {
+                        has_completed_focus = YAN_Sambovato1
+                    }
+                    mark_focus_tree_layout_dirty = yes
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Zeb_Volk
+        icon = GFX_goal_authority
+        x = 2
+        y = 3
+        cost = 0.9
+        cancelable = no
+        prerequisite = { focus = YAN_Compromise }
+        completion_reward = {
+            country_event = { id = zebstart.8 }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Royal_Visit
+        icon = GFX_goal_GRI_grover_v_death
+        x = 2
+        y = 4
+        cost = 5
+        available = {
+            always = no
+        }
+        prerequisite = { focus = YAN_Zeb_Volk }
+        prerequisite = { focus = YAN_Sambovato1 }
+        prerequisite = { focus = YAN_Fragrance_Connection }
+        allow_branch = {
+            NOT = { has_country_flag = isaac_paral }
+        }
+        cancelable = no
+        completion_reward = {
+            country_event = { id = sussybaka.1 }
+            add_political_power = 200
+            add_stability = 0.2
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.3
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+focus = {
+        id = YAN_Pay_Our_Respects
+        icon = GFX_goal_GRI_grover_v_death
+        x = 2
+        y = 4
+        cost = 12
+        allow_branch = {
+            has_country_flag = isaac_paral
+        }
+        cancelable = no
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = YAN_Pay_Respects_tt
+                has_completed_focus = YAN_jewel_south
+                has_completed_focus = YAN_Day_Beakavia
+                has_completed_focus = YAN_Out_West
+                has_completed_focus = YAN_Observe_East
+                has_completed_focus = YAN_Burea
+                has_completed_focus = YAN_Compromise
+                has_completed_focus = YAN_Expand_BSF
+                has_completed_focus = YAN_Sambovato1
+                has_completed_focus = YAN_Zeb_Volk
+                has_completed_focus = YAN_Fragrance_Connection
+            }
+        }
+        select_effect = {
+            country_event = { id = interim.1 days = 7 }
+        }
+        completion_reward = {
+            mark_focus_tree_layout_dirty = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Disjointed_Government
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 2
+        y = 5
+        cost = 12
+        available = { always = no }
+        prerequisite = { focus = YAN_Pay_Our_Respects }
+        allow_branch = {
+            has_country_flag = Isaac_Retired
+        }
+        select_effect = {
+            country_event = {
+                id = interim.2 days 14
+            }
+        }
+        cancelable = no
+        completion_reward = { custom_effect_tooltip = YAN_Vultures_tt }
+    }
+    ai_will_do = {
+        factor = 1
+    }
+
+
+
+    focus = {
+        id = YAN_VOC_Bailout
+        icon = GFX_goal_endless_money
+        x = -1
+        y = 6
+        cost = 12
+        prerequisite = { focus = YAN_Disjointed_Government }
+        available = {
+            always = no
+        }
+        completion_reward = { }
+        ai_will_do = {
+            factor = 1
+        }
+        cancelable = no
+    }
+
+
+
+    focus = {
+        id = interim_hoorst_clique
+        icon = GFX_Focus_VOC_Chud
+        x = 1
+        y = 7
+        cost = 1
+        prerequisite = { focus = YAN_VOC_Bailout }
+        mutually_exclusive = { focus = YAN_VOC_Moderates }
+        mutually_exclusive = { focus = YAN_VOC_Commies }
+        allow_branch = {
+            has_completed_focus = YAN_VOC_Bailout
+        }
+        available = {
+            always = no
+        }
+        complete_tooltip = {
+            custom_effect_tooltip = hoorst_clique1_tt
+        }
+        completion_reward = {
+
+        }
+        cancelable = no
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = interim_grand_speech
+        icon = GFX_Focus_VOC_Chud
+        x = 1
+        y = 8
+        cost = 5
+        prerequisite = { focus = interim_hoorst_clique }
+        allow_branch = {
+            has_completed_focus = interim_hoorst_clique
+        }
+        select_effect = {
+            country_event = { id = chuddie.1 days = 5 }
+        }
+        completion_reward = {
+            country_event = { id = chuddie.2 }
+
+        }
+        cancelable = no
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = interim_slash_spending
+        icon = GFX_Focus_VOC_Chud
+        x = 1
+        y = 9
+        cost = 4
+        prerequisite = { focus = interim_grand_speech }
+        cancelable = no
+        completion_reward = {
+            country_event = {
+                id = chuddie.3
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = interim_economic_austerity
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 1
+        y = 10
+        cost = 3
+        prerequisite = { focus = interim_slash_spending }
+        cancelable = no
+        completion_reward = {
+            country_event = { id = chuddie.4 }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = interim_bottom_line
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 1
+        y = 11
+        cost = 2
+        cancelable = no
+        prerequisite = { focus = interim_economic_austerity }
+        completion_reward = {
+            country_event = { id = chuddie.5 }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = new_corporate_griff
+        icon = GFX_goal_tax_slave
+        x = 1
+        y = 12
+        cost = 1
+        cancelable = no
+        prerequisite = { focus = interim_bottom_line }
+        completion_reward = {
+            custom_effect_tooltip = new_corporate_griff_tt
+            hidden_effect = {
+                country_event = { id = new_corp_griff.1 days = 3 }
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_VOC_Moderates
+        icon = GFX_Focus_VOC_Dutch
+        x = -1
+        y = 7
+        cost = 1
+        cancelable = no
+        allow_branch = {
+            has_completed_focus = YAN_VOC_Bailout
+        }
+        prerequisite = { focus = YAN_VOC_Bailout }
+        mutually_exclusive = { focus = interim_hoorst_clique }
+        mutually_exclusive = { focus = YAN_VOC_Commies }
+        available = {
+            always = no
+        }
+        complete_tooltip = {
+            custom_effect_tooltip = nocontentyet
+        }
+        completion_reward = { }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_VOC_Commies
+        icon = GFX_Focus_VOC_Lib
+        x = -3
+        y = 7
+        cost = 1
+        cancelable = no
+        allow_branch = {
+            has_completed_focus = YAN_VOC_Bailout
+        }
+        prerequisite = { focus = YAN_VOC_Bailout }
+        mutually_exclusive = { focus = interim_hoorst_clique }
+        mutually_exclusive = { focus = YAN_VOC_Moderates }
+        available = {
+            always = no
+        }
+        complete_tooltip = {
+            custom_effect_tooltip = nocontentyet
+        }
+        completion_reward = { }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Anarchy_Beakavia
+        icon = GFX_zebra_anarchy
+        x = 5
+        y = 6
+        cost = 1
+        cancelable = no
+        prerequisite = { focus = YAN_Disjointed_Government }
+        available = {
+            always = no
+        }
+        complete_tooltip = {
+            custom_effect_tooltip = nocontentyet
+        }
+        completion_reward = {
+            custom_effect_tooltip = nocontentyet
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}

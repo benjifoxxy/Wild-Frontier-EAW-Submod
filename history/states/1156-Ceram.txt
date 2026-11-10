@@ -1,0 +1,24 @@
+state = {
+    id = 1156
+    name = STATE_1156
+    provinces = { 13373 20256 20257 20258 20259 20260 20261 }
+    resources = {
+        oil = 8
+        rubber = 12
+        coal = 4
+    }
+    history = {
+        owner = CER
+        buildings = {
+            infrastructure = 1
+            20259 = {
+                naval_base = 1
+            }
+        }
+        victory_points = { 20259 15 }
+        add_core_of = CER
+    }
+    state_category = small_island
+    manpower = 585911
+    buildings_max_level_factor = 1.000
+}

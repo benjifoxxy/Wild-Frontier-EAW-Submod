@@ -1,0 +1,75 @@
+﻿l_english:
+ 
+
+# Light Weapon Stash Scripted Loc for Saddle Arabia CW
+
+SA_CW_LW_Stash_0:0 "§REmpty§!" 
+SA_CW_LW_Stash_1:0 "1 Thousand Rifles (20% Full)" 
+SA_CW_LW_Stash_2:0 "2 Thousand Rifles (40% Full)" 
+SA_CW_LW_Stash_3:0 "3 Thousand Rifles (60% Full)" 
+SA_CW_LW_Stash_4:0 "4 Thousand Rifles (80% Full)" 
+SA_CW_LW_Stash_5:0 "5 Thousand Rifles (§C100%§! Full)" 
+
+# Heavy Weapon Stash Scripted Loc for Saddle Arabia CW
+
+SA_CW_HW_Stash_0:0 "§REmpty§!"
+SA_CW_HW_Stash_1:0 "25 Artillery Cannons (20% Full)"
+SA_CW_HW_Stash_2:0 "50 Artillery Cannons (40% Full)"
+SA_CW_HW_Stash_3:0 "75 Artillery Cannons (60% Full)"
+SA_CW_HW_Stash_4:0 "100 Artillery Cannons (80% Full)"
+SA_CW_HW_Stash_5:0 "125 Artillery Cannons (§C100%§! Full)"
+
+# Light Vehicles Stash Scripted Loc for Saddle Arabia CW
+
+SA_CW_LV_Stash_0:0 "§REmpty§!"
+SA_CW_LV_Stash_1:0 "10 Light Armoured Vehicles (20% Full)"
+SA_CW_LV_Stash_2:0 "20 Light Armoured Vehicles (40% Full)"
+SA_CW_LV_Stash_3:0 "30 Light Armoured Vehicles (60% Full)"
+SA_CW_LV_Stash_4:0 "40 Light Armoured Vehicles (80% Full)"
+SA_CW_LV_Stash_5:0 "50 Light Armoured Vehicles (§C100%§! Full)"
+
+### Stormland Decision - Ikvus Happiness
+
+Ikvus_Happiness_0:0 "Ikvus Happy 0"
+Ikvus_Happiness_1:0 "Ikvus Happy 1"
+Ikvus_Happiness_2:0 "Ikvus Happy 2"
+Ikvus_Happiness_3:0 "Ikvus Happy 3"
+Ikvus_Happiness_4:0 "Ikvus Happy 4"
+Ikvus_Happiness_5:0 "Ikvus Happy 5"
+Ikvus_Happiness_6:0 "Ikvus Happy 6"
+Ikvus_Happiness_7:0 "Ikvus Happy 7"
+Ikvus_Happiness_8:0 "Ikvus Happy 8"
+Ikvus_Happiness_9:0 "Ikvus Happy 9"
+Ikvus_Happiness_10:0 "Ikvus Happy 10"
+
+### Saddle Arabia - Faisal Happiness
+
+Faisal_Happiness_0:0 "Faisal Happy 0"
+Faisal_Happiness_1:0 "Faisal Happy 1"
+Faisal_Happiness_2:0 "Faisal Happy 2"
+Faisal_Happiness_3:0 "Faisal Happy 3"
+Faisal_Happiness_4:0 "Faisal Happy 4"
+Faisal_Happiness_5:0 "Faisal Happy 5"
+Faisal_Happiness_6:0 "Faisal Happy 6"
+Faisal_Happiness_7:0 "Faisal Happy 7"
+Faisal_Happiness_8:0 "Faisal Happy 8"
+Faisal_Happiness_9:0 "Faisal Happy 9"
+Faisal_Happiness_10:0 "Faisal Happy 10"
+
+### Imba Zaru Zebra Prince Happiness
+
+Prince_Happiness_0:0 "Prince CW Happiness Influence 0"
+Prince_Happiness_1:0 "Prince CW Happiness Influence 1"
+Prince_Happiness_2:0 "Prince CW Happiness Influence 2"
+Prince_Happiness_3:0 "Prince CW Happiness Influence 3"
+Prince_Happiness_4:0 "Prince CW Happiness Influence 4"
+Prince_Happiness_5:0 "Prince CW Happiness Influence 5"
+
+### Imba Zaru Griffon Council Happiness
+
+Griff_CW_Happiness_0:0 "Griff CW Happiness Influence 0"
+Griff_CW_Happiness_1:0 "Griff CW Happiness Influence 1"
+Griff_CW_Happiness_2:0 "Griff CW Happiness Influence 2"
+Griff_CW_Happiness_3:0 "Griff CW Happiness Influence 3"
+Griff_CW_Happiness_4:0 "Griff CW Happiness Influence 4"
+Griff_CW_Happiness_5:0 "Griff CW Happiness Influence 5"

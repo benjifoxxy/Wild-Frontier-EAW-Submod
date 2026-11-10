@@ -1,0 +1,26 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			IF = {
+				limit = {
+					YAN = {
+						is_ai = no
+					}
+				}
+				YAN = {
+				country_event = { id = debug_Wild_Frontier_Startup.2 }	
+				}
+				
+			}
+			ELSE = {
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					country_event = { id = debug_Wild_Frontier_Startup.1 }
+					goto_province = 13371
+				}
+			}
+		}
+	}
+}

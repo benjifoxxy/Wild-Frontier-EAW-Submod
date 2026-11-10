@@ -1,0 +1,115 @@
+spriteTypes = {
+   	 spriteType = {
+        	name = GFX_Isaac_R_Portrait
+        	texturefile = "gfx\leaders\Wild_Frontier\Izaak_Reigers.tga"
+       		legacy_lazy_load = no
+    }
+
+	spriteType = {
+		name = GFX_VOC_Mandate_Portrait
+		texturefile = "gfx\leaders\Wild_Frontier\VOC_Wild_Frontier.tga"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = GFX_Cleo_Portrait
+		texturefile = "gfx\leaders\Wild_Frontier\portrait_cleo.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = GFX_Savior_South_Portrait
+		texturefile = "gfx\leaders\Wild_Frontier\GFS_anesu_goldleaf.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = GFX_Luang_Portrait
+		texturefile = "gfx\leaders\Wild_Frontier\zebra_rambo.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = GFX_Zahida_Portrait
+		texturefile = "gfx\leaders\Wild_Frontier\portrait_zahida.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = GFX_Jan_Hoorst_Portrait
+		texturefile = "gfx\leaders\Wild_Frontier\YAN_Cakarkeluli_Semuakawan.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = GFX_Interim_Council_Portrait
+		texturefile = "gfx\leaders\Wild_Frontier\SLC_national_assembly.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = GFX_Crimson_Sword_Portrait
+		texturefile = "gfx\leaders\Wild_Frontier\portrait_cs.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = GFX_niko_bellic_Portrait
+		texturefile = "gfx\leaders\Wild_Frontier\Iris_Schneider.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = GFX_roman_bellic_Portrait
+		texturefile = "gfx\leaders\Wild_Frontier\portrait_rb.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_Edi_Zamine_Portrait
+		texturefile = "gfx\leaders\Wild_Frontier\portrait_edi_zamine.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_interim_council_Portrait
+		texturefile = "gfx\leaders\Wild_Frontier\SLC_national_assembly.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_warlords_Portrait
+		texturefile = "gfx\leaders\Wild_Frontier\SLC_provisional_council.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_Talon_Company_Commander_Portrait
+		texturefile = "gfx\leaders\Wild_Frontier\portrait_talon_commander.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_Initial_Air_Scientist_YAN
+		texturefile = "gfx\leaders\Wild_Frontier\griffon_scientist_male1.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_Loy_Beck_Leader
+		texturefile = "gfx\leaders\Wild_Frontier\YAN_Orangtua_Yangmarah.tga"
+		legacy_lazy_load = no
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ }

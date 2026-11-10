@@ -1,0 +1,349 @@
+
+add_namespace = beakavian_emergency
+add_namespace = clawVShoof
+add_namespace = insanity
+add_namespace = hoorst_flees
+
+
+country_event = { # opening emergency event , disbands the mercenaries and also locks down the gov district
+    id = beakavian_emergency.1
+    title = beakavian_emergency.1.t
+    desc = beakavian_emergency.1.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    fire_only_once = yes
+    option = { #zebrikaaner divisions delete, demilitarize clawtoria
+        name = beakavian_emergency.1.a
+        ai_chance = {
+            factor = 1
+        }
+        custom_effect_tooltip = New_Decisions_Unlocked_YAN
+        custom_effect_tooltip = Zebrikaaner_Units_Retreat_To_Clawtoria_tt
+        set_country_flag = FZS_Civil_War_Cat_Enable
+        add_ideas = YAN_Civil_War_Ongoing
+        activate_mission = FZS_Strength_Check
+        #set_country_flag = FZS_CW_Strength_Activate_Mission
+
+        hidden_effect = {
+            delete_unit_template_and_units = {
+                division_template = "Zebrikaanse Landwacht"
+                disband = yes
+            }
+            delete_unit_template_and_units = {
+                division_template = "Zebrikaanse Veldpolitie"
+                disband = yes
+            }
+            load_focus_tree = beakavian_emergency_tree_hoorst
+            mark_focus_tree_layout_dirty = yes
+            country_event = { id = beakavian_emergency.2 days = 10 }
+            country_event = { id = beakavian_emergency.3 days = 5 }
+            1157 = {
+                set_demilitarized_zone = yes
+            }
+            set_variable = {
+                var = FZS_Strength_Meter
+                value = 25
+            }
+        }
+    }
+}
+
+country_event = { #triggered automatically
+    id = beakavian_emergency.2
+    title = beakavian_emergency.2.t
+    desc = beakavian_emergency.2.desc
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = { # main option if no other are available
+        name = beakavian_emergency.2.a
+        ai_chance = {
+            factor = 1
+        }
+        available = {
+            NOT = {
+                IF = {
+                    has_country_flag = SK_Invest_Decision_Cat_Completed
+                    has_country_flag = SA_Invest_Decision_Cat_Completed
+                    has_country_flag = CC_Invest_Decision_Cat_Completed
+                }
+            }
+        }
+        custom_effect_tooltip = will_unlocked_focuses_yan
+        complete_national_focus = beakavian_emergency
+        hidden_effect = {
+
+        }
+    }
+    option = { # available if storm kingdom victory was secured
+        name = beakavian_emergency.2.b
+        ai_chance = {
+            factor = 1
+        }
+        available = {
+            has_country_flag = SK_Invest_Decision_Cat_Completed
+        }
+        custom_effect_tooltip = will_unlocked_focuses_yan
+        complete_national_focus = beakavian_emergency
+        hidden_effect = {
+
+        }
+    }
+    option = { # available if saddle arabic victory was secured
+        name = beakavian_emergency.2.c
+        ai_chance = {
+            factor = 1
+        }
+        available = {
+            has_country_flag = SA_Invest_Decision_Cat_Completed
+        }
+        custom_effect_tooltip = will_unlocked_focuses_yan
+        complete_national_focus = beakavian_emergency
+        hidden_effect = {
+
+        }
+    }
+    option = { # available if the imba zaru were successful
+        name = beakavian_emergency.2.d
+        ai_chance = {
+            factor = 1
+        }
+        available = {
+            has_country_flag = CC_Invest_Decision_Cat_Completed
+        }
+        custom_effect_tooltip = will_unlocked_focuses_yan
+        complete_national_focus = beakavian_emergency
+        hidden_effect = {
+
+        }
+
+    }
+    option = { # available if the player is somehow a gigachad and won all 3 sponsors
+        name = beakavian_emergency.2.e
+        ai_chance = {
+            factor = 1
+        }
+        available = {
+            AND = {
+                has_country_flag = SK_Invest_Decision_Cat_Completed
+                has_country_flag = SA_Invest_Decision_Cat_Completed
+                has_country_flag = CC_Invest_Decision_Cat_Completed
+            }
+        }
+        custom_effect_tooltip = will_unlocked_focuses_yan
+        complete_national_focus = beakavian_emergency
+        hidden_effect = {
+
+        }
+    }
+}
+
+country_event = { # cubana break free event - changed to decision now
+    id = beakavian_emergency.3
+    title = beakavian_emergency.3.t
+    desc = beakavian_emergency.3.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+        trigger = {
+        original_tag = YAN
+    }
+    option = { # Natives say fuck you LOL
+        name = beakavian_emergency.3.a
+        ai_chance = {
+            factor = 1
+        }
+        available = {
+            NOT = {
+                has_country_flag = MQA_Secured
+            }
+        }
+        custom_trigger_tooltip = {
+            tooltip = Ceram_Kirchau_Break_Free_tt
+            activate_mission = Secure_Ceram
+            activate_mission = Secure_Kirchau
+        }
+    }
+    option = {
+        name = beakavian_emergency.3.b
+        ai_chance = {
+            factor = 1
+        }
+        available = {
+            has_country_flag = MQA_Secured
+        }
+        custom_trigger_tooltip = {
+            tooltip = Ceram_Kirchau_Sambo_Break_Free_tt
+            activate_mission = Secure_Ceram
+            activate_mission = Secure_Kirchau
+            activate_mission = Secure_Sambo
+        }
+    }
+}
+
+country_event = { # Secure Ceram Decision Event
+    id = beakavian_emergency.4
+    title = beakavian_emergency.4.t
+    desc = beakavian_emergency.4.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+        trigger = {
+        original_tag = YAN
+    }
+    option = { # We have always been friends with the Ceram! ask for their support
+        name = beakavian_emergency.4.a
+        ai_chance = {
+            factor = 1
+        }
+        add_stability = 0.2
+        add_political_power = 200        
+    }
+    option = { # We should take the opportunity to fully take over the Administration of Ceram!
+        name = beakavian_emergency.4.b
+        ai_chance = {
+            factor = 1
+        }
+        YAN = {
+            annex_country = CER
+        }
+        
+        add_political_power = -50
+        add_timed_idea = {
+            idea = YAN_Radar_Array_Construction_Effort
+            days = 14
+        }
+    }
+}
+
+country_event = { # Secure Kirchau Event
+    id = beakavian_emergency.5
+    title = beakavian_emergency.5.t
+    desc = beakavian_emergency.5.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+        trigger = {
+        original_tag = YAN
+    }
+    option = { # Ewal is a greedy bastard. Set him up with a position in government.
+        name = beakavian_emergency.5.a
+        ai_chance = {
+            factor = 1
+        }
+        add_timed_idea = {
+            idea = Bribe_Ewal_Idea
+            days = 21
+        }
+        YAN = {
+            annex_country = MIZ
+        }
+        add_political_power = -50
+        recruit_character = admiral_ewal
+        add_manpower = 25000
+
+    }
+    option = { # We dont need his help.
+        name = beakavian_emergency.5.b
+        ai_chance = {
+            factor = 1
+        }
+        YAN = {
+            end_puppet = MIZ  
+        }
+        add_political_power = 100
+    }
+}
+
+country_event = { # Secure Sambovato event
+    id = beakavian_emergency.6
+    title = beakavian_emergency.6.t
+    desc = beakavian_emergency.6.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = { # The Royal Family has outlived it's usefulness
+        name = beakavian_emergency.6.a
+        ai_chance = {
+            factor = 1
+        }
+        MQA = {
+            set_cosmetic_tag = MQA_Subjugated
+        }
+        set_politics = {
+            ruling_party = fascism
+            last_election = "1001.1.1"
+            elections_allowed = no
+        }
+        set_popularities = {
+            fascism = 40
+            communism = 30
+            democratic = 30
+            neutrality = 0
+        }
+        create_country_leader = {
+            name = "Luay Beckanbauer"
+            desc = "Loy_Beck_desc"
+            picture = GFX_Loy_Beck_Leader
+            expire = "1965.1.1"
+            ideology = surveillance_state
+        }
+    }
+}
+
+country_event = { # unused rn
+    id = beakavian_emergency.7
+    title = beakavian_emergency.7.t
+    desc = beakavian_emergency.7.d
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    hidden = yes
+    option = {
+        name = beakavian_emergency.7.a
+        ai_chance = {
+            factor = 1
+        }
+                
+    }
+}
+
+
+country_event = { # focus that gives attack bonus vs nations with zebra race
+    id = clawVShoof.1
+    title = clawVShoof.1.t
+    desc = clawVShoof.1.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+        trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = clawVShoof.1.a
+        ai_chance = {
+            factor = 1
+        }
+        add_political_power = 25
+    }
+}
+
+country_event = {
+    id = insanity.1
+    title = insanity.1.t
+    desc = insanity.1.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+        trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = insanity.1.a
+        ai_chance = {
+            factor = 1
+        }
+        add_political_power = 25
+    }
+}

@@ -1,0 +1,352 @@
+characters = {
+
+
+    Crimson_Sword = {
+        name = "Crimson Sword"
+        portraits = {
+            civilian = {
+                large = GFX_Crimson_Sword_Portrait
+                small = GFX_Crimson_Sword_Portrait
+            }
+        }
+        country_leader = {
+            ideology = religious_socialism
+            traits = {  }
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+
+    Jan_Hoorst = {
+        name = "Stadtholder Jan Hoorst"
+        portraits = {
+            civilian = {
+                large = GFX_Jan_Hoorst_Portrait
+                small = GFX_Jan_Hoorst_Portrait
+            }
+        }
+        country_leader = {
+            ideology = corporatocracy
+            traits = { }
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+
+
+    YAN_Air_Scientist_Initial = {
+        name = YAN_Air_Scientist_Initial
+        portraits = {
+            civilian = {
+                large = GFX_Initial_Air_Scientist_YAN
+                small = GFX_Initial_Air_Scientist_YAN
+            }
+        }
+        scientist = {
+            skills = { specialization_air = 1 }
+            traits = { electronics_specialist griffon_race genius }
+        }
+    }
+
+
+
+    Mataram_Cleo_1 = {
+        name = Mataram_Cleo_1
+        portraits = {
+            civilian = {
+                large = GFX_Cleo_Portrait
+                small = GFX_Cleo_Portrait
+            }
+        }
+        country_leader = {
+            ideology = divine_protectorate
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+
+    admiral_ewal = {
+        name = admiral_ewal
+        portraits = {
+            civilian = {
+                large = GFX_Zahida_Portrait
+                small = GFX_Zahida_Portrait
+            }
+        }
+        country_leader = {
+            ideology = warlord_militarism
+            traits = { colonial_collaborator }
+            expire = "1965.1.1"
+            id = -1
+        }
+        navy_leader = {
+            skill = 3
+            attack_skill = 3
+            defense_skill = 3
+            maneuvering_skill = 3
+            coordination_skill = 3
+            legacy_id = -1
+        }
+    }
+
+    Edi_Zamine = {
+        name = Edi_Zamine
+        portraits = {
+            civilian = {
+                large = GFX_Edi_Zamine_Portrait
+                small = GFX_Edi_Zamine_Portrait
+            }
+        }
+        country_leader = {
+            ideology = stratocracy
+            traits = { colonial_collaborator }
+            expire = "1965.1.1"
+            id = -1
+        }
+        corps_commander = {
+            skill = 3
+            attack_skill = 7
+            defense_skill = 1
+            planning_skill = 4
+            logistics_skill = 5
+            legacy_id = -1
+        }
+    }
+
+    Isaac_Reigers = {
+        name = Isaac_Reigers
+        portraits = {
+            civilian = {
+                large = GFX_Isaac_R_Portrait
+                small = GFX_Isaac_R_Portrait
+            }
+        }
+        country_leader = {
+            ideology = benign_paternalism
+            traits = { caring_claw }
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    interim_council = {
+        name = "Interim Council"
+        portraits = {
+            civilian = {
+                large = GFX_interim_council_Portrait
+                civilian = GFX_interim_council_Portrait
+            }
+        }
+        country_leader = {
+            ideology = oligarchism
+            expire = "1965.1.1.1"
+            id = -1
+        }
+    }
+
+    luang_idori = {
+        name = luang_idori
+        portraits = {
+            civilian = {
+                large = GFX_Luang_Portrait
+                small = GFX_Luang_Portrait
+            }
+        }
+        country_leader = {
+            ideology = tribal_council
+            traits = { Cerami_Nationality }
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    company_voc = {
+        name = company_voc
+        portraits = {
+            civilian = {
+                large = GFX_VOC_Mandate_Portrait
+                small = GFX_VOC_Mandate_Portrait
+            }
+        }
+        country_leader = {
+            ideology = concessionary_sov
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    various_warlords_UBE = {
+        name = various_warlords
+        portraits={
+            civilian = {
+                large = GFX_warlords_Portrait
+                civilian = GFX_warlords_Portrait
+            }
+        }
+        country_leader = {
+            ideology = warlord_militarism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+    HAF_Warlord = {
+        name = HAF_Warlord
+        portraits = {
+            civilian = {
+                large = "gfx\leaders\zebra\army_zebra_4.tga"
+            }
+        }
+        country_leader = {
+            ideology = warlord_militarism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+
+    THA_Warlord = {
+        name = THA_Warlord
+        portraits = {
+            civilian = {
+                large = "gfx\leaders\zebra\army_zebra_4.tga"
+            }
+        }
+        country_leader = {
+            ideology = warlord_militarism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+
+    XHO_Warlord = {
+        name = XHO_Warlord
+        portraits = {
+            civilian = {
+                large = "gfx\leaders\zebra\army_zebra_4.tga"
+            }
+        }
+        country_leader = {
+            ideology = warlord_militarism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+
+    NKO_Warlord = {
+        name = NKO_Warlord
+        portraits = {
+            civilian = {
+                large = "gfx\leaders\zebra\army_zebra_4.tga"
+            }
+        }
+        country_leader = {
+            ideology = warlord_militarism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+
+    TAO_Warlord = {
+        name = TAO_Warlord
+        portraits = {
+            civilian = {
+                large = "gfx\leaders\zebra\army_zebra_4.tga"
+            }
+        }
+        country_leader = {
+            ideology = warlord_militarism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+
+    IST_Warlord = {
+        name = IST_Warlord
+        portraits = {
+            civilian = {
+                large = GFX_Luang_Portrait
+            }
+        }
+        country_leader = {
+            ideology = warlord_militarism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+
+    VOC_Schizo_General = {
+        name = VOC_Schizo_General
+        portraits = {
+            civilian = {
+                large = GFX_niko_bellic_Portrait
+                civilian = GFX_niko_bellic_Portrait
+            }
+        }
+        country_leader = {
+            ideology = warlord_militarism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+
+    VOC_Wholesome_General = {
+        name = VOC_Wholesome_General
+        portraits = {
+            civilian = {
+                large = GFX_roman_bellic_Portrait
+                civilian = GFX_roman_bellic_Portrait
+            }
+        }
+        country_leader = {
+            ideology = holy_order_h
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+
+    UBE_Saviour_of_the_South = {
+        name = UBE_Saviour_Leader
+        portraits = {
+            civilian = {
+                large = GFX_Savior_South_Portrait
+                civilian = GFX_Savior_South_Portrait
+            }
+        }
+        country_leader = {
+            ideology = social_banditry
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+
+    VOC_Talon_Commander = {
+        name = VOC_Talon_Commander
+        portraits = {
+            civilian = {
+                large = GFX_Talon_Company_Commander_Portrait
+                civilian = GFX_Talon_Company_Commander_Portrait
+            }
+        }
+        country_leader = {
+            ideology = stratocracy
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+
+    TON_Warlord = {
+        name = TON_Warlord
+        portraits = {
+            civilian = {
+                large = "gfx\leaders\zebra\army_zebra_4.tga"
+            }
+        }
+        country_leader = {
+            ideology = warlord_militarism
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+}
+
+
+
+
+
+

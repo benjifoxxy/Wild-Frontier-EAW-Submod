@@ -1,0 +1,608 @@
+
+
+Saddle_Arabia_Investment_Decisions = { # TAG - SDL - Grand Prince Faisal ibn Sai'del
+
+    saddle_arabia_keksimus_maximus_0 = { # intelligence report on faisal
+
+        icon = generic_civil_war
+        cost = 0
+        allowed = {
+            original_tag = YAN
+        }
+        available = {
+            has_intelligence_agency = yes
+            network_strength = {
+                target = SDL
+                state = 868
+                value > 10
+            }
+        }
+        visible = {
+            NOT = {
+                has_country_flag = Saddle_Arabia_Intelligence_Report_Decision_Taken
+            }
+        }
+        remove_effect = {
+            custom_effect_tooltip = Saddle_Arabica_Intelligence_Report_tt
+            hidden_effect = {
+                country_event = { id = saddle_arabica.1 }
+                set_country_flag = Saddle_Arabia_Intelligence_Report_Decision_Taken
+            }
+        }
+    }
+
+    saddle_arabia_keksimus_maximus_1 = { # Meeting with Faisal
+
+        icon = generic_civil_war
+        cost = 5
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            NOT = {
+                has_country_flag = Arabia_Dec_1_Taken
+            }
+        }
+        days_remove = 3
+        days_re_enable = 20000
+            remove_effect = {
+                hidden_effect = {
+                    set_country_flag = Arabia_Dec_1_Taken
+                    country_event = { id = saddle_arabica.2 }
+                    clamp_variable = {
+                        var = Saddle_Arabia_CW_Weapon_Stashes_Light_Weapons
+                        min = 0
+                        max = 5
+                    }
+                    clamp_variable = {
+                        var = Saddle_Arabia_CW_Weapon_Stashes_Heavy_Weapons
+                        min = 0
+                        max = 5
+                    }
+                    clamp_variable = {
+                        var = Saddle_Arabia_CW_Weapon_Stashes_Mobile_Vehicles
+                        min = 0
+                        max = 5
+                    }
+                    SDL = {
+                        diplomatic_relation = {
+                            country = YAN
+                            relation = docking_rights
+                            active = yes
+                        }
+                    }
+                }
+
+            }
+        }
+    
+
+    saddle_arabia_keksimus_maximus_2 = { # Headquarters in Saddle Arabia event chain
+
+        icon = generic_civil_war
+        cost = 0
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            has_country_flag = Arabia_Dec_1_Taken
+        }
+        days_remove = 3
+        days_re_enable = 19000
+
+        remove_effect = {
+            hidden_effect = {
+                set_country_flag = Arabia_Dec_2_Taken
+                country_event = { id = saddle_arabica.3 }
+            }
+        }
+    }
+
+
+    saddle_arabia_keksimus_maximus_3 = { # decision to send more volunteers to faisal
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        days_remove = 3
+        days_re_enable = 19000
+        visible = {
+            AND = {
+                has_country_flag = Arabia_Dec_1_Taken
+                has_country_flag = Arabia_Dec_2_Taken
+                NOT = {
+                    has_country_flag = Sent_Volunteers_to_SA_CW_Flag
+                }
+            }
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = We_Have_Established_HQ_In_Saddle_Arabia_tt
+                has_country_flag = HQ_in_SA_Established
+            }
+        }
+        remove_effect = {
+            add_targeted_modifier = {
+                tag = SDL
+                modifier = YAN_SDL_Volunteer_Modifier
+            }
+            hidden_effect = {
+                set_country_flag = Sent_Volunteers_to_SA_CW_Flag
+                add_to_variable = {
+                    var = Faisal_CW_Happiness
+                    value = 2
+                }
+            }
+        }
+    }
+
+    saddle_arabia_keksimus_maximus_4 = { # event where the player donates light weapons
+
+        icon = generic_civil_war
+        cost = 0
+        allowed = {
+            original_tag = YAN
+        }
+        days_remove = 7
+        days_re_enable = 14
+        visible = {
+            AND = {
+                has_country_flag = Arabia_Dec_1_Taken
+                has_country_flag = Arabia_Dec_2_Taken
+                has_country_flag = Sent_Volunteers_to_SA_CW_Flag
+            }
+        }
+        available = {
+            AND = {
+                has_equipment = {
+                    infantry_equipment > 999
+                }
+                NOT = {
+                    check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Light_Weapons >= 5 }
+                }
+            }
+        }
+        remove_effect = {
+            custom_effect_tooltip = Give_SDL_Light_Weapons_Remove_Effect_tt
+            hidden_effect = {
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = -1000
+                }
+                add_to_variable = {
+                    var = Saddle_Arabia_CW_Weapon_Stashes_Light_Weapons
+                    value = 1
+                }
+            }
+        }
+    }
+    saddle_arabia_keksimus_maximus_5 = { # event where the player donates heavy weapons (artillery)
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        days_remove = 7
+        days_re_enable = 21
+        visible = {
+            AND = {
+                has_country_flag = Arabia_Dec_1_Taken
+                has_country_flag = Arabia_Dec_2_Taken
+                has_country_flag = Sent_Volunteers_to_SA_CW_Flag
+            }
+        }
+        available = {
+            AND = {
+                has_equipment = {
+                    artillery_equipment > 12
+                }
+                has_equipment = {
+                    support_equipment > 12
+                }
+                NOT = {
+                    check_variable = {
+                        var = Saddle_Arabia_CW_Weapon_Stashes_Heavy_Weapons
+                        value >= 5
+                    }
+                }
+            }
+        }
+        remove_effect = {
+            custom_effect_tooltip = Give_SDL_Heavy_Weapons_Remove_Effect_tt
+            hidden_effect = {
+                add_equipment_to_stockpile = {
+                    type = artillery_equipment
+                    amount = -12
+                }
+                add_equipment_to_stockpile = {
+                    type = support_equipment
+                    amount = -12
+                }
+                add_to_variable = {
+                    var = Saddle_Arabia_CW_Weapon_Stashes_Heavy_Weapons
+                    value = 1
+                }
+            }
+        }
+    }
+    saddle_arabia_keksimus_maximus_6 = { # event where the player donates light vehicles (light tanks)
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            AND = {
+                has_country_flag = Arabia_Dec_1_Taken
+                has_country_flag = Arabia_Dec_2_Taken
+                has_country_flag = Sent_Volunteers_to_SA_CW_Flag
+            }
+        }
+        days_remove = 21
+        days_re_enable = 7
+        available = {
+            NOT = {
+                check_variable = {
+                    var = Saddle_Arabia_CW_Weapon_Stashes_Mobile_Vehicles
+                    value >= 5
+                }
+            }
+        }
+        complete_effect = {
+            add_timed_idea = {
+                YAN_SDL_Fund_Light_Vehicles_CW_Idea
+                days = 21
+            }
+        }
+        remove_effect = {
+            hidden_effect = {
+                add_to_variable = {
+                    var = Saddle_Arabia_CW_Weapon_Stashes_Mobile_Vehicles
+                    value = 1
+                }
+            }
+        }
+    }
+    saddle_arabia_keksimus_maximus_7 = { # arm insurgency in the other cw countries
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        days_remove = 14
+        days_re_enable = 150
+        visible = {
+            AND = {
+                custom_trigger_tooltip = {
+                    tooltip = Saddle_Arabia_Arm_Insurgency_CW_tt
+                    AND = {
+                        has_country_flag = Arabia_Dec_1_Taken
+                        has_country_flag = Arabia_Dec_2_Taken
+                        check_variable = {
+                            var = Saddle_Arabia_CW_Weapon_Stashes_Light_Weapons
+                            value >= 2
+                        }
+                    }
+                }
+            }
+        }
+        remove_effect = {
+            custom_effect_tooltip = Insurgency_Explanation_Saddle_Arabia_tt
+            hidden_effect = {
+                add_to_variable = {
+                    var = Faisal_CW_Happiness
+                    value = 2
+                }
+                SDL = {
+                    add_timed_idea = {
+                        idea = YAN_SDL_Insurgency_Add_Bonus_CW
+                        days = 120
+                    }
+                }
+                SDC = {
+                    add_timed_idea = {
+                        idea = YAN_SDL_Insurgency_Subtract_Bonus_CW
+                        days = 120
+                    }
+                }
+                SDF = {
+                    add_timed_idea = {
+                        idea = YAN_SDL_Insurgency_Subtract_Bonus_CW
+                        days = 120
+                    }
+                }   
+                                SDS = {
+                    add_timed_idea = {
+                        idea = YAN_SDL_Insurgency_Subtract_Bonus_CW
+                        days = 120
+                    }
+                }             
+            }
+        }
+        complete_effect = {
+            add_timed_idea = {
+                idea = YAN_SDL_Armed_Insurgency_Funding_CW_Idea
+                days = 14
+            }
+            hidden_effect = {
+            subtract_from_variable = {
+                var = Saddle_Arabia_CW_Weapon_Stashes_Light_Weapons
+                value = 2
+            }
+            }
+        }
+    }
+
+    saddle_arabia_keksimus_maximus_8 = { # create militia divisions! for faisal
+
+        icon = generic_civil_war
+        cost = 0
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            AND = {
+                has_country_flag = Arabia_Dec_1_Taken
+                has_country_flag = Arabia_Dec_2_Taken
+            }
+        }
+        days_remove = 14
+        days_re_enable = 90
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = Create_Militia_Divisions_Faisal_CW_tt
+                check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Light_Weapons > 1 }
+            }
+        }
+        remove_effect = {
+            custom_effect_tooltip = Create_Militia_Divisions_Faisal_CW_2_tt
+            hidden_effect = {
+                subtract_from_variable = {
+                    var = Saddle_Arabia_CW_Weapon_Stashes_Light_Weapons
+                    value = 2
+                }
+                SDL = {
+                division_template = {
+                    name = "Arab Militia Formation"
+                    regiments = {
+                    irregular_infantry = { x = 0 y = 0 }
+                    irregular_infantry = { x = 0 y = 1 }
+                    irregular_infantry = { x = 0 y = 2 }
+                    irregular_infantry = { x = 0 y = 3 }
+                    }
+                    regimental_support = {
+
+                    }
+                    support = {
+
+                    }
+                }
+                
+            }
+            868 = {
+                    create_unit = {
+                    division = "name = \"Arab Militia\" division_template = \"Arab Militia Formation\" start_experience_factor = 0.6 start_equipment_factor = 1"
+                    owner = SDL
+                    count = 2
+                }
+            }
+            }
+        }
+    }
+
+    saddle_arabia_keksimus_maximus_9 = { # create infantry divisions!
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            AND = {
+                has_country_flag = Arabia_Dec_1_Taken
+                has_country_flag = Arabia_Dec_2_Taken
+            }
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = Create_Inf_Divisions_Faisal_CW_tt
+                check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Heavy_Weapons > 2 }
+            }
+        }
+        days_remove = 21
+        days_re_enable = 120
+        remove_effect = {
+            custom_effect_tooltip = Create_Inf_Divisions_Faisal_CW_2_tt
+            hidden_effect = {
+                subtract_from_variable = {
+                    var = Saddle_Arabia_CW_Weapon_Stashes_Heavy_Weapons
+                    value = 3
+                }
+                SDL = { 
+                    division_template = {
+                    name = "Arab Organized Division"
+                    regiments = {
+                        infantry = { x = 0 y = 0 }
+                        infantry = { x = 1 y = 0 }
+                        infantry = { x = 2 y = 0 }
+                        infantry = { x = 0 y = 1 }
+                        infantry = { x = 0 y = 2 }
+                        artillery = { x = 3 y = 2}
+                    }
+
+                    regimental_support = {
+
+                    }
+                    support = {
+                        engineer = { x = 0 y = 0 }
+                    }
+                }
+                }
+                868 = {
+                    create_unit = {
+                    division = "name = \"Arab Infantry Formation\" division_template = \"Arab Organized Division\" start_experience_factor = 0.8 start_equipment_factor = 1"
+                    owner = SDL
+                    count = 3
+                }
+            }
+            }
+        }
+
+    }
+
+    saddle_arabia_keksimus_maximus_10 = { # Create Armoured Division for Faisal
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            AND = {
+                has_country_flag = Arabia_Dec_1_Taken
+                has_country_flag = Arabia_Dec_2_Taken
+            }
+        }
+        days_remove = 30
+        days_re_enable = 300
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = Faisal_Create_Armoured_Div_CW_tt
+                AND = {
+                    check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Light_Weapons > 2 }
+                    check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Heavy_Weapons > 3 }
+                    check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Mobile_Vehicles > 4 }
+                }
+            }
+        }
+        remove_effect = {
+            custom_effect_tooltip = Faisal_Create_Armoured_Div_CW_2_tt
+            hidden_effect = {
+                subtract_from_variable = {
+                    var = Saddle_Arabia_CW_Weapon_Stashes_Light_Weapons
+                    value = 3
+                }
+                subtract_from_variable = {
+                    var = Saddle_Arabia_CW_Weapon_Stashes_Heavy_Weapons
+                    value = 4
+                }
+                subtract_from_variable = {
+                    var = Saddle_Arabia_CW_Weapon_Stashes_Mobile_Vehicles
+                    value = 5
+                }
+                SDL = {
+                    division_template = {
+                        name = "Arab Onhooves Division"
+                        regiments = {
+                            motorized = { x = 0 y = 0 }
+                            motorized = { x = 0 y = 1 }
+                            motorized = { x = 1 y = 0 }
+                            motorized = { x = 1 y = 1 }
+                            motorized = { x = 2 y = 0 }
+                            motorized = { x = 2 y = 1 }
+                            light_armor = { x = 3 y = 0 }
+                            light_armor = { x = 3 y = 1 }
+                            light_armor = { x = 3 y = 2 }
+                        }
+                        regimental_support = {
+
+                        }
+                        support = {
+                            engineer = { x = 0 y = 0 }
+                            artillery = { x = 0 y = 1 }
+                            maintenance_company = { x = 0 y = 2 }
+                            signal_company = { x = 0 y = 3 }
+                            anti_air = { x = 0 y = 4 }
+                        }
+                    }
+                }
+                868 = {
+                    create_unit = {
+                        division = "name = \"Arab Mobile Formation\" division_template = \"Arab Onhooves Division\" start_experience_factor = 0.9 start_equipment_factor = 1"
+                        owner = SDL
+                        count = 1
+                    }
+                }
+            }
+        }
+
+    }
+
+    saddle_arabia_keksimus_maximus_11 = { # Naval Support for Faisals troops
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            AND = {
+                has_country_flag = Arabia_Dec_1_Taken
+                has_country_flag = Arabia_Dec_2_Taken
+            }
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = Naval_Bombardment_SDL_CW_tt
+                AND = {
+                    OR = {
+                        ships_in_state_ports = {
+                        type = battleship
+                        size > 1
+                        state = 868
+                        }
+                        ships_in_state_ports = {
+                            type = battleship
+                            size > 1
+                            state = 869
+                        }
+                    }
+                    NOT = {
+                        SDL = {
+                            has_idea = YAN_SDL_Naval_Bombardment                                                      
+                        }
+                    }
+                }
+            }
+        }
+        days_remove = 7
+        days_re_enable = 19000
+        remove_effect = {
+            SDL = {
+                add_timed_idea = {
+                    idea = YAN_SDL_Naval_Bombardment
+                    days = 365
+                }
+            }
+        }
+    }
+
+    saddle_arabia_keksimus_maximus_13 = { # category completion decision
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            has_country_flag = Arabia_Dec_1_Taken
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = YAN_Arabia_Unified_tt
+                has_global_flag = arabia_unified
+
+            }
+        }
+        complete_effect = {
+            custom_effect_tooltip = Complete_SK_CW_Category_tt
+            set_global_flag = Saddle_Arabia_Crisis_Resolved
+        }
+
+    }
+}

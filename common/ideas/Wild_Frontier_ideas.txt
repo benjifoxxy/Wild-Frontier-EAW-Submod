@@ -1,0 +1,479 @@
+ideas = {
+    country = {
+
+        YAN_PUL_Food_Aid_Idea = {
+            picture = GFX_idea_NOR_printing_money
+            allowed = {
+                always = yes
+            }
+            modifier = {
+                civilian_factory_use = 3
+                political_power_gain = -0.5
+            }
+        }
+
+        YAN_PUL_Reparations_Idea = {
+            picture = GFX_idea_NOR_printing_money
+            allowed = {
+                always = yes
+            }
+            modifier = {
+                civilian_factory_use = 3
+                political_power_gain = -0.5
+            }
+        }
+
+        YAN_Civil_War_Ongoing = {
+            picture = GFX
+            allowed = {
+                always = yes 
+            }
+            modifier = {
+                cannot_declare_war - yes 
+                political_power_gain = 0.4
+                stability_factor = -0.2
+                industrial_capacity_factory = -0.5
+                industrial_capacity_dockyard = -0.5 
+                weekly_manpower = -250
+            }
+        }
+
+        YAN_MQA_1_Idea = {
+            picture = HIP_moneylock
+            allowed = {
+                always = yes
+            }
+            modifier = {
+
+
+                political_power_gain = -0.75
+                stability_factor = -0.3
+                consumer_goods_factor = 0.6
+
+
+            }
+        }
+
+        YAN_Zaikiria_Matriarch = {
+            picture = KXN_Matriarch_Cult
+            allowed = {
+                always = yes
+            }
+            modifier = {
+
+            }
+        }
+
+        YAN_Zaikiria_Militancy = {
+            picture = KIR_peasant_army
+            allowed = {
+                always = yes
+            }
+            modifier = {
+
+            }
+        }
+
+        YAN_Zaikiria_Wartorn_States = {
+            picture = KIR_arty_forwards
+            allowed = {
+                always = yes
+            }
+            modifier = {
+
+            }
+        }
+
+        YAN_Fucked_Government_1 = {
+            picture = BAL_hell
+            allowed = {
+                always = yes
+            }
+            modifier = {
+                stability_factor = -0.5
+            }
+        }
+
+        YAN_Invest_Sambo = {
+            picture = GFX_idea_capital_outflow
+            allowed = {
+                always = yes
+            }
+            modifier = {
+                civilian_factory_use = 3
+                political_power_gain = -0.5
+            }
+        }
+
+        YAN_Underhanded_Deals_With_Auburn_Isle = {
+            picture = GFX_idea_NOR_printing_money
+            allowed = {
+                always = yes
+            }
+            modifier = {
+                industrial_capacity_dockyard = 0.2
+                consumer_goods_expected_value = -0.1
+                consumer_goods_factor = -0.25
+                equipment_bonus = {
+                    convoy = {
+                        build_cost_ic = -0.25
+                        instant = yes
+                    }
+                }
+                political_power_factor = -0.2
+            }
+        }
+
+        YAN_Hoorst_Grand_Speech_1_Cheap = {
+            picture = GFX_idea_NOR_printing_money
+            allowed = {
+                always = yes
+            }
+            modifier = {
+                weekly_stability = 0.01
+                political_power_gain = 1
+            }
+        }
+
+        YAN_Hoorst_Grand_Speech_1_Navy = {
+            picture = GFX_goal_radio
+            allowed = {
+                always = yes
+            }
+            modifier = {
+                weekly_stability = 0.01
+                political_power_gain = 1
+            }
+        }
+
+        YAN_Hoorst_Grand_Speech_1_Air = {
+            picture = GFX_goal_radio
+            allowed = {
+                always = yes
+            }
+            modifier = {
+                weekly_stability = 0.01
+                political_power_gain = 1
+            }
+        }
+
+        YAN_Hoorst_Grand_Speech_1_Cultural = {
+            picture = GFX_goal_radio
+            allowed = {
+                always = yes
+            }
+            modifier = {
+                weekly_stability = 0.01
+                political_power_gain = 1
+            }
+        }
+
+        YAN_Radar_Array_Construction_Effort = {
+            picture = JER_legacy_of_coltbert
+            allowed = {
+                always = yes
+            }
+            modifier = {
+                civilian_factory_use = 3
+                production_speed_buildings_factor = -0.2
+
+            }
+        }
+
+
+        YAN_Beakavian_Radar_Research = {
+            picture = GFX_idea_GRW_opened_up_schools2
+            allowed = {
+                always = yes
+            }
+            modifier = {
+
+            }
+        }
+
+
+        YAN_Griffische_Culture_Idea = {
+            picture = GFX_goal_griffon_books
+            allowed = {
+                always = yes
+            }
+        }
+
+        YAN_Zebrikaaner_Culture_Idea = {
+            picture = GFX_idea_EQC_griffon_minorities1
+            allowed = {
+                always = yes
+            }
+            modifier = {
+
+            }
+        }
+
+        YAN_Sudzebra_Culture_Idea = {
+            picture = GFX_idea_GRW_war_of_liberation
+            allowed = {
+                always = yes
+            }
+            modifier = {
+
+            }
+        }
+
+        YAN_Open_Defiance_Idea = {
+            picture = HUN_the_rakosi_battalion_idea
+            allowed = {
+                always = yes
+            }
+            modifier = {
+
+            }
+        }
+
+        YAN_Der_Kulturkampf_Idea = {
+            picture = GFX_goal_navy_hat_ships
+            allowed = {
+                always = yes
+            }
+            modifier = {
+
+            }
+        }
+
+        YAN_Triple_Administration_Idea = {
+            picture = HUN_treaty_of_triannon
+            allowed = {
+                always = yes
+            }
+            modifier = {
+                political_power_gain = -0.1
+                stability_weekly = -0.01
+            }
+        }
+
+        YAN_Greifenvater_Idea = { # isaac loved by all
+            picture = FEA_izaak_reigers
+            allowed = {
+                always = yes
+            }
+            modifier = {
+                political_power_gain = 0.25
+                stability_weekly = 0.005
+            }
+        }
+
+        YAN_Talon_Company = {
+            picture = generic_oppression
+            allowed = {
+                always = yes
+            }
+            modifier = {
+
+            }
+        }
+
+        YAN_Beaks_At_The_Table = {
+            picture = GFX_goal_generic_national_unity_claws
+            allowed = {
+                always = yes
+            }
+            modifier = {
+
+            }
+        }
+
+        PUL_Scars_of_1004_Idea = {
+            picture = KIR_way_of_fire_war
+            allowed = {
+                always = yes
+            }
+            modifier = {
+                stability_factor = -0.3
+                war_support_factor = -0.2
+                autonomy_gain = 0.1
+                can_master_build_for_us = 0
+                research_speed_factor = -0.5
+            }
+        }
+
+        PUL_Scars_of_1004_Idea_2 = {
+            picture = FRA_scw_intervention_republicans_focus
+            allowed = {
+                always = yes
+            }
+            modifier = {
+                stability_factor = 0.1
+                war_support_factor = 0.5
+                ai_desired_divisions_factor = 0.1
+                army_core_defence_factor = 0.1
+                research_speed_factor = -0.05
+                equipment_capture = 0.5
+                conscription_factor = 0.05
+            }
+        }
+
+        YAN_Security_Forces_Snubbed_Idea = {
+            picture = BAL_hell
+            allowed = {
+                always = yes
+            }
+            modifier = {
+
+            }
+        }
+
+        YAN_Colonial_Administration_Idea = {
+            picture = RAJ_external_investments
+            allowed = {
+                always = yes
+            }
+            modifier = {
+
+            }
+        }
+
+        YAN_Warlord_Administration_Idea = {
+            picture = SIA_bloodlusted_irredentism
+            allowed = {
+                always = yes
+            }
+            modifier = {
+
+            }
+        }
+
+        YAN_Benign_Administration_Idea = {
+            picture = generic_agrarian_society
+            allowed = {
+                always = yes
+            }
+            modifier = {
+
+            }
+        }
+
+        YAN_Naval_Administration_Idea = {
+            picture = generic_coastal_defense_ships
+            allowed = {
+                always = yes
+            }
+            modifier = {
+
+            }
+        }
+
+        YAN_Local_Administration_Idea = {
+            picture = HUN_secret_rearmament
+            allowed = {
+                always = yes
+            }
+            modifier = {
+
+            }
+        }
+
+        YAN_Corporate_Administration_Idea = {
+            picture = GFX_goal_bag_of_money_pony_griffon
+            allowed = {
+                always = yes
+            }
+            modifier = {
+
+            }
+        }
+
+        YAN_Wild_Frontier_Idea = {
+            picture = isolation
+            allowed = {
+                always = yes
+            }
+            modifier = {
+
+            }
+        }
+
+        YAN_Rampant_Slavery_Idea = {
+            picture = RAJ_state_of_famine_country
+            allowed = {
+                always = yes
+            }
+            modifier = {
+
+            }
+        }
+
+        YAN_Ignored_Slavery_Idea = {
+            picture = GFX_goal_PENAL
+            allowed = {
+                always = yes
+            }
+            modifier = {
+
+            }
+        }
+
+        YAN_Status_Quo_Idea = {
+            picture = hol_aloof_neutrality
+            allowed = {
+                always = yes
+            }
+            modifier = {
+
+            }
+        }
+
+        YAN_Clique_Diplomacy = {
+            picture = MAN_garrison_shortcomings_lvl_1
+            allowed = {
+                always = yes
+            }
+            modifier = {
+
+            }
+        }
+
+        YAN_War_Tourism_Idea = {
+            picture = CES_jungle_acclimatization
+            allowed = {
+                always = yes
+            }
+            modifier = {
+
+            }
+        }
+
+        YAN_Hoorst_Martial_Law_CW = {
+            picture = GFX
+            allowed = {
+                always = yes 
+            }
+            modifier = {
+                
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}

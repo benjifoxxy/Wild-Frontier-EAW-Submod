@@ -1,0 +1,23 @@
+﻿l_english:
+   
+    concessionary_sov:0 "Concessionary Sovereignty (Corporatocracy)"
+    concessionary_sov_desc:0 "Concessionary Sovereignty - The Land is Governed by the §OBoard of Directors of the Vereenigde Oost-Griffische Compagnie§! §HVOC§!, a Conglomerate of privately owned corporations investing in the idea of vast foreign riches to saturate home markets. \n\nAs the Government here is entirely absent and has no profit incentive to increase living standards or provide basic necessities - The Lands are split §Runder the control of Local Warlords§!, usually formerly Tribal Chiefs, that are too busy fighting each other for the bare necessities than to expel their oppressors. \n\nThe §OVOC§! has a vested interest in ensuring the §RStatus Quo Remains§!. And is more than willing to use §RAny Means Necessary§!."
+   
+    benign_paternalism:0 "Benign Paternalism (Non-Aligned)"
+    benign_paternalism_desc:0 "Benign Paternalism - The Country is controlled by a jovial, respected and admired Governer who truly wants the best for the citizens under their watch. They interfere as little as possible and are often given credit for things they had no part or cause in. \n\nSegregation and Inequality is ignored as social issues not out of a desire for guarding conservative virtues but to instead not rock the boat, perse."
+
+    warlord_militarism:0 "Warlord Militarism (Supremacist)"
+    warlord_militarism_desc:0 "Warlord Militarism - There is no Government, no Law and no Justice except for that which is decreed by the General, Supreme Commander or Warchief that leads a roving band of what is pretty much organized bandits claiming to fight for Ethnic Liberation, Social Change or against Oppressors."
+
+    garrison_state:0 "Garrison State (Non-Aligned)"
+    garrison_state_desc:0 "The Land is in a usually temporary, state of Military Control under the authority of a ruling Generalship that's ultimate goal is to control the territory on behalf of a foreign Military Structure. The lawlessness created by this state of affairs is usually responded to with citizens resorting to banditry to make ends meet with reprisals in response being over-reaching and brutal."
+
+    uto_corp_surv_state:0 "Utopian-Corporatist Surveillance State (Supremacist)"
+    uto_corp_surv_state_desc:0 "Utopian-Corporatist Surveillance State"
+
+    theo_aug_aut:0 "Theomanic Augustan Autocracy (Esoteric Theocracy)"
+    theo_aug_aut_desc:0 "Theomanic Augustan Autocracy description"
+
+    divine_protectorate:0 "divine_protectorate (Harmonic)"
+    divine_protectorate_desc:0 "divine_protectorate description"
+

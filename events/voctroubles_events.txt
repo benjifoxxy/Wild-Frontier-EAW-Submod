@@ -1,0 +1,348 @@
+add_namespace = voctroubles
+add_namespace = voctroublesutility
+
+
+
+country_event = {  #introductory event triggered by focus
+    id = voctroubles.1  #focus id
+    title = voctroubles.1.t   #focus title
+    desc = voctroubles.1.d    #focus description
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {  #example description
+        name = voctroubles.1.a
+        ai_chance = {
+            factor = 1
+        }
+        custom_effect_tooltip = New_Decisions_Unlocked_YAN
+        set_country_flag = VOC_Mandate_Development_Decisions_Flag
+        #country_event = { id = voctroubles.2 days = 7 }
+    }
+}
+
+country_event = {  #triggered by event 1 , option to disable flavour events for the colony
+    id = voctroubles.2  #focus id
+    title = voctroubles.2.t   #focus title
+    desc = voctroubles.2.d    #focus description
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {  #continues the other events
+        name = voctroubles.2.a
+        ai_chance = {
+            factor = 1
+        }
+        add_political_power = 1
+    }
+    option = { #doesnt fire the other events
+        name = voctroubles.2.b
+        ai_chance = {
+            factor = 1
+        }
+        custom_effect_tooltip = disable_other_voc_colony_events
+        clr_country_flag = VOC_Mandate_Development_Decisions_Flag
+    }
+}
+
+country_event = {  #example description
+    id = voctroubles.3  #focus id
+    title = voctroubles.3.t   #focus title
+    desc = voctroubles.3.d    #focus description
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {  #example description
+        name = voctroubles.3.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+country_event = {  #example description
+    id = voctroubles.4  #focus id
+    title = voctroubles.4.t   #focus title
+    desc = voctroubles.4.d    #focus description
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {  #example description
+        name = voctroubles.4.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+country_event = {  #example description
+    id = voctroubles.5  #focus id
+    title = voctroubles.5.t   #focus title
+    desc = voctroubles.5.d    #focus description
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {  #example description
+        name = voctroubles.5.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+country_event = {  #example description
+    id = voctroubles.6  #focus id
+    title = voctroubles.6.t   #focus title
+    desc = voctroubles.6.d    #focus description
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {  #example description
+        name = voctroubles.6.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+country_event = {  #example description
+    id = voctroubles.7  #focus id
+    title = voctroubles.7.t   #focus title
+    desc = voctroubles.7.d    #focus description
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {  #example description
+        name = voctroubles.7.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+country_event = {  #example description
+    id = voctroubles.8  #focus id
+    title = voctroubles.8.t   #focus title
+    desc = voctroubles.8.d    #focus description
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {  #example description
+        name = voctroubles.8.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+country_event = {  #example description
+    id = voctroubles.9  #focus id
+    title = voctroubles.9.t   #focus title
+    desc = voctroubles.9.d    #focus description
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {  #example description
+        name = voctroubles.9.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+country_event = {  #example description
+    id = voctroubles.10  #focus id
+    title = voctroubles.10.t   #focus title
+    desc = voctroubles.10.d    #focus description
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {  #example description
+        name = voctroubles.10.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+country_event = {  #example description
+    id = voctroubles.11  #focus id
+    title = voctroubles.11.t   #focus title
+    desc = voctroubles.11.d    #focus description
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {  #example description
+        name = voctroubles.11.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+country_event = {
+    id = voctroubles.12
+    title = voctroubles.12.t
+    desc = voctroubles.12.d
+    picture = GFX_report_event_generic_sign_treaty1
+
+    is_triggered_only = yes
+
+    trigger = {
+        original_tag = YAN
+    }
+
+    option = {
+        name = voctroubles.12.a
+        ai_chance = { factor = 1 }
+        available = {
+            NOT = {
+                has_global_flag = South_Zone_Crisis_Resolved
+            }
+        }
+
+        custom_effect_tooltip = VOC_CW_Start_Tooltip_1_tt
+
+        hidden_effect = {
+            country_event = { id = beakavian_emergency.1 days = 5 }
+
+            if = {
+                limit = { country_flag = voc_mandate_harmony_entrenched_flag }
+                country_event = { id = beakavian_emergency_debug.1 }
+            }
+            if = {
+                limit = { country_flag = voc_mandate_supremacy_entrenched_flag }
+                country_event = { id = beakavian_emergency_debug.2 }
+            }
+            country_event = { id = beakavian_emergency_debug.3 }
+        }
+
+        end_puppet = VOC
+
+        1153 = { add_core_of = HAF }
+        1154 = { add_core_of = HAF }
+        1152 = { add_core_of = THA }
+        1190 = { add_core_of = THA }
+        1143 = { add_core_of = HAF }
+        1142 = { add_core_of = NKO }
+        1141 = { add_core_of = NKO }
+        1192 = { add_core_of = TAO }
+        1146 = { add_core_of = TAO }
+        1144 = { add_core_of = THA }
+        1150 = { add_core_of = XHO }
+        1145 = { add_core_of = XHO }
+        1148 = { add_core_of = XHO }
+        1155 = { add_core_of = WAD }
+        1149 = { add_core_of = VOC }
+
+        UBE = {
+            release = HAF
+            release = IDO
+            release = IST
+            release = NKO
+            release = TAO
+            release = THA
+            release = XHO
+            release = WAD
+        }
+
+        if = {
+            limit = {
+                1149 = { is_owned_by = UBE }
+            }
+            1149 = { transfer_state_to = VOC }
+        }
+
+        every_country = {
+            limit = {
+                OR = {
+                    tag = HAF
+                    tag = IDO
+                    tag = IST
+                    tag = NKO
+                    tag = TAO
+                    tag = THA
+                    tag = XHO
+                    tag = WAD
+                    tag = VOC
+                }
+                exists = yes
+            }
+
+            every_other_country = {
+                limit = {
+                    OR = {
+                        tag = HAF
+                        tag = IDO
+                        tag = IST
+                        tag = NKO
+                        tag = TAO
+                        tag = THA
+                        tag = XHO
+                        tag = WAD
+                        tag = VOC
+                    }
+                    exists = yes
+                }
+
+                declare_war_on = {
+                    target = PREV
+                    type = annex_everything
+                }
+                add_civil_war_target = PREV
+            }
+        }
+
+        UBE = {
+            if = {
+                limit = { has_character = various_warlords }
+                retire_character = various_warlords
+            }
+            if = {
+                limit = { has_character = UBE_Saviour_of_the_South }
+                promote_character = UBE_Saviour_of_the_South
+            }
+            set_politics = {
+                ruling_party = democratic
+                elections_allowed = no
+            }
+            set_popularities = {
+                democratic = 60
+                fascism = 30
+                neutrality = 10
+                communism = 0
+            }
+        }
+    }
+    option = {
+        name = voctroubles.12.b
+        ai_chance = {
+            factor = 1
+        }
+        available = {
+            has_global_flag = South_Zone_Crisis_Resolved
+        }
+    }
+}

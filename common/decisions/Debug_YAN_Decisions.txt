@@ -1,0 +1,181 @@
+
+
+YAN_Debug_Decisions = {
+
+    Debug_Active_All_Decision_Categories = {
+
+        icon = generic_civil_war
+        cost = 0
+        allowed = {
+            original_tag = YAN
+        }
+        complete_effect = {
+            set_global_flag = Storm_Kingdom_Crisis_Resolved
+            set_global_flag = Saddle_Arabia_Crisis_Resolved
+            set_global_flag = Chisimbi_Crisis_Resolved
+            set_global_flag = South_Zone_Crisis_Resolved
+            set_country_flag = VOC_Mandate_Development_Decisions_Flag
+            set_country_flag = FZS_Civil_War_Cat_Enable
+            set_country_flag = SK_Invest_Decision_Cat_Activate
+            set_country_flag = SA_Invest_Decision_Cat_Activate
+            set_country_flag = CC_Invest_Decision_Cat_Activate
+            set_country_flag = SI_Invest_Decision_Cat_Activate
+            set_country_flag = Cubanacan_Anger_Decisions_Enable
+            set_variable = { Saddle_Arabia_CW_Weapon_Stashes_Light_Weapons = 0 }
+            set_variable = { Saddle_Arabia_CW_Weapon_Stashes_Heavy_Weapons = 0 }
+            set_variable = { Saddle_Arabia_CW_Weapon_Stashes_Mobile_Vehicles = 0 }
+            set_variable = { Ikvus_CW_Happiness = 0 }
+            set_variable = { Faisal_CW_Happiness = 0 }
+            set_variable = { Prince_CW_Happiness = 0 }
+            set_variable = { Security_Zone_Safety = 0 }
+            set_variable = { Griff_CW_Happiness = 0  }
+
+        }
+    }
+
+
+    debug_add_light_stash = {
+    icon = generic_civil_war
+    cost = 0
+
+    complete_effect = {
+        add_to_variable = { Saddle_Arabia_CW_Weapon_Stashes_Light_Weapons = 1 }
+        clamp_variable = {
+            var = Saddle_Arabia_CW_Weapon_Stashes_Light_Weapons
+            min = 0
+            max = 5
+        }
+    }
+}
+
+
+    Debug_Set_Civil_War_Intervention_Variables = {
+        cost = 0
+        allowed = {
+            original_tag = YAN
+        }
+        complete_effect = {
+            set_variable = {
+                var = Ikvus_CW_Happiness
+                value = 0
+            }
+            set_variable = {
+                var = Faisal_CW_Happiness
+                value = 0
+            }
+            set_variable = {
+                var = Prince_CW_Happiness
+                value = 0
+            }
+            set_variable = {
+                var = Security_Zone_Safety
+                value = 0
+            }
+        }
+    }
+
+    Debug_PUL_Anger_Add_10 = {
+        cost = 0
+        allowed = {
+            original_tag = YAN
+        }
+        complete_effect = {
+            add_to_variable = {
+                var = Cuban_Anger
+                value = 10
+            }
+        }
+    }
+
+    Debug_PUL_Anger_Subtract_10 = {
+        cost = 0
+        allowed = {
+            original_tag = YAN
+        }
+        complete_effect = {
+            subtract_from_variable = {
+                var = Cuban_Anger
+                value = 10
+            }
+        }
+    }
+
+    Debug_Starter_Tree = {
+        cost = 0
+        allowed = {
+            original_tag = YAN
+        }
+        complete_effect = {
+            load_focus_tree = All_is_fine_kek
+        }
+    }
+
+    Debug_Beakavian_Emergency_Tree = {
+        cost = 0
+        allowed = {
+            original_tag = YAN
+        }
+        complete_effect = {
+            load_focus_tree = beakavian_emergency_tree_hoorst
+        }
+    }
+
+    Debug_Corpo_Chud_Tree = {
+        cost = 0
+        allowed = {
+            original_tag = YAN
+        }
+        complete_effect = {
+            load_focus_tree = corpo_chud
+        }
+    }
+
+    Debug_hoorst_tree_2_tree = {
+        cost = 0
+        allowed = {
+            original_tag = YAN
+        }
+        complete_effect = {
+            load_focus_tree = hoorst_tree_2
+        }
+    }
+
+    Debug_VOC_Radical_Tree = {
+        cost = 0
+        allowed = {
+            original_tag = YAN
+        }
+        complete_effect = {
+            load_focus_tree = VOC_Radical_Tree
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

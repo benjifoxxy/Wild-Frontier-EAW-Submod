@@ -1,0 +1,1152 @@
+
+
+# old tree - unused for now
+
+focus_tree = {
+    id = VOC_Radical_Tree
+    default = no
+    country = {
+        factor = 0
+        modifier = {
+            add = 1000
+            has_country_flag = YAN_Governor1Passed
+        }
+    }
+    continuous_focus_position = { x = -1310 y = 422 }
+    initial_show_position = { x = 0 y = 0 }
+
+    focus = {
+        id = YAN_Steady_as_She_goes
+        icon = GFX_goal_agency
+        x = 3
+        y = 1
+        cost = 12
+        allow_branch = {
+            has_country_flag = Ceram_Governor_zebrica_is_fucked
+        }
+        select_effect = {
+            country_event = {
+                id = ceram.1
+                days = 10
+            }
+        }
+        complete_tooltip = {
+            custom_effect_tooltip = YAN_RC_tt
+        }
+        completion_reward = { }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Board_of_Commerce
+        icon = GFX_goal_SLC_Reassure_The_Administration
+        x = -3
+        y = 2
+        cost = 3
+        prerequisite = { focus = YAN_Steady_as_She_goes }
+        allow_branch = {
+            has_country_flag = Ceram_reality_check
+        }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Board_of_Defence
+        icon = GFX_goal_HIP_legacy_of_the_king
+        x = 1
+        y = 2
+        cost = 3
+        prerequisite = { focus = YAN_Steady_as_She_goes }
+        allow_branch = {
+            has_country_flag = Ceram_reality_check
+        }
+        available = {
+            has_completed_focus = YAN_Wealth_Sets_You_Free_Fuck_Capitalism
+            has_completed_focus = YAN_Imperialism_7
+            has_completed_focus = YAN_Pulling_The_Rug
+        }
+        completion_reward = {
+            hidden_effect = {
+                mark_focus_tree_layout_dirty = yes
+            }
+            add_stability = 0.1
+            custom_effect_tooltip = YAN_Board_Of_Defence_tt
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Board_of_Tourism
+        icon = GFX_goal_KIR_barrels
+        x = 3
+        y = 2
+        cost = 3
+        prerequisite = { focus = YAN_Steady_as_She_goes }
+        allow_branch = {
+            has_country_flag = Ceram_reality_check
+        }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Board_of_Compliance
+        icon = GFX_goal_NLR_Stoic_Buddy
+        x = 5
+        y = 2
+        cost = 3
+        prerequisite = { focus = YAN_Steady_as_She_goes }
+        allow_branch = {
+            has_completed_focus = YAN_Board_of_Defence
+        }
+        available = {
+            has_completed_focus = YAN_Board_of_Defence
+            OR = {
+                has_completed_focus = YAN_Elite_Force
+                has_completed_focus = YAN_Native_Auxiliaries
+            }
+            OR = {
+                has_completed_focus = YAN_Naval_Aviation
+                has_completed_focus = YAN_Change_What_Works
+            }
+            OR = {
+                has_completed_focus = YAN_Aviator_Autonomy
+                has_completed_focus = YAN_Centralized_Air_Command
+            }
+            OR = {
+                has_completed_focus = YAN_Decent_Control
+                has_completed_focus = YAN_Fortress_Cities
+            }
+            custom_effect_tooltip = YAN_Board_Of_Compliance_tt
+        }
+        completion_reward = {
+            hidden_effect = {
+                mark_focus_tree_layout_dirty = yes
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Illusion_of_Wealth
+        icon = GFX_goal_griffon_money_growth
+        x = -4
+        y = 3
+        cost = 2
+        prerequisite = { focus = YAN_Board_of_Commerce }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Indentured_Servitude
+        icon = GFX_goal_expand_private_industry
+        x = -2
+        y = 3
+        cost = 2
+        prerequisite = { focus = YAN_Board_of_Commerce }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Promise_of_Prosperity
+        icon = GFX_goal_griffon_money_growth
+        x = -4
+        y = 4
+        cost = 2
+        prerequisite = { focus = YAN_Illusion_of_Wealth }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Idea_of_Freedom
+        icon = GFX_goal_griffon_money_growth
+        x = -4
+        y = 5
+        cost = 2
+        prerequisite = { focus = YAN_Promise_of_Prosperity }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Corvee_System
+        icon = GFX_goal_expand_private_industry
+        x = -2
+        y = 4
+        cost = 2
+        prerequisite = { focus = YAN_Indentured_Servitude }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Labour_Quotas
+        icon = GFX_goal_expand_private_industry
+        x = -2
+        y = 5
+        cost = 2
+        prerequisite = { focus = YAN_Corvee_System }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Sponsored_PIracy
+        icon = GFX_goal_chn_money
+        x = 0
+        y = 3
+        cost = 3
+        prerequisite = { focus = YAN_Board_of_Commerce }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Underhanded_Deals
+        icon = GFX_goal_chn_money
+        x = -0
+        y = 4
+        cost = 3
+        prerequisite = { focus = YAN_Sponsored_PIracy }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Privateer
+        icon = GFX_goal_chn_money
+        x = -0
+        y = 5
+        cost = 3
+        prerequisite = { focus = YAN_Underhanded_Deals }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Unrestricted_Thievery
+        icon = GFX_goal_chn_money
+        x = -1
+        y = 6
+        cost = 8
+        prerequisite = { focus = YAN_Privateer }
+        mutually_exclusive = { focus = YAN_End_The_Farce }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_End_The_Farce
+        icon = GFX_goal_chn_money
+        x = 1
+        y = 6
+        cost = 8
+        prerequisite = { focus = YAN_Privateer }
+        mutually_exclusive = { focus = YAN_Unrestricted_Thievery }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Fiscal_Responsibility
+        icon = GFX_goal_bag_of_money
+        x = -6
+        y = 3
+        cost = 1
+        prerequisite = { focus = YAN_Board_of_Commerce }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Wealth_Sets_You_Free_Fuck_Capitalism
+        icon = GFX_goal_tax_slave
+        x = -3
+        y = 6
+        cost = 5
+        prerequisite = { focus = YAN_Idea_of_Freedom }
+        prerequisite = { focus = YAN_Labour_Quotas }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Imperialism_1
+        icon = GFX_goal_SLC_Analyse_The_Succession_War
+        x = 2
+        y = 3
+        cost = 1
+        prerequisite = { focus = YAN_Board_of_Tourism }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Imperialism_2
+        icon = GFX_goal_SLC_Analyse_The_Succession_War
+        x = 4
+        y = 3
+        cost = 1
+        prerequisite = { focus = YAN_Board_of_Tourism }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Learning_from_Griffonia
+        icon = GFX_goal_long_live_queen_skystar
+        x = -4
+        y = -4
+        cost = 8
+        allow_branch = {
+            has_completed_focus = YAN_Board_of_Defence
+        }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Elite_Force
+        icon = GFX_focus_FAT_assure_griffonian_ponies
+        x = -9
+        y = -3
+        cost = 5
+        prerequisite = { focus = YAN_Learning_from_Griffonia }
+        mutually_exclusive = { focus = YAN_Native_Auxiliaries }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Native_Auxiliaries
+        icon = GFX_focus_PRC_stoke_the_flames
+        x = -7
+        y = -3
+        cost = 5
+        prerequisite = { focus = YAN_Learning_from_Griffonia }
+        mutually_exclusive = { focus = YAN_Elite_Force }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Aviator_Autonomy
+        icon = GFX_goal_KIR_tank_factory
+        x = -1
+        y = -3
+        cost = 5
+        prerequisite = { focus = YAN_Learning_from_Griffonia }
+        mutually_exclusive = { focus = YAN_Centralized_Air_Command }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Naval_Aviation
+        icon = GFX_focus_PER_raf_planes
+        x = -5
+        y = -3
+        cost = 5
+        prerequisite = { focus = YAN_Learning_from_Griffonia }
+        mutually_exclusive = { focus = YAN_Change_What_Works }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Change_What_Works
+        icon = GFX_goal_battleship
+        x = -3
+        y = -3
+        cost = 5
+        prerequisite = { focus = YAN_Learning_from_Griffonia }
+        mutually_exclusive = { focus = YAN_Naval_Aviation }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Centralized_Air_Command
+        icon = GFX_goal_KIR_tank_factory
+        x = 1
+        y = -3
+        cost = 5
+        prerequisite = { focus = YAN_Learning_from_Griffonia }
+        mutually_exclusive = { focus = YAN_Aviator_Autonomy }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Superior_Marksmanship
+        icon = GFX_focus_FAT_assure_griffonian_ponies
+        x = -9
+        y = -2
+        cost = 5
+        prerequisite = { focus = YAN_Elite_Force }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Rapid_Deployment
+        icon = GFX_focus_FAT_assure_griffonian_ponies
+        x = -9
+        y = -1
+        cost = 5
+        prerequisite = { focus = YAN_Superior_Marksmanship }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Steel_Talons
+        icon = GFX_focus_FAT_assure_griffonian_ponies
+        x = -9
+        y = -0
+        cost = 5
+        prerequisite = { focus = YAN_Rapid_Deployment }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Mandatory_Service
+        icon = GFX_focus_PRC_stoke_the_flames
+        x = -7
+        y = -2
+        cost = 5
+        prerequisite = { focus = YAN_Native_Auxiliaries }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Local_Warchiefs
+        icon = GFX_focus_PRC_stoke_the_flames
+        x = -7
+        y = -1
+        cost = 5
+        prerequisite = { focus = YAN_Mandatory_Service }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Slave_Soldiers
+        icon = GFX_focus_PRC_stoke_the_flames
+        x = -7
+        y = 0
+        cost = 5
+        prerequisite = { focus = YAN_Local_Warchiefs }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Floating_Airfields
+        icon = GFX_focus_generic_air_carrier
+        x = -5
+        y = -2
+        cost = 5
+        prerequisite = { focus = YAN_Naval_Aviation }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_An_Open_Claw
+        icon = GFX_goal_UESR_TNO_happy_pone
+        x = -5
+        y = -1
+        cost = 5
+        prerequisite = { focus = YAN_Floating_Airfields }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Sharpened_Talons
+        icon = GFX_goal_phoenix_plane
+        x = -5
+        y = -0
+        cost = 5
+        prerequisite = { focus = YAN_An_Open_Claw }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Super_Battleships
+        icon = GFX_goal_battleship
+        x = -3
+        y = -2
+        cost = 5
+        prerequisite = { focus = YAN_Change_What_Works }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Curtain_of_Flak
+        icon = GFX_goal_battleship
+        x = -3
+        y = -1
+        cost = 5
+        prerequisite = { focus = YAN_Super_Battleships }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Efficiency_Above_All
+        icon = GFX_goal_battleship
+        x = -3
+        y = 0
+        cost = 5
+        prerequisite = { focus = YAN_Curtain_of_Flak }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_private_flight_schools
+        icon = GFX_goal_KIR_tank_factory
+        x = -1
+        y = -2
+        cost = 5
+        prerequisite = { focus = YAN_Aviator_Autonomy }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Nationalise_Air_Force
+        icon = GFX_goal_KIR_tank_factory
+        x = 1
+        y = -2
+        cost = 5
+        prerequisite = { focus = YAN_Centralized_Air_Command }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Restrict_Civilian_Aviation
+        icon = GFX_goal_KIR_tank_factory
+        x = 1
+        y = -1
+        cost = 5
+        prerequisite = { focus = YAN_Nationalise_Air_Force }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_private_losership
+        icon = GFX_goal_KIR_tank_factory
+        x = -1
+        y = -1
+        cost = 5
+        prerequisite = { focus = YAN_private_flight_schools }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Economic_Support_Aviation
+        icon = GFX_goal_KIR_tank_factory
+        x = -0
+        y = -0
+        cost = 5
+        prerequisite = { focus = YAN_Restrict_Civilian_Aviation focus = YAN_private_losership }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Beakavia_Foundry
+        icon = GFX_BRZ_goal_red_book
+        x = -8
+        y = 1
+        cost = 6
+        prerequisite = { focus = YAN_Steel_Talons focus = YAN_Slave_Soldiers }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Naval_Academies
+        icon = GFX_goal_HIP_SIR_ARI_learn_from_mistakes
+        x = -4
+        y = 1
+        cost = 6
+        prerequisite = { focus = YAN_Sharpened_Talons focus = YAN_Efficiency_Above_All }
+        allow_branch = {
+            has_completed_focus = YAN_Board_of_Compliance
+        }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_RadicalSecondSummit
+        icon = GFX_goal_VOC_CrazyRacist
+        x = 7
+        y = -4
+        cost = 4
+        allow_branch = {
+            has_completed_focus = YAN_Board_of_Compliance
+        }
+        completion_reward = { }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Shady_C
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -6
+        y = 4
+        cost = 1
+        prerequisite = { focus = YAN_Fiscal_Responsibility }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = land_of_opportunity_YAN_Passed_Budget_Tree_focus_79
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -6
+        y = 5
+        cost = 1
+        prerequisite = { focus = YAN_Shady_C }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Radical_Layoffs
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 7
+        y = -3
+        cost = 10
+        prerequisite = { focus = YAN_RadicalSecondSummit }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Purity_Labour
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 5
+        y = -3
+        cost = 10
+        prerequisite = { focus = YAN_RadicalSecondSummit }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Loyalty_Through_Conflict
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 9
+        y = -3
+        cost = 10
+        prerequisite = { focus = YAN_RadicalSecondSummit }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Perfect_City
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 5
+        y = -2
+        cost = 10
+        prerequisite = { focus = YAN_Purity_Labour }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Insane_Science
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 3
+        y = -2
+        cost = 10
+        prerequisite = { focus = YAN_Purity_Labour }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Sponsor_Youth
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 7
+        y = -2
+        cost = 10
+        prerequisite = { focus = YAN_Radical_Layoffs }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Pleasure_Beyond_Imagination
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 4
+        y = -1
+        cost = 10
+        prerequisite = { focus = YAN_Insane_Science }
+        prerequisite = { focus = YAN_Perfect_City }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Keys_to_Power
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 7
+        y = -1
+        cost = 10
+        prerequisite = { focus = YAN_Sponsor_Youth }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Perfect_Citizen
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 9
+        y = -2
+        cost = 10
+        prerequisite = { focus = YAN_Loyalty_Through_Conflict }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Mandatory_Steralization
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 11
+        y = -2
+        cost = 10
+        prerequisite = { focus = YAN_Loyalty_Through_Conflict }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Population_Quotas
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 10
+        y = -1
+        cost = 10
+        prerequisite = { focus = YAN_Perfect_Citizen }
+        prerequisite = { focus = YAN_Mandatory_Steralization }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Radical_Finale_2
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 6
+        y = 0
+        cost = 10
+        prerequisite = { focus = YAN_Pleasure_Beyond_Imagination }
+        prerequisite = { focus = YAN_Keys_to_Power }
+        prerequisite = { focus = YAN_Population_Quotas }
+        mutually_exclusive = { focus = YAN_Radical_Finale_1 }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Mission_Civilize
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 3
+        y = 4
+        cost = 2
+        prerequisite = { focus = YAN_Imperialism_1 }
+        prerequisite = { focus = YAN_Imperialism_2 }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Radical_Offence
+        icon = GFX_goal_authority
+        x = 7
+        y = 2
+        cost = 3
+        prerequisite = { focus = YAN_Steady_as_She_goes }
+        allow_branch = {
+            has_country_flag = Ceram_reality_check
+        }
+        available = {
+            has_completed_focus = YAN_Beakavia_Foundry
+        }
+        completion_reward = {
+            set_country_flag = Board_Of_Offence
+            mark_focus_tree_layout_dirty = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Blank_Cheque
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 7
+        y = 3
+        cost = 2
+        prerequisite = { focus = YAN_Radical_Offence }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Economic_Miracle_Radical
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 6
+        y = 4
+        cost = 5
+        prerequisite = { focus = YAN_Blank_Cheque }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Radical_Industrial_Complex
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 8
+        y = 4
+        cost = 5
+        prerequisite = { focus = YAN_Blank_Cheque }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Radical_Conquest
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 7
+        y = 5
+        cost = 6
+        prerequisite = { focus = YAN_Economic_Miracle_Radical }
+        prerequisite = { focus = YAN_Radical_Industrial_Complex }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Decent_Control
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 6
+        y = 6
+        cost = 15
+        prerequisite = { focus = YAN_Radical_Conquest }
+        mutually_exclusive = { focus = YAN_Fortress_Cities }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Fortress_Cities
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 8
+        y = 6
+        cost = 15
+        prerequisite = { focus = YAN_Radical_Conquest }
+        mutually_exclusive = { focus = YAN_Decent_Control }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = YAN_Radical_Finale_1
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 8
+        y = -0
+        cost = 10
+        prerequisite = { focus = YAN_Pleasure_Beyond_Imagination }
+        prerequisite = { focus = YAN_Keys_to_Power }
+        prerequisite = { focus = YAN_Population_Quotas }
+        mutually_exclusive = { focus = YAN_Radical_Finale_2 }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}

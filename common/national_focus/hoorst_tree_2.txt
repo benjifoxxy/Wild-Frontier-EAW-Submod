@@ -1,0 +1,412 @@
+focus_tree = {
+    id = hoorst_tree_2
+    default = no
+    country = {
+        factor = 0
+        modifier = {
+            add = 1000
+            tag = YAN
+        }
+    }
+    continuous_focus_position = { x = 200 y = 1500 }
+
+    focus = {
+        id = sad_when
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 0
+        y = 0
+        cost = 10
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = savior_zebrika
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = { focus = sad_when }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = hoorst_legions
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -1
+        y = 2
+        cost = 10
+        prerequisite = { focus = savior_zebrika }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = hoorst_decrees
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 1
+        y = 2
+        cost = 10
+        prerequisite = { focus = savior_zebrika }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = mil_soc
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -1
+        y = 3
+        cost = 10
+        prerequisite = { focus = hoorst_legions }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = mand_serv
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -3
+        y = 3
+        cost = 10
+        prerequisite = { focus = hoorst_legions }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = pride_war
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -1
+        y = 4
+        cost = 10
+        prerequisite = { focus = mil_soc }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = indoc_youth
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -3
+        y = 4
+        cost = 10
+        prerequisite = { focus = mand_serv }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = chud_1
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 1
+        y = 3
+        cost = 10
+        prerequisite = { focus = hoorst_decrees }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = schizophrenia1
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 3
+        y = 3
+        cost = 10
+        prerequisite = { focus = hoorst_decrees }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = spartan_doc
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -5
+        y = 4
+        cost = 10
+        prerequisite = { focus = mand_serv }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = dtd_corp
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -1
+        y = 5
+        cost = 10
+        prerequisite = { focus = pride_war }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = zebraschild
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -3
+        y = 5
+        cost = 10
+        prerequisite = { focus = indoc_youth }
+        prerequisite = { focus = spartan_doc }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = chud_2
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 1
+        y = 4
+        cost = 10
+        prerequisite = { focus = chud_1 }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = chud_3
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 1
+        y = 5
+        cost = 10
+        prerequisite = { focus = chud_2 }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = special_project_zones
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 3
+        y = 4
+        cost = 10
+        prerequisite = { focus = schizophrenia1 }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = nothing_out_of_bounds
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 5
+        y = 4
+        cost = 10
+        prerequisite = { focus = schizophrenia1 }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = cult_of_sacrifice
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 3
+        y = 5
+        cost = 10
+        prerequisite = { focus = special_project_zones }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = alea_iacta_est
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 0
+        y = 6
+        cost = 10
+        prerequisite = { focus = zebraschild }
+        prerequisite = { focus = dtd_corp }
+        prerequisite = { focus = chud_3 }
+        prerequisite = { focus = cult_of_sacrifice }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = FRot
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -4
+        y = 8
+        cost = 10
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = FBraun
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -3
+        y = 9
+        cost = 10
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = FRosa
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 0
+        y = 10
+        cost = 10
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = FBlau
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 3
+        y = 9
+        cost = 10
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = FGrun
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 4
+        y = 8
+        cost = 10
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = acta_est_fabula
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 0
+        y = 8
+        cost = 10
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = fall_weis
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -2
+        y = 10
+        cost = 10
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = fall_gelb
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 2
+        y = 10
+        cost = 10
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}

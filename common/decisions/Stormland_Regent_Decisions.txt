@@ -1,0 +1,339 @@
+Storm_Kingdom_Investment_Decisions = { # TAG - STM - Ikvus Hailstorm
+
+    StormKing_Decision_0 = { # Ikvus Intelligence Report
+        icon = generic_civil_war
+        cost = 0
+        allowed = {
+            original_tag = YAN
+        }
+        days_remove = 7
+        days_re_enable = 19000
+        fire_only_once = yes
+        available = {
+            has_intelligence_agency = yes
+            network_strength = {
+                target = STM
+                state = 982
+                value > 10
+            }
+        }
+        complete_effect = {
+            custom_effect_tooltip = Ikvus_Intelligence_Report_tt
+            hidden_effect = {
+                country_event = { id = storm_chud.5 }
+            }
+        }
+    }
+
+    StormKing_Decision_1 = { # Meeting with Ikvus
+
+        icon = generic_civil_war
+        cost = 0
+        allowed = {
+            original_tag = YAN
+        }
+        days_remove = 7
+        days_re_enable = 19000
+        fire_only_once = yes
+        complete_effect = {
+            set_country_flag = SK_Decision_Met_Ikvus
+            hidden_effect = {
+                country_event = { id = storm_chud.1 }
+                clamp_variable = {
+                    var = Ikvus_CW_Happiness
+                    min = 0
+                    max = 10
+                }
+                set_variable = {
+                    var = Ikvus_CW_Happiness
+                    value = 0
+                }
+                STM = {
+                    diplomatic_relation = {
+                        country = YAN
+                        relation = docking_rights
+                        active = yes
+                    }
+                }
+            }
+        }
+    }
+
+    StormKing_Decision_2 = { # Produce Weapons for Ikvus
+
+        icon = generic_civil_war
+        cost = 0
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            has_country_flag = SK_Decision_Met_Ikvus
+        }
+    }
+
+    StormKing_Decision_3 = { # loans to the regency
+
+        icon = generic_civil_war
+        cost = 0
+        allowed = {
+            original_tag = YAN
+        }
+        days_re_enable = 180
+        available = {
+            check_variable = { Ikvus_CW_Happiness >= 2 }
+            custom_trigger_tooltip = {
+                tooltip = Loans_To_the_Regency_tt
+                always = yes
+            }
+        }
+        visible = {
+            has_country_flag = SK_Decision_Met_Ikvus
+        }
+        complete_effect = {
+            add_timed_idea = {
+                idea = YAN_Loans_For_Ikvus_Idea
+                days = 21
+            }
+            custom_effect_tooltip = Loans_To_the_Regency_2_tt
+            hidden_effect = {
+                country_event = { id = storm_chud.6 days = 21 }
+            }
+        }
+    }
+
+    StormKing_Decision_4 = { # volunteer idea, gives bonuses
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        days_remove = 5
+        fire_only_once = yes
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = Havent_Sent_Volunteers_To_Regent_CW_tt
+                NOT = {
+                    has_country_flag = Storm_Regent_Volunteer_Idea_Taken
+                }
+            }
+        }
+        visible = {
+            AND = { has_country_flag = SK_Decision_Met_Ikvus
+            NOT = {
+                has_country_flag = Storm_Regent_Volunteer_Idea_Taken
+            }
+        }
+        }
+        remove_effect = {
+            add_targeted_modifier = {
+                tag = STM
+                modifier = YAN_STM_Volunteer_Modifier
+                }
+                hidden_effect = {
+                    add_to_variable = {
+                        value = 2
+                        var = Ikvus_CW_Happiness
+                    }
+                }
+            
+        }
+    }
+
+    StormKing_Decision_5 = { # naval gunfire support
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            has_country_flag = SK_Decision_Met_Ikvus
+        }
+        days_remove = 5
+        days_re_enable = 700
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = Naval_Bombardment_STM_CW_tt
+                AND = {
+                    OR = {
+                        ships_in_state_ports = {
+                            type = battleship
+                            size > 1
+                            state = 985
+                        }
+                        ships_in_state_ports = {
+                            type = battleship
+                            size > 1
+                            state = 1025
+                        }
+                        ships_in_state_ports = {
+                            type = battleship
+                            size > 1
+                            state = 983
+                        }
+                        ships_in_state_ports = {
+                            type = battleship
+                            size > 1
+                            state = 984
+                        }
+                        }
+                    }
+                    NOT = {
+                            STM = {
+                                has_idea = YAN_STM_Naval_Bombardment
+                            }
+                }
+            }
+        }
+        remove_effect = {
+            STM = {
+                add_timed_idea = {
+                    idea = YAN_STM_Naval_Bombardment
+                    days = 365
+                }
+            }
+        }
+    }
+
+    StormKing_Decision_6 = { # logistics support
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            has_country_flag = SK_Decision_Met_Ikvus
+        }
+        days_remove = 7
+        days_re_enable = 19000
+        complete_effect = {
+            add_timed_idea = {
+                idea = YAN_Loans_For_Ikvus_Idea
+                days = 21
+            }
+            hidden_effect = {
+                country_event = { id = stormchud.7 days = 21 }
+            }
+        }
+    }
+
+    StormKing_Decision_7 = { # foreign sales of ikvus plushies!
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            has_country_flag = SK_Decision_Met_Ikvus
+        }
+        days_remove = 21
+        available = {
+            STM = {
+                has_completed_focus = STM_propaganda_plushies
+            }
+        }
+        remove_effect = {
+            hidden_effect = {
+                set_country_flag = SK_Decision_Selling_Bodypillows
+            }
+            add_stability = 0.075
+            add_political_power = -10
+            STM = {
+                add_stability = 0.1
+                add_political_power = 50
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment_1
+                    amount = 1500
+                }
+                add_equipment_to_stockpile = {
+                    type = artillery
+                    amount = 100
+                }
+            }
+        }
+    }
+
+    StormKing_Decision_8 = { # Encourage Investment in the Rainband
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = We_Have_Not_Increased_War_Participation_Yet_tt
+                NOT = {
+                    has_country_flag = SK_CW_War_Participation_Increased
+                }
+            }
+        }
+        visible = {
+            AND = {
+                has_country_flag = SK_Decision_Met_Ikvus
+                NOT = {
+                    has_country_flag = SK_CW_War_Participation_Increased
+                }
+                STM = {
+                    has_volunteers_amount_from = { YAN > 0 }
+                }
+            }
+        }
+        days_remove = 21
+        days_re_enable = 21000
+        complete_effect = {
+            add_timed_idea = {
+                idea = YAN_Loans_For_Ikvus_Idea
+                days = 21
+            }
+            hidden_effect = {
+                set_country_flag = SK_CW_War_Participation_Increased
+            }
+        }
+        remove_effect = {
+            STM = {
+                add_timed_idea = {
+                    idea = STM_YAN_Griffonian_Investment
+                    days = 90
+                }
+            }
+        }
+    }
+
+    StormKing_Decision_9 = { # Complete the category
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            has_country_flag = SK_Decision_Met_Ikvus
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = YAN_Ikvus_Claimed_Storm_King_tt
+                has_global_flag = SK_formed
+                GYZ = {
+                    exists = no
+                }
+                THU = {
+                    exists = no
+                }
+                SLC = {
+                    exists = no
+                }
+            }
+        }
+        complete_effect = {
+            custom_effect_tooltip = Complete_SK_CW_Category_tt
+            hidden_effect = {
+                set_global_flag = Storm_Kingdom_Crisis_Resolved
+            }
+        }
+
+    }
+}

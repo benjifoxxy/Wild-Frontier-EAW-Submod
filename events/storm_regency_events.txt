@@ -1,0 +1,122 @@
+add_namespace = storm_chud
+
+country_event = { # Meeting with Ikvus
+	id = storm_chud.1
+	title = storm_chud.1.t
+	desc = storm_chud.1.d
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+	fire_only_once =  yes
+	option = { # How should we present ourselves to Ikvus? - Option A is just as is, doesnt cost anything
+		name = storm_chud.1.a 
+		hidden_effect = {
+			country_event = { id = storm_chud.2 days = 5 }
+		}
+		custom_effect_tooltip = present_ikvus_cheap_tt
+	}
+		option = { # Option B - Civilian Styled Expedition, costs?
+		name = storm_chud.1.b 
+		hidden_effect = {
+			country_event = { id = storm_chud.3 days = 5 }
+		}
+	}
+		option = { # Option C - Military Styled Expedition, costs?
+		name = storm_chud.1.c 
+		hidden_effect = {
+			country_event = { id = storm_chud.4 days = 5 }
+		}
+		
+	}
+}
+
+country_event = { # Response from Ikvus welcoming the delegates. Cheap option.
+	id = storm_chud.2
+	title = storm_chud.2.t
+	desc = storm_chud.2.d
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+
+	option = {
+		name = storm_chud.2.a
+		
+	}
+}
+
+country_event = { # Response from Ikvus welcoming the delegates. Civilian Option, Ikvus warm welcome
+	id = storm_chud.3
+	title = storm_chud.3.t
+	desc = storm_chud.3.d
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+
+	option = {
+		name = storm_chud.3.a
+		
+	}
+}
+
+country_event = { # Response from Ikvus welcoming the delegates. Military Option, Ikvus weary, but receive pp
+	id = storm_chud.4
+	title = storm_chud.4.t
+	desc = storm_chud.4.d
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+
+	option = {
+		name = storm_chud.4.a
+		
+	}
+}
+
+country_event = { # Ikvus Intelligence Report
+	id = storm_chud.5
+	title = storm_chud.5.t
+	desc = storm_chud.5.d
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = storm_chud.5.a		
+	}
+}
+
+country_event = { # Ikvus grateful for loans
+    id = storm_chud.6
+    title = storm_chud.6.t
+    desc = storm_chud.6.d
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    option = {
+        name = storm_chud.6.a
+        custom_effect_tooltip = Ikvus_Loans_Grateful_For_Loans_tt
+        hidden_effect = {
+            STM = {
+                add_timed_idea = {
+                    idea = YAN_STM_Loans_Granted_Idea
+                    days = 30
+                }
+            }
+            add_to_variable = {
+                var = Ikvus_CW_Happiness
+                value = 2
+            }
+        }
+        add_political_power = 50
+    }
+}
+
+country_event = { # hidden event from logistics support
+	id = storm_chud.7
+	title = storm_chud.7.t
+	desc = storm_chud.7.d
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+	hidden = yes
+	option = {
+		name = storm_chud.7.a
+		add_to_variable = { 
+			var = Ikvus_CW_Happiness 
+			value = 2
+	}
+}
+}

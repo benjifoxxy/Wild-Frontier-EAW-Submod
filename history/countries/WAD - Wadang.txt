@@ -1,0 +1,47 @@
+capital = 1155
+set_research_slots = 2
+set_convoys = 30
+set_stability = 0.5
+set_war_support = 0.5
+recruit_character = Edi_Zamine
+recruit_character = WAD_council
+
+# Additional starting history effects
+set_cosmetic_tag = WAD_cosmetic
+add_manpower = 60000
+set_oob = Zebrides_Warriors_OOB
+load_focus_tree = ZEB_SUBJECTS
+is_zebrican_continent_country = yes
+set_cosmetic_tag = WAD_cosmetic
+set_technology = {
+	zebra_race = 1
+	melee_weapons = 1
+	tech_support = 1
+	infantry_weapons = 1
+    melee_weapons1 = 1
+    gw_artillery = 1
+	mountaineers = 1
+}
+actually_fix_weapon_techs = yes
+
+add_ideas = { 
+    tribal_society 
+    poor_science_base 
+    lack_of_scientists 
+    primitive_economy 
+    closed_economy
+ }
+
+# Politics selected in the builder
+set_politics = {
+    ruling_party = fascism
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+set_popularities = {
+    democratic = 10
+    fascism = 55
+    communism = 0
+    neutrality = 35
+}

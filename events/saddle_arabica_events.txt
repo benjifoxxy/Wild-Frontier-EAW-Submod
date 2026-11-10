@@ -1,0 +1,68 @@
+country_event = { # intelligence report opening event
+	id = saddle_arabica.1
+	title = saddle_arabica.1.t
+	desc = saddle_arabica.1.d
+	picture = GFX_report_event_generic_political
+
+	is_triggered_only = yes
+
+	option = {
+		name = saddle_arabica.1.a
+		add_political_power = 25
+	}
+}
+
+country_event = { # Meet with Faisal
+	id = saddle_arabica.2
+	title = saddle_arabica.2.t
+	desc = saddle_arabica.2.d
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+
+	option = {
+		name = saddle_arabica.2.a
+		
+	}
+}
+
+country_event = { # HQ in Saddle Arabia part 1 
+	id = saddle_arabica.3
+	title = saddle_arabica.3.t
+	desc = saddle_arabica.3.d
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+
+	option = {
+		name = saddle_arabica.3.a
+		
+	}
+}
+
+country_event = { # HQ in Saddle Arabia part 2 
+	id = saddle_arabica.4
+	title = saddle_arabica.4.t
+	desc = saddle_arabica.4.d
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+
+	option = {
+		name = saddle_arabica.4.a
+		
+	}
+}
+
+country_event = { # HQ in Saddle Arabia part 3 
+	id = saddle_arabica.5
+	title = saddle_arabica.5.t
+	desc = saddle_arabica.5.d
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+
+	option = {
+		name = saddle_arabica.5.a
+		hidden_effect = {
+			set_country_flag = HQ_in_SA_Established
+		}
+	}
+}
+

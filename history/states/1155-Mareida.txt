@@ -1,0 +1,23 @@
+state = {
+    id = 1155
+    name = STATE_1155
+    provinces = { 13377 20262 20264 }
+    history = {
+        owner = UBE
+        buildings = {
+            infrastructure = 1
+            13377 = {
+                naval_base = 1
+            }
+        }
+        victory_points = { 13377 5 }
+        add_core_of = UBE
+        set_demilitarized_zone = yes
+    }
+    state_category = small_island
+    manpower = 224180
+    buildings_max_level_factor = 1.000
+    resources = {
+        rubber = 4
+    }
+}

@@ -1,0 +1,1300 @@
+add_namespace = zebstart
+add_namespace = interim
+add_namespace = vocdebate
+add_namespace = vocfirstsummit
+add_namespace = hoorst_clique
+add_namespace = beakavian_emergency
+add_namespace = BeakavianCER
+add_namespace = BeakavianWAD
+add_namespace = BeakavianMIZ
+add_namespace = BeakavianPUL
+add_namespace = clawVShoof
+add_namespace = insanity
+add_namespace = chuddie
+add_namespace = ceram
+add_namespace = sussybaka
+add_namespace = voc_little_chuddie
+add_namespace = main_land_troubles
+
+
+country_event = { # southern jewel
+    id = zebstart.1
+    title = zebstart.1.t
+    desc = zebstart.1.d
+    picture = GFX_report_event_radar_01
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = zebstart.1.a
+        ai_chance = {
+            factor = 1
+        }
+        swap_ideas = {
+            remove_idea = YAN_Radar_Array_Construction_Effort
+            add_idea = YAN_Beakavian_Radar_Research
+        }
+        set_technology = {
+            electronic_mechanical_engineering = 1
+            radio = 1
+            radio_detection = 1
+            cavity_magnatron = 1
+        }
+        complete_special_project = sp:sp_air_radar
+        1158 = {
+            add_extra_state_shared_building_slots = 5
+            add_building_construction = {
+                type = radar_station
+                level = 2
+                instant_build = yes
+            }
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+                instant_build = yes
+            }
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+            add_building_construction = {
+                type = dockyard
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+}
+country_event = { # southern jewel
+    id = zebstart.2
+    title = zebstart.2.t
+    desc = zebstart.2.d
+    picture = GFX_report_event_radar_01
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = zebstart.2.a
+        ai_chance = {
+            factor = 1
+        }
+        recruit_character = YAN_Air_Scientist_Initial
+        #        generate_scientist_character = {
+        #            skills = {
+        #                specialization_air = 1
+        #            }
+        #            traits = { electronics_specialist griffon_race_trait genius }
+        #        }
+        1158 = {
+            add_building_construction = {
+                type = air_facility
+                level = 1
+                instant_build = yes
+                province = 13372
+            }
+            add_building_construction = {
+                type = air_base
+                level = 2
+                instant_build = yes
+            }
+        }
+        add_ideas = YAN_Radar_Array_Construction_Effort
+        hidden_effect = {
+            country_event = { id = zebstart.1 days = 8}
+            country_event = { id = zebstart.3 days = 42 }
+        }
+    }
+}
+country_event = { # southern jewel secondary scientist event
+    id = zebstart.3
+    desc = zebstart.3.desc
+    title = zebstart.3.t
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = zebstart.3.a
+        ai_chance = {
+            factor = 1
+        }
+        generate_scientist_character = {
+            name = " "
+            skills = {
+                specialization_naval = 1
+            }
+        }
+        1157 = {
+            add_building_construction = {
+                type = naval_facility
+                level = 1
+                instant_build = yes
+                province = 20085
+            }
+        }
+        add_breakthrough_progress = {
+            specialization = specialization_naval
+            value = 0.5
+        }
+        increase_science_base = yes
+    }
+    option = {
+        name = zebstart.3.b
+        ai_chance = {
+            factor = 1
+        }
+        generate_scientist_character = {
+            skills = {
+                specialization_magical = 1
+            }
+        }
+        1157 = {
+            add_building_construction = {
+                type = magical_facility
+                level = 1
+                instant_build = yes
+                province = 20085
+            }
+        }
+        add_breakthrough_progress = {
+            specialization = specialization_magical
+            value = 0.5
+        }
+        increase_science_base = yes
+    }
+    option = {
+        name = zebstart.3.c
+        ai_chance = {
+            factor = 1
+        }
+        generate_scientist_character = {
+            skills = {
+                specialization_Land = 1
+            }
+        }
+        1157 = {
+            add_building_construction = {
+                type = land_facility
+                level = 1
+                instant_build = yes
+                province = 20085
+            }
+        }
+        add_breakthrough_progress = {
+            specialization = specialization_land
+            value = 0.5
+        }
+        increase_science_base = yes
+    }
+    option = {
+        name = zebstart.3.d
+        ai_chance = {
+            factor = 1
+        }
+        custom_effect_tooltip = you_greedy_mf
+        increase_science_base = yes
+        add_political_power = 450
+    }
+}
+
+country_event = { # beakavia ball part 1 - changed to introduction to the beakavian city state
+    id = zebstart.4
+    title = zebstart.4.t
+    desc = zebstart.4.d
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = { # activates a decision category - not anymore
+        name = zebstart.4.a
+        ai_chance = {
+            factor = 1
+        }
+        custom_effect_tooltip = YAN_receive_units_tt
+        add_political_power = 25
+        add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 1000
+        }
+        hidden_effect = { # changed to load more so the player can send volunteers
+            load_oob = YAN_1007_Yaneo
+            load_oob = YAN_1007_Beakavia
+            load_oob = YAN_1007_Yaneo
+        }
+
+    }
+}
+
+country_event = { # beakavia ball part 2 - now unused
+    id = zebstart.5
+    title = zebstart.5.t
+    desc = zebstart.5.d
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = zebstart.5.a
+        ai_chance = {
+            factor = 1
+        }
+        add_political_power = 25
+        add_popularity = {
+            ideology = neutrality
+            popularity = 0.02
+        }
+        set_country_flag = BKGB_Decision_Flag_1_Fired
+    }
+}
+
+country_event = { # beakavia ball part 3 - now unused
+    id = zebstart.6
+    title = zebstart.6.t
+    desc = zebstart.6.d
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = zebstart.6.a
+        ai_chance = {
+            factor = 1
+        }
+        set_country_flag = BKGB_Decision_Flag_2_Fired
+    }
+}
+
+country_event = { #compromise of 1004
+    id = zebstart.7
+    title = zebstart.7.t
+    desc = zebstart.7.d
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = zebstart.7.a
+        ai_chance = {
+            factor = 1
+        }
+        add_stability = -0.1
+        add_political_power = -15
+        add_popularity = {
+            ideology = democratic
+            popularity = 0.1
+        }
+        add_popularity = {
+            ideology = communism
+            popularity = 0.1
+        }
+
+        PUL = {
+            add_ideas = PUL_Scars_of_1004_Idea
+            add_ideas = YAN_Open_Defiance_Idea
+        }
+        set_variable = {
+            var = Cuban_Anger
+            value = 25
+        }
+        set_country_flag = Cubanacan_Anger_Decisions_Enable
+        activate_mission = Cubanacan_Anger_Mission
+    }
+}
+
+country_event = { #zebrikaaner ways
+    id = zebstart.8
+    title = zebstart.8.t
+    desc = zebstart.8.d
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = zebstart.8.a
+        ai_chance = {
+            factor = 1
+        }
+        hidden_effect = {
+            1157 = {
+                set_demilitarized_zone = no
+            }
+        }
+        custom_effect_tooltip = FZS_Introduction_tt
+        #custom_effect_tooltip = YAN_receive_units_tt
+        hidden_effect = {
+            load_oob = YAN_1007_Zebrikaan
+        }
+    }
+}
+
+country_event = { # out west completion reward - civil war profiteering
+    id = zebstart.9
+    title = zebstart.9.t
+    desc = zebstart.9.desc
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = zebstart.9.a # storm kingdom decision category
+        ai_chance = {
+            factor = 1
+        }
+        add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 1500
+        }
+        add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = 150
+        }
+        add_equipment_to_stockpile = {
+            type = convoy
+            amount = 20
+        }
+        custom_effect_tooltip = New_Decisions_Unlocked_YAN
+        hidden_effect = {
+            set_country_flag = SK_Invest_Decision_Cat_Activate
+            set_variable = {
+                var = Ikvus_CW_Happiness
+                value = 0
+            }
+        }
+    }
+    option = {
+        name = zebstart.9.b #Saddle Arabia decision category
+        ai_chance = {
+            factor = 1
+        }
+        add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 1500
+        }
+        add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = 150
+        }
+        add_equipment_to_stockpile = {
+            type = convoy
+            amount = 20
+        }
+        custom_effect_tooltip = New_Decisions_Unlocked_YAN
+        hidden_effect = {
+            set_country_flag = SA_Invest_Decision_Cat_Activate
+            set_variable = {
+                var = Faisal_CW_Happiness
+                value = 0
+            }
+        }
+    }
+
+    option = {
+        name = zebstart.9.c #Chisimbi Crisis Decision Category - needed for schizo ending
+        ai_chance = {
+            factor = 1
+        }
+        add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 1500
+        }
+        add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = 150
+        }
+        add_equipment_to_stockpile = {
+            type = convoy
+            amount = 20
+        }
+        custom_effect_tooltip = New_Decisions_Unlocked_YAN
+        hidden_effect = {
+            set_country_flag = CC_Invest_Decision_Cat_Activate
+            set_variable = {
+                var = Prince_CW_Happiness
+                value = 0
+            }
+            set_variable = {
+                var = Griff_CW_Happiness
+                value = 0
+            }
+        }
+    }
+
+    option = {
+        name = zebstart.9.d #invest in the south investment zone instead
+        ai_chance = {
+            factor = 1
+        }
+        add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 1500
+        }
+        add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = 150
+        }
+        add_equipment_to_stockpile = {
+            type = convoy
+            amount = 20
+        }
+        custom_effect_tooltip = New_Decisions_Unlocked_YAN
+        hidden_effect = {
+            set_country_flag = SI_Invest_Decision_Cat_Activate
+            set_variable = {
+                var = Security_Zone_Safety
+                value = 0
+            }
+        }
+    }
+    option = {
+        name = zebstart.9.e #fuck it we ball ALL OF THEM AT ONCE
+        ai_chance = {
+            factor = 1
+        }
+        #add_political_power = -250
+        add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 6000
+        }
+        add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = 600
+        }
+        add_equipment_to_stockpile = {
+            type = convoy
+            amount = 80
+        }
+        custom_effect_tooltip = New_Decisions_Unlocked_YAN
+        custom_effect_tooltip = fuck_it_we_ball_tt
+        hidden_effect = {
+            set_country_flag = SK_Invest_Decision_Cat_Activate
+            set_country_flag = SA_Invest_Decision_Cat_Activate
+            set_country_flag = CC_Invest_Decision_Cat_Activate
+            set_country_flag = SI_Invest_Decision_Cat_Activate
+            set_variable = {
+                var = Ikvus_CW_Happiness
+                value = 0
+            }
+            set_variable = {
+                var = Faisal_CW_Happiness
+                value = 0
+            }
+            set_variable = {
+                var = Prince_CW_Happiness
+                value = 0
+            }
+            set_variable = {
+                var = Security_Zone_Safety
+                value = 0
+            }
+        }
+    }
+}
+
+
+
+country_event = { # out west on select
+    id = zebstart.17
+    title = zebstart.17.t
+    desc = zebstart.17.d
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = zebstart.17.a
+        ai_chance = {
+            factor = 1
+        }
+        add_political_power = -25
+        1156 = {
+            add_extra_state_shared_building_slots = 6
+            add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+            }
+            add_building_construction = {
+                type = arms_factory
+                level = 2
+                instant_build = yes
+            }
+        }
+    }
+
+}
+
+
+country_event = { # A Day at the Office - VOC Mainland focus, kicks off voctroubles event chain
+    id = zebstart.10
+    title = zebstart.10.t
+    desc = zebstart.10.d
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = zebstart.10.a
+        ai_chance = {
+            factor = 1
+        }
+        hidden_effect = {
+            country_event = { id = voctroubles.1 days = 3 }
+        }
+        1149 = {
+            add_building_construction = {
+                type = dockyard
+                level = 1
+                instant_build = yes
+            }
+            add_building_construction = {
+                type = naval_base
+                level = 3
+                province = 16229
+                instant_build = yes
+            }
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+}
+
+country_event = { # YAN Sambovato part 1 focus
+    id = zebstart.11
+    title = zebstart.11.t
+    desc = zebstart.11.d
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = { #help sambo
+        name = zebstart.11.a
+        ai_chance = {
+            factor = 1
+        }
+        add_ideas = { YAN_Invest_Sambo
+    }
+    hidden_effect = {
+        country_event = {
+            id = zebstart.12
+            days = 14
+        }
+    }
+}
+option = {  #abandon sambo investments
+    name = zebstart.11.b
+    ai_chance = {
+        factor = 1
+    }
+    add_offsite_building = {
+        type = industrial_complex
+        level = 3
+    }
+    add_offsite_building = {
+        type = dockyard
+        level = 2
+    }
+    add_political_power = 50
+}
+}
+
+country_event = { #YAN Sambovato part 2 focus
+    id = zebstart.12
+    title = zebstart.12.t
+    desc = zebstart.12.d
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = zebstart.12.a
+        ai_chance = {
+            factor = 1
+        }
+        YAN = {
+            set_autonomy = {
+                target = MQA
+                autonomous_state = autonomy_puppet
+            }
+        }
+        MQA = {
+            transfer_navy = {
+                target = YAN
+            }
+        }
+        MQA = {
+            remove_ideas = MQA_ravaged_environment
+            remove_ideas = MQA_gate_to_zebrica
+            remove_ideas = YAN_MQA_1_Idea
+        }
+        remove_ideas = YAN_Invest_Sambo
+        set_country_flag = MQA_Secured
+    }
+}
+
+country_event = { #explain mizor and pulapi, choose to develop one of them, or both
+    id = zebstart.13
+    title = zebstart.13.t
+    desc = zebstart.13.desc
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = { # support mizor
+        name = zebstart.13.a
+        ai_chance = {
+            factor = 1
+        }
+
+        1159 = {
+            add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+            }
+        }
+        add_political_power = -25
+    }
+    option = { # support pulapi
+        name = zebstart.13.b
+        ai_chance = {
+            factor = 1
+        }
+        add_opinion_modifier = {
+            target = PUL
+            modifier = positive_50
+        }
+        1160 = {
+            add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+            }
+        }
+        add_political_power = -25
+    }
+    option = { # greedy option
+        name = zebstart.13.c
+        ai_chance = {
+            factor = 1
+        }
+        add_political_power = 75
+    }
+    option = { # extremely greedy option
+        name = zebstart.13.d
+        ai_chance = {
+            factor = 1
+        }
+        1158 = {
+            add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+            }
+        }
+        add_political_power = -50
+    }
+    option = { #wholesome chungus option
+        name = zebstart.13.e
+        ai_chance = {
+            factor = 1
+        }
+        1160 = {
+            add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+            }
+        }
+        1159 = {
+            add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+            }
+        }
+        1158 = {
+            add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+            }
+        }
+        add_political_power = -125
+    }
+}
+
+country_event = {
+    id = zebstart.14
+    title = zebstart.14.t
+    desc = zebstart.14.d
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = zebstart.14.a
+        ai_chance = {
+            factor = 1
+        }
+        create_intelligence_agency = {
+            agency_name = "Koloniale Abwehrstelle"
+        }
+        add_political_power = 25
+        custom_effect_tooltip = KAS_Founded_tt
+        custom_effect_tooltip = YAN_receive_units_tt
+        hidden_effect = {
+            load_oob = YAN_1007_Talon_Company
+        }
+        set_country_flag = TC_Supported_1_CW
+    }
+    option = {
+        name = zebstart.14.b
+        ai_chance = {
+            factor = 1
+        }
+        create_intelligence_agency = {
+            agency_name = "Beakavische Geheimstelle"
+        }
+        add_political_power = 25
+        custom_effect_tooltip = BGS_Founded_tt
+        custom_effect_tooltip = YAN_receive_units_tt
+        hidden_effect = {
+            load_oob = YAN_1007_Talon_Company
+        }
+        set_country_flag = TC_Supported_1_CW
+    }
+    option = {
+        name = zebstart.14.c
+        ai_chance = {
+            factor = 1
+        }
+        1158 = {
+            add_extra_state_shared_building_slots = 5
+            add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+            }
+        }
+        add_political_power = 200
+        custom_effect_tooltip = intel_agency_greed_tt
+        add_timed_idea = {
+            idea = YAN_Security_Forces_Snubbed_Idea
+            days = 90
+        }
+    }
+}
+
+
+
+country_event = { #fragrance / kirian connection
+    id = zebstart.15
+    title = zebstart.15.t
+    desc = zebstart.15.d
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = { # arms sale to fickle current (give supremacist)
+        name = zebstart.15.a
+        ai_chance = {
+            factor = 1
+        }
+        add_political_power = 100
+        1071 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+                instant_build = yes
+            }
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+            add_building_construction = {
+                type = dockyard
+                level = 1
+                instant_build = yes
+            }
+            add_building_construction = {
+                type = naval_base
+                level = 1
+                instant_build = yes
+                province = 3637
+            }
+            add_building_construction = {
+                type = radar_station
+                level = 1
+                instant_build = yes
+            }
+            add_building_construction = {
+                type = air_base
+                level = 2
+                instant_build = yes
+                province = 3637
+            }
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+                province = 3637
+            }
+        }
+        KIR = {
+            add_stability = -0.05
+            add_political_power = -50
+        }
+    }
+    option = { # industry connections to autumn blaze (give harmonist)
+        name = zebstart.15.b
+        ai_chance = {
+            factor = 1
+        }
+        send_equipment = {
+            equipment = train_equipment
+            amount = 12
+            target = KIR
+        }
+        1059 = {
+            add_building_construction = {
+                type = industrial_complex
+                level = 3
+            }
+            add_building_construction = {
+                type = air_base
+                level = 2
+                instant_build = yes
+                province = 5867
+            }
+            add_building_construction = {
+                type = radar_station
+                level = 1
+                instant_build = yes
+            }
+            add_building_construction = {
+                type = infrastructure
+                level = 2
+                instant_build = yes
+            }
+        }
+        KIR = {
+            add_stability = 0.05
+            add_political_power = 50
+        }
+    }
+    option = { # trade with auburn isle
+        name = zebstart.15.c
+        ai_chance = {
+            factor = 1
+        }
+        add_timed_idea = {
+            idea = YAN_Underhanded_Deals_With_Auburn_Isle
+            days = 90
+        }
+        add_political_power = 100
+        add_equipment_to_stockpile = {
+            type = support_equipment_1
+            amount = 100
+        }
+        add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 1500
+        }
+
+
+    }
+}
+
+country_event = { # out west
+    id = zebstart.16
+    title = zebstart.16.t
+    desc = zebstart.16.d
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = zebstart.16.a
+        ai_chance = {
+            factor = 1
+        }
+        add_political_power = 50
+        hidden_effect = {
+            1155 = {
+                add_core_of = VOC
+                transfer_state_to = VOC
+            }
+
+        }
+        custom_effect_tooltip = security_chief_zamine_in_control_tt
+        set_province_name = {
+            id = 13377
+            name = "Festung Zamine"
+        }
+        1155 = {
+            add_building_construction = {
+                type = bunker
+                level = 1
+                province = 13377
+            }
+            add_building_construction = {
+                type = bunker
+                level = 1
+                province = 20264
+            }
+            add_building_construction = {
+                type = bunker
+                level = 1
+                province = 20262
+            }
+            set_demilitarized_zone = no
+        }
+
+    }
+}
+
+country_event = { #kirian connection
+    id = zebstart.18
+    title = zebstart.18.t
+    desc = zebstart18.d
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = zebstart.18.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+    option = {
+        name = zebstart.18.b
+        ai_chance = {
+            factor = 1
+        }
+    }
+    option = {
+        name = zebstart.18.c
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+country_event = { # supporting mizor second event
+    id = zebstart.19
+    title = zebstart.19.t
+    desc = zebstart.19.d
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = { #aircraft carrier and naval aviation specialization
+        name = zebstart.19.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+    option = { #submarine long range warfare specialization
+        name = zebstart.19.b
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+country_event = { #triggered by grover v death focus
+    id = zebstart.20
+    title = zebstart.20.t
+    desc = zebstart.20.d
+    picture = GFX_report_event_generic
+    trigger = {
+        original_tag = YAN
+        GRI = { has_completed_focus = GRI_emperor_passed }
+    }
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = zebstart.20.a
+        ai_chance = {
+            factor = 1
+        }
+        custom_effect_tooltip = paralyzed_isaac
+        custom_effect_tooltip = will_unlocked_focuses_yan
+        hidden_effect = {
+            set_country_flag = isaac_paral
+            mark_focus_tree_layout_dirty = yes
+        }
+        swap_ideas = {
+            remove_idea = YAN_Greifenvater_Idea
+            add_idea = YAN_Fucked_Government_1
+        }
+    }
+}
+
+country_event = {
+    id = zebstart.21
+    title = zebstart.21.t
+    desc = zebstart.21.d
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = zebstart.21.a
+        ai_chance = {
+            factor = 1
+        }
+        hidden_effect = {
+            annex_country = {
+                target = PUL
+                transfer_troops = yes
+            }
+            every_state = {
+                limit = {
+                    is_core_of
+                }
+                add_core_of = YAN
+            }
+            every_state = {
+                limit = {
+                    is_core_of = PUL
+                }
+                remove_core_of = PUL
+            }
+        }
+    }
+}
+
+country_event = { #backup event incase a silly cheater
+    id = sussybaka.1
+    title = sussybaka.1.t
+    desc = sussybaka.1.d
+    picture = GFX_report_event_radar_01
+    fire_only_once = yes
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = sussybaka.1.a
+        hidden_effect = {
+            3 = { add_building_construction = {
+                dockyard
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+}
+option = {
+    name = sussybaka.1.b
+    hidden_effect = {
+        3 = { add_building_construction = {
+            dockyard
+            level = 1
+            instant_build = yes
+        }
+    }
+}
+}
+option = {
+    name = sussybaka.1.c
+    hidden_effect = {
+        3 = { add_building_construction = {
+            dockyard
+            level = 1
+            instant_build = yes
+        }
+    }
+}
+}
+option = {
+    name = sussybaka.1.d
+    hidden_effect = {
+        3 = { add_building_construction = {
+            dockyard
+            level = 1
+            instant_build = yes
+        }
+    }
+}
+}
+}
+
+country_event = {
+    id = interim.1
+    title = interim.1.t
+    desc = interim.1.d
+    picture = GFX_event_AF26_tea
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    fire_only_once = yes
+    option = {
+        name = interim.1.a
+        ai_chance = {
+            factor = 1
+        }
+        custom_effect_tooltip = Isaac_Retires_To_Griffonia_After_GV_Death_tt
+        hidden_effect = {
+            retire_character = Isaac_Reigers
+            add_country_leader_role = {
+                character = interim_council
+                promote_leader = yes
+                country_leader = {
+                    ideology = oligarchism
+                    expire = "1965.1.1"
+                }
+            }
+            set_country_flag = Isaac_Retired
+            country_event = {
+                id = interim.2
+                days = 7
+            }
+        }
+        complete_national_focus = YAN_Pay_Our_Respects
+        add_political_power = -25
+        add_stability = -0.25
+    }
+}
+country_event = {
+    id = interim.2
+    title = interim.2.t
+    desc = interim.2.d
+    picture = GFX_event_AF26_tea
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    fire_only_once = yes
+    option = {
+        name = interim.2.a
+        ai_chance = {
+            factor = 1
+        }
+        add_political_power = 5
+        custom_effect_tooltip = VOC_to_rescue_tt
+        hidden_effect = {
+            complete_national_focus = YAN_Disjointed_Government
+            mark_focus_tree_layout_dirty = yes
+            country_event = {
+                id = vocdebate.1
+                days = 7
+            }
+        }
+    }
+
+}
+
+
+
+country_event = {
+    id = vocdebate.1
+    title = vocdebate.1.t
+    desc = vocdebate.1.d
+    picture = GFX_event_af23_cultist
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    fire_only_once = yes
+    option = {
+        name = vocdebate.1.a
+        ai_chance = {
+            factor = 1
+        }
+        add_popularity = {
+            ideology = democratic
+            popularity = 0.15
+        }
+        add_popularity = {
+            ideology = neutrality
+            popularity = 0.1
+        }
+        custom_effect_tooltip = nocontentyet
+    }
+    option = {
+        name = vocdebate.1.b
+        ai_chance = {
+            factor = 1
+        }
+        add_popularity = {
+            ideology = neutrality
+            popularity = 0.25
+        }
+        custom_effect_tooltip = nocontentyet
+    }
+    option = {
+        name = vocdebate.1.c
+        ai_chance = {
+            factor = 1
+        }
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.3
+        }
+        hidden_effect = {
+            country_event = {
+                id = hoorst_clique.1 days = 5 }
+            }
+            complete_national_focus = YAN_VOC_Bailout
+            mark_focus_tree_layout_dirty = yes
+            custom_effect_tooltip = hoorst_opening_speech_tt
+        }
+    }
+
+

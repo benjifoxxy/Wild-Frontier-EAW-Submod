@@ -1,0 +1,341 @@
+
+add_namespace = new_corp_griff
+add_namespace = hoorst_clique
+add_namespace = chuddie
+
+country_event = {  #while hoorst celebrates, the zebrikaaners prepare.
+    id = new_corp_griff.1  #focus id
+    title = new_corp_griff.1.t   #focus title
+    desc = new_corp_griff.1.d    #focus description
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {  #example description
+        name = new_corp_griff.1.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+country_event = {
+    id = hoorst_clique.1
+    title = hoorst_clique.1.t
+    desc = hoorst_clique.1.d
+    picture = GFX_report_event_radar_01
+    fire_only_once = yes
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = hoorst_clique.1.a
+        hidden_effect = {
+            complete_national_focus = interim_hoorst_clique
+            set_politics = fascism
+        }
+        mark_focus_tree_layout_dirty = yes
+        custom_effect_tooltip = unlocked_focuses_yan
+        add_stability = -0.1
+        add_manpower = 20000
+    }
+}
+
+
+
+
+
+
+
+country_event = { # grand speech event select effect - # location of speech
+    id = chuddie.1
+    title = chuddie.1.t
+    desc = chuddie.1.desc
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = { # cheap option
+        name = chuddie.1.a
+        ai_chance = {
+            factor = 1
+        }
+        set_global_flag = speech1cheap_f
+        hidden_effect = {
+            country_event { id = chuddie.7 days = 12 }
+        }
+    }
+    option = { # grand navy parade option
+        name = chuddie.1.b
+        ai_chance = {
+            factor = 1
+        }
+        set_global_flag = speech1navy_f
+        hidden_effect = {
+            country_event = { id = chuddie.8 days = 12 }
+        }
+    }
+    option = { # air parade option
+        name = chuddie.1.c
+        ai_chance = {
+            factor = 1
+        }
+        set_global_flag = speech1air_f
+        hidden_effect = { id = chuddie.9 days = 12 }
+    }
+    option = { # cultural option - focus on Zebridische
+        name = chuddie.1.d
+        ai_chance = {
+            factor = 1
+        }
+        set_global_flag = speech1racist_f
+        hidden_effect = { id = chuddie.10 days = 12 }
+    }
+}
+
+country_event = { # grand speech cheap
+    id = chuddie.7
+    title = chuddie.7.t
+    desc = chuddie.7.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = chuddie.7.a
+        ai_chance = {
+            factor = 1
+        }
+        add_timed_idea = {
+            idea = Hoorst_Grand_Speech_1_cheap
+            days = 35
+        }
+    }
+}
+
+country_event = { #grand speech navy focus
+    id = chuddie.8
+    title = chuddie.8.t
+    desc = chuddie.8.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = chuddie.8.a
+        ai_chance = {
+            factor = 1
+        }
+        add_timed_idea = {
+            idea = Hoorst_Grand_Speech_1_navy
+            days = 35
+        }
+    }
+}
+
+country_event = { #grand speech air focus
+    id = chuddie.9
+    title = chuddie.9.t
+    desc = chuddie.9.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = chuddie.9.a
+        ai_chance = {
+            factor = 1
+        }
+        add_timed_idea = {
+            idea = Hoorst_Grand_Speech_1_air
+            days = 35
+        }
+    }
+}
+
+country_event = { # grand speech cultural focus - schizo
+    id = chuddie.10
+    title = chuddie.10.t
+    desc = chuddie.10.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = chuddie.10.a
+        ai_chance = {
+            factor = 1
+        }
+        add_timed_idea = {
+            idea = Hoorst_Grand_Speech_1_cultural
+            days = 35
+        }
+    }
+}
+
+country_event = { # shifting VOC Radical administration from mainland to beakavia
+    id = chuddie.2
+    title = chuddie.2.t
+    desc = chuddie.2.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = { # Yes, sure why not - WHAT could possibly could go wrong...
+        name = chuddie.2.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+    option = { # No, the mandate is still important.
+        name = chuddie.2.b
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+country_event = { # slash spending - sell off ships , or close unprofitable factories
+    id = chuddie.3
+    title = chuddie.3.t
+    desc = chuddie.3.desc
+    picture = GFX_report_event_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = { #sell off airforce decision
+        name = chuddie.3.a
+        ai_chance = {
+            factor = 1
+        }
+        add_political_power = -100
+
+        random_owned_controlled_state = {
+            limit = { industrial_complex > 1 }
+            remove_building = { type = industrial_complex level = 2 }
+        }
+        random_owned_controlled_state = {
+            limit = { arms_factory > 1 }
+            remove_building = { type = arms_factory level = 2 }
+        }
+        set_country_flag = slash_spending_airforce_fully_privatized
+    }
+    option = { # a horrendous economic decision (piss off the natives)
+        name = chuddie.3.b
+        ai_chance = {
+            factor = 1
+        }
+        1158 = {
+
+        }
+        set_country_flag = slash_spending_natives
+    }
+    option = { # disband the army, full reliance on mercenaries
+        name = chuddie.3.c
+        ai_chance = {
+            factor = 1
+        }
+        set_country_flag = slash_spending_removed_army
+    }
+    option = { # cut off social spending
+        name = chuddie.3.d
+        ai_chance = {
+            factor = 1
+        }
+        set_country_flag = slash_spending_social_spending
+    }
+}
+country_event = { # brutalist policy
+    id = chuddie.4
+    title = chuddie.4.t
+    desc = chuddie.4.desc
+    picture = GFX_report_event_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = { #sell off government holdings for capital
+        name = chuddie.4.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+    option = { # loot sambovato instead, available only if bailed out sambo
+        name = chuddie.4.b
+        ai_chance = {
+            factor = 1
+        }
+        available = {
+            
+        }
+    }
+    option = { # sell off government shares in Storm Kingdom , available if won CW
+        name = chuddie.4.c
+        ai_chance = {
+            factor = 1
+        }
+    }
+    option = { # sell off government shares in Saddle Arabia, available if won CW
+        name = chuddie.4.d
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+country_event = { # economic austerity/bottom line - final nail in the coffin for the VOC colony
+    id = chuddie.5
+    title = chuddie.5.t
+    desc = chuddle.5.d
+    picture = GFX_report_event_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = { # option that seals the deal for the colony.
+        name = chuddie.5.a
+        ai_chance = {
+            factor = 1
+        }
+        hidden_effect = {
+            country_event = {
+                id = chuddie.6 days = 10 }
+            }
+
+        }
+    }
+
+
+    country_event = { # zebrikaaners prepare event
+        id = chuddie.6
+        title = chuddie.6.t
+        desc = chuddie.6.d
+        picture = GFX_report_event_sign_treaty1
+        is_triggered_only = yes
+        trigger = {
+            original_tag = YAN
+        }
+        option = {
+            name = chuddie.6.a
+            ai_chance = {
+                factor = 1
+            }
+            mark_focus_tree_layout_dirty = yes
+            hidden_effect = {
+                country_event = {
+                    id = voctroubles.12 days = 5 }
+                }
+            }
+        }
+
+
+

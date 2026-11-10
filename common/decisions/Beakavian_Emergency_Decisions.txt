@@ -1,0 +1,387 @@
+
+
+FZS_CW_Decisions = {
+
+    FZS_Strength_Check = { # timer every 30 days , checks whether the player has actually pressed, the mission. Yes? Makes the decision re appear and remove 1 point from variable. No? Adds 1 point to the variable.
+        icon = generic_civil_war
+        desc = FZS_Strength_Check.desc
+
+        allowed = {
+            original_tag = YAN
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = FZS_CW_Check_Explainer_tt
+                always = no
+            }
+        }
+        days_mission_timeout = 30
+        days_re_enable = 18000
+        activation = {
+            always = no
+        }
+
+        timeout_effect = {
+            hidden_effect = {
+                country_event = { id = debugCW.1 }
+            }
+        }
+        ai_will_do = {
+            factor = 0
+        }
+        priority = 1000
+    }
+
+
+    Secure_Ceram = {
+        cost = 0
+        allowed = {
+            original_tag = YAN
+        }
+        days_mission_timeout = 60
+        days_re_enable = 19000
+        fire_only_once = yes
+        activation = {
+            always = no
+        }
+        timeout_effect = {
+            YAN = {
+                end_puppet = CER
+            }
+        }
+        complete_effect = {
+            country_event = { id = beakavian_emergency.4 }
+        }
+    }
+
+    Secure_Kirchau = {
+        cost = 0
+        allowed = {
+            original_tag = YAN
+        }
+        days_mission_timeout = 60
+        days_re_enable = 19000
+        fire_only_once = yes
+        activation = {
+            always = no
+        }
+        timeout_effect = {
+            YAN = {
+                end_puppet = MIZ
+            }
+        }
+        complete_effect = {
+            country_event = { id = beakavian_emergency.5 }
+        }
+    }
+
+    Secure_Sambo = {
+        cost = 0
+        allowed = {
+            original_tag = YAN
+        }
+        days_mission_timeout = 60
+        days_re_enable = 19000
+        fire_only_once = yes
+        activation = {
+            always = no
+        }
+        timeout_effect = {
+            YAN = {
+                end_puppet = MQA
+            }
+        }
+        complete_effect = {
+            country_event = { id = beakavian_emergency.6 }
+        }
+    }
+
+
+    FZS_CW_Storm_Kingdom = {
+        icon = generic_civil_war
+        cost = 50
+        desc = FZS_CW_Use_Navy_Decision.1.desc
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            has_global_flag = Storm_Kingdom_Crisis_Resolved
+        }
+        available = {
+            custom_trigger_tooltip {
+                tooltip = FZS_CW_Round_Explainer_tt
+                NOT = {
+                    OR = {
+                        has_country_flag = FZS_CW_Strength_Increase_Paid_Flag
+                        has_country_flag = FZS_CW_Based_Paid_Flag
+                    }
+                }
+            }
+
+        }
+        days_remove = 7
+        days_re_enable = 7
+        complete_effect = {
+            set_country_flag = FZS_CW_Based_Paid_Flag
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        priority = 150
+    }
+
+    FZS_CW_Saddle_Arabia = {
+        icon = generic_civil_war
+        cost = 50
+        desc = FZS_CW_Use_Navy_Decision.1.desc
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            has_global_flag = Saddle_Arabia_Crisis_Resolved
+        }
+        available = {
+            NOT = {
+                has_country_flag = FZS_CW_Strength_Increase_Paid_Flag
+                has_country_flag = FZS_CW_Based_Paid_Flag
+            }
+        }
+        days_remove = 7
+        days_re_enable = 7
+        complete_effect = {
+            set_country_flag = FZS_CW_Based_Paid_Flag
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        priority = 140
+    }
+
+    FZS_CW_Chisimbi = {
+        icon = generic_civil_war
+        cost = 50
+        desc = FZS_CW_Use_Navy_Decision.1.desc
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            has_global_flag = Chisimbi_Crisis_Resolved
+        }
+        available = {
+            NOT = {
+                has_country_flag = FZS_CW_Strength_Increase_Paid_Flag
+                has_country_flag = FZS_CW_Based_Paid_Flag
+            }
+        }
+        days_remove = 7
+        days_re_enable = 7
+        complete_effect = {
+            set_country_flag = FZS_CW_Based_Paid_Flag
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        priority = 130
+    }
+
+    FZS_CW_South_Zone = {
+        icon = generic_civil_war
+        cost = 50
+        desc = FZS_CW_Use_Navy_Decision.1.desc
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            has_global_flag = South_Zone_Crisis_Resolved
+        }
+        available = {
+            NOT = {
+                has_country_flag = FZS_CW_Strength_Increase_Paid_Flag
+                has_country_flag = FZS_CW_Based_Paid_Flag
+            }
+        }
+        days_remove = 7
+        days_re_enable = 7
+        complete_effect = {
+            set_country_flag = FZS_CW_Based_Paid_Flag
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        priority = 120
+    }
+
+    FZS_CW_Strength_Increase = {
+        icon = generic_civil_war
+        cost = 50
+        desc = FZS_CW_Strength_Increase.desc
+
+        allowed = {
+            original_tag = YAN
+        }
+        available = {
+            NOT = {
+                has_country_flag = FZS_CW_Strength_Increase_Paid_Flag
+                has_country_flag = FZS_CW_Based_Paid_Flag
+            }
+        }
+        days_remove = 7
+        days_re_enable = 7
+        complete_effect = {
+            set_country_flag = FZS_CW_Strength_Increase_Paid_Flag
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+        priority = 100
+    }
+
+    FZS_CW_Use_Navy_Decision_1 = {
+        icon = generic_civil_war
+        cost = 50
+        desc = FZS_CW_Use_Navy_Decision.1.desc
+        allowed = {
+            original_tag = YAN
+        }
+        available = {
+            NOT = {
+                has_country_flag = FZS_CW_Strength_Increase_Paid_Flag
+                has_country_flag = FZS_CW_Based_Paid_Flag
+            }
+        }
+        days_remove = 7
+        days_re_enable = 7
+        complete_effect = {
+
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        priority = 100
+    }
+
+
+    FZS_CW_Use_Navy_Decision_2 = {
+        icon = generic_civil_war
+        cost = 50
+        desc = FZS_CW_Use_Navy_Decision.1.desc
+        allowed = {
+            original_tag = YAN
+        }
+        available = {
+            NOT = {
+                has_country_flag = FZS_CW_Strength_Increase_Paid_Flag
+                has_country_flag = FZS_CW_Based_Paid_Flag
+            }
+        }
+        days_remove = 7
+        days_re_enable = 7
+        complete_effect = {
+
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        priority = 100
+    }
+
+    FZS_CW_Manpower_Decision = {
+        icon = generic_civil_war
+        cost = 50
+        desc = FZS_CW_Use_Navy_Decision.1.desc
+        allowed = {
+            original_tag = YAN
+        }
+        available = {
+            NOT = {
+                has_country_flag = FZS_CW_Strength_Increase_Paid_Flag
+                has_country_flag = FZS_CW_Based_Paid_Flag
+            }
+        }
+        days_remove = 7
+        days_re_enable = 7
+        complete_effect = {
+
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        priority = 100
+    }
+
+
+    FZS_CW_Airforce_Decision = {
+        icon = generic_civil_war
+        cost = 50
+        desc = FZS_CW_Use_Navy_Decision.1.desc
+        allowed = {
+            original_tag = YAN
+        }
+        available = {
+            NOT = {
+                has_country_flag = FZS_CW_Strength_Increase_Paid_Flag
+                has_country_flag = FZS_CW_Based_Paid_Flag
+            }
+        }
+        days_remove = 7
+        days_re_enable = 7
+        complete_effect = {
+
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        priority = 100
+    }
+
+    FZS_CW_Bribe_Kirchau = {
+        icon = generic_civil_war
+        cost = 50
+        desc = FZS_CW_Use_Navy_Decision.1.desc
+        allowed = {
+            original_tag = YAN
+        }
+        available = {
+            NOT = {
+                has_country_flag = FZS_CW_Strength_Increase_Paid_Flag
+                has_country_flag = FZS_CW_Based_Paid_Flag
+            }
+        }
+        days_remove = 7
+        days_re_enable = 7
+        complete_effect = {
+
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        priority = 100
+    }
+
+
+    FZS_CW_Incite_Natives = {
+        icon = generic_civil_war
+        cost = 50
+        desc = FZS_CW_Use_Navy_Decision.1.desc
+        allowed = {
+            original_tag = YAN
+        }
+        available = {
+            NOT = {
+                has_country_flag = FZS_CW_Strength_Increase_Paid_Flag
+                has_country_flag = FZS_CW_Based_Paid_Flag
+            }
+        }
+        days_remove = 7
+        days_re_enable = 7
+        complete_effect = {
+
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        priority = 100
+    }
+
+}

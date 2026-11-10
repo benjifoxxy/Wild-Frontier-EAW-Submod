@@ -1,0 +1,44 @@
+capital = 1156
+set_research_slots = 2
+set_convoys = 10
+set_stability = 0.5
+set_war_support = 0.5
+recruit_character = CER_council
+recruit_character = luang_idori
+
+# Additional starting history effects
+add_manpower = 60000
+set_oob = CER_1007_Start
+is_zebrican_continent_country = yes
+load_focus_tree = ZEB_SUBJECTS
+set_technology = {
+    zebra_race = 1
+    melee_weapons = 1
+    melee_weapons1 = 1
+    tech_spirit_warriors = 1
+}
+actually_fix_weapon_techs = yes
+add_ideas = { 
+    
+    tribal_society 
+    poor_science_base 
+    lack_of_scientists 
+    primitive_economy 
+    closed_economy 
+    YAN_Sudzebra_Culture_Idea
+
+}
+
+# Politics selected in the builder
+set_politics = {
+    ruling_party = neutrality
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+set_popularities = {
+    democratic = 3
+    fascism = 2
+    communism = 5
+    neutrality = 90
+}

@@ -1,0 +1,36 @@
+state = {
+    id = 1158
+    name = STATE_1158
+    provinces = { 13371 13372 13374 13375 20086 20088 20089 20090 20091 20272 20290 20291 20292 20293 20294 20295 20296 20297 20298 }
+    resources = {
+        aluminium = 10
+        rubber = 8
+        chromium = 2
+    }
+    history = {
+        owner = YAN
+        add_core_of = YAN
+        buildings = {
+            infrastructure = 2
+            industrial_complex = 6
+            arms_factory = 3
+            dockyard = 3
+            13371 = {
+                naval_base = 6
+            }
+            20272 = {
+                naval_base = 2
+            }
+            20295 = {
+                naval_base = 2
+            }
+        }
+        victory_points = { 13371 40 }
+        victory_points = { 20272 15 }
+        victory_points = { 20295 15 }
+        add_extra_state_shared_building_slots = 10
+    }
+    state_category = large_city
+    manpower = 1185641
+    buildings_max_level_factor = 1.000
+}

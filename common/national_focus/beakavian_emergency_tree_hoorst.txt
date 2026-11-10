@@ -1,0 +1,417 @@
+focus_tree = {
+    id = beakavian_emergency_tree_hoorst
+    default = no
+    country = {
+        factor = 0
+        modifier = {
+            add = 1000
+            tag = YAN
+        }
+    }
+    continuous_focus_position = { x = 1400 y = 1400 }
+
+    focus = {
+        id = beakavian_emergency
+        icon = GFX_focus_RAJ_bathe_in_hellfire
+        x = 4
+        y = 1
+        cost = 20
+        available = {
+            always = no
+        }
+        completion_reward = { }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = jungle_fanatic
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -1
+        y = 5
+        cost = 1
+        prerequisite = { focus = beakavian_emergency }
+        available = {
+            has_completed_focus = beakavian_emergency
+        }
+        allow_branch = {
+            has_completed_focus = beakavian_emergency
+        }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = private_general_chud
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 9
+        y = 5
+        cost = 1
+        prerequisite = { focus = beakavian_emergency }
+        available = {
+            has_completed_focus = beakavian_emergency
+        }
+        allow_branch = {
+            has_completed_focus = beakavian_emergency
+        }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = mommy_milkies
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 11
+        y = 2
+        cost = 1
+        prerequisite = { focus = beakavian_emergency }
+        available = {
+            has_completed_focus = beakavian_emergency
+        }
+        allow_branch = {
+            has_completed_focus = beakavian_emergency
+        }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = the_naive_collab
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -3
+        y = 2
+        cost = 1
+        prerequisite = { focus = beakavian_emergency }
+        available = {
+            has_completed_focus = beakavian_emergency
+        }
+        allow_branch = {
+            has_completed_focus = beakavian_emergency
+        }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = grant_emergency_powers
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 4
+        y = 3
+        cost = 1
+        prerequisite = { focus = beakavian_emergency }
+        available = {
+            has_completed_focus = beakavian_emergency
+        }
+        allow_branch = {
+            has_completed_focus = beakavian_emergency
+        }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = mobilize_eco_rad
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 3
+        y = 5
+        cost = 1
+        prerequisite = { focus = grant_emergency_powers }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = rapid_mil_reforms
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 5
+        y = 5
+        cost = 1
+        prerequisite = { focus = grant_emergency_powers }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = an_offer_WAD
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -1
+        y = 6
+        cost = 1
+        prerequisite = { focus = jungle_fanatic }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = WAD_chud
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 0
+        y = 7
+        cost = 1
+        prerequisite = { focus = an_offer_WAD }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = contact_bunkers
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -3
+        y = 4
+        cost = 1
+        prerequisite = { focus = the_naive_collab }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = cord_key
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -3
+        y = 6
+        cost = 1
+        prerequisite = { focus = contact_bunkers }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ending_farce
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 9
+        y = 6
+        cost = 1
+        prerequisite = { focus = private_general_chud }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = long_overdue
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 10
+        y = 7
+        cost = 1
+        prerequisite = { focus = ending_farce }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = cleo_nothin_ever_happens
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 11
+        y = 2
+        cost = 1
+        prerequisite = { focus = mommy_milkies }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = broken_cleo
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 11
+        y = 4
+        cost = 1
+        prerequisite = { focus = cleo_nothin_ever_happens }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = eu4_ahh_idea
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 2
+        y = 7
+        cost = 1
+        prerequisite = { focus = mobilize_eco_rad }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = req_civ_ships
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 4
+        y = 7
+        cost = 1
+        prerequisite = { focus = mobilize_eco_rad }
+        prerequisite = { focus = rapid_mil_reforms }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = nationalize_bas
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 6
+        y = 7
+        cost = 1
+        prerequisite = { focus = rapid_mil_reforms }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = claw_vs_hoof
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 4
+        y = 9
+        cost = 3
+        prerequisite = { focus = req_civ_ships }
+        prerequisite = { focus = nationalize_bas }
+        prerequisite = { focus = eu4_ahh_idea }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = new_age_of_piracy
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 8
+        y = 7
+        cost = 1
+        prerequisite = { focus = ending_farce }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = WAD_audacity
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -2
+        y = 7
+        cost = 1
+        prerequisite = { focus = an_offer_WAD }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = vaas
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -3
+        y = 9
+        cost = 5
+        prerequisite = { focus = broken_cleo }
+        prerequisite = { focus = long_overdue }
+        prerequisite = { focus = claw_vs_hoof }
+        prerequisite = { focus = new_age_of_piracy }
+        prerequisite = { focus = cord_key }
+        prerequisite = { focus = WAD_chud }
+        prerequisite = { focus = WAD_audacity }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = not_vaas
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 4
+        y = 11
+        cost = 5
+        prerequisite = { focus = claw_vs_hoof }
+        prerequisite = { focus = new_age_of_piracy }
+        prerequisite = { focus = long_overdue }
+        prerequisite = { focus = broken_cleo }
+        prerequisite = { focus = cord_key }
+        prerequisite = { focus = WAD_chud }
+        prerequisite = { focus = WAD_audacity }
+        completion_reward = {
+            add_political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}

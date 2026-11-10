@@ -1,0 +1,209 @@
+spriteTypes = {
+    spriteType = {
+        name = GFX_goal_YAN_RD_Marekisser
+        texturefile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_76dfff1bb64a4a75a151a90d27d99caa.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_goal_YAN_RD_Marekisser_shine
+        texturefile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_76dfff1bb64a4a75a151a90d27d99caa.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_76dfff1bb64a4a75a151a90d27d99caa.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_goal_YAN_Pinkiepie
+        texturefile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_5e5b5ec9e9d94b94aa7c2e248e03141c.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_goal_YAN_Pinkiepie_shine
+        texturefile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_5e5b5ec9e9d94b94aa7c2e248e03141c.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_5e5b5ec9e9d94b94aa7c2e248e03141c.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_goal_YAN_Patrick
+        texturefile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_3fbefc5206d8414da35b124b7872114e.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_goal_YAN_Patrick_shine
+        texturefile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_3fbefc5206d8414da35b124b7872114e.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_3fbefc5206d8414da35b124b7872114e.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_goal_Linus_Bruh
+        texturefile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_6ec438c7ad8f4b54803ca6a6162b8fde.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_goal_Linus_Bruh_shine
+        texturefile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_6ec438c7ad8f4b54803ca6a6162b8fde.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_6ec438c7ad8f4b54803ca6a6162b8fde.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_goal_VOC_Liberal
+        texturefile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_a0d1ce224b74472ea75ddc94975fce8d.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_goal_VOC_Liberal_shine
+        texturefile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_a0d1ce224b74472ea75ddc94975fce8d.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_a0d1ce224b74472ea75ddc94975fce8d.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_goal_Dutch_Larp
+        texturefile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_10c85a96b74a4d92b0786fd9d37b7584.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_goal_Dutch_Larp_shine
+        texturefile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_10c85a96b74a4d92b0786fd9d37b7584.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_10c85a96b74a4d92b0786fd9d37b7584.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_goal_VOC_CrazyRacist
+        texturefile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_9d820613baae4d2fbb0a00cbaee85190.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_goal_VOC_CrazyRacist_shine
+        texturefile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_9d820613baae4d2fbb0a00cbaee85190.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_9d820613baae4d2fbb0a00cbaee85190.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_goal_YAN_Gem
+        texturefile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_082bd7f4e3f841d8a1fe55768ee26e4f.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_goal_YAN_Gem_shine
+        texturefile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_082bd7f4e3f841d8a1fe55768ee26e4f.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_082bd7f4e3f841d8a1fe55768ee26e4f.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_goal_trixie
+        texturefile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_9685119b2ae743b5b6a43bcb064a9afb.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = GFX_goal_trixie_shine
+        texturefile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_9685119b2ae743b5b6a43bcb064a9afb.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/hmb_gfx/land_of_opportunity/land_of_opportunity_9685119b2ae743b5b6a43bcb064a9afb.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+}

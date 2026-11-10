@@ -1,0 +1,215 @@
+﻿l_english:
+ 
+
+ ####################### EVENT INSIGHTS
+
+  Out_West_Reward_Explanation_tt:0 "Upon §YSelection§! of this Focus, we will receive an event giving economic support to Ceram.\n\nUpon §YCompletion§! of the Focus, we will receive an Event allowing us to choose a Region to focus our resources on controlling.\nWe may choose between §GSaddle Arabia§!, §CThe Storm Kingdom§!, §8Chisimbi§! or the §9South Investment Zone§!.\n\n\n§7Choosing to participate in and Completing all four of these may grant us Great Future Bonuses.§!"
+
+ ####
+
+ # §
+ 
+ New_Decisions_Unlocked_YAN:0 "§GNew Decisions will be revealed!§!"
+
+ unlocked_focuses_yan:0 "§GNew Focuses have been unlocked.§!"
+
+ will_unlocked_focuses_yan:0 "§GNew foci will be revealed!§!"
+
+ YAN_receive_units_tt:0 "§YYou will receive Divisions to aid your cause.§!"
+
+ Decision_Cannot_Be_Reversed_tt:0 "§RThis is an irreversible decision, please double check before taking this action.§!"
+
+ nocontentyet:0 "§RThis path is still being developed! Stay tuned, and thanks for playing so far! ^-^§!"
+
+ nocontentyetfocus:0 "§RContent is planned for this Nation in future! :3§!"
+
+ ########################
+
+ Startup_Explanation_tt:0 "§7Welcome to Wild Frontier by Benjifoxyy , this is my first mod and I really appreciate your time and faith in playing. I hope you enjoy.§!"
+
+ Player_Force_Switched_To_YAN:0 "§9If you were forcibly switched to playing the Zebridean Militarstaat, it is to make sure you enjoy the intention of the Submod. Thankyou for understanding.§!"
+
+
+ YAN_Pay_Respects_tt:0 "Introductory Focuses Completed"
+
+ Zebrikaaner_Units_Retreat_To_Clawtoria_tt:0 "ZFS units disobey orders and hold the border bridge at Clawtoria"
+
+ VOC_CW_Start_Tooltip_1_tt:0 "The Mandate are filled with incompetent idiotgriffs!"
+
+ FZS_Introduction_tt:0 "The Western Island of the Zebrides will be §RDemilitarized§! and we shall receive control of their §GArmed Forces§!."
+
+ BKGB_Category_Deactivate_tt:0 "This will disable the Grand Ball Category."
+
+ disable_other_voc_colony_events:0 "§RThis will disable future flavour events for the VOC Colony, this cannot be reversed.§!"
+
+ radar_array_add_beakavia:0 "Beakavian University of Electronic Science and Technology"
+
+ yan_natives_break_free_ceram:0 "The Natives, upset with the direction of Beakavia, have broken free!"
+
+ nocontentyet:0 "§RThis path is still being developed! Stay tuned, and thanks for playing so far! ^-^§!"
+
+ nocontentyetfocus:0 "§RContent is planned for this Nation in future! :3§!"
+
+ VOC_to_rescue_tt:0 "§GThe§! §RVOC Mandate§! §Ghave succeeded with their proposed Prosperity Plan!§!"
+
+ Isaac_Retires_To_Griffonia_After_GV_Death_tt:0 "Isaac retires from the Governship in grief and flees to Feathisia following the death of Grover V."
+
+ Day_At_Beakavia_TT:0 "The §HGrand Ball of Beakavia§! shall begin!"
+
+ southern_jewel_tt:0 "Another Year of §GPropserity§! Will Begin!"
+
+ Review_Sambo_1_tt:0 "todo - We Will Review Our Actions Upon Sambovato."
+
+ isaac_retires_shids_fucked_tt:0 "todo ISaac returns to girronia"
+
+ intel_agency_greed_tt:0 "An Intelligence Agency? Who needs one of those? The Money can be put to better use elsewhere!"
+
+ hoorst_clique1_tt:0 "§RGovernor Jan Hoorst will lead the Government!§!"
+
+ disjointed_gov_decision_tt:0 "§The Griffs of Beakavia hope for an end to the Chaos by securing a new Government.§!"
+
+ YAN_Vultures_tt:0 "The §RVultures swirl§!, but time moves on. Our §Gfuture§! will be decided by the way in which the wind blows strongest."
+
+ hoorst_opening_speech_tt:0 "The New Governor will make his opening speech in the coming days."
+
+ paralyzed_isaac:0 "The usual jovial Governor seemed §CFrozen in Gaze§!, as he looked out to the §YSunset.§!"
+
+ grover_address_replaced:0 "With the passing of Grover V,The focus §RPay Our Respects§! has been unlocked."
+
+ security_chief_zamine_in_control_tt:0 "General der Dschunglestruppe Zamine is given Command."
+
+ fuck_it_we_ball_tt:0 "§RFUCK IT WE BALL!§!"
+
+ you_greedy_mf:0 "The Funds are sorely needed!"
+
+ FZS_Introduction_tt:0 "The Western Isles of the Zebrides will be demilitarized and Zebrikaaner Troops will be at our disposal."
+
+ increase_rubber_production_in_wezuli:0 "Increase Rubber Production In Talonhoek"
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ #### unused testing stuff ####
+
+
+ ### STATES ###
+ #STATE_1157:0 "Clawtoria"
+ #STATE_1158:0 "Talonhoek"
+
+ #STATE_1149:0 "Neu-Rottendestaat"
+ #VICTORY_POINTS_16229:0 "Weijamardstadt"
+
+ #STATE_1154:0 "Ersterbezirk"
+ #STATE_1153:0 "Zweiterbezirk"
+ #STATE_1152:0 "Dritterbezirk"
+ #STATE_1190:0 "Vieterbezirk"
+ #STATE_1143:0 "Fünfterbezirk"
+ #STATE_1150:0 "Sechsterbezirk"
+ #STATE_1144:0 "Siebterbezirk"
+ #STATE_1142:0 "Achterbezirk"
+ #STATE_1148:0 "Neunterbezirk"
+ #STATE_1146:0 "Zehnterbezirk"
+ #STATE_1139:0 "Elfterbezirk"
+ #STATE_1145:0 "Zwölfterbezirk"
+ #STATE_1141:0 "Dreizehnterbezirk"
+ #STATE_1192:0 "Vierzehnterbezirk"
+ #STATE_1155:0 "Wadangsonderbezirk"
+
+ # Sambo state rename#
+ #STATE_1137:0 "Bronei"
+ #STATE_1136:0 "Bronei Novo"
+ #STATE_1207:0 "Greater Noveau"
+ # Sambo vp renames #
+ #VICTORY_POINTS_8344:0 "Sambo"
+ #VICTORY_POINTS_2905:0 "Sambo 2"
+ #VICTORY_POINTS_8825:0 "Sambo 3"
+ #VICTORY_POINTS_8441:0 "Sambo 4"
+
+ ### Talonhoek Victory Points ###
+
+ #VICTORY_POINTS_13370:0 "Beakavia"
+ #VICTORY_POINTS_20089:0 "Pazan"
+ #VICTORY_POINTS_20295:0 "Kassar"
+ 
+ ### Clawtoria Victory Points ###
+
+ #VICTORY_POINTS_20085:0 "Soreabaja"
+ #VICTORY_POINTS_20082:0 "Zenpasar"
+
+ ### Mizor ###
+
+ #VICTORY_POINTS_13368:0 "Naval Base Gerlach"
+
+ ### Pulapi Islands ###
+
+ #VICTORY_POINTS_20096:0 "Kalapa Burung"
+ #VICTORY_POINTS_20094:0 "Biara Guntur"
+
+ ### Wadang ### 
+
+ #VICTORY_POINTS_13377:0 "Koeten"
+
+ ### Ceram ###
+
+ #VICTORY_POINTS_20257:0 "Gitamala"

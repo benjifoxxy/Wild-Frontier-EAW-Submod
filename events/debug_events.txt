@@ -1,0 +1,443 @@
+add_namespace = debugYAN
+add_namespace = beakavian_emergency_debug
+add_namespace = debugCW
+add_namespace = debugCubanacan
+add_namespace = debug_Wild_Frontier_Startup
+
+country_event = { # now ubused
+    id = debug_Wild_Frontier_Startup.1
+    is_triggered_only = yes
+    title = debug_Wild_Frontier_Startup.1.t
+    desc = debug_Wild_Frontier_Startup.1.desc
+    option = {
+        name = debug_Wild_Frontier_Startup.1.a
+        YAN = {
+            change_tag_from = ROOT
+            
+        }
+        set_global_flag = debugFlagStartup
+        
+    }
+    hidden = yes
+}
+
+country_event = {
+    id = debug_Wild_Frontier_Startup.2
+    title = debug_Wild_Frontier_Startup.2.t
+    desc = debug_Wild_Frontier_Startup.2.desc
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    fire_only_once =  yes
+    immediate = {
+        set_global_flag = debug_Startup_Event_2_fired
+    }
+    trigger = {
+        YAN = {
+            is_ai = no
+            has_country_flag = Player_Selected_Country_Other_Than_YAN
+        }
+    }
+    option = {
+        name = debug_Wild_Frontier_Startup.2.a
+        custom_effect_tooltip = Startup_Explanation_tt
+        custom_effect_tooltip = Player_Force_Switched_To_YAN
+        trigger = {
+            NOT = {
+                has_country_flag = Player_Selected_Country_Other_Than_YAN
+            }
+        }
+    }
+    option = {
+        name = debug_Wild_Frontier_Startup.2.b
+        custom_effect_tooltip = Startup_Explanation_tt
+        custom_effect_tooltip = Player_Force_Switched_To_YAN
+        trigger = {
+            has_country_flag = debugFlagStartup
+        }
+    }
+    option = {
+        name = debug_Wild_Frontier_Startup.3.c
+        custom_effect_tooltip = Startup_Explanation_tt
+        custom_effect_tooltip = Player_Force_Switched_To_YAN        
+    }
+}
+
+country_event = {
+    id = debugCubanacan.1
+    title = debugCubanacan.1.t
+    desc = debugCubanacan.1.d
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    hidden = yes
+    option = {
+        name = debugCubanacan.1.a
+        activate_mission = Cubanacan_Anger_Mission
+        add_to_variable = {
+            var = Cuban_Anger
+            value = 15
+        }
+    }
+}
+
+country_event = {
+    id = debugCubanacan.2
+    title = debugCubanacan.2.t
+    desc = debugCubanacan.2.d
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    hidden = yes
+    option = {
+        name = debugCubanacan.2.a
+        random_list = {
+            15 = { # positive event
+                 country_event = { id = cuban.3 days = 14 }
+            }
+            15 = { # positive event
+                 country_event = { id = cuban.4 days = 7 }
+            }
+            15 = { # negative event
+                country_event = { id = cuban.5 days = 22}
+            }
+            15 = { # negative event
+                country_event = { id = cuban.6 days = 8}
+            }
+            39 = { # nothing happens
+
+            }
+            1 = { # gold rush!
+                country_event = { id = cuban.7 hours = 67 }
+            }
+        }
+    }
+}
+
+
+country_event = {
+    id = debugCW.1
+    title = debugCW.1.t
+    desc = debugCW.1.d
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    hidden = yes
+    option = {
+        name = debugCW.1.a
+        clr_country_flag = FZS_CW_Strength_Activate_Mission
+        IF = {
+            limit = { has_country_flag = FZS_CW_Strength_Increase_Paid_Flag }
+            country_event = { id = debugCW.2 }
+        }
+        IF = {
+            limit = { has_country_flag = FZS_CW_Based_Paid_Flag }
+            country_event = { id = debugCW.4 }
+        }
+        IF = {
+            limit = {
+                NOT = {
+                    OR = {
+                        has_country_flag = FZS_CW_Strength_Increase_Paid_Flag
+                        has_country_flag = FZS_CW_Based_Paid_Flag
+                    }
+                }
+            }
+            country_event = { id = debugCW.3 }
+        }
+    }
+}
+
+country_event = {
+    id = debugCW.2
+    title = debugCW.2.t
+    desc = debugCW.2.d
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    hidden = yes
+    option = {
+        name = debugCW.2.a
+        clr_country_flag = FZS_CW_Strength_Increase_Paid_Flag
+        subtract_from_variable = { FZS_Strength_Meter = 3 }
+        activate_mission = FZS_Strength_Check        
+    }
+}
+
+country_event = {
+    id = debugCW.3
+    title = debugCW.3.t
+    desc = debugCW.3.d
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    hidden = yes
+    option = {
+        name = debugCW.3.a
+        add_to_variable = { FZS_Strength_Meter = 2 }
+        activate_mission = FZS_Strength_Check   
+    }
+}
+
+country_event = {
+    id = debugCW.4
+    title = debugCW.4.t
+    desc = debugCW.4.d
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    hidden = yes
+    option = {
+        name = debugCW.4.a
+        clr_country_flag = FZS_CW_Based_Paid_Flag
+        subtract_from_variable = { FZS_Strength_Meter = 6 }
+        activate_mission = FZS_Strength_Check        
+    }
+}
+
+
+country_event = {
+    id = debugYAN.1
+    title = debugYAN.t
+    desc = debugYAN.d
+    picture = GFX
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = debugYAN.a
+        load_focus_tree = All_is_fine_kek
+    }
+    option = {
+        name = debugYAN.b
+        load_focus_tree = beakavian_emergency_tree_hoorst
+    }
+    option = {
+        name = debugYAN.c
+        load_focus_tree = corpo_chud
+    }
+    option = {
+        name = debugYAN.d
+        load_focus_tree = hoorst_tree_2
+    }
+    option = {
+        name = debugYAN.e
+        load_focus_tree = VOC_Radical_Tree
+    }
+}
+
+country_event = {
+    id = beakavian_emergency_debug.1
+    title = beakavian_emergency_debug.1.t
+    desc = beakavian_emergency_debug.1.d
+    picture = GFX_report_event_generic_sign_treaty1
+    hidden = yes
+    fire_only_once = yes
+    is_triggered_only = yes
+    trigger = {
+
+        has_global_flag = voc_mandate_harmony_entrenched_flag
+    }
+    option = {
+        name = beakavian_emergency_debug.1.a
+        ai_chance = {
+            factor = 1
+        }
+        VOC = {
+            retire_character = voc_company
+            set_politics = {
+                ruling_party = democratic
+                elections_allowed = no
+            }
+            set_popularities = {
+                democratic = 60
+                fascism = 30
+                neutrality = 10
+                communism = 0
+            }
+        }
+    }
+}
+
+country_event = {
+    id = beakavian_emergency_debug.2
+    title = beakavian_emergency_debug.2.t
+    desc = beakavian_emergency_debug.2.d
+    picture = GFX_report_event_generic_sign_treaty1
+    hidden = yes
+    fire_only_once = yes
+    is_triggered_only = yes
+    trigger = {
+
+        has_global_flag = voc_mandate_supremacy_entrenched_flag
+    }
+    option = {
+        name = beakavian_emergency_debug.2.a
+        ai_chance = {
+            factor = 1
+        }
+        VOC = {
+            retire_character = voc_company
+        }
+    }
+}
+
+country_event = {
+    id = beakavian_emergency_debug.3
+    title = beakavian_emergency_debug.3.t
+    desc = beakavian_emergency_debug.3.d
+    picture = GFX_report_event_generic
+    hidden = yes
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = beakavian_emergency_debug.3.a
+        ai_chance = {
+            factor = 1
+        }
+        HAF = {
+            load_oob = HAF_CW_OOB
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 10000
+            }
+            add_equipment_to_stockpile = {
+                type = artillery_equipment_1
+                amount = 100
+            }
+        }
+        IDO = {
+            load_oob = IDO_CW_OOB
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 10000
+            }
+            add_equipment_to_stockpile = {
+                type = artillery_equipment_1
+                amount = 100
+            }
+        }
+        IST = {
+            load_oob = IST_CW_OOB
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 10000
+            }
+            add_equipment_to_stockpile = {
+                type = artillery_equipment_1
+                amount = 100
+            }
+        }
+        NKO = {
+            load_oob = NKO_CW_OOB
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 10000
+            }
+            add_equipment_to_stockpile = {
+                type = artillery_equipment_1
+                amount = 100
+            }
+        }
+        TAO = {
+            load_oob = TAO_CW_OOB
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 10000
+            }
+            add_equipment_to_stockpile = {
+                type = artillery_equipment_1
+                amount = 100
+            }
+        }
+        THA = {
+            load_oob = THA_CW_OOB
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 10000
+            }
+            add_equipment_to_stockpile = {
+                type = artillery_equipment_1
+                amount = 100
+            }
+        }
+        XHO = {
+            load_oob = XHO_CW_OOB
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 10000
+            }
+            add_equipment_to_stockpile = {
+                type = artillery_equipment_1
+                amount = 100
+            }
+        }
+        VOC = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 8000
+            }
+            add_equipment_to_stockpile = {
+                type = artillery_equipment_1
+                amount = 100
+            }
+            release = WAD
+        }
+        country_event = { id = beakavian_emergency_debug.4 }
+    }
+}
+
+country_event = {
+    id = beakavian_emergency_debug.4
+    title = beakavian_emergency_debug.4.t
+    desc = beakavian_emergency_debug.4.d
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    hidden = yes
+    option = {
+        name = beakavian_emergency_debug.4.a
+        ai_chance = {
+            factor = 1
+        }
+        WAD = {
+            load_oob = WAD_CW_OOB_1
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 10000
+            }
+            add_equipment_to_stockpile = {
+                type = support_equipment
+                amount = 100
+            }
+            add_equipment_to_stockpile = {
+                type = artillery_equipment_1
+                amount = 100
+            }
+            declare_war_on = {
+                target = HAF
+                type = annex_everything
+            }
+            add_civil_war_target = HAF
+            declare_war_on = {
+                target = THA
+                type = annex_everything
+            }
+            add_civil_war_target = THA
+            declare_war_on = {
+                target = NKO
+                type = annex_everything
+            }
+            add_civil_war_target = NKO
+            declare_war_on = {
+                target = TAO
+                type = annex_everything
+            }
+            add_civil_war_target = TAO
+            declare_war_on = {
+                target = XHO
+                type = annex_everything
+            }
+            add_civil_war_target = XHO
+            declare_war_on = {
+                target = VOC
+                type = annex_everything
+            }
+            add_civil_war_target = VOC
+        }
+
+    }
+}

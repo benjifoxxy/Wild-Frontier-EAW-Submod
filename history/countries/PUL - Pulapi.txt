@@ -1,0 +1,51 @@
+capital = 1160
+set_research_slots = 2
+set_convoys = 0
+set_stability = 0.5
+set_war_support = 0.5
+recruit_character = Mataram_Cleo_1
+recruit_character = Mataram_Cleo_2
+recruit_character = PUL_Council
+
+# Additional starting history effects
+load_focus_tree = ZEB_SUBJECTS
+add_manpower = 60000
+set_oob = PUL_1007_Start
+is_zebrican_continent_country = yes
+set_technology = {
+    zebra_race = 1
+    melee_weapons = 1
+    melee_weapons1 = 1
+    tech_spirit_warriors = 1
+}
+actually_fix_weapon_techs = yes
+
+add_ideas = { 
+    
+    tribal_society 
+    poor_science_base 
+    lack_of_scientists 
+    primitive_economy 
+    closed_economy 
+
+}
+
+# Politics selected in the builder
+set_politics = {
+    ruling_party = democratic
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+set_popularities = {
+    democratic = 95
+    fascism = 5
+    communism = 0
+    neutrality = 0
+}
+
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 8000
+    producer = YAN
+}

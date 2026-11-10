@@ -1,0 +1,236 @@
+division_template = {
+    name = "Elite Warband"
+    regiments = {
+        mountaineers = { x = 0 y = 0 }
+        mountaineers = { x = 0 y = 1 }
+        mountaineers = { x = 0 y = 2 }
+        mountaineers = { x = 1 y = 0 }
+        mountaineers = { x = 1 y = 1 }
+        mountaineers = { x = 1 y = 2 }
+        mountaineers = { x = 2 y = 0 }
+        mountaineers = { x = 2 y = 1 }
+        mountaineers = { x = 2 y = 2 }
+    }
+    regimental_support = {
+
+    }
+    support = {
+        artillery = { x = 0 y = 0 }
+    }
+}
+
+division_template = {
+    name = "Organized Resistance"
+    regiments = {
+        militia = { x = 0 y = 0 }
+        militia = { x = 0 y = 1 }
+        militia = { x = 0 y = 2 }
+        militia = { x = 0 y = 3 }
+    }
+    regimental_support = {
+
+    }
+    support = {
+
+    }
+}
+
+division_template = {
+    name = "Freezeeb Auxiliaries"
+    regiments = {
+        irregular_infantry = { x = 0 y = 0 }
+        irregular_infantry = { x = 0 y = 1 }
+        irregular_infantry = { x = 0 y = 2 }
+        irregular_infantry = { x = 1 y = 0 }
+        irregular_infantry = { x = 1 y = 1 }
+        irregular_infantry = { x = 1 y = 2 }
+
+    }
+    regimental_support = {
+
+    }
+    support = {
+
+    }
+}
+
+
+units = {
+
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        location = 16059
+        division_template = "Elite Warband"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        location = 16059
+        division_template = "Elite Warband"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        location = 16059
+        division_template = "Organized Resistance"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        location = 16059
+        division_template = "Organized Resistance"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        location = 16023
+        division_template = "Organized Resistance"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        location = 15998
+        division_template = "Organized Resistance"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        location = 15977
+        division_template = "Organized Resistance"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        location = 15977
+        division_template = "Organized Resistance"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        location = 16096
+        division_template = "Organized Resistance"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        location = 16096
+        division_template = "Organized Resistance"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        location = 16096
+        division_template = "Organized Resistance"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        location = 16140
+        division_template = "Organized Resistance"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+
+	division = {
+        division_name = {
+            is_name_ordered = yes 
+            name_order = 1
+        }
+        location = 16095
+        division_template = "Freezeeb Auxiliaries"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+
+	division = {
+        division_name = {
+            is_name_ordered = yes 
+            name_order = 1
+        }
+        location = 16095
+        division_template = "Freezeeb Auxiliaries"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+
+	division = {
+        division_name = {
+            is_name_ordered = yes 
+            name_order = 1
+        }
+        location = 16095
+        division_template = "Freezeeb Auxiliaries"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+
+	division = {
+        division_name = {
+            is_name_ordered = yes 
+            name_order = 1
+        }
+        location = 16095
+        division_template = "Freezeeb Auxiliaries"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+    }
+	
+}

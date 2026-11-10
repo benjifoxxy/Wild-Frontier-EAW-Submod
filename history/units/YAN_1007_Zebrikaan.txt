@@ -1,0 +1,87 @@
+
+
+division_template = {
+    name = "Zebrikaanse Landwacht"
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+        infantry = { x = 1 y = 2 }
+    }
+    regimental_support = {
+        field_guns = { x = 0 y = 0 }
+        field_guns = { x = 0 y = 1 }
+    }
+    support = {
+        armored_car_recon = { x = 0 y = 0 }
+    }
+}
+
+division_template = {
+    name = "Zebrikaanse Veldpolitie"
+    regiments = {
+        militia = { x = 0 y = 0 }
+        militia = { x = 0 y = 1 }
+        militia = { x = 0 y = 2 }
+        militia = { x = 0 y = 3 }
+        militia = { x = 1 y = 0 }
+        militia = { x = 1 y = 1 }
+        militia = { x = 1 y = 2 }
+        militia = { x = 1 y = 3 }
+    }
+    regimental_support = {
+        field_guns = { x = 0 y = 0 }
+        field_guns = { x = 0 y = 1 }
+    }
+}
+
+
+units = {
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        location = 20082
+        division_template = "Zebrikaanse Veldpolitie"
+        start_experience_factor = 0.5
+        start_equipment_factor = 1
+    }
+    
+
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        location = 20081
+        division_template = "Zebrikaanse Veldpolitie"
+        start_experience_factor = 0.5
+        start_equipment_factor = 1
+    }
+
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        location = 20085
+        division_template = "Zebrikaanse Landwacht"
+        start_experience_factor = 0.5
+        start_equipment_factor = 1
+    }
+
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        location = 20087
+        division_template = "Zebrikaanse Landwacht"
+        start_experience_factor = 0.5
+        start_equipment_factor = 1
+    }
+
+}

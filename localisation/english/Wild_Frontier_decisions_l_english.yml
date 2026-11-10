@@ -1,0 +1,225 @@
+﻿l_english:
+ #### Storm Regency Intervention Decisions ####
+
+ Storm_Kingdom_Investment_Decisions:0 "Intervention in the §5Rainband§!"
+ Storm_Kingdom_Investment_Decisions_desc:0 "With the passing of the §RStorm King§! in his unfortunate folly, the seat of his Power, the Rainband - has collapsed into multiple Successor States of varying legitimacy.\n\nA Warlock, A confused Storm Creature, An armchair General relying on the good will of Zebras...\n\nAnd in the seat of Power, the §4Eye of the Storm§!, §5Ikvus Hailstorm§! sits atop the traditional throne and one of the most secure positions for our investments.\n\nIt is to our distinct advantage to keep him content so we may call in our Investments at a later date. §7Or perhaps, convene something greater; should we play our cards right.§!\n\n§5Ikvus Hailstorm's§! currently §G[ROOT.Get_Ikvus_Happiness]§!."
+
+ StormKing_Decision_0:0 "Intelligence Report: §5Ikvus Hailstorm§!"
+
+ Ikvus_Intelligence_Report_tt:0 "The most valuable Weapon in any Conflict is §2Information§!.\n\nWe shall dispatch an agent to the Eye of the Storm to see just how the new '§4Storm King§!' operates under duress."
+
+ StormKing_Decision_1:0 "An Audience with §4Ikvus§!"
+ StormKing_Decision_1_desc:0 "We shall meet with the Southern Claimaint to the Storm Throne."
+
+ StormKing_Decision_2:0 "Support §4Ikvus§!' claim with Weapons"
+ StormKing_Decision_2_desc:0 "An Event will appear with options for different equipment to donate."
+
+ StormKing_Decision_3:0 "An Economic Support Package"
+ Loans_To_The_Regency_tt:0 "We must have at least a relationship of §G2§! to take this decision.\n\nWe will be able to retake this decision once every 180 days."
+ Loans_To_The_Regency_2_tt:0 "Upon expiration of the Idea, we will receive an event confirming our donation."
+
+ StormKing_Decision_4:0 "Increase our Military Presence within the Regency"
+ Havent_Sent_Volunteers_To_Regent_CW_tt:0 "This decision will add §G2§! to §4Ikvus'§! happiness."
+
+ StormKing_Decision_5:0 "Provide §6Naval Support§! to §4Ikvus'§! troops"
+ Naval_Bombardment_STM_CW_tt:0 "We must have 2 Battleships stations in a Port of the Storm Regent. This is valid for the Storm Isle and the Island of Comareos."
+
+ StormKing_Decision_6:0 "Provide Logistics Support to the Frontline Troops"
+
+ StormKing_Decision_7:0 "§4Ikvus§! Pride Worldwide!"
+
+ StormKing_Decision_8:0 "Encourage Investment in the Rainband"
+ We_Have_Not_Increased_War_Participation_Yet_tt:0 "We must have an active volunteer force sent to the Storm egency.\n\n§RThis decision can only be taken once.§!"
+
+ StormKing_Decision_9:0 "Celebrate our Victory!"
+ YAN_Ikvus_Claimed_Storm_King_tt:0 "This decision will become available once §4Ikvus§! has claimed the §3Storm Crown§!."
+ Complete_SK_CW_Category_tt:0 "§7Completing this Category will open up Greater Opportunities§!"
+ 
+
+ StormKing_Decision_10:0 "Stormland Decision 10" #unused
+ StormKing_Decision_11:0 "Stormland Decision 11" #unused
+ StormKing_Decision_12:0 "Stormland Decision 12" #unused
+
+ ##### Arabia Investment Decisions
+
+ Saddle_Arabia_Investment_Decisions:0 "Trouble in §7Arabica§!"
+ Saddle_Arabia_Investment_Decisions_desc:0 "civil war intervention decision category todo\n\nFaisals Happiness Indicator - §6[?ROOT.Get_Faisal_Happiness]§!\nCurrent Light Weapon Storage is §9[ROOT.Get_SA_CW_LW_Stashes]§!\nCurrent Heavy Weapon Storage is §9[ROOT.Get_SA_CW_HW_Stashes]§!\nCurrent Light Armoured Storage is §9[ROOT.Get_SA_CW_LV_Stashes]§!\n\n§7The Oil Must Flow!§!"
+
+ saddle_arabia_keksimus_maximus_0:0 "Intelligence Report: §7Emir Faisal§! and the §7Pax Arabica§!"
+ saddle_arabia_keksimus_maximus_1:0 "Introduce Ourselves to the Emir"
+ saddle_arabia_keksimus_maximus_2:0 "Establish an FOB in the Capital"
+ saddle_arabia_keksimus_maximus_3:0 "Expand our Volunteer Operations" 
+ saddle_arabia_keksimus_maximus_4:0 "event where the player donates light weapons"
+ saddle_arabia_keksimus_maximus_5:0 "event where the player donates heavy weapons (artillery)"
+ saddle_arabia_keksimus_maximus_6:0 "event where the player donates light vehicles (light tanks)" 
+ saddle_arabia_keksimus_maximus_7:0 "arm insurgency in other countries"
+ saddle_arabia_keksimus_maximus_8:0 "create militia divisions! "
+ saddle_arabia_keksimus_maximus_9:0 "create infantry divisions! " 
+ saddle_arabia_keksimus_maximus_10:0 "Create Armoured Division for Faisal" 
+ saddle_arabia_keksimus_maximus_11:0 "naval bombardment todo" 
+ saddle_arabia_keksimus_maximus_12:0 "Saddle Arabia Decision 12" #unused
+
+ saddle_arabia_keksimus_maximus_13:0 "Complete the Arabian Category" 
+ YAN_Arabia_Unified_tt:0 "§RSaddle Arabia has United the Peninsula.§!"
+
+ #### Chisimbi Crisis Decisions
+
+ Chisimbi_Crisis_Investment_Decisions:0 "The §8Chisimbi Successor§!"
+ Chisimbi_Crisis_Investment_Decisions_desc:0 "chisimbi crisis stuff\n\ntodo\n\n[ROOT.Prince_Happiness] - Ikvus Happiness influence amount\n\n[ROOT.Griff_CW_Happiness] - Imba Zaru Griffons influence"
+
+ Chisimbi_Griff_Influence_Mission:0 "Griffon §YInfluence§! Increases!"
+
+ Chisimbi_Zaru_Influence_Mission:0 "Imba Zaru §YInfluence§! Increases!"
+
+ Chisimbi_Crisis_0:0 "Intelligence Report: §8Chisimbi Region§!"
+ Intelligence_Report_Chisimbi_tt:0 "We will receive crucial information regarding all Nations in the Chisimbi Region."
+
+ Chisimbi_Crisis_1:0 "Meet with the Directorate"
+ Meet_Imba_Zaru_Leaders_tt:0 "This will enable further options in the category."
+ 
+
+ Chisimbi_Crisis_3:0 "Expand Military Presence in Imba Zaru"
+ Have_Met_Griffons_And_Prince_Regent_tt:0 "We have made our Presence known to the various groups in the Imba Zaru Principality."
+
+ Chisimbi_Crisis_4:0 "Supply Weapons to the Chisigriffs"
+ Rifle_Influence_Increase_Griffs:0 "We will send 1,000 Rifles to Aid the Cause of our friends in Chisimbi.\n\nBy choosing to support the Griffons of Imba Zaru.\n\nWe will increase their power over Governance by §G2§!."
+
+ Chisimbi_Crisis_45:0 "Supply Weapons to the Imba Zaru"
+ Rifle_Influence_Increase_Zaru:0 "We will send 1,000 Rifles to Aid the Cause of our friends in Chisimbi.\n\nBy choosing to support the Zebras of Imba Zaru.\n\nWe will increase their power over Governance by §G2§!."
+
+ Chisimbi_Crisis_5:0 "Air Volunteers to Chisimbi"
+ Air_Vol_Chisimbi_CW_tt:0 "\nUpon the Removal of the Idea, the Imba Zaru will receive 50 Fighters to aid their cause.\nThis decision will be available 75 days after it completes.\nIf the States of Muromo Werizi, Ibellen or Grinhival do not have an Air Base of at least Level 2, one will be built for them."
+
+ Chisimbi_Crisis_6:0 "Incite the Zeblu to War"
+
+ Chisimbi_Crisis_66:0 "Secure North Chisimbi"
+
+ Chisimbi_Crisis_7:0 "Secure West Chisimbi - Tanganiyka"
+
+ Chisimbi_Crisis_8:0 "Chisimbi Decision 9"
+
+ Chisimbi_Crisis_10:0 "Chisimbi Decision 10" #unused
+ Chisimbi_Crisis_11:0 "Chisimbi Decision 11" #unused
+ Chisimbi_Crisis_12:0 "Chisimbi Decision 12" #unused
+
+ South_Zone_Investment_Decisions:0 "Saving the Süd"
+ South_Zone_Investment_Decisions_desc:0 "todo"
+
+ South_Zone_Investiture_1:0 "Süd Decision 1"
+ South_Zone_Investiture_2:0 "Süd Decision 2"
+ South_Zone_Investiture_3:0 "Süd Decision 3"
+ South_Zone_Investiture_4:0 "Süd Decision 4"
+ South_Zone_Investiture_5:0 "Süd Decision 5"
+ South_Zone_Investiture_6:0 "Süd Decision 6"
+ South_Zone_Investiture_7:0 "Süd Decision 7"
+ South_Zone_Investiture_8:0 "Süd Decision 8"
+ South_Zone_Investiture_9:0 "Süd Decision 9"
+ South_Zone_Investiture_10:0 "Süd Decision 10"
+ South_Zone_Investiture_11:0 "Süd Decision 11"
+ South_Zone_Investiture_12:0 "Süd Decision 12"
+
+ YAN_VOC_Mandate_Development_Decisions:0 "Mandate Story Decisions todo"
+ YAN_VOC_Mandate_Development_Decisions_desc:0 "todo"
+
+ VOC_Mandate_Backstory_1:0 "decision category disable"
+ VOC_Mandate_Backstory_2:0 "descision 2"
+ VOC_Mandate_Backstory_3:0 "backstory decision 3"
+ VOC_Mandate_Backstory_4:0 "backstory decision 4"
+ VOC_Mandate_Backstory_5:0 "backstory decision 5"
+ VOC_Mandate_Backstory_6:0 "backstory decision 6"
+ VOC_Mandate_Backstory_7:0 "backstory decision 7"
+ VOC_Mandate_Backstory_8:0 "backstory decision 8"
+
+
+ ### FZS Crisis Decisions
+
+ FZS_CW_Decisions:0 "The Beakavian Emergency"
+ FZS_CW_Decisions_desc:0 "To the West of Beakavia, the ungrateful §OZebrikaangriffs§! have declared the Governance of Jan Hoorst to be illegitimate, citing corruption, greed and all other nonsense that comes from such disorganized dullards. \n\nIn order for us to §GRestore Order, Authority & Achieve our future Prospects..§! we must utilize all of our '§RAssets§!' to our advantage.\n\nSome methods may prove... §RControversial§!, but Businessgriffs are quick to forget when there's §GProfit to be Made!§!\n\n\nThe §OZebrikaaners§! Current Strength: §R[?ROOT.FZS_Strength_Meter]§!\n\nGetting their Strength to §R0§! will end the Crisis and §CRestore Zebridischer Control Over the Zebrides!§!\n\nHover over the §gRound Crisis Mission§! for details on how to end the §REmergency§!."
+
+ FZS_Strength_Check:0 "Round Duration"
+ FZS_Strength_Check.desc:0 "If we have already invested this round, the §OZebrikaaners§! will lose §R1§! §CRevolt Strength.§! \n\nIf we fail to invest in the round, the §OZebrikaaners§! will gain §R1§! §CRevolt Strength§!."
+
+ FZS_CW_Strength_Increase:0 "Launch a Propaganda Campaign!"
+ FZS_CW_Strength_Increase.desc:0 ""
+
+ FZS_CW_Storm_Kingdom:0 "Call in a Favour from §CIkvus Hailstorm§!."
+
+ FZS_CW_Saddle_Arabia:0 "Call in a Favour from §OEmir Faisal§!."
+
+ FZS_CW_Chisimbi:0 "Call in a Favour from the §0Chisimbi Council§!."
+
+ FZS_CW_South_Zone:0 "Request Help from §6Mexikstadt und Boreasgrotte!§!"
+
+ FZS_CW_Use_Navy_Decision_1:0 "Reinforce the §GNacre Gate§!."
+
+ FZS_CW_Use_Navy_Decision_2:0 "Perform a Naval Bombardment of §RReigershaven!§!"
+
+ FZS_CW_Manpower_Decision:0 "Weapons for the Frontline Griffs."
+
+ FZS_CW_Airforce_Decision:0 "Disrupt §OZebrikaaner§! Supply Lines!"
+
+ FZS_CW_Bribe_Kirchau:0 "An Offer Admiral Zehida §Rcannot refuse.§!"
+
+ FZS_CW_Incite_Natives:0 "Promise Yaneoan Autonomy!"
+
+ FZS_CW_Consequences_tt:0 "§RTaking this action will have future consequences.§!"
+
+ Zebrikaaners_CW_Increase_Strength_tt:0 "The §GNext Phase§! of the Revolt will occur!"
+
+ Zebrikaaners_CW_Decrease_Strength_tt:0 "The §GNext Phase§! of the Revolt will occur!"
+
+ Zebrikaaner_Variable_tt:0 "§GSelecting this Mission§! will reduce the §RZebrikaaner Revolt's Strength§! by §G1§!.\n\n§GFailing to pay the upkeep§! for our Brave frontline Griffs will result in the §RZebrikaaner Revolts Strength§! by §R1§!."
+ 
+ FZS_CW_Round_Explainer_tt:0 "Available if we have yet to take other §COpportunities§! this round."
+
+ FZS_CW_Check_Explainer_tt:0 "Every 30 days a new Round will begin."
+
+ ### Cubanacan Crisis Decisions
+
+ Cuban_Anger_Map_Area_tt:0 "Click to Jump to §1Cubanacan§!"
+
+ Cubanacan_Anger_Decisions:0 "§1Cubanacan Fury!§!"
+ Cubanacan_Anger_Decisions_desc:0 "Todo mission of Native co operation\n\nCurrent Cabanacan §RAnger§! is §7[?ROOT.Cuban_Anger]§!% out of a maximum of §7100%§!\n\nWe have currently taken §R[?ROOT.Cuban_Actions]§! Actions to appease them.\n\ntodo decision"
+
+ Cubanacan_Anger_Mission:0 "Cubanacani §RAnger§! Increases!"
+ Cubanacan_Anger_Mission_desc:0 "todo"
+
+ Secure_Ceram:0 "Checking in with Ceram"
+ Secure_Ceram_desc:0 "The Island of Ceram has always been considered loyal to it's Protectors in Beakavia... perhaps we should remind them of our continued friendship."
+
+ Secure_Kirchau:0 "The Kirchau Question"
+ Secure_Kirchau_desc:0 "The self-proclaimed Admiral of the Kirchau Governate has always been a crook wearing a uniform. If we are to remain in control of the situation, we should handle him quickly."
+
+ Secure_Sambo:0 "Nacre Nuance"
+ Secure_Sambo_desc:0 "The now subjugated Thalossacracy of Sambovato seems happy to take the opportunity to ignore our officials given the turbulent situation. Perhaps it's time to finally end the farce here and now."
+ 
+ Cubanacan_Decision_1:0 "Economic Investment in Magua Ezantsi"
+
+ Cubanacan_Decision_2:0 "Provide Food Security for the Cubanacani Zebras"
+
+ Cubanacan_Decision_3:0 "Provide Relief to the Survivors of the Massacre"
+
+ Cubanacan_Decision_4:0 "Cash in a Favour from the §1Mataram§!"
+
+ Cubanacan_Decision_5:0 "The §RMarien Incident§!"
+
+ Cubanacan_Decision_6:0 "Prepare a §GNew Compromise§!"
+
+ YAN_Cubanacan_Compromise_Taken_10_Decisions_tt:0 "Taken at least §G10§! §RActions§! and §RAnger§! is less than §G5§!."
+
+ YAN_Cubanacan_Compromise_Completed_tt:0 "A New Accord will be established with §1Mataram Cleo§!!"
+
+ YAN_Cuban_Stage_False_Incident:0 "We have more than §G90§! §RAnger§! with the Cubanacan."
+
+ We_Will_Use_Cleo_Favour_tt:0 "We will gain §G4§! §RActions§! and remove §G30§! §RAnger§!."
+
+ We_Have_Cleo_Favour_tt:0 "We have gained favour with the §1Mataram§!, that we can utilize."
+
+ Cuban_Decision_1_tt:0 "We shall set to work investing in §1Cubanacan§!.\n\nThis decision has the following effects:\n\nAn equal chance to build either a §GCivilian Factory§!, a §GMilitary Factory§! or a §GLevel of Infrastructure§! in the state of §1Cubanacan§!.\n\nWe will also remove 10 §RAnger§! and receive 1 §RAction§!.\n\nThere is also a small chance of a §GMiracle§! where we will build all three at once for the price of one. And remove 30 §RAnger§! from the score and 3 §RActions§! taken.\n\n§GThis decision can be taken once every 120 days§!."
+
+
+ #### Debug Decisions ####
+
+ YAN_Debug_Decisions:0 "Debug Decisions"
+ YAN_Debug_Decisions_desc:0 "Debug Decisions - All Variables\n\nIkvus_CW_Happiness - §R[?ROOT.Ikvus_CW_Happiness]§!\n\nFaisal_CW_Happiness - §R[?ROOT.Faisal_CW_Happiness]§!\n\nPrince_CW_Happiness - §R[?ROOT.Prince.CW.Happiness]§!\n\nSecurity_Zone_Safety - §R[?ROOT.Security_Zone_Safety]§!\n\n\nCuban Actions - §R[?ROOT.Cuban_Actions]§!\n\nCuban Anger - §R[?ROOT.Cuban_Anger]§!\n\n\nFrei Zebrikaan State Strength Meter - §R[?ROOT.FZS_Strength_Meter]§!\n\n\nScripted loc keys\n§C[ROOT.Get_SA_CW_LW_Stashes]§! Light Weapon stash , §C[ROOT.Get_SA_CW_HW_Stashes]§! Heavy Weapon artillery stash §C[ROOT.Get_SA_CW_LV_Stashes]§! light armoured vehicles"
+ 
