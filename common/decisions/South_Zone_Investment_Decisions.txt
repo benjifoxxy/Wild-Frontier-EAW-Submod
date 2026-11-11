@@ -2,6 +2,71 @@
 
 South_Zone_Investment_Decisions = { # TAG - UBE -
 
+    South_Zone_Investiture_Mission_1 = { # South Zone Tourism Mission
+        days_mission_timeout = 90
+        allowed = {
+            original_tag = YAN           
+        }
+        available = {
+            always = no
+        }
+        activation = {
+            always = no
+        }
+        timeout_effect = {
+
+        }
+    }
+
+    South_Zone_Investiture_Mission_2 = { # mercenary company strength
+        days_mission_timeout = 30
+        allowed = {
+            original_tag = YAN
+        }
+        available = {
+            always = no
+        }
+        activation = {
+            always = no
+        }
+        timeout_effect = {
+            
+        }        
+    }
+
+    South_Zone_Investiture_Mission_3 = { # Zebra tribal power mission
+        days_mission_timeout = 30
+        allowed = {
+            original_tag = YAN
+        }
+        available = {
+            always = no
+        }
+        activation = {
+            always = no
+        }
+        timeout_effect = {
+            
+        }        
+    }
+
+    South_Zone_Investiture_Mission_4 = { # Air Supply must maintain
+        days_mission_timeout = 180
+        days_re_enable = 21000
+        allowed = {
+            original_tag = YAN
+        }
+        available = {
+            always = no
+        }
+        activation = {
+            always = no
+        }
+        timeout_effect = {
+            
+        }        
+    }
+
     South_Zone_Investiture_0 = { #intelligence report on the south investment zone
         icon = generic_civil_war
         cost = 0
@@ -40,13 +105,13 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
         fire_only_once = yes
         complete_effect = {
             hidden_effect = {
-                country_event = { id = South_Zone_Crisis.3 days = 1 }
+                country_event = { id = South_Zone_Crisis.3 days = 1 } # large event chain
             }
 
         }
     }
 
-    South_Zone_Investiture_2 = { # Boreasgrotte
+    South_Zone_Investiture_2 = { # Investment in Boreasgrotte state - 1139
 
         icon = generic_civil_war
         cost = 1
@@ -56,7 +121,6 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
         visible = {
             has_country_flag = South_Zone_Situation_On_The_Ground_Completed
         }
-        fire_only_once = yes
         complete_effect = {
             hidden_effect = {
                 

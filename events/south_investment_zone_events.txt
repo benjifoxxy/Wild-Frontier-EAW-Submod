@@ -24,7 +24,9 @@ country_event = { # Boreasgrotte explanation event
 
 	option = { # return to event 3
 		name = South_Zone_Crisis.2.a
-		
+		hidden_effect = {
+			country_event = { id = South_Zone_Crisis.3 }
+		}
 	}
 }
 
@@ -37,78 +39,174 @@ country_event = { # Situation on the ground explanation loop event
 
     option = { # Tell me more about Boreasgrotte
         name = South_Zone_Crisis.3.a
-		hidden_effect = {
-			country_event = { id = South_Zone_Crisis.2 }
-			set_country_flag = South_Zone_Crisis_Event_3_Option_A_Taken
-		}
-		trigger = {
-			NOT = {
-			has_country_flag = South_Zone_Crisis_Event_3_Option_A_Taken	
-			}
-			
-		}
+        hidden_effect = {
+            country_event = { id = South_Zone_Crisis.2 }
+            set_country_flag = South_Zone_Crisis_Event_3_Option_A_Taken
+        }
+        trigger = {
+            NOT = {
+                has_country_flag = South_Zone_Crisis_Event_3_Option_A_Taken
+            }
+
+        }
     }
     option = { # Tell me more about Weijmardstadt
         name = South_Zone_Crisis.3.b
-		hidden_effect = {
-			country_event = { id = South_Zone_Crisis.4 }
-			set_country_flag = South_Zone_Crisis_Event_3_Option_B_Taken
-		}
-		trigger = {
-			NOT = {
-			has_country_flag = South_Zone_Crisis_Event_3_Option_B_Taken	
-			}
-			
-		}
+        hidden_effect = {
+            country_event = { id = South_Zone_Crisis.4 }
+            set_country_flag = South_Zone_Crisis_Event_3_Option_B_Taken
+        }
+        trigger = {
+            NOT = {
+                has_country_flag = South_Zone_Crisis_Event_3_Option_B_Taken
+            }
+
+        }
     }
     option = { # Tell me more about the South Investment Zone
         name = South_Zone_Crisis.3.c
-		hidden_effect = {
-			country_event = { id = South_Zone_Crisis.5 }
-			set_country_flag = South_Zone_Crisis_Event_3_Option_C_Taken
-		}
-		trigger = {
-			NOT = {
-				has_country_flag = South_Zone_Crisis_Event_3_Option_C_Taken
-			}
-		}
+        hidden_effect = {
+            country_event = { id = South_Zone_Crisis.5 }
+            set_country_flag = South_Zone_Crisis_Event_3_Option_C_Taken
+        }
+        trigger = {
+            NOT = {
+                has_country_flag = South_Zone_Crisis_Event_3_Option_C_Taken
+            }
+        }
     }
     option = { # Tell me more about the Mercenary Companies
         name = South_Zone_Crisis.3.d
-		hidden_effect = {
-			country_event = { id = South_Zone_Crisis.6 }
-			set_country_flag = South_Zone_Crisis_Event_3_Option_D_Taken
-		}
-		trigger = {
-			NOT = {
-				has_country_flag = South_Zone_Crisis_Event_3_Option_D_Taken
-			}
-		}
+        hidden_effect = {
+            country_event = { id = South_Zone_Crisis.6 }
+            set_country_flag = South_Zone_Crisis_Event_3_Option_D_Taken
+        }
+        trigger = {
+            NOT = {
+                has_country_flag = South_Zone_Crisis_Event_3_Option_D_Taken
+            }
+        }
 
     }
     option = { # And what of the Zebras?
         name = South_Zone_Crisis.3.e
-		hidden_effect = {
-			country_event = { id = South_Zone_Crisis.7 }
-			set_country_flag = South_Zone_Crisis_Event_3_Option_E_Taken
-		}
-		trigger = {
-			NOT = {
-				has_country_flag = South_Zone_Crisis_Event_3_Option_E_Taken
-			}
-		}
+        hidden_effect = {
+            country_event = { id = South_Zone_Crisis.7 }
+            set_country_flag = South_Zone_Crisis_Event_3_Option_E_Taken
+        }
+        trigger = {
+            NOT = {
+                has_country_flag = South_Zone_Crisis_Event_3_Option_E_Taken
+            }
+        }
 
     }
     option = { # I've heard enough!
         name = South_Zone_Crisis.3.f
-		set_country_flag = South_Zone_Crisis_Event_3_Option_A_Taken
-		set_country_flag = South_Zone_Crisis_Event_3_Option_B_Taken
-		set_country_flag = South_Zone_Crisis_Event_3_Option_C_Taken
-		set_country_flag = South_Zone_Crisis_Event_3_Option_D_Taken
-		set_country_flag = South_Zone_Crisis_Event_3_Option_E_Taken
+        hidden_effect = {
+            set_country_flag = South_Zone_Crisis_Event_3_Option_A_Taken
+            set_country_flag = South_Zone_Crisis_Event_3_Option_B_Taken
+            set_country_flag = South_Zone_Crisis_Event_3_Option_C_Taken
+            set_country_flag = South_Zone_Crisis_Event_3_Option_D_Taken
+            set_country_flag = South_Zone_Crisis_Event_3_Option_E_Taken
+        }
+
     }
     immediate = {
         set_country_flag = South_Zone_Situation_On_The_Ground_Completed
-		set_country_flag = South_Zone_Boreasgrotte_Explained
+        set_country_flag = South_Zone_Boreasgrotte_Explained
+        clamp_variable = {
+            var = South_Zone_Tourism_Crisis
+            min = 0
+            max = 5
+        }
+        clamp_variable = {
+            var = South_Zone_Merc_Strength_Crisis
+            min = 0
+            max = 5
+        }
+        clamp_variable = {
+            var = South_Zone_Zebra_Tribes_Crisis
+            min = 0
+            max = 5
+        }
+        clamp_variable = {
+            var = South_Zone_Crisis_Air_Supply
+            min = 0
+            max = 3
+        }
     }
 }
+
+country_event = {
+	id = South_Zone_Crisis.4
+	title = South_Zone_Crisis.4.t
+	desc = South_Zone_Crisis.4.d
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+
+	option = {
+		name = South_Zone_Crisis.4.a
+		hidden_effect = {
+			country_event = { id = South_Zone_Crisis.3 }
+		}
+	}
+}
+
+country_event = {
+	id = South_Zone_Crisis.5
+	title = South_Zone_Crisis.5.t
+	desc = South_Zone_Crisis.5.d
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+
+	option = {
+		name = South_Zone_Crisis.5.a
+		hidden_effect = {
+			country_event = { id = South_Zone_Crisis.3 }
+		}
+	}
+}
+
+country_event = { # merc companies
+	id = South_Zone_Crisis.6
+	title = South_Zone_Crisis.6.t
+	desc = South_Zone_Crisis.6.d
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+
+	option = { # Talon Company - Herzland
+		name = South_Zone_Crisis.6.a
+		hidden_effect = {
+			country_event = { id = South_Zone_Crisis.3 }
+		}
+	}
+	option = { # Aquilean Foreign Legion - Aquilea
+		name = South_Zone_Crisis.6.b
+		hidden_effect = {
+			country_event = { id = South_Zone_Crisis.3 }
+		}
+	}
+	option = { # Pegasi Mercenary Company - River Fed
+		name = South_Zone_Crisis.6.c
+		hidden_effect = {
+			country_event = { id = South_Zone_Crisis.3 }
+		}
+	}		
+}
+
+country_event = {
+	id = South_Zone_Crisis.7
+	title = South_Zone_Crisis.7.t
+	desc = South_Zone_Crisis.7.d
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+
+	option = {
+		name = South_Zone_Crisis.7.a
+		hidden_effect = {
+			country_event = { id = South_Zone_Crisis.3 }
+		}
+	}
+}
+

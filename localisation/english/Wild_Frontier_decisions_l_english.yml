@@ -102,12 +102,32 @@
  Chisimbi_Crisis_11:0 "Chisimbi Decision 11" #unused
  Chisimbi_Crisis_12:0 "Chisimbi Decision 12" #unused
 
- South_Zone_Investment_Decisions:0 "Saving the Süd"
- South_Zone_Investment_Decisions_desc:0 "todo"
+ #### South Zone Decision Category Localisation
 
- South_Zone_Investiture_1:0 "Süd Decision 1"
- South_Zone_Investiture_2:0 "Süd Decision 2"
- South_Zone_Investiture_3:0 "Süd Decision 3"
+ South_Zone_Investment_Decisions:0 "Saving the Investment Zone"
+ South_Zone_Investment_Decisions_desc:0 "todo saving investment zone\n\n\nvariables below\n\n[§LROOT.South_Zone_Tourism_Crisis]§! Tourism Check\n\n§L[ROOT.South_Zone_Merc_Strength_Crisis]§! - merc strength check\n\n§L[ROOT.South_Zone_Zebra_Tribes_Crisis]§! zebra tribe strength\n\n§L[GET.South_Zone_Crisis_Air_Supply]§! air supply check"
+
+ South_Zone_Investiture_Mission_1:0 "tourism mission"
+ South_Zone_Investiture_Mission_1_desc:0 "todo"
+
+ South_Zone_Investiture_Mission_2:0 "merc company strength check"
+ South_Zone_Investiture_Mission_2_desc:0 "todo"
+
+ South_Zone_Investiture_Mission_3:0 "zebra tribal power strength"
+ South_Zone_Investiture_Mission_3_desc:0 "todo"
+
+ South_Zone_Investiture_Mission_4:0 "maintain air supply"
+ South_Zone_Investiture_Mission_4_desc:0 "todo"
+
+ South_Zone_Investiture_0:0 "intelligence report south zone"
+ South_Zone_Investiture_0_desc:0 "todo"
+
+ South_Zone_Investiture_1:0 "situation on the ground event chain"
+
+ South_Zone_Investiture_2:0 "invest in boreasgrotte"
+
+ South_Zone_Investiture_3:0 "support helicopter development"
+ 
  South_Zone_Investiture_4:0 "Süd Decision 4"
  South_Zone_Investiture_5:0 "Süd Decision 5"
  South_Zone_Investiture_6:0 "Süd Decision 6"
@@ -117,6 +137,9 @@
  South_Zone_Investiture_10:0 "Süd Decision 10"
  South_Zone_Investiture_11:0 "Süd Decision 11"
  South_Zone_Investiture_12:0 "Süd Decision 12"
+
+ ####
+
 
  YAN_VOC_Mandate_Development_Decisions:0 "Mandate Story Decisions todo"
  YAN_VOC_Mandate_Development_Decisions_desc:0 "todo"

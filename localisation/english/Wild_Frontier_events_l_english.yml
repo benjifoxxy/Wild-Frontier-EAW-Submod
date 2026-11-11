@@ -314,3 +314,44 @@
  chuddie.5.a:0 "option a - try and save the southern zone"
  chuddie.5.b:0 "option b - welp, shids fucked"
 
+ #### South Zone Crisis Events Localisation
+
+ 
+
+ South_Zone_Crisis.1.t:0 "South Zone Crisis Event 1 todo"
+ South_Zone_Crisis.1.d:0 "South Zone Crisis Event 1 desc todo intelligence report"
+ South_Zone_Crisis.1.a:0 "intelligence report todo"
+
+ South_Zone_Crisis.2.t:0 "boreasgrotte event info loop event"
+ South_Zone_Crisis.2.d:0 "description boreasgrotte"
+ South_Zone_Crisis.2.a:0 "Return"
+
+ South_Zone_Crisis.3.t:0 "Situation on the ground todo"
+ South_Zone_Crisis.3.desc:0 "situation on the ground desc"
+ South_Zone_Crisis.3.a:0 "option a - tell me about boreasgrotte"
+ South_Zone_Crisis.3.b:0 "option b - tell me about weijmardstadt"
+ South_Zone_Crisis.3.c:0 "option c - tell me about the south investment zone kiddo"
+ South_Zone_Crisis.3.d:0 "tell me about the merc companies - option d"
+ South_Zone_Crisis.3.e:0 "what of the zebras in the south? option e"
+ South_Zone_Crisis.3.f:0 "Ive heard enough! (ends event chain)"
+
+ South_Zone_Crisis.4.t:0 "weimar stadt info event"
+ South_Zone_Crisis.4.d:0 "weimar info desc todo"
+ South_Zone_Crisis.4.a:0 "Return"
+
+ South_Zone_Crisis.5.t:0 "south investment zone todo"
+ South_Zone_Crisis.5.d:0 "desc todo south investment"
+ South_Zone_Crisis.5.a:0 "Return"
+
+ South_Zone_Crisis.6.t:0 "tell me about the mercenary companies"
+ South_Zone_Crisis.6.d:0 "desc company mercs return event"
+ South_Zone_Crisis.6.a:0 "option a merc company return merc company A talon company"
+ South_Zone_Crisis.6.b:0 "option a merc company return merc company b aquilean foreign legion"
+ South_Zone_Crisis.6.c:0 "option a merc company return merc company c river fed pegasi mercs"
+
+ South_Zone_Crisis.7.t:0 "various zebra tribes todo event title"
+ South_Zone_Crisis.7.d:0 "description zebra tribes"
+ South_Zone_Crisis.7.a:0 "Return"
+
+
+ 
