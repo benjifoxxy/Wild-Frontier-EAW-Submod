@@ -2,6 +2,34 @@
 
 South_Zone_Investment_Decisions = { # TAG - UBE -
 
+    South_Zone_Investiture_0 = { #intelligence report on the south investment zone
+        icon = generic_civil_war
+        cost = 0
+        allowed = {
+            original_tag = YAN 
+        }
+        fire_only_once = yes
+        available = {
+            has_intelligence_agency = yes
+            network_strength = {
+                target = UBE 
+                state = 1139
+                value > 10
+            }
+        }
+        visible = {
+            NOT = {
+                has_country_flag = South_Zone_Intelligence_Report_Gained
+            }
+        }
+        complete_effect = {
+            custom_effect_tooltip = Intelligence_Report_Sud_Zebrika
+            hidden_effect = {
+                country_event = { id = South_Zone_Crisis.1 days = 1 } # intelligence report event
+            }
+        }
+        }
+
     South_Zone_Investiture_1 = { # Situation on the Ground introductory event
 
         icon = generic_civil_war
@@ -11,7 +39,10 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
         }
         fire_only_once = yes
         complete_effect = {
-            set_country_flag = SZ_Decision_Flag_A
+            hidden_effect = {
+                country_event = { id = South_Zone_Crisis.3 days = 1 }
+            }
+
         }
     }
 
@@ -23,16 +54,19 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
             original_tag = YAN
         }
         visible = {
-            has_country_flag = SZ_Decision_Flag_A
+            has_country_flag = South_Zone_Situation_On_The_Ground_Completed
         }
         fire_only_once = yes
         complete_effect = {
-            set_country_flag = SZ_Decision_Flag_B
+            hidden_effect = {
+                
+            }
+            
         }
 
     }
 
-    South_Zone_Investiture_3 = { # Weijamardstadt
+    South_Zone_Investiture_3 = { # Sponsor Helicopter Development
 
         icon = generic_civil_war
         cost = 1
@@ -41,13 +75,19 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
         }
         visible = {
             AND = {
-                has_country_flag = SZ_Decision_Flag_A
-                has_country_flag = SZ_Decision_Flag_B
+                has_country_flag = South_Zone_Situation_On_The_Ground_Completed
+                has_country_flag = South_Zone_Boreasgrotte_Explained
             }
+        }
+        available = {
+            has_air_experience > 24
+            has_political_power > 24
         }
         fire_only_once = yes
         complete_effect = {
-
+            add_air_experience = -25
+            add_political_power = -25
+            
         }
 
     }
@@ -60,7 +100,7 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
             original_tag = YAN
         }
         visible = {
-            has_country_flag = SZ_Decision_Flag_A
+            has_country_flag = South_Zone_Situation_On_The_Ground_Completed
         }
         fire_only_once = no
         complete_effect = {
@@ -76,7 +116,7 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
             original_tag = YAN
         }
         visible = {
-            has_country_flag = SZ_Decision_Flag_A
+            has_country_flag = South_Zone_Situation_On_The_Ground_Completed
         }
         fire_only_once = no
         complete_effect = {
@@ -92,7 +132,7 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
             original_tag = YAN
         }
         visible = {
-            has_country_flag = SZ_Decision_Flag_A
+            has_country_flag = South_Zone_Situation_On_The_Ground_Completed
         }
         fire_only_once = yes
         complete_effect = {
@@ -108,7 +148,7 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
             original_tag = YAN
         }
         visible = {
-            has_country_flag = SZ_Decision_Flag_A
+            has_country_flag = South_Zone_Situation_On_The_Ground_Completed
         }
         fire_only_once = yes
         complete_effect = {
@@ -125,7 +165,7 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
         }
         visible = {
             AND = {
-                has_country_flag = SZ_Decision_Flag_A
+                has_country_flag = South_Zone_Situation_On_The_Ground_Completed
                 has_country_flag = SZ_Decision_Flag_C
             }
         }
@@ -144,7 +184,7 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
         }
         visible = {
             AND = {
-                has_country_flag = SZ_Decision_Flag_A
+                has_country_flag = South_Zone_Situation_On_The_Ground_Completed
                 has_country_flag = SZ_Decision_Flag_C
                 has_country_flag = SZ_Decision_Flag_D
             }
@@ -164,7 +204,7 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
         }
         visible = {
             AND = {
-                has_country_flag = SZ_Decision_Flag_A
+                has_country_flag = South_Zone_Situation_On_The_Ground_Completed
                 has_country_flag = SZ_Decision_Flag_C
                 has_country_flag = SZ_Decision_Flag_D
                 has_country_flag = SZ_Decision_Flag_E
@@ -185,7 +225,7 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
         }
         visible = {
             AND = {
-                has_country_flag = SZ_Decision_Flag_A
+                has_country_flag = South_Zone_Situation_On_The_Ground_Completed
                 has_country_flag = SZ_Decision_Flag_C
                 has_country_flag = SZ_Decision_Flag_D
                 has_country_flag = SZ_Decision_Flag_E

@@ -8,7 +8,7 @@ on_actions = {
 					}
 				}
 				YAN = {
-				country_event = { id = debug_Wild_Frontier_Startup.2 }	
+				country_event = { id = debug_Wild_Frontier_Startup.2 }	# this doesnt work at the moment for some reason.
 				}
 				
 			}
@@ -17,7 +17,7 @@ on_actions = {
 					limit = {
 						is_ai = no
 					}
-					country_event = { id = debug_Wild_Frontier_Startup.1 }
+					country_event = { id = debug_Wild_Frontier_Startup.1 } # forces the player to switch to YAN via event
 					goto_province = 13371
 				}
 			}

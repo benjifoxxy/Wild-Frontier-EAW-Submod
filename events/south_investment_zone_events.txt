@@ -1,0 +1,114 @@
+add_namespace = South_Zone_Crisis
+
+country_event = { # intelligence report event
+	id = South_Zone_Crisis.1
+title = South_Zone_Crisis.1.t
+desc = South_Zone_Crisis.1.d
+fire_only_once = yes
+picture = GFX_generic
+option = {
+	name = South_Zone_Crisis.1.a
+	
+}
+immediate = {
+	set_country_flag = South_Zone_Intelligence_Report_Gained
+}
+}
+
+country_event = { # Boreasgrotte explanation event
+	id = South_Zone_Crisis.2
+	title = South_Zone_Crisis.2.t
+	desc = South_Zone_Crisis.2.d
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+
+	option = { # return to event 3
+		name = South_Zone_Crisis.2.a
+		
+	}
+}
+
+country_event = { # Situation on the ground explanation loop event
+    id = South_Zone_Crisis.3
+    title = South_Zone_Crisis.3.t
+    desc = South_Zone_Crisis.3.desc
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+
+    option = { # Tell me more about Boreasgrotte
+        name = South_Zone_Crisis.3.a
+		hidden_effect = {
+			country_event = { id = South_Zone_Crisis.2 }
+			set_country_flag = South_Zone_Crisis_Event_3_Option_A_Taken
+		}
+		trigger = {
+			NOT = {
+			has_country_flag = South_Zone_Crisis_Event_3_Option_A_Taken	
+			}
+			
+		}
+    }
+    option = { # Tell me more about Weijmardstadt
+        name = South_Zone_Crisis.3.b
+		hidden_effect = {
+			country_event = { id = South_Zone_Crisis.4 }
+			set_country_flag = South_Zone_Crisis_Event_3_Option_B_Taken
+		}
+		trigger = {
+			NOT = {
+			has_country_flag = South_Zone_Crisis_Event_3_Option_B_Taken	
+			}
+			
+		}
+    }
+    option = { # Tell me more about the South Investment Zone
+        name = South_Zone_Crisis.3.c
+		hidden_effect = {
+			country_event = { id = South_Zone_Crisis.5 }
+			set_country_flag = South_Zone_Crisis_Event_3_Option_C_Taken
+		}
+		trigger = {
+			NOT = {
+				has_country_flag = South_Zone_Crisis_Event_3_Option_C_Taken
+			}
+		}
+    }
+    option = { # Tell me more about the Mercenary Companies
+        name = South_Zone_Crisis.3.d
+		hidden_effect = {
+			country_event = { id = South_Zone_Crisis.6 }
+			set_country_flag = South_Zone_Crisis_Event_3_Option_D_Taken
+		}
+		trigger = {
+			NOT = {
+				has_country_flag = South_Zone_Crisis_Event_3_Option_D_Taken
+			}
+		}
+
+    }
+    option = { # And what of the Zebras?
+        name = South_Zone_Crisis.3.e
+		hidden_effect = {
+			country_event = { id = South_Zone_Crisis.7 }
+			set_country_flag = South_Zone_Crisis_Event_3_Option_E_Taken
+		}
+		trigger = {
+			NOT = {
+				has_country_flag = South_Zone_Crisis_Event_3_Option_E_Taken
+			}
+		}
+
+    }
+    option = { # I've heard enough!
+        name = South_Zone_Crisis.3.f
+		set_country_flag = South_Zone_Crisis_Event_3_Option_A_Taken
+		set_country_flag = South_Zone_Crisis_Event_3_Option_B_Taken
+		set_country_flag = South_Zone_Crisis_Event_3_Option_C_Taken
+		set_country_flag = South_Zone_Crisis_Event_3_Option_D_Taken
+		set_country_flag = South_Zone_Crisis_Event_3_Option_E_Taken
+    }
+    immediate = {
+        set_country_flag = South_Zone_Situation_On_The_Ground_Completed
+		set_country_flag = South_Zone_Boreasgrotte_Explained
+    }
+}
