@@ -1,6 +1,8 @@
 ﻿l_english:
  #### Storm Regency Intervention Decisions ####
 
+ Storm_Kingdom_Map_Area_tt:0 "Click to jump to the §5Storm Isle§!"
+
  Storm_Kingdom_Investment_Decisions:0 "Intervention in the §5Rainband§!"
  Storm_Kingdom_Investment_Decisions_desc:0 "With the passing of the §RStorm King§! in his unfortunate folly, the seat of his Power, the Rainband - has collapsed into multiple Successor States of varying legitimacy.\n\nA Warlock, A confused Storm Creature, An armchair General relying on the good will of Zebras...\n\nAnd in the seat of Power, the §4Eye of the Storm§!, §5Ikvus Hailstorm§! sits atop the traditional throne and one of the most secure positions for our investments.\n\nIt is to our distinct advantage to keep him content so we may call in our Investments at a later date. §7Or perhaps, convene something greater; should we play our cards right.§!\n\n§5Ikvus Hailstorm's§! currently §G[ROOT.Get_Ikvus_Happiness]§!."
 
@@ -42,6 +44,8 @@
 
  ##### Arabia Investment Decisions
 
+ Saddle_Arabica_Map_Area_tt:0 "Click to jump to §6Trotgiers§!"
+
  Saddle_Arabia_Investment_Decisions:0 "Trouble in §7Arabica§!"
  Saddle_Arabia_Investment_Decisions_desc:0 "civil war intervention decision category todo\n\nFaisals Happiness Indicator - §6[?ROOT.Get_Faisal_Happiness]§!\nCurrent Light Weapon Storage is §9[ROOT.Get_SA_CW_LW_Stashes]§!\nCurrent Heavy Weapon Storage is §9[ROOT.Get_SA_CW_HW_Stashes]§!\nCurrent Light Armoured Storage is §9[ROOT.Get_SA_CW_LV_Stashes]§!\n\n§7The Oil Must Flow!§!"
 
@@ -63,6 +67,8 @@
  YAN_Arabia_Unified_tt:0 "§RSaddle Arabia has United the Peninsula.§!"
 
  #### Chisimbi Crisis Decisions
+
+ Chisimbi_Crisis_Map_Area_tt:0 "Click to jump to §8Grinhval§!"
 
  Chisimbi_Crisis_Investment_Decisions:0 "The §8Chisimbi Successor§!"
  Chisimbi_Crisis_Investment_Decisions_desc:0 "chisimbi crisis stuff\n\ntodo\n\n[ROOT.Prince_Happiness] - Ikvus Happiness influence amount\n\n[ROOT.Griff_CW_Happiness] - Imba Zaru Griffons influence"
@@ -103,6 +109,8 @@
  Chisimbi_Crisis_12:0 "Chisimbi Decision 12" #unused
 
  #### South Zone Decision Category Localisation
+
+ South_Zone_Decision_Map_Area_tt:0 "Click to jump to §7Mexikstadt§!"
 
  South_Zone_Investment_Decisions:0 "Saving the Investment Zone"
  South_Zone_Investment_Decisions_desc:0 "todo saving investment zone\n\n\nvariables below\n\n[§LROOT.South_Zone_Tourism_Crisis]§! Tourism Check\n\n§L[ROOT.South_Zone_Merc_Strength_Crisis]§! - merc strength check\n\n§L[ROOT.South_Zone_Zebra_Tribes_Crisis]§! zebra tribe strength\n\n§L[GET.South_Zone_Crisis_Air_Supply]§! air supply check\n\n§L[GET.South_Zone_Helicopter_Investment]§! - Helicopter Investment"

@@ -437,7 +437,7 @@ defined_text = {
 			has_country_leader_ideology = despotism
 		}
 		localization_key = despotism
-	}
+	
 	text = {
 		trigger = {
 			has_country_leader_ideology = oligarchism
@@ -520,3 +520,4 @@ defined_text = {
 		localization_key = neutrality
 	}
 
+}

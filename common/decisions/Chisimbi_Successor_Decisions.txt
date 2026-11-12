@@ -206,8 +206,9 @@ Chisimbi_Crisis_Investment_Decisions = { # TAG - GFS - Mukoza Taredna
                 }
             }
             YAN = {
-                    has_equipment =  infantry_equipment > 999
+                    has_equipment = { infantry_equipment > 999
                 }
+            }
         }
         days_re_enable = 21
         complete_effect = {
@@ -221,13 +222,13 @@ Chisimbi_Crisis_Investment_Decisions = { # TAG - GFS - Mukoza Taredna
                 country_event = { id = chisimbi_crisis.5 days = 21 }
                 GFS = {
                     add_equipment_to_stockpile = {
-                        equipment = infantry_equipment
+                        type = infantry_equipment
                         amount = 1000
                     }
                 }
                 YAN = {
                     add_equipment_to_stockpile = {
-                        equipment = infantry_equipment
+                        type = infantry_equipment
                         amount = -1000
                     }
                 } 
@@ -256,8 +257,10 @@ Chisimbi_Crisis_Investment_Decisions = { # TAG - GFS - Mukoza Taredna
                     }
                 }
                 YAN = {
-                    has_equipment =  infantry_equipment > 999
+                    has_equipment = {
+                         infantry_equipment > 999
                 }
+            }
             }
         }
         days_re_enable = 21
@@ -272,13 +275,13 @@ Chisimbi_Crisis_Investment_Decisions = { # TAG - GFS - Mukoza Taredna
                 country_event = { id = chisimbi_crisis.5 days = 21 }
                 GFS = {
                     add_equipment_to_stockpile = {
-                        equipment = infantry_equipment
+                        type = infantry_equipment
                         amount = 1000
                     }
                 }
                 YAN = {
                     add_equipment_to_stockpile = {
-                        equipment = infantry_equipment
+                        type = infantry_equipment
                         amount = -1000
                     }
                 }
@@ -448,7 +451,7 @@ Chisimbi_Crisis_Investment_Decisions = { # TAG - GFS - Mukoza Taredna
                 }
                 GFS = {
                     declare_war_on = {
-                        tag = IBZ
+                        target = IBZ
                         type = annex_everything
                     }
                 }
@@ -461,7 +464,7 @@ Chisimbi_Crisis_Investment_Decisions = { # TAG - GFS - Mukoza Taredna
                 }
                 GFS = {
                     declare_war_on = {
-                        tag = TSV
+                        target = TSV
                         type = annex_everything
                     }
                 }
@@ -510,7 +513,7 @@ Chisimbi_Crisis_Investment_Decisions = { # TAG - GFS - Mukoza Taredna
         days_re_enable = 19000
         remove_effect = {
             country_event = {
-                chisimbi_crisis.4
+                id = chisimbi_crisis.4
                 days = 1
             }
         }

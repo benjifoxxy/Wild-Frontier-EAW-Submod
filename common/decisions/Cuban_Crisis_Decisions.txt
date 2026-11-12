@@ -28,11 +28,7 @@ Cubanacan_Anger_Decisions = { # hidden events increase anger automatically.
                     max = 100
                 }                
             }
-            ai_will_do = {
-                factor = 0
-            }
-            priority = 1000
-            complete_effect = {
+            remove_effect = {
 
             }
         }

@@ -1,0 +1,14 @@
+YAN_STM_Volunteer_Modifier = {
+	send_volunteer_size = 3
+	lend_least_tension = -1
+}
+
+YAN_SDL_Volunteer_Modifier = {
+	send_volunteer_size = 3
+	lend_least_tension = -1
+}
+
+YAN_GFS_Volunteer_Modifier = {
+	send_volunteer_size = 3
+	lend_least_tension = -1
+}
