@@ -250,3 +250,78 @@ defined_text = {
         localization_key = SA_CW_LV_Stash_0
     }
 }
+
+defined_text = {
+    name = Get_South_Zone_Heli_Progress
+
+    text = {
+        trigger = { check_variable = { South_Zone_Helicopter_Investment = 0 } }
+        localization_key = South_Zone_Heli_Invest_0
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Helicopter_Investment = 1 } }
+        localization_key = South_Zone_Heli_Invest_1
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Helicopter_Investment = 2 } }
+        localization_key = South_Zone_Heli_Invest_2
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Helicopter_Investment = 3 } }
+        localization_key = South_Zone_Heli_Invest_3
+    }
+}
+
+defined_text = {
+    text = {
+        trigger = { check_variable = { South_Zone_Merc_Strength_Crisis = 0 } }
+        localization_key = SZ_Merc_Strength_0
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Merc_Strength_Crisis = 1 } }
+        localization_key = SZ_Merc_Strength_1
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Merc_Strength_Crisis = 2 } }
+        localization_key = SZ_Merc_Strength_2
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Merc_Strength_Crisis = 3 } }
+        localization_key = SZ_Merc_Strength_3
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Merc_Strength_Crisis = 4 } }
+        localization_key = SZ_Merc_Strength_4
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Merc_Strength_Crisis = 5 } }
+        localization_key = SZ_Merc_Strength_5
+    }
+}
+
+defined_text = {
+    text = {
+        trigger = { check_variable = { South_Zone_Zebra_Tribes_Crisis = 0 } }
+        localization_key = SZ_Zebra_Strength_0
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Zebra_Tribes_Crisis = 1 } }
+        localization_key = SZ_Zebra_Strength_1
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Zebra_Tribes_Crisis = 2 } }
+        localization_key = SZ_Zebra_Strength_2
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Zebra_Tribes_Crisis = 3 } }
+        localization_key = SZ_Zebra_Strength_3
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Zebra_Tribes_Crisis = 4 } }
+        localization_key = SZ_Zebra_Strength_4
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Zebra_Tribes_Crisis = 5 } }
+        localization_key = SZ_Zebra_Strength_5
+    }
+}

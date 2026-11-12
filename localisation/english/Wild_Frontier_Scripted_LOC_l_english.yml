@@ -73,3 +73,28 @@ Griff_CW_Happiness_2:0 "Griff CW Happiness Influence 2"
 Griff_CW_Happiness_3:0 "Griff CW Happiness Influence 3"
 Griff_CW_Happiness_4:0 "Griff CW Happiness Influence 4"
 Griff_CW_Happiness_5:0 "Griff CW Happiness Influence 5"
+
+### South Zone Strengths
+
+SZ_Merc_Strength_0:0 "Non-Existant (0)"
+SZ_Merc_Strength_1:0 "Small Bands of Looters (1)"
+SZ_Merc_Strength_2:0 "Methodical Banditry (2)"
+SZ_Merc_Strength_3:0 "Attractive Prospect (3)"
+SZ_Merc_Strength_4:0 "Disciplined Formations (4)"
+SZ_Merc_Strength_5:0 "Modern Military Equipped (5)"
+
+SZ_Zebra_Strength_0:0 "Scorched Earth (0)"
+SZ_Zebra_Strength_1:0 "Loose Settlements (1)"
+SZ_Zebra_Strength_2:0 "Logistic Raids (2)"
+SZ_Zebra_Strength_3:0 "Religious Fantacisicm (3)"
+SZ_Zebra_Strength_4:0 "Creating Weapon Caches (4)"
+SZ_Zebra_Strength_5:0 "Dare to Die Corps (5)"
+
+### South Zone Heli Investment
+
+South_Zone_Heli_Invest_0:0 "Helicopter Development has not begun in the South Zone. (0/3)"
+South_Zone_Heli_Invest_1:0 "Helicopter Development is it's early stages in the South Zone. (1/3)"
+South_Zone_Heli_Invest_2:0 "Helicopter Development is in the testing phases and is nearly ready for implementation. (2/3)"
+South_Zone_Heli_Invest_3:0 "Helicopter Development is Complete and research has been shared with the Troops of Mexikstadt. (3/3)"
+
+###

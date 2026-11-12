@@ -105,7 +105,7 @@
  #### South Zone Decision Category Localisation
 
  South_Zone_Investment_Decisions:0 "Saving the Investment Zone"
- South_Zone_Investment_Decisions_desc:0 "todo saving investment zone\n\n\nvariables below\n\n[§LROOT.South_Zone_Tourism_Crisis]§! Tourism Check\n\n§L[ROOT.South_Zone_Merc_Strength_Crisis]§! - merc strength check\n\n§L[ROOT.South_Zone_Zebra_Tribes_Crisis]§! zebra tribe strength\n\n§L[GET.South_Zone_Crisis_Air_Supply]§! air supply check"
+ South_Zone_Investment_Decisions_desc:0 "todo saving investment zone\n\n\nvariables below\n\n[§LROOT.South_Zone_Tourism_Crisis]§! Tourism Check\n\n§L[ROOT.South_Zone_Merc_Strength_Crisis]§! - merc strength check\n\n§L[ROOT.South_Zone_Zebra_Tribes_Crisis]§! zebra tribe strength\n\n§L[GET.South_Zone_Crisis_Air_Supply]§! air supply check\n\n§L[GET.South_Zone_Helicopter_Investment]§! - Helicopter Investment"
 
  South_Zone_Investiture_Mission_1:0 "tourism mission"
  South_Zone_Investiture_Mission_1_desc:0 "todo"
@@ -244,5 +244,5 @@
  #### Debug Decisions ####
 
  YAN_Debug_Decisions:0 "Debug Decisions"
- YAN_Debug_Decisions_desc:0 "Debug Decisions - All Variables\n\nIkvus_CW_Happiness - §R[?ROOT.Ikvus_CW_Happiness]§!\n\nFaisal_CW_Happiness - §R[?ROOT.Faisal_CW_Happiness]§!\n\nPrince_CW_Happiness - §R[?ROOT.Prince.CW.Happiness]§!\n\nSecurity_Zone_Safety - §R[?ROOT.Security_Zone_Safety]§!\n\n\nCuban Actions - §R[?ROOT.Cuban_Actions]§!\n\nCuban Anger - §R[?ROOT.Cuban_Anger]§!\n\n\nFrei Zebrikaan State Strength Meter - §R[?ROOT.FZS_Strength_Meter]§!\n\n\nScripted loc keys\n§C[ROOT.Get_SA_CW_LW_Stashes]§! Light Weapon stash , §C[ROOT.Get_SA_CW_HW_Stashes]§! Heavy Weapon artillery stash §C[ROOT.Get_SA_CW_LV_Stashes]§! light armoured vehicles"
+ YAN_Debug_Decisions_desc:0 "Debug Decisions - All Variables\n\nIkvus_CW_Happiness - §R[?ROOT.Ikvus_CW_Happiness]§!\n\nFaisal_CW_Happiness - §R[?ROOT.Faisal_CW_Happiness]§!\n\nPrince_CW_Happiness - §R[?ROOT.Prince.CW.Happiness]§!\n\nSecurity_Zone_Safety - §R[?ROOT.Security_Zone_Safety]§!\n\n\nCuban Actions - §R[?ROOT.Cuban_Actions]§!\n\nCuban Anger - §R[?ROOT.Cuban_Anger]§!\n\n\nFrei Zebrikaan State Strength Meter - §R[?ROOT.FZS_Strength_Meter]§!\n\n\nScripted loc keys\n§C[ROOT.Get_SA_CW_LW_Stashes]§! Light Weapon stash , §C[ROOT.Get_SA_CW_HW_Stashes]§! Heavy Weapon artillery stash §C[ROOT.Get_SA_CW_LV_Stashes]§! light armoured vehicles\n\n[§LROOT.South_Zone_Tourism_Crisis]§! Tourism Check\n\n§L[ROOT.South_Zone_Merc_Strength_Crisis]§! - merc strength check\n\n§L[ROOT.South_Zone_Zebra_Tribes_Crisis]§! zebra tribe strength\n\n§L[GET.South_Zone_Crisis_Air_Supply]§! air supply check\n\n§L[GET.South_Zone_Helicopter_Investment]§! - Helicopter Investment"
  

@@ -467,6 +467,11 @@ country_event = { # out west completion reward - civil war profiteering
                 var = Security_Zone_Safety
                 value = 0
             }
+                        set_variable = { South_Zone_Tourism_Crisis = 0 }
+            set_variable = { South_Zone_Merc_Strength_Crisis = 0 }
+            set_variable = { South_Zone_Zebra_Tribes_Crisis = 0 }
+            set_variable = { South_Zone_Crisis_Air_Supply = 0 }
+            set_variable = { South_Zone_Helicopter_Investment = 0 }
         }
     }
     option = {
@@ -510,6 +515,11 @@ country_event = { # out west completion reward - civil war profiteering
                 var = Security_Zone_Safety
                 value = 0
             }
+            set_variable = { South_Zone_Tourism_Crisis = 0 }
+            set_variable = { South_Zone_Merc_Strength_Crisis = 0 }
+            set_variable = { South_Zone_Zebra_Tribes_Crisis = 0 }
+            set_variable = { South_Zone_Crisis_Air_Supply = 0 }
+            set_variable = { South_Zone_Helicopter_Investment = 0 }
         }
     }
 }
