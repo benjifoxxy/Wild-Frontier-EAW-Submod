@@ -273,6 +273,7 @@ defined_text = {
 }
 
 defined_text = {
+    name = SZ_Merc_Strength
     text = {
         trigger = { check_variable = { South_Zone_Merc_Strength_Crisis = 0 } }
         localization_key = SZ_Merc_Strength_0
@@ -300,6 +301,7 @@ defined_text = {
 }
 
 defined_text = {
+    name = SZ_Zebra_Strength
     text = {
         trigger = { check_variable = { South_Zone_Zebra_Tribes_Crisis = 0 } }
         localization_key = SZ_Zebra_Strength_0
@@ -323,5 +325,61 @@ defined_text = {
     text = {
         trigger = { check_variable = { South_Zone_Zebra_Tribes_Crisis = 5 } }
         localization_key = SZ_Zebra_Strength_5
+    }
+}
+
+defined_text = {
+    name = SZ_Air_Supply
+    text = {
+        trigger = { check_variable = { South_Zone_Crisis_Air_Supply = 0 } }
+        localization_key = SZ_Air_Supply_0
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Crisis_Air_Supply = 1 } }
+        localization_key = SZ_Air_Supply_1
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Crisis_Air_Supply = 2 } }
+        localization_key = SZ_Air_Supply_2
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Crisis_Air_Supply = 3 } }
+        localization_key = SZ_Air_Supply_3
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Crisis_Air_Supply = 4 } }
+        localization_key = SZ_Air_Supply_4
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Crisis_Air_Supply = 5 } }
+        localization_key = SZ_Air_Supply_5
+    }
+}
+
+defined_text = {
+    name = SZ_Tourism_Safety
+    text = {
+        trigger = { check_variable = { South_Zone_Tourism_Crisis = 0 } }
+        localization_key = SZ_Tourism_Crisis_0
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Tourism_Crisis = 1 } }
+        localization_key = SZ_Tourism_Crisis_1
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Tourism_Crisis = 2 } }
+        localization_key = SZ_Tourism_Crisis_2
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Tourism_Crisis = 3 } }
+        localization_key = SZ_Tourism_Crisis_3
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Tourism_Crisis = 4 } }
+        localization_key = SZ_Tourism_Crisis_4
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Tourism_Crisis = 5 } }
+        localization_key = SZ_Tourism_Crisis_5
     }
 }

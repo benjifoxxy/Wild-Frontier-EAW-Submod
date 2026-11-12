@@ -97,4 +97,20 @@ South_Zone_Heli_Invest_1:0 "Helicopter Development is it's early stages in the S
 South_Zone_Heli_Invest_2:0 "Helicopter Development is in the testing phases and is nearly ready for implementation. (2/3)"
 South_Zone_Heli_Invest_3:0 "Helicopter Development is Complete and research has been shared with the Troops of Mexikstadt. (3/3)"
 
-###
+### South Zone Air Supply
+
+SZ_Air_Supply_0:0 "Air Supply in the South Zone is at Level 0"
+SZ_Air_Supply_1:0 "Air Supply in the South Zone is at Level 1"
+SZ_Air_Supply_2:0 "Air Supply in the South Zone is at Level 2"
+SZ_Air_Supply_3:0 "Air Supply in the South Zone is at Level 3"
+SZ_Air_Supply_4:0 "Air Supply in the South Zone is at Level 4"
+SZ_Air_Supply_5:0 "Air Supply in the South Zone is at Level 5"
+
+### South Zone Tourism
+
+SZ_Tourism_Crisis_0:0 "Completely Unsafe for Tourism (0)"
+SZ_Tourism_Crisis_1:0 "Only the Most Daring (1)"
+SZ_Tourism_Crisis_2:0 "Dangerous but Doable (2)"
+SZ_Tourism_Crisis_3:0 "Generally Okay (3)"
+SZ_Tourism_Crisis_4:0 "Complete Safety (4)"
+SZ_Tourism_Crisis_5:0 "So Safe it's Boring (5)"
