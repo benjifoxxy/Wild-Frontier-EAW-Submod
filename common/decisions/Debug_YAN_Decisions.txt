@@ -2,14 +2,14 @@
 
 YAN_Debug_Decisions = {
 
-    Debug_Active_Enable_Decision_Categories = {
+    Debug_Active_Enable_All_Flags = {
 
         icon = generic_civil_war
         cost = 0
         allowed = {
             original_tag = YAN
         }
-        complete_effect = { # all decision category activators are here
+        complete_effect = { # all decision category activators are here, updated to include all country flags so this can sort of act as a repo for country flags for the mod. will be useful to keep some sort of area where they are kept in check.
             set_country_flag = VOC_Mandate_Development_Decisions_Flag
             set_country_flag = FZS_Civil_War_Cat_Enable
             set_country_flag = SK_Invest_Decision_Cat_Activate
@@ -17,6 +17,7 @@ YAN_Debug_Decisions = {
             set_country_flag = CC_Invest_Decision_Cat_Activate
             set_country_flag = SI_Invest_Decision_Cat_Activate
             set_country_flag = Cubanacan_Anger_Decisions_Enable
+            set_country_flag = South_Zone_Corruption_Chain_Started
 
         }
     }
@@ -42,6 +43,7 @@ YAN_Debug_Decisions = {
             set_variable = { South_Zone_Zebra_Tribes_Crisis = 0 }
             set_variable = { South_Zone_Crisis_Air_Supply = 0 }
             set_variable = { South_Zone_Helicopter_Investment = 0 }
+            set_variable = { South_Zone_Corruption_Investigation = 0 }
         }
     }
 

@@ -1,0 +1,14 @@
+namespace = South_Zone_Crisis_Corruption
+
+country_event = { # Normal Event Result
+	id = South_Zone_Crisis_Corruption.1
+	title = South_Zone_Crisis_Corruption.1.t
+	desc = South_Zone_Crisis_Corruption.1.desc
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+
+	option = { # We shall begin our investigation!
+		name = South_Zone_Crisis_Corruption.1.a
+		
+	}
+}

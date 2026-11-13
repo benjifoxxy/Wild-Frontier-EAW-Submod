@@ -222,3 +222,143 @@ country_event = { # Helicopter and Air Investment
         
     }
 }
+
+country_event = { # investigating corruption inside the investment zone - part 1
+    id = South_Zone_Crisis.9
+    title = South_Zone_Crisis.9.t
+    desc = South_Zone_Crisis.9.desc
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    immediate = {
+        clamp_variable = {
+            var = South_Zone_Corruption_Investigation
+            min = 0
+            max = 100
+        }
+    }
+    option = { # Normal Option available if nothing else
+        name = South_Zone_Crisis.9.a
+        trigger = {
+            NOT = {
+                OR = {
+                    #AND = {
+                    #    has_intelligence_agency = yes
+                    #}
+                    AND = { # agency + heli investment
+                        has_intelligence_agency = yes
+                        check_variable = { South_Zone_Helicopter_Investment > 2 }
+                    }
+                    AND = {
+                        check_variable = { South_Zone_Merc_Strength_Crisis > 4 }
+                        check_variable = { South_Zone_Zebra_Tribes_Crisis < 1 }
+                    }
+                    AND = {
+                        check_variable = { South_Zone_Zebra_Tribes_Crisis > 4 }
+                        check_variable = { South_Zone_Merc_Strength_Crisis < 1 }
+                    }
+                    AND = {
+                        check_variable = { South_Zone_Merc_Strength_Crisis = 0 }
+                        check_variable = { South_Zone_Zebra_Tribes_Crisis = 0 }
+                    }
+                    AND = {
+                        check_variable = { South_Zone_Crisis_Air_Supply > 2 }
+                        check_variable = { South_Zone_Helicopter_Investment = 3 }
+                        check_variable = { South_Zone_Merc_Strength_Crisis > 4 }
+                        check_variable = { South_Zone_Zebra_Tribes_Crisis < 1 }
+                        check_variable = { South_Zone_Tourism_Crisis > 4 }
+                    }
+                }
+            }
+        }
+        custom_effect_tooltip = South_Zone_Event_9_Effect_A_tt
+        hidden_effect = {
+            set_country_flag = South_Zone_Corruption_Option_A_Taken
+            country_event = {
+                id = Storm_Zone_Crisis_Corruption.1
+                days = 30
+            }
+            
+        }
+    }
+    option = { # Has intelligence agency
+        name = South_Zone_Crisis.9.b
+        trigger = {
+            has_intelligence_agency = yes
+            NOT = {
+                check_variable = { South_Zone_Helicopter_Investment < 3 }
+            }
+        }
+        custom_effect_tooltip = South_Zone_Event_9_Effect_B_tt
+        hidden_effect = {
+            set_country_flag = South_Zone_Corruption_Option_B_Taken
+
+            
+        }
+    }
+    option = { # has completed helicopter investments and has an intelligence agency
+        name = South_Zone_Crisis.9.c
+        trigger = {
+            ROOT = {
+                is_special_project_completed = sp:sp_air_helicopter
+            }
+            check_variable = { South_Zone_Helicopter_Investment = 3 }
+            has_intelligence_agency = yes
+        }
+        custom_effect_tooltip = South_Zone_Event_9_Effect_C_tt
+        hidden_effect = {
+            set_country_flag = South_Zone_Corruption_Option_C_Taken
+
+            
+        }
+    }
+    option = {  # mercenary strength is too high , but zebra strength low
+        name = South_Zone_Crisis.9.d
+        trigger = {
+            check_variable = { South_Zone_Merc_Strength_Crisis > 4 }
+            check_variable = { South_Zone_Zebra_Tribes_Crisis < 1 }
+        }
+        custom_effect_tooltip = South_Zone_Event_9_Effect_D_tt
+        hidden_effect = {
+            set_country_flag = South_Zone_Corruption_Option_D_Taken
+
+            
+        }
+    }
+    option = {  # zebra strength high, but mercenary strength low
+        name = South_Zone_Crisis.9.e
+        trigger = {
+            check_variable = { South_Zone_Zebra_Tribes_Crisis > 4 }
+            check_variable = { South_Zone_Merc_Strength_Crisis < 1 }
+        }
+        custom_effect_tooltip = South_Zone_Event_9_Effect_E_tt
+        hidden_effect = {
+            set_country_flag = South_Zone_Corruption_Option_E_Taken
+
+            
+        }
+    }
+    option = {  # both mercenary and zebra strength are low
+        name = South_Zone_Crisis.9.f
+        trigger = {
+            check_variable = { South_Zone_Merc_Strength_Crisis = 0 }
+            check_variable = { South_Zone_Zebra_Tribes_Crisis = 0 }
+        }
+        custom_effect_tooltip = South_Zone_Event_9_Effect_F_tt
+    }
+    option = {  # air supply is high, heli invest completed merc strength high , zebra strength low, tourism safety high
+        name = South_Zone_Crisis.9.g
+        trigger = {
+            check_variable = { South_Zone_Crisis_Air_Supply > 2 }
+            check_variable = { South_Zone_Helicopter_Investment = 3 }
+            check_variable = { South_Zone_Merc_Strength_Crisis > 4 }
+            check_variable = { South_Zone_Zebra_Tribes_Crisis < 1 }
+            check_variable = { South_Zone_Tourism_Crisis > 4 }
+        }
+        custom_effect_tooltip = South_Zone_Event_9_Effect_G_tt
+        hidden_effect = {
+            set_country_flag = South_Zone_Corruption_Option_F_Taken
+
+            
+        }
+    }
+}
