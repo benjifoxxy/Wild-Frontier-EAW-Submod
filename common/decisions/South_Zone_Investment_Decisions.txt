@@ -484,7 +484,7 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
             AND = {
                 has_country_flag = South_Zone_Situation_On_The_Ground_Completed
                 has_country_flag = South_Zone_Corruption_Chain_Started
-                has_country_flag = SZ_Decision_Cat_Corruption_Completed
+                has_country_flag = South_Zone_Corruption_Chain_Completed
             }
         }
         fire_only_once = no

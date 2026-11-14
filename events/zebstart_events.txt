@@ -1,21 +1,7 @@
 add_namespace = zebstart
 add_namespace = interim
 add_namespace = vocdebate
-add_namespace = vocfirstsummit
-add_namespace = hoorst_clique
 add_namespace = beakavian_emergency
-add_namespace = BeakavianCER
-add_namespace = BeakavianWAD
-add_namespace = BeakavianMIZ
-add_namespace = BeakavianPUL
-add_namespace = clawVShoof
-add_namespace = insanity
-add_namespace = chuddie
-add_namespace = ceram
-add_namespace = sussybaka
-add_namespace = voc_little_chuddie
-add_namespace = main_land_troubles
-
 
 country_event = { # southern jewel
     id = zebstart.1

@@ -1,5 +1,95 @@
 
 defined_text = {
+    name = Get_SZ_Corruption
+    
+    text = {
+        trigger = { check_variable = { South_Zone_Corruption_Investigation = 0 } }
+        localization_key = SZ_Corruption_0
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Corruption_Investigation = 5 } }
+        localization_key = SZ_Corruption_5
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Corruption_Investigation = 10 } }
+        localization_key = SZ_Corruption_10
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Corruption_Investigation = 15 } }
+        localization_key = SZ_Corruption_15
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Corruption_Investigation = 20 } }
+        localization_key = SZ_Corruption_20
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Corruption_Investigation = 25 } }
+        localization_key = SZ_Corruption_25
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Corruption_Investigation = 30 } }
+        localization_key = SZ_Corruption_30
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Corruption_Investigation = 35 } }
+        localization_key = SZ_Corruption_35
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Corruption_Investigation = 40 } }
+        localization_key = SZ_Corruption_40
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Corruption_Investigation = 45 } }
+        localization_key = SZ_Corruption_45
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Corruption_Investigation = 50 } }
+        localization_key = SZ_Corruption_50
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Corruption_Investigation = 55 } }
+        localization_key = SZ_Corruption_55
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Corruption_Investigation = 60 } }
+        localization_key = SZ_Corruption_60
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Corruption_Investigation = 65 } }
+        localization_key = SZ_Corruption_65
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Corruption_Investigation = 70 } }
+        localization_key = SZ_Corruption_70
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Corruption_Investigation = 75 } }
+        localization_key = SZ_Corruption_75
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Corruption_Investigation = 80 } }
+        localization_key = SZ_Corruption_80
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Corruption_Investigation = 85 } }
+        localization_key = SZ_Corruption_85
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Corruption_Investigation = 90 } }
+        localization_key = SZ_Corruption_90
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Corruption_Investigation = 95 } }
+        localization_key = SZ_Corruption_95
+    }
+    text = {
+        trigger = { check_variable = { South_Zone_Corruption_Investigation = 100 } }
+        localization_key = SZ_Corruption_100
+    }
+}
+
+
+defined_text = {
     name = Get_Ikvus_Happiness
 
     text = {

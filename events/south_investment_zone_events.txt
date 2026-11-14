@@ -275,7 +275,7 @@ country_event = { # investigating corruption inside the investment zone - part 1
             set_country_flag = South_Zone_Corruption_Option_A_Taken
             country_event = {
                 id = Storm_Zone_Crisis_Corruption.1
-                days = 30
+                days = 21
             }
             
         }
@@ -291,7 +291,10 @@ country_event = { # investigating corruption inside the investment zone - part 1
         custom_effect_tooltip = South_Zone_Event_9_Effect_B_tt
         hidden_effect = {
             set_country_flag = South_Zone_Corruption_Option_B_Taken
-
+            country_event = {
+                id = Storm_Zone_Crisis_Corruption.2
+                days = 21
+            }
             
         }
     }

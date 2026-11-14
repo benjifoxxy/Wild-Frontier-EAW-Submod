@@ -1,24 +1,5 @@
-
-add_namespace = new_corp_griff
 add_namespace = hoorst_clique
 add_namespace = chuddie
-
-country_event = {  #while hoorst celebrates, the zebrikaaners prepare.
-    id = new_corp_griff.1  #focus id
-    title = new_corp_griff.1.t   #focus title
-    desc = new_corp_griff.1.d    #focus description
-    picture = GFX_report_event_generic_sign_treaty1
-    is_triggered_only = yes
-    trigger = {
-        original_tag = YAN
-    }
-    option = {  #example description
-        name = new_corp_griff.1.a
-        ai_chance = {
-            factor = 1
-        }
-    }
-}
 
 country_event = {
     id = hoorst_clique.1
@@ -42,12 +23,6 @@ country_event = {
         add_manpower = 20000
     }
 }
-
-
-
-
-
-
 
 country_event = { # grand speech event select effect - # location of speech
     id = chuddie.1

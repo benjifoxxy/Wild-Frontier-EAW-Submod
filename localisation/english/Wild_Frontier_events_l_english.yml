@@ -127,14 +127,65 @@
  debug_Wild_Frontier_Startup_2.b:0 "I just want to play! le angry face startup option 2"
  debug_Wild_Frontier_Startup_3_c:0 "staartup option 3"
 
+ South_Zone_Tasty.1.t:0 "Title 1"
+ South_Zone_Tasty.1.desc:0 "Description 1"
+ South_Zone_Tasty.1.a:0 "Option 1"
 
+ South_Zone_Tasty.2.t:0 "Title 2"
+ South_Zone_Tasty.2.desc:0 "Description 2"
+ South_Zone_Tasty.2.a:0 "Option 2"
 
+ South_Zone_Tasty.3.t:0 "Title 3"
+ South_Zone_Tasty.3.desc:0 "Description 3"
+ South_Zone_Tasty.3.a:0 "Option 3"
 
+ South_Zone_Tasty.4.t:0 "Title 4"
+ South_Zone_Tasty.4.desc:0 "Description 4"
+ South_Zone_Tasty.4.a:0 "Option 4"
 
+ South_Zone_Tasty.5.t:0 "Title 5"
+ South_Zone_Tasty.5.desc:0 "Description 5"
+ South_Zone_Tasty.5.a:0 "Option 5"
 
- ceram.1.t:0 "A Reality Check"
- ceram.1.d:0 "Natives grow restless with the country's direction and move to break free."
- ceram.1.a:0 "Do they not know the inevitability of their folly?"
+ South_Zone_Tasty.6.t:0 "Title 6"
+ South_Zone_Tasty.6.desc:0 "Description 6"
+ South_Zone_Tasty.6.a:0 "Option 6"
+
+ South_Zone_Tasty.7.t:0 "Title 7"
+ South_Zone_Tasty.7.desc:0 "Description 7"
+ South_Zone_Tasty.7.a:0 "Option 7"
+
+ South_Zone_Tasty.8.t:0 "Title 8"
+ South_Zone_Tasty.8.desc:0 "Description 8"
+ South_Zone_Tasty.8.a:0 "Option 8"
+
+ South_Zone_Tasty.9.t:0 "Title 9"
+ South_Zone_Tasty.9.desc:0 "Description 9"
+ South_Zone_Tasty.9.a:0 "Option 9"
+
+ South_Zone_Tasty.10.t:0 "Title 10"
+ South_Zone_Tasty.10.desc:0 "Description 10"
+ South_Zone_Tasty.10.a:0 "Option 10"
+
+ South_Zone_Tasty.11.t:0 "Title 11"
+ South_Zone_Tasty.11.desc:0 "Description 11"
+ South_Zone_Tasty.11.a:0 "Option 11"
+
+ South_Zone_Tasty.12.t:0 "Title 12"
+ South_Zone_Tasty.12.desc:0 "Description 12"
+ South_Zone_Tasty.12.a:0 "Option 12"
+
+ South_Zone_Tasty.13.t:0 "Title 13"
+ South_Zone_Tasty.13.desc:0 "Description 13"
+ South_Zone_Tasty.13.a:0 "Option 13"
+
+ South_Zone_Tasty.14.t:0 "Title 14"
+ South_Zone_Tasty.14.desc:0 "Description 14"
+ South_Zone_Tasty.14.a:0 "Option 14"
+
+ South_Zone_Tasty.15.t:0 "Title 15"
+ South_Zone_Tasty.15.desc:0 "Description 15"
+ South_Zone_Tasty.15.a:0 "Option 15"
 
  hidden.1.t:0 "hidden country setup"
  hidden.1.d:0 "Describe this event."
@@ -154,100 +205,6 @@
  vocdebate.1.a:0 "The Liberals win out!"
  vocdebate.1.b:0 "Neither side are convincing, we must compromise!"
  vocdebate.1.c:0 "The Radicals win out!"
-
- vocfirstsummit.1.t:0 "The First VOC Summit"
- vocfirstsummit.1.d:0 "Hosted at the new VOC Headquarters in Beakavia."
- vocfirstsummit.1.a:0 "This is a Victory for all of us!"
- vocfirstsummit.1.b:0 "All of us have a part to play!"
- vocfirstsummit.1.c:0 "The Investors are Happy, but what of the people?"
-
- vocfirstsummit.2.t:0 "Empty Seats"
- vocfirstsummit.2.d:0 "None of them seem to care that the invited native delegations declined to arrive."
- vocfirstsummit.2.a:0 "Accept"
-
- vocfirstsummit.3.t:0 "Radio Silence"
- vocfirstsummit.3.d:0 "Hoorst, now clearly in charge of the country, orders a plane flyover and scouting fleets to find out what is going on. Garrisons on the islands have gone radio silent."
- vocfirstsummit.3.a:0 "Accept"
-
- vocfirstsummit.4.t:0 "Talonhoek Burns"
- vocfirstsummit.4.d:0 "Demands that native leaders present themselves are ignored. Native auxiliaries on Talonhoek turn to terrorism, and the natives fully break free."
- vocfirstsummit.4.a:0 "Accept"
-
- voc_little_chuddie.1.t:0 "placeholder"
- voc_little_chuddie.1.d:0 "placeholder"
- voc_little_chuddie.1.a:0 "placeholder"
-
- voc_little_chuddie.2.t:0 "placeholder"
- voc_little_chuddie.2.d:0 "placeholder"
- voc_little_chuddie.2.a:0 "placeholder"
-
- voc_little_chuddie.3.t:0 "placeholder"
- voc_little_chuddie.3.d:0 "placeholder"
- voc_little_chuddie.3.a:0 "placeholder"
-
- voc_little_chuddie.4.t:0 "placeholder"
- voc_little_chuddie.4.d:0 "placeholder"
- voc_little_chuddie.4.a:0 "placeholder"
-
- voc_little_chuddie.5.t:0 "placeholder"
- voc_little_chuddie.5.d:0 "placeholder"
- voc_little_chuddie.5.a:0 "placeholder"
-
- voc_little_chuddie.6.t:0 "placeholder"
- voc_little_chuddie.6.d:0 "placeholder"
- voc_little_chuddie.6.a:0 "placeholder"
-
- voc_little_chuddie.7.t:0 "placeholder"
- voc_little_chuddie.7.d:0 "placeholder"
- voc_little_chuddie.7.a:0 "placeholder"
-
- voc_little_chuddie.8.t:0 "placeholder"
- voc_little_chuddie.8.d:0 "placeholder"
- voc_little_chuddie.8.a:0 "placeholder"
-
- BeakavianCER.1.t:0 "Into Ceram"
- BeakavianCER.1.d:0 "The invasion of Ceram begins."
- BeakavianCER.1.a:0 "Accept"
-
- BeakavianCER.2.t:0 "Hidden Bunkers"
- BeakavianCER.2.d:0 "Option A: we do not need their help — a research bonus comes later.\n\nOption B: commit everything."
- BeakavianCER.2.a:0 "Accept"
-
- BeakavianCER.3.t:0 "Hoorst on Ceram"
- BeakavianCER.3.d:0 "Hoorst delivers a speech condemning Ceram."
- BeakavianCER.3.a:0 "Accept"
-
- BeakavianMIZ.1.t:0 "Pirate Raids"
- BeakavianMIZ.1.d:0 "A navy zebra pirate launches erratic raids on Beakavia.\n\nOption A: fight him and impress him.\nOption B: refuse the confrontation."
- BeakavianMIZ.1.a:0 "Accept"
-
- BeakavianMIZ.2.t:0 "A Second Chance"
- BeakavianMIZ.2.d:0 "If the confrontation was refused, a second chance appears to turn him into an allied pirate.\n\nYes: he becomes an asset, with maluses.\nNo: he must be destroyed."
- BeakavianMIZ.2.a:0 "Accept"
-
- BeakavianPUL.1.t:0 "Queen of Pulapi"
- BeakavianPUL.1.d:0 "Cleo declares herself Queen of Pulapi and Mataram. Pulapi's grievances come into the open."
- BeakavianPUL.1.a:0 "Accept"
-
- BeakavianPUL.2.t:0 "A Costly Prize"
- BeakavianPUL.2.d:0 "Pulapi holds heavy investment. Rebuilding it would be painful. Offer surrender in exchange for autonomy."
- BeakavianPUL.2.a:0 "Accept"
-
- BeakavianPUL.3.t:0 "The Cost of Conquest"
- BeakavianPUL.3.d:0 "If Pulapi was invaded without restraint, the aftermath is written in war crimes."
- BeakavianPUL.3.a:0 "Accept"
-
- BeakavianWAD.1.t:0 "Zamine"
- BeakavianWAD.1.d:0 "Edi Zamine presents himself."
- BeakavianWAD.1.a:0 "Accept"
-
- BeakavianWAD.2.t:0 "A Grand War"
- BeakavianWAD.2.d:0 "Promise Zamine his grand war, or refuse.\n\nYes: he joins you.\nNo: he will not. He must be fought."
- BeakavianWAD.2.a:0 "Accept"
-
- BeakavianWAD.3.t:0 "After Annexation"
- BeakavianWAD.3.d:0 "After annexing Wadangi, choose to kill Zamine or keep him — if the earlier promise was refused."
- BeakavianWAD.3.a:0 "Accept"
 
  beakavian_emergency.1.t:0 "beakavian emergency begins todo"
  beakavian_emergency.1.d:0 "beakavian emergency desc todo event 1"

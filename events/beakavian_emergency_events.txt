@@ -1,7 +1,5 @@
 
 add_namespace = beakavian_emergency
-add_namespace = clawVShoof
-add_namespace = insanity
 add_namespace = hoorst_flees
 
 
@@ -312,38 +310,3 @@ country_event = { # unused rn
 }
 
 
-country_event = { # focus that gives attack bonus vs nations with zebra race
-    id = clawVShoof.1
-    title = clawVShoof.1.t
-    desc = clawVShoof.1.d
-    picture = GFX_report_event_generic_sign_treaty1
-    is_triggered_only = yes
-        trigger = {
-        original_tag = YAN
-    }
-    option = {
-        name = clawVShoof.1.a
-        ai_chance = {
-            factor = 1
-        }
-        add_political_power = 25
-    }
-}
-
-country_event = {
-    id = insanity.1
-    title = insanity.1.t
-    desc = insanity.1.d
-    picture = GFX_report_event_generic_sign_treaty1
-    is_triggered_only = yes
-        trigger = {
-        original_tag = YAN
-    }
-    option = {
-        name = insanity.1.a
-        ai_chance = {
-            factor = 1
-        }
-        add_political_power = 25
-    }
-}
