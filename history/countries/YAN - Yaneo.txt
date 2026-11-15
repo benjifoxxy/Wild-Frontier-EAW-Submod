@@ -70,7 +70,7 @@ set_technology = {
 set_naval_oob = "YAN_1007_naval"
 
 add_equipment_to_stockpile = {
-	equipment = basic_train
+	type = basic_train
     amount = 10
 }
 
@@ -269,7 +269,7 @@ if = {
         aa_lmg = 1
     }
 }
-ELSE = {
+else = {
     set_technology = {
         fighter1 = 1
     }

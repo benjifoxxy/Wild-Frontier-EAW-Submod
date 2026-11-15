@@ -80,7 +80,10 @@ Storm_Kingdom_Investment_Decisions = { # TAG - STM - Ikvus Hailstorm
         }
         days_re_enable = 180
         available = {
-            check_variable = { Ikvus_CW_Happiness >= 2 }
+            check_variable = { 
+                var = Ikvus_CW_Happiness
+                value >= 2
+             }
             custom_trigger_tooltip = {
                 tooltip = Loans_To_the_Regency_tt
                 always = yes
@@ -126,7 +129,7 @@ Storm_Kingdom_Investment_Decisions = { # TAG - STM - Ikvus Hailstorm
         }
         }
         remove_effect = {
-            add_targeted_modifier = {
+            targeted_modifier = {
                 tag = STM
                 modifier = YAN_STM_Volunteer_Modifier
                 }
@@ -177,12 +180,12 @@ Storm_Kingdom_Investment_Decisions = { # TAG - STM - Ikvus Hailstorm
                             size > 1
                             state = 984
                         }
-                        }
                     }
                     NOT = {
-                            STM = {
-                                has_idea = YAN_STM_Naval_Bombardment
-                            }
+                        STM = {
+                            has_idea = YAN_STM_Naval_Bombardment
+                        }
+                    }
                 }
             }
         }
@@ -249,7 +252,7 @@ Storm_Kingdom_Investment_Decisions = { # TAG - STM - Ikvus Hailstorm
                     amount = 1500
                 }
                 add_equipment_to_stockpile = {
-                    type = artillery
+                    type = artillery_equipment
                     amount = 100
                 }
             }
@@ -278,7 +281,7 @@ Storm_Kingdom_Investment_Decisions = { # TAG - STM - Ikvus Hailstorm
                     has_country_flag = SK_CW_War_Participation_Increased
                 }
                 STM = {
-                    has_volunteers_amount_from = { YAN > 0 }
+                    has_volunteers_amount_from = { tag = YAN count > 1 }
                 }
             }
         }

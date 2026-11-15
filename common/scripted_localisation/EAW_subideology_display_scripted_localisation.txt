@@ -431,13 +431,12 @@ defined_text = {
 		}
 		localization_key = garrison_state
 	}
-
-
+	text = {
 		trigger = {
 			has_country_leader_ideology = despotism
 		}
 		localization_key = despotism
-	
+	}
 	text = {
 		trigger = {
 			has_country_leader_ideology = oligarchism

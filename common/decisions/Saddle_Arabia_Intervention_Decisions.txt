@@ -45,36 +45,35 @@ Saddle_Arabia_Investment_Decisions = { # TAG - SDL - Grand Prince Faisal ibn Sai
         }
         days_remove = 3
         days_re_enable = 20000
-            remove_effect = {
-                hidden_effect = {
-                    set_country_flag = Arabia_Dec_1_Taken
-                    country_event = { id = saddle_arabica.2 }
-                    clamp_variable = {
-                        var = Saddle_Arabia_CW_Weapon_Stashes_Light_Weapons
-                        min = 0
-                        max = 5
-                    }
-                    clamp_variable = {
-                        var = Saddle_Arabia_CW_Weapon_Stashes_Heavy_Weapons
-                        min = 0
-                        max = 5
-                    }
-                    clamp_variable = {
-                        var = Saddle_Arabia_CW_Weapon_Stashes_Mobile_Vehicles
-                        min = 0
-                        max = 5
-                    }
-                    SDL = {
-                        diplomatic_relation = {
-                            country = YAN
-                            relation = docking_rights
-                            active = yes
-                        }
+        remove_effect = {
+            hidden_effect = {
+                set_country_flag = Arabia_Dec_1_Taken
+                country_event = { id = saddle_arabica.2 }
+                clamp_variable = {
+                    var = Saddle_Arabia_CW_Weapon_Stashes_Light_Weapons
+                    min = 0
+                    max = 5
+                }
+                clamp_variable = {
+                    var = Saddle_Arabia_CW_Weapon_Stashes_Heavy_Weapons
+                    min = 0
+                    max = 5
+                }
+                clamp_variable = {
+                    var = Saddle_Arabia_CW_Weapon_Stashes_Mobile_Vehicles
+                    min = 0
+                    max = 5
+                }
+                SDL = {
+                    diplomatic_relation = {
+                        country = YAN
+                        relation = docking_rights
+                        active = yes
                     }
                 }
-
             }
         }
+    }
     
 
     saddle_arabia_keksimus_maximus_2 = { # Headquarters in Saddle Arabia event chain
@@ -124,7 +123,7 @@ Saddle_Arabia_Investment_Decisions = { # TAG - SDL - Grand Prince Faisal ibn Sai
             }
         }
         remove_effect = {
-            add_targeted_modifier = {
+            targeted_modifier = {
                 tag = SDL
                 modifier = YAN_SDL_Volunteer_Modifier
             }
@@ -160,11 +159,11 @@ Saddle_Arabia_Investment_Decisions = { # TAG - SDL - Grand Prince Faisal ibn Sai
                     infantry_equipment > 999
                 }
                 NOT = {
-                    check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Light_Weapons >= 5 }
+                    check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Light_Weapons = 5 }
                 }
             }
         }
-        remove_effect = {
+        remove_effect = { # potentially raising a false positive
             custom_effect_tooltip = Give_SDL_Light_Weapons_Remove_Effect_tt
             hidden_effect = {
                 add_equipment_to_stockpile = {
@@ -178,6 +177,7 @@ Saddle_Arabia_Investment_Decisions = { # TAG - SDL - Grand Prince Faisal ibn Sai
             }
         }
     }
+
     saddle_arabia_keksimus_maximus_5 = { # event where the player donates heavy weapons (artillery)
 
         icon = generic_civil_war
@@ -228,6 +228,7 @@ Saddle_Arabia_Investment_Decisions = { # TAG - SDL - Grand Prince Faisal ibn Sai
             }
         }
     }
+
     saddle_arabia_keksimus_maximus_6 = { # event where the player donates light vehicles (light tanks)
 
         icon = generic_civil_war
@@ -254,7 +255,7 @@ Saddle_Arabia_Investment_Decisions = { # TAG - SDL - Grand Prince Faisal ibn Sai
         }
         complete_effect = {
             add_timed_idea = {
-                YAN_SDL_Fund_Light_Vehicles_CW_Idea
+                idea = YAN_SDL_Fund_Light_Vehicles_CW_Idea
                 days = 21
             }
         }

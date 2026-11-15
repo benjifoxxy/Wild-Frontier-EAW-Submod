@@ -1,73 +1,68 @@
-
 #CER = {
-	color = { 90 231 255 }
-	color_ui = { 90 231 255 }
+#	color = { 90 231 255 }
+#	color_ui = { 90 231 255 }
 #}
-
+#
 #HAF = {
-	color = { 161 207 166 }
-	color_ui = { 161 207 166 }
+#	color = { 161 207 166 }
+#	color_ui = { 161 207 166 }
 #}
-
+#
 #MIZ = { 
-	color = { 194 255 60 }
-	color_ui = { 194 255 60}
+#	color = { 194 255 60 }
+#	color_ui = { 194 255 60}
 #}
-
+#
 #NKO = {
-	color = { 232 219 255 }
-	color_ui = { 232 219 255 }
+#	color = { 232 219 255 }
+#	color_ui = { 232 219 255 }
 #}
-
-
+#
+#
 #PUL = {
-	color = { 164 82 255 }
-	color_ui = { 164 82 255 }
+#	color = { 164 82 255 }
+#	color_ui = { 164 82 255 }
 #}
-
+#
 #TAO = {
-	color = { 255 168 211 }
-	color_ui = { 255 168 211 }
+#	color = { 255 168 211 }
+#	color_ui = { 255 168 211 }
 #}
-
+#
 #THA = {
-	color = { 254 198 255 }
-	color_ui = { 254 198 255 }
+#	color = { 254 198 255 }
+#	color_ui = { 254 198 255 }
 #}
-
+#
 #TON = {
-	color = { 160 138 97 }
-	color_ui = { 160 138 97 }
+#	color = { 160 138 97 }
+#	color_ui = { 160 138 97 }
 #}
-
+#
 #UBE = {
-	color = { 82 64 108 }
-	color_ui = { 82 64 108 }
+#	color = { 82 64 108 }
+#	color_ui = { 82 64 108 }
 #}
-
+#
 #VOC = {
-	color = { 43 0 102 }
-	color_ui = { 43 0 102 }
+#	color = { 43 0 102 }
+#	color_ui = { 43 0 102 }
 #}
-
-#WAD = {
-	color = { 103 51 174 }
-	color_ui = { 103 51 174 }
+#
+##WAD = {
+#	color = { 103 51 174 }
+#	color_ui = { 103 51 174 }
 #}
-
+#
 #XHO = {
-	color = { 44 160 139 }
-	color_ui = { 44 160 139 }
+#	color = { 44 160 139 }
+#	color_ui = { 44 160 139 }
 #}
-
+#
 #YAN = {
-	color = { 249 127 70 }
-	color_ui = { 249 127 70 }
+#	color = { 249 127 70 }
+#	color_ui = { 249 127 70 }
 #}
-
-
-
-
 EQS = {
 	color = rgb { 158 242 117 }
 	color_ui = rgb { 158 242 117 }

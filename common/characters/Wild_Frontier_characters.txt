@@ -190,7 +190,7 @@ characters = {
         name = HAF_Warlord
         portraits = {
             civilian = {
-                large = "gfx\leaders\zebra\army_zebra_4.tga"
+                large = "gfx/leaders/zebra/army_zebra_4.tga"
             }
         }
         country_leader = {
@@ -204,7 +204,7 @@ characters = {
         name = THA_Warlord
         portraits = {
             civilian = {
-                large = "gfx\leaders\zebra\army_zebra_4.tga"
+                large = "gfx/leaders/zebra/army_zebra_4.tga"
             }
         }
         country_leader = {
@@ -218,7 +218,7 @@ characters = {
         name = XHO_Warlord
         portraits = {
             civilian = {
-                large = "gfx\leaders\zebra\army_zebra_4.tga"
+                large = "gfx/leaders/zebra/army_zebra_4.tga"
             }
         }
         country_leader = {
@@ -232,7 +232,7 @@ characters = {
         name = NKO_Warlord
         portraits = {
             civilian = {
-                large = "gfx\leaders\zebra\army_zebra_4.tga"
+                large = "gfx/leaders/zebra/army_zebra_4.tga"
             }
         }
         country_leader = {
@@ -246,7 +246,7 @@ characters = {
         name = TAO_Warlord
         portraits = {
             civilian = {
-                large = "gfx\leaders\zebra\army_zebra_4.tga"
+                large = "gfx/leaders/zebra/army_zebra_4.tga"
             }
         }
         country_leader = {
@@ -275,7 +275,7 @@ characters = {
         portraits = {
             civilian = {
                 large = GFX_niko_bellic_Portrait
-                civilian = GFX_niko_bellic_Portrait
+                
             }
         }
         country_leader = {
@@ -290,7 +290,7 @@ characters = {
         portraits = {
             civilian = {
                 large = GFX_roman_bellic_Portrait
-                civilian = GFX_roman_bellic_Portrait
+                
             }
         }
         country_leader = {
@@ -305,7 +305,7 @@ characters = {
         portraits = {
             civilian = {
                 large = GFX_Savior_South_Portrait
-                civilian = GFX_Savior_South_Portrait
+                
             }
         }
         country_leader = {
@@ -320,7 +320,7 @@ characters = {
         portraits = {
             civilian = {
                 large = GFX_Talon_Company_Commander_Portrait
-                civilian = GFX_Talon_Company_Commander_Portrait
+                
             }
         }
         country_leader = {
@@ -334,7 +334,7 @@ characters = {
         name = TON_Warlord
         portraits = {
             civilian = {
-                large = "gfx\leaders\zebra\army_zebra_4.tga"
+                large = "gfx/leaders/zebra/army_zebra_4.tga"
             }
         }
         country_leader = {

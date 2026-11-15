@@ -11,7 +11,7 @@ set_cosmetic_tag = WAD_cosmetic
 add_manpower = 60000
 set_oob = Zebrides_Warriors_OOB
 load_focus_tree = ZEB_SUBJECTS
-is_zebrican_continent_country = yes
+
 set_cosmetic_tag = WAD_cosmetic
 set_technology = {
 	zebra_race = 1

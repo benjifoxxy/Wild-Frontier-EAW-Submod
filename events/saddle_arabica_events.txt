@@ -1,3 +1,5 @@
+add_namespace = saddle_arabica # cant believe i forgot to add this bruh
+
 country_event = { # intelligence report opening event
 	id = saddle_arabica.1
 	title = saddle_arabica.1.t

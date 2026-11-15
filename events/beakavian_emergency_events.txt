@@ -63,7 +63,7 @@ country_event = { #triggered automatically
         ai_chance = {
             factor = 1
         }
-        available = {
+        trigger = {
             NOT = {
                 IF = {
                     has_country_flag = SK_Invest_Decision_Cat_Completed
@@ -83,7 +83,7 @@ country_event = { #triggered automatically
         ai_chance = {
             factor = 1
         }
-        available = {
+        trigger = {
             has_country_flag = SK_Invest_Decision_Cat_Completed
         }
         custom_effect_tooltip = will_unlocked_focuses_yan
@@ -97,7 +97,7 @@ country_event = { #triggered automatically
         ai_chance = {
             factor = 1
         }
-        available = {
+        trigger = {
             has_country_flag = SA_Invest_Decision_Cat_Completed
         }
         custom_effect_tooltip = will_unlocked_focuses_yan
@@ -111,7 +111,7 @@ country_event = { #triggered automatically
         ai_chance = {
             factor = 1
         }
-        available = {
+        trigger = {
             has_country_flag = CC_Invest_Decision_Cat_Completed
         }
         custom_effect_tooltip = will_unlocked_focuses_yan
@@ -126,7 +126,7 @@ country_event = { #triggered automatically
         ai_chance = {
             factor = 1
         }
-        available = {
+        trigger = {
             AND = {
                 has_country_flag = SK_Invest_Decision_Cat_Completed
                 has_country_flag = SA_Invest_Decision_Cat_Completed
@@ -147,7 +147,7 @@ country_event = { # cubana break free event - changed to decision now
     desc = beakavian_emergency.3.d
     picture = GFX_report_event_generic_sign_treaty1
     is_triggered_only = yes
-        trigger = {
+    trigger = {
         original_tag = YAN
     }
     option = { # Natives say fuck you LOL
@@ -155,31 +155,35 @@ country_event = { # cubana break free event - changed to decision now
         ai_chance = {
             factor = 1
         }
-        available = {
+        trigger = {
             NOT = {
                 has_country_flag = MQA_Secured
             }
         }
-        custom_trigger_tooltip = {
-            tooltip = Ceram_Kirchau_Break_Free_tt
+        custom_effect_tooltip = Ceram_Kirchau_Break_Free_tt
+        hidden_effect = {
             activate_mission = Secure_Ceram
             activate_mission = Secure_Kirchau
         }
+
+
     }
     option = {
         name = beakavian_emergency.3.b
         ai_chance = {
             factor = 1
         }
-        available = {
+        trigger = {
             has_country_flag = MQA_Secured
         }
-        custom_trigger_tooltip = {
-            tooltip = Ceram_Kirchau_Sambo_Break_Free_tt
+        custom_trigger_tooltip = Ceram_Kirchau_Sambo_Break_Free_tt
+        hidden_effect = {
             activate_mission = Secure_Ceram
             activate_mission = Secure_Kirchau
             activate_mission = Secure_Sambo
         }
+
+
     }
 }
 
@@ -206,7 +210,9 @@ country_event = { # Secure Ceram Decision Event
             factor = 1
         }
         YAN = {
-            annex_country = CER
+            annex_country = {
+                target = CER
+            }
         }
         
         add_political_power = -50
@@ -236,10 +242,14 @@ country_event = { # Secure Kirchau Event
             days = 21
         }
         YAN = {
-            annex_country = MIZ
+            annex_country = {
+                target = MIZ
+            }
         }
         add_political_power = -50
-        recruit_character = admiral_ewal
+        YAN = {
+            recruit_character = Admiral_Ewal
+        }
         add_manpower = 25000
 
     }

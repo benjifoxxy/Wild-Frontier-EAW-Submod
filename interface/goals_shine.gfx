@@ -1,14 +1,11 @@
-
 spriteTypes = {
-
-
 
     spriteType = {
         name = "GFX_Focus_Jewel_shine"
-        texturefile = "gfx\interface\goals\southern_jewel.dds"
+        texturefile = "gfx/interface/goals/southern_jewel.dds"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx\interface\goals\southern_jewel.dds"
+            animationmaskfile = "gfx/interface/goals/southern_jewel.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = -90.0
             animationlooping = no
@@ -20,7 +17,7 @@ spriteTypes = {
             animationtexturescale = { x = 1.0 y = 1.0 }
         }
         animation = {
-            animationmaskfile = "gfx\interface\goals\southern_jewel.dds"
+            animationmaskfile = "gfx/interface/goals/southern_jewel.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no
@@ -36,10 +33,10 @@ spriteTypes = {
 
     spriteType = {
         name = "GFX_Focus_west_pinkie_shine"
-        texturefile = "gfx\interface\goals\look_west_pinkie.dds"
+        texturefile = "gfx/interface/goals/look_west_pinkie.dds"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx\interface\goals\look_west_pinkie.dds"
+            animationmaskfile = "gfx/interface/goals/look_west_pinkie.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = -90.0
             animationlooping = no
@@ -51,7 +48,7 @@ spriteTypes = {
             animationtexturescale = { x = 1.0 y = 1.0 }
         }
         animation = {
-            animationmaskfile = "gfx\interface\goals\look_west_pinkie.dds"
+            animationmaskfile = "gfx/interface/goals/look_west_pinkie.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no
@@ -67,10 +64,10 @@ spriteTypes = {
 
     spriteType = {
         name = "GFX_Focus_trixie_shine"
-        texturefile = "gfx\interface\goals\trixie_right.dds"
+        texturefile = "gfx/interface/goals/trixie_right.dds"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx\interface\goals\trixie_right.dds"
+            animationmaskfile = "gfx/interface/goals/trixie_right.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = -90.0
             animationlooping = no
@@ -82,7 +79,7 @@ spriteTypes = {
             animationtexturescale = { x = 1.0 y = 1.0 }
         }
         animation = {
-            animationmaskfile = "gfx\interface\goals\trixie_right.dds"
+            animationmaskfile = "gfx/interface/goals/trixie_right.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no
@@ -98,10 +95,10 @@ spriteTypes = {
 
     spriteType = {
         name = "GFX_Focus_VOC_Lib_shine"
-        texturefile = "gfx\interface\goals\voc_commie.dds"
+        texturefile = "gfx/interface/goals/voc_commie.dds"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx\interface\goals\voc_commie.dds"
+            animationmaskfile = "gfx/interface/goals/voc_commie.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = -90.0
             animationlooping = no
@@ -113,7 +110,7 @@ spriteTypes = {
             animationtexturescale = { x = 1.0 y = 1.0 }
         }
         animation = {
-            animationmaskfile = "gfx\interface\goals\voc_commie.dds"
+            animationmaskfile = "gfx/interface/goals/voc_commie.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no
@@ -129,10 +126,10 @@ spriteTypes = {
 
     spriteType = {
         name = "GFX_Focus_VOC_Dutch_shine"
-        texturefile = "gfx\interface\goals\voc_dutch.dds"
+        texturefile = "gfx/interface/goals/voc_dutch.dds"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx\interface\goals\voc_dutch.dds"
+            animationmaskfile = "gfx/interface/goals/voc_dutch.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = -90.0
             animationlooping = no
@@ -144,7 +141,7 @@ spriteTypes = {
             animationtexturescale = { x = 1.0 y = 1.0 }
         }
         animation = {
-            animationmaskfile = "gfx\interface\goals\voc_dutch.dds"
+            animationmaskfile = "gfx/interface/goals/voc_dutch.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no
@@ -160,10 +157,10 @@ spriteTypes = {
 
     spriteType = {
         name = "GFX_Focus_VOC_Chud_shine"
-        texturefile = "gfx\interface\goals\voc_chud.dds"
+        texturefile = "gfx/interface/goals/voc_chud.dds"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx\interface\goals\voc_chud.dds"
+            animationmaskfile = "gfx/interface/goals/voc_chud.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = -90.0
             animationlooping = no
@@ -175,7 +172,7 @@ spriteTypes = {
             animationtexturescale = { x = 1.0 y = 1.0 }
         }
         animation = {
-            animationmaskfile = "gfx\interface\goals\voc_chud.dds"
+            animationmaskfile = "gfx/interface/goals/voc_chud.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no
@@ -191,10 +188,10 @@ spriteTypes = {
 
     spriteType = {
         name = "GFX_Focus_king_meme_shine"
-        texturefile = "gfx\interface\goals\king_not_meme.dds"
+        texturefile = "gfx/interface/goals/king_not_meme.dds"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx\interface\goals\king_not_meme.dds"
+            animationmaskfile = "gfx/interface/goals/king_not_meme.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = -90.0
             animationlooping = no
@@ -206,7 +203,7 @@ spriteTypes = {
             animationtexturescale = { x = 1.0 y = 1.0 }
         }
         animation = {
-            animationmaskfile = "gfx\interface\goals\king_not_meme.dds"
+            animationmaskfile = "gfx/interface/goals/king_not_meme.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no
@@ -222,10 +219,10 @@ spriteTypes = {
 
     spriteType = {
         name = "GFX_Focus_Octaviamerc_shine"
-        texturefile = "gfx\interface\goals\octavia_meme.dds"
+        texturefile = "gfx/interface/goals/octavia_meme.dds"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx\interface\goals\octavia_meme.dds"
+            animationmaskfile = "gfx/interface/goals/octavia_meme.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = -90.0
             animationlooping = no
@@ -237,7 +234,7 @@ spriteTypes = {
             animationtexturescale = { x = 1.0 y = 1.0 }
         }
         animation = {
-            animationmaskfile = "gfx\interface\goals\octavia_meme.dds"
+            animationmaskfile = "gfx/interface/goals/octavia_meme.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no
@@ -250,6 +247,5 @@ spriteTypes = {
         }
         legacy_lazy_load = no
     }
-
 
 }

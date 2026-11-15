@@ -311,14 +311,15 @@ focus = {
         }
         select_effect = {
             country_event = {
-                id = interim.2 days 14
+                id = interim.2 
+                days = 14
             }
+        }
+        ai_will_do = {
+            factor = 1
         }
         cancelable = no
         completion_reward = { custom_effect_tooltip = YAN_Vultures_tt }
-    }
-    ai_will_do = {
-        factor = 1
     }
 
 

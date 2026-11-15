@@ -24,8 +24,8 @@ set_technology = {
 actually_fix_weapon_techs = yes
 
 set_politics = {
-	ruling party = neutrality
-	last election = "1001.1.1"
+	ruling_party = neutrality
+	last_election = "1001.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }

@@ -172,7 +172,7 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
             }
             check_variable = { South_Zone_Helicopter_Investment > 2 }
         }
-        immediate = {
+        complete_effect = {
             add_timed_idea = {
                 idea = YAN_South_Zone_Helicopter_Designer
                 days = 28
@@ -190,7 +190,7 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
                         }
                     }
                 }
-            add_air_experience = -25
+            air_experience = -25
             add_political_power = -25
             add_to_variable = {
                 var = South_Zone_Helicopter_Investment
@@ -261,7 +261,7 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
         }
         days_remove = 21
         days_re_enable = 42
-        immediate = {
+        complete_effect = {
             YAN = {
                 add_fuel = -50000
                 add_political_power = -50
@@ -335,7 +335,7 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
         days_remove = 150
         days_re_enable = 250
         fire_only_once = no
-        immediate = {
+        complete_effect = {
             custom_effect_tooltip = South_Invest_5_Complete_2_tt
             hidden_effect ={
                 add_timed_idea = {

@@ -44,7 +44,6 @@ add_ideas = {
 	lack_of_scientists
 	primitive_economy
 	closed_economy
-        Economic_Reliance_On_Beakavia
 }
 
 recruit_character = DEL_high_priest_xuwicha

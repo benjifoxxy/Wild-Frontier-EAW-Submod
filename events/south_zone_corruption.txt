@@ -1,5 +1,5 @@
-namespace = South_Zone_Crisis_Corruption
-namespace = South_Zone_Tasty
+add_namespace = South_Zone_Crisis_Corruption
+add_namespace = South_Zone_Tasty
 
 country_event = { # Event that determines how easy it will be to fix the corruption.
 	id = South_Zone_Crisis_Corruption.1
@@ -273,7 +273,18 @@ country_event = { # fires when corruption reaches 35% (34) investigated
 	desc = South_Zone_Crisis_Corruption.3.desc
 	picture = GFX_report_event_generic
 	is_triggered_only = yes
-
+	trigger = {
+		check_variable = {
+			var = South_Zone_Corruption_Investigation > 34
+		}
+	}
+	immediate = {
+		clamp_variable = {
+			var = South_Zone_Corruption_Investigation
+			min = 35
+			max = 100
+		}
+	}
 	option = {
 		name = South_Zone_Crisis_Corruption.3.a
 	}

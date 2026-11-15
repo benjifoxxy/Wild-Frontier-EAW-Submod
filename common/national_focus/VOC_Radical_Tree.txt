@@ -113,24 +113,29 @@ focus_tree = {
             has_completed_focus = YAN_Board_of_Defence
         }
         available = {
-            has_completed_focus = YAN_Board_of_Defence
-            OR = {
-                has_completed_focus = YAN_Elite_Force
-                has_completed_focus = YAN_Native_Auxiliaries
+
+            custom_trigger_tooltip = {
+                tooltip = YAN_Board_Of_Compliance_tt
+                AND = {
+                    has_completed_focus = YAN_Board_of_Defence
+                    OR = {
+                        has_completed_focus = YAN_Elite_Force
+                        has_completed_focus = YAN_Native_Auxiliaries
+                    }
+                    OR = {
+                        has_completed_focus = YAN_Naval_Aviation
+                        has_completed_focus = YAN_Change_What_Works
+                    }
+                    OR = {
+                        has_completed_focus = YAN_Aviator_Autonomy
+                        has_completed_focus = YAN_Centralized_Air_Command
+                    }
+                    OR = {
+                        has_completed_focus = YAN_Decent_Control
+                        has_completed_focus = YAN_Fortress_Cities
+                    }
+                }
             }
-            OR = {
-                has_completed_focus = YAN_Naval_Aviation
-                has_completed_focus = YAN_Change_What_Works
-            }
-            OR = {
-                has_completed_focus = YAN_Aviator_Autonomy
-                has_completed_focus = YAN_Centralized_Air_Command
-            }
-            OR = {
-                has_completed_focus = YAN_Decent_Control
-                has_completed_focus = YAN_Fortress_Cities
-            }
-            custom_effect_tooltip = YAN_Board_Of_Compliance_tt
         }
         completion_reward = {
             hidden_effect = {

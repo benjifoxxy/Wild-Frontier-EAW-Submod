@@ -12,7 +12,6 @@ YAN_Debug_Decisions = {
 Cubanacan_Anger_Decisions = {
     icon = generic_civil_war
     priority = 1010
-    desc = Cubanacan_Anger_Decisions.desc
     allowed = {
         original_tag = YAN
     }
@@ -43,7 +42,6 @@ YAN_VOC_Mandate_Development_Decisions = {
 
 FZS_CW_Decisions = {
     icon = generic_civil_war
-    desc = FZS_CW_Decisions.desc
     priority = 999
     allowed = {
         original_tag = YAN
@@ -70,7 +68,7 @@ Storm_Kingdom_Investment_Decisions = {
 
 
     }
-    highlight_color_before_active = 2
+    highlight_color_before_active = 2 # being raised as a false positive
     highlight_states = {
         state = 982
         state = 983
@@ -112,7 +110,7 @@ Saddle_Arabia_Investment_Decisions = {
         name = Saddle_Arabica_Map_Area_tt
 
     }
-    highlight_color_before_active = 2
+    highlight_color_before_active = 2 # being raised as a false positive
     highlight_states = {
         state = 868
         state = 869
@@ -158,7 +156,7 @@ Chisimbi_Crisis_Investment_Decisions = {
         state = 912
         name = Chisimbi_Crisis_Map_Area_tt
     }
-    highlight_color_before_active = 2
+    highlight_color_before_active = 2 # being raised as a false positive 
     highlight_states = {
         state = 911
         state = 912
@@ -202,6 +200,7 @@ South_Zone_Investment_Decisions = {
         state = 1139
         name = South_Zone_Decision_Map_Area_tt
     }
+    highlight_color_before_active = 2 # being raised as a false positive
     highlight_states = {
         state = 1139
         state = 1149
@@ -220,6 +219,5 @@ South_Zone_Investment_Decisions = {
         state = 1154
         state = 1155
     }
-    highlight_color_before_active = 2
 }
 

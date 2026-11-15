@@ -13,10 +13,10 @@ YAN_VOC_Mandate_Development_Decisions = {
 
         }
         complete_effect = {
-            custom_trigger_tooltip = {
-                tooltip = Decision_Cannot_Be_Reversed_tt
-                clr_country_flag = VOC_Mandate_Development_Decisions_Flag
-            }
+            custom_effect_tooltip = Decision_Cannot_Be_Reversed_tt
+                hidden_effect = {
+                    clr_country_flag = VOC_Mandate_Development_Decisions_Flag
+                }
         }
     }
 

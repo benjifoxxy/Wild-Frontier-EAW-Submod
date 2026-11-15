@@ -74,13 +74,9 @@ country_event = { # southern jewel
         ai_chance = {
             factor = 1
         }
-        recruit_character = YAN_Air_Scientist_Initial
-        #        generate_scientist_character = {
-        #            skills = {
-        #                specialization_air = 1
-        #            }
-        #            traits = { electronics_specialist griffon_race_trait genius }
-        #        }
+        ROOT = {
+            recruit_character = YAN_Air_Scientist_Initial
+        }
         1158 = {
             add_building_construction = {
                 type = air_facility
@@ -692,10 +688,6 @@ country_event = { #explain mizor and pulapi, choose to develop one of them, or b
         ai_chance = {
             factor = 1
         }
-        add_opinion_modifier = {
-            target = PUL
-            modifier = positive_50
-        }
         1160 = {
             add_building_construction = {
                 type = industrial_complex
@@ -772,7 +764,7 @@ country_event = {
             factor = 1
         }
         create_intelligence_agency = {
-            agency_name = "Koloniale Abwehrstelle"
+            name = "Koloniale Abwehrstelle"
         }
         add_political_power = 25
         custom_effect_tooltip = KAS_Founded_tt
@@ -788,7 +780,7 @@ country_event = {
             factor = 1
         }
         create_intelligence_agency = {
-            agency_name = "Beakavische Geheimstelle"
+            name = "Beakavische Geheimstelle"
         }
         add_political_power = 25
         custom_effect_tooltip = BGS_Founded_tt
@@ -874,7 +866,6 @@ country_event = { #fragrance / kirian connection
                 type = air_base
                 level = 2
                 instant_build = yes
-                province = 3637
             }
             add_building_construction = {
                 type = bunker
@@ -907,7 +898,6 @@ country_event = { #fragrance / kirian connection
                 type = air_base
                 level = 2
                 instant_build = yes
-                province = 5867
             }
             add_building_construction = {
                 type = radar_station
@@ -1100,7 +1090,7 @@ country_event = {
             }
             every_state = {
                 limit = {
-                    is_core_of
+                    is_core_of = PUL
                 }
                 add_core_of = YAN
             }
@@ -1285,12 +1275,14 @@ country_event = {
         }
         hidden_effect = {
             country_event = {
-                id = hoorst_clique.1 days = 5 }
+                id = hoorst_clique.1
+                days = 5
             }
-            complete_national_focus = YAN_VOC_Bailout
-            mark_focus_tree_layout_dirty = yes
-            custom_effect_tooltip = hoorst_opening_speech_tt
         }
+        complete_national_focus = YAN_VOC_Bailout
+        mark_focus_tree_layout_dirty = yes
+        custom_effect_tooltip = hoorst_opening_speech_tt
     }
+}
 
 

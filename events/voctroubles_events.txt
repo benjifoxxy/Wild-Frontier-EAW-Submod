@@ -217,7 +217,7 @@ country_event = {
     option = {
         name = voctroubles.12.a
         ai_chance = { factor = 1 }
-        available = {
+        trigger = {
             NOT = {
                 has_global_flag = South_Zone_Crisis_Resolved
             }
@@ -229,11 +229,11 @@ country_event = {
             country_event = { id = beakavian_emergency.1 days = 5 }
 
             if = {
-                limit = { country_flag = voc_mandate_harmony_entrenched_flag }
+                limit = { has_country_flag = voc_mandate_harmony_entrenched_flag }
                 country_event = { id = beakavian_emergency_debug.1 }
             }
             if = {
-                limit = { country_flag = voc_mandate_supremacy_entrenched_flag }
+                limit = { has_country_flag = voc_mandate_supremacy_entrenched_flag }
                 country_event = { id = beakavian_emergency_debug.2 }
             }
             country_event = { id = beakavian_emergency_debug.3 }
@@ -341,7 +341,7 @@ country_event = {
         ai_chance = {
             factor = 1
         }
-        available = {
+        trigger = {
             has_global_flag = South_Zone_Crisis_Resolved
         }
     }

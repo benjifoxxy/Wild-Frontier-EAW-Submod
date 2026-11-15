@@ -4,7 +4,7 @@ Chisimbi_Crisis_Investment_Decisions = { # TAG - GFS - Mukoza Taredna
 
     Chisimbi_Griff_Influence_Mission = { # activated after both factions have been met. reactives itself
         icon = generic_civil_war
-        cost = 0
+        
         allowed = {
             always = no
         }
@@ -28,7 +28,7 @@ Chisimbi_Crisis_Investment_Decisions = { # TAG - GFS - Mukoza Taredna
 
     Chisimbi_Zaru_Influence_Mission = { # activated after both factions have been met. reactives itself
         icon = generic_civil_war
-        cost = 0
+        
         allowed = {
             always = no
         }
@@ -178,7 +178,7 @@ Chisimbi_Crisis_Investment_Decisions = { # TAG - GFS - Mukoza Taredna
         days_remove = 3
         days_re_enable = 21000
         remove_effect = {
-            add_targeted_modifier = {
+            targeted_modifier = {
                 tag = GFS
                 modifier = YAN_GFS_Volunteer_Modifier
             }

@@ -5,7 +5,6 @@ Cubanacan_Anger_Decisions = { # hidden events increase anger automatically.
     Cubanacan_Anger_Mission = {
 
         icon = generic_civil_war
-        cost = 1
         allowed = {
             original_tag = YAN
         }
@@ -27,9 +26,6 @@ Cubanacan_Anger_Decisions = { # hidden events increase anger automatically.
                     min = 0
                     max = 100
                 }                
-            }
-            remove_effect = {
-
             }
         }
     }
@@ -233,10 +229,10 @@ Cubanacan_Decision_4 = { # Call in a favour from Cleo
             }
         }
         complete_effect = {
-            custom_trigger_tooltip = {
-                tooltip = YAN_Cubanacan_Compromise_Completed_tt
-                set_country_flag = Cubanacan_Anger_Decisions_Completed
-            }
+            custom_effect_tooltip = YAN_Cubanacan_Compromise_Completed_tt
+                hidden_effect = {
+                    set_country_flag = Cubanacan_Anger_Decisions_Completed
+                }
             add_stability = 0.1
             add_political_power = 100
             country_event = { id = Cuban.2 }

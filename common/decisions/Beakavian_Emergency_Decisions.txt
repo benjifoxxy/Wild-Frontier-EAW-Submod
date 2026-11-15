@@ -34,7 +34,7 @@ FZS_CW_Decisions = {
 
 
     Secure_Ceram = {
-        cost = 0
+        
         allowed = {
             original_tag = YAN
         }
@@ -55,7 +55,7 @@ FZS_CW_Decisions = {
     }
 
     Secure_Kirchau = {
-        cost = 0
+        
         allowed = {
             original_tag = YAN
         }
@@ -76,7 +76,7 @@ FZS_CW_Decisions = {
     }
 
     Secure_Sambo = {
-        cost = 0
+        
         allowed = {
             original_tag = YAN
         }
@@ -108,7 +108,7 @@ FZS_CW_Decisions = {
             has_global_flag = Storm_Kingdom_Crisis_Resolved
         }
         available = {
-            custom_trigger_tooltip {
+            custom_trigger_tooltip = {
                 tooltip = FZS_CW_Round_Explainer_tt
                 NOT = {
                     OR = {

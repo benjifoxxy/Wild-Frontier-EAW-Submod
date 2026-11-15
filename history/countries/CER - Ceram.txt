@@ -9,7 +9,6 @@ recruit_character = luang_idori
 # Additional starting history effects
 add_manpower = 60000
 set_oob = CER_1007_Start
-is_zebrican_continent_country = yes
 load_focus_tree = ZEB_SUBJECTS
 set_technology = {
     zebra_race = 1

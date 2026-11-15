@@ -15,7 +15,11 @@ country_event = {
         name = hoorst_clique.1.a
         hidden_effect = {
             complete_national_focus = interim_hoorst_clique
-            set_politics = fascism
+            set_politics = {
+                ruling_party = fascism
+                elections_allowed = no
+
+            }
         }
         mark_focus_tree_layout_dirty = yes
         custom_effect_tooltip = unlocked_focuses_yan
@@ -40,7 +44,10 @@ country_event = { # grand speech event select effect - # location of speech
         }
         set_global_flag = speech1cheap_f
         hidden_effect = {
-            country_event { id = chuddie.7 days = 12 }
+            country_event = { 
+                id = chuddie.7 
+                days = 12 
+            }
         }
     }
     option = { # grand navy parade option
@@ -59,15 +66,21 @@ country_event = { # grand speech event select effect - # location of speech
             factor = 1
         }
         set_global_flag = speech1air_f
-        hidden_effect = { id = chuddie.9 days = 12 }
+        hidden_effect = { 
+            country_event = {
+                id = chuddie.9 
+                days = 12 
+            }
     }
+}
     option = { # cultural option - focus on Zebridische
         name = chuddie.1.d
         ai_chance = {
             factor = 1
         }
         set_global_flag = speech1racist_f
-        hidden_effect = { id = chuddie.10 days = 12 }
+        hidden_effect = { 
+            country_event = { chuddie.10 days = 12 } }
     }
 }
 
@@ -249,7 +262,7 @@ country_event = { # brutalist policy
         ai_chance = {
             factor = 1
         }
-        available = {
+        trigger = {
             
         }
     }

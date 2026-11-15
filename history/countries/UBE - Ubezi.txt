@@ -44,7 +44,7 @@ add_ideas = {
 }
 
 add_equipment_to_stockpile = {
-    type = pre_gw_artillery
+    type = artillery_equipment
     amount = 200
     producer = YAN
 }

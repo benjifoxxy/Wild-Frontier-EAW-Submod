@@ -691,6 +691,19 @@ bookmarks = {
 				KIR_focus_5f
 			}
 		}
+		"YAN"={
+			history = "ZOO_GATHERING_STORM_DESC"
+			ideology = neutrality
+			label = { CSS_ZebricaFilter }
+			ideas = {
+
+			}
+			focuses = {
+				YAN_jewel_south
+				YAN_Out_West
+				YAN_Observe_East
+			}
+		}
 		#"---"={
 		#	history = "OTHER_GATHERING_STORM_DESC"
 		#}
@@ -835,20 +848,6 @@ bookmarks = {
 				WAR_reeling_from_shock
 				WAR_proper_coronation
 				WAR_a_fresh_start
-			}
-		}
-		"YAN"={
-			major = yes
-			history = "WAR_GATHERING_STORM_DESC"
-			ideology = neutrality
-			label = { CSS_ZebricaFilter }
-			ideas = {
-
-			}
-			focuses = {
-				YAN_jewel_south
-				YAN_Out_West
-				YAN_Observe_East
 			}
 		}
 		effect = {
