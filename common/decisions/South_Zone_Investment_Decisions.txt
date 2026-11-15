@@ -389,22 +389,6 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
         }
     }
 
-    South_Zone_Investiture_7 = { # investigate corruption part 1 enables other corruption decisions
-
-        icon = generic_civil_war
-        cost = 1
-        allowed = {
-            original_tag = YAN
-        }
-        visible = {
-            has_country_flag = South_Zone_Situation_On_The_Ground_Completed
-        }
-        fire_only_once = yes
-        complete_effect = {
-            set_country_flag = South_Zone_Corruption_Chain_Started
-        }
-    }
-
     South_Zone_Corruption_Mission_1 = { # Corruption Mission Check
         icon = generic_civil_war
         cost = 0
@@ -423,6 +407,22 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
             activate_mission = South_Zone_Corruption_Mission_1
         }
 
+    }
+
+    South_Zone_Investiture_7 = { # investigate corruption part 1 enables other corruption decisions
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            has_country_flag = South_Zone_Situation_On_The_Ground_Completed
+        }
+        fire_only_once = yes
+        complete_effect = {
+            set_country_flag = South_Zone_Corruption_Chain_Started
+        }
     }
 
     South_Zone_Investiture_8 = { # investigate corruption part 2 - investigate corruption
