@@ -35,9 +35,7 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
                             check_variable = { South_Zone_Tourism_Crisis = 2 }
                             check_variable = { South_Zone_Tourism_Crisis = 3 }
                             check_variable = { South_Zone_Tourism_Crisis = 4 }
-
                         }
-
                     }
                     random_list = {
                         25 = {
@@ -62,554 +60,555 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
                 }
                 ELSE_IF = {
                     limit = {
-                        check_variable = { South_Zone_Tourism_Crisis = 5 } }
-                        country_event = {
-                            id = South_Zone_Tourism.6
-                            hours = 10
-                        }
+                        check_variable = { South_Zone_Tourism_Crisis = 5 }
+                    }
+                    country_event = {
+                        id = South_Zone_Tourism.6
+                        hours = 10
                     }
                 }
-            }
-        }
-
-        South_Zone_Investiture_Mission_2 = { # mercenary company strength
-            days_mission_timeout = 30
-            allowed = {
-                original_tag = YAN
-            }
-            available = {
-                always = no
-            }
-            activation = {
-                always = no
-            }
-            timeout_effect = {
-                custom_effect_tooltip = Merc_Power_Check_2_tt
-                activate_mission = South_Zone_Investiture_Mission_2
-                hidden_effect = {
-                    IF = {
-                        limit = {
-                            OR = {
-                                check_variable = { South_Zone_Merc_Strength_Crisis = 0 }
-                                check_variable = { South_Zone_Merc_Strength_Crisis = 1 }
-                            }
-                        }
-                        add_command_power = 10
-                        add_political_power = 15
-                    }
-                    ELSE_IF = {
-                        limit = {
-                            check_variable = { South_Zone_Merc_Strength_Crisis > 1 }
-                        }
-                        add_to_variable = {
-                            var = South_Zone_Merc_Strength_Crisis
-                            value = 1
-                        }
-                    }
-                }
-            }
-        }
-
-        South_Zone_Investiture_Mission_3 = { # Zebra tribal power mission
-            days_mission_timeout = 30
-            allowed = {
-                original_tag = YAN
-            }
-            available = {
-                always = no
-            }
-            activation = {
-                always = no
-            }
-            timeout_effect = {
-                custom_effect_tooltip = Zebra_Tribal_Power_Check_3_tt
-                activate_mission = South_Zone_Investiture_Mission_3
-                hidden_effect = {
-                    IF = {
-                        limit = {
-                            OR = {
-                                check_variable = { South_Zone_Zebra_Tribes_Crisis = 0 }
-                                check_variable = { South_Zone_Zebra_Tribes_Crisis = 1 }
-                            }
-                            add_command_power = 10
-                            add_political_power = 15
-                        }
-                    }
-                    ELSE_IF = {
-                        limit = {
-                            OR = {
-                                check_variable = { South_Zone_Zebra_Tribes_Crisis > 1 }
-                            }
-                            add_to_variable = {
-                                var = South_Zone_Zebra_Tribes_Crisis
-                                value = 1
-                            }
-                        }
-                    }
-                }
-
-            }
-        }
-
-        South_Zone_Investiture_Mission_4 = { # Air Supply must maintain
-            days_mission_timeout = 180
-
-            allowed = {
-                original_tag = YAN
-            }
-            available = {
-                always = no
-            }
-            activation = {
-                always = no
-            }
-            timeout_effect = {
-                activate_mission = South_Zone_Investiture_Mission_4
-            }
-        }
-
-        South_Zone_Investiture_0 = { #intelligence report on the south investment zone
-            icon = generic_civil_war
-            cost = 0
-            allowed = {
-                original_tag = YAN
-            }
-            fire_only_once = yes
-            available = {
-                has_intelligence_agency = yes
-                network_strength = {
-                    target = UBE
-                    state = 1139
-                    value > 10
-                }
-            }
-            visible = {
-                NOT = {
-                    has_country_flag = South_Zone_Intelligence_Report_Gained
-                }
-            }
-            complete_effect = {
-                custom_effect_tooltip = Intelligence_Report_Sud_Zebrika
-                hidden_effect = {
-                    country_event = { id = South_Zone_Crisis.1 days = 1 } # intelligence report event
-                }
-            }
-        }
-
-        South_Zone_Investiture_1 = { # Situation on the Ground introductory event
-
-            icon = generic_civil_war
-            cost = 1
-            allowed = {
-                original_tag = YAN
-            }
-            fire_only_once = yes
-            complete_effect = {
-                hidden_effect = {
-                    country_event = { id = South_Zone_Crisis.3 days = 1 } # large event chain
-                    clamp_variable = {
-                        var = South_Zone_Helicopter_Investment
-                        min = 0
-                        max = 3
-                    }
-                    clamp_variable = {
-                        var = South_Zone_Tourism_Crisis
-                        min = 0
-                        max = 5
-                    }
-                }
-
-            }
-        }
-
-        South_Zone_Investiture_2 = { # Investment in Boreasgrotte state - 1139
-
-            icon = generic_civil_war
-            cost = 1
-            allowed = {
-                original_tag = YAN
-            }
-            visible = {
-                has_country_flag = South_Zone_Situation_On_The_Ground_Completed
-            }
-            days_remove = 30
-            days_re_enable = 30
-            remove_effect = {
-                custom_effect_tooltip = South_Zone_Investiture_2_custom_tt
-                hidden_effect = {
-                    add_timed_idea = {
-                        idea = YAN_South_Zone_Invest_Boreasgrotte
-                        days = 30
-                    }
-                }
-
-            }
-
-        }
-
-        South_Zone_Investiture_3 = { # Sponsor Helicopter Development
-
-            icon = generic_civil_war
-            cost = 1
-            allowed = {
-                original_tag = YAN
-            }
-            visible = {
-                AND = {
-                    has_country_flag = South_Zone_Situation_On_The_Ground_Completed
-                    has_country_flag = South_Zone_Boreasgrotte_Explained
-                }
-            }
-            available = {
-                has_air_experience > 24
-                has_political_power > 24
-                NOT = {
-                    UBE = {
-                        is_special_project_completed = sp:sp_air_helicopter
-                    }
-                }
-                YAN = {
-                    is_special_project_completed = sp:sp_air_helicopter
-                }
-                check_variable = { South_Zone_Helicopter_Investment > 2 }
-            }
-            complete_effect = {
-                add_timed_idea = {
-                    idea = YAN_South_Zone_Helicopter_Designer
-                    days = 28
-                }
-            }
-            days_remove = 14
-            days_re_enable = 21
-            fire_only_once = yes
-            remove_effect = {
-                IF = {
-                    limit = {
-                        NOT = {
-                            UBE = {
-                                is_special_project_completed = sp:sp_air_helicopter
-                            }
-                        }
-                    }
-                    air_experience = -25
-                    add_political_power = -25
-                    add_to_variable = {
-                        var = South_Zone_Helicopter_Investment
-                        value = 1
-                    }
-                }
-                IF = {
-                    limit = {
-                        check_variable = { South_Zone_Helicopter_Investment > 2 }
-                    }
-                    UBE = { complete_special_project = sp:sp_air_helicopter }
-                    1139 = {
-                        add_building_construction = {
-                            type = air_facility
-                            level = 1
-                            instant_build = yes
-                            province = 16030
-                        }
-                    }
-                }
-            }
-
-        }
-
-        South_Zone_Investiture_4 = { # sponsor industry in the colony
-
-            icon = generic_civil_war
-            custom_cost_trigger = {
-                has_political_power > 49
-                has_fuel > 49999
-            }
-            custom_cost_text = South_Zone_Decision_Invest_4_custom_cost_tt
-            allowed = {
-                original_tag = YAN
-            }
-            visible = {
-                has_country_flag = South_Zone_Situation_On_The_Ground_Completed
-                UBE = {
-                    num_of_civilian_factories < 12
-                    num_of_military_factories < 12
-                }
-            }
-            available = {
-                custom_trigger_tooltip = {
-                    tooltip = South_Zone_Sponsor_Industry_Available_tt
-                    check_variable = {
-                        var = South_Zone_Crisis_Air_Supply
-                        value > 1
-                    }
-                    check_variable = {
-                        var = South_Zone_Helicopter_Investment
-                        value = 3
-                    }
-                    check_variable = {
-                        var = South_Zone_Merc_Strength_Crisis
-                        value < 3
-                    }
-                    check_variable = {
-                        var = South_Zone_Zebra_Tribes_Crisis
-                        value < 3
-                    }
-                }
-                YAN = {
-                    has_political_power > 49
-                    has_fuel > 49999
-
-                }
-            }
-            days_remove = 21
-            days_re_enable = 42
-            complete_effect = {
-                YAN = {
-                    add_fuel = -50000
-                    add_political_power = -50
-                }
-                add_timed_idea = {
-                    idea = YAN_Invest_In_South_Zone_Idea
-                    days = 21
-                }
-                subtract_from_variable = { South_Zone_Crisis_Air_Supply = 1 }
-            }
-            remove_effect = {
-                custom_effect_tooltip = UBE_Receives_Industry_tt
-                hidden_effect = {
-                    UBE = {
-                        random_list = {
-                            49 = {
-                                1139 = {
-                                    add_extra_state_shared_building_slots = 1
-                                    add_building_construction = {
-                                        type = industrial_complex
-                                        level = 1
-                                        instant_build = yes
-                                    }
-                                }
-                            }
-                            49 = {
-                                1139 = {
-                                    add_extra_state_shared_building_slots = 1
-                                    add_building_construction = {
-                                        type = arms_factory
-                                        level = 1
-                                        instant_build = yes
-                                    }
-                                }
-                            }
-                            2 = {
-                                1139 = {
-                                    add_extra_state_shared_building_slots = 2
-                                    add_building_construction = {
-                                        type = industrial_complex
-                                        level = 1
-                                        instant_build = yes
-                                    }
-                                    add_building_construction = {
-                                        type = arms_factory
-                                        level = 1
-                                        instant_build = yes
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        South_Zone_Investiture_5 = { # joint training exercise
-
-            icon = generic_civil_war
-            cost = 1
-            allowed = {
-                original_tag = YAN
-            }
-            visible = {
-                has_country_flag = South_Zone_Situation_On_The_Ground_Completed
-            }
-            available = {
-                has_army_experience < 299
-                has_air_experience < 299
-            }
-            days_remove = 150
-            days_re_enable = 250
-            fire_only_once = no
-            complete_effect = {
-                custom_effect_tooltip = South_Invest_5_Complete_2_tt
-                hidden_effect ={
-                    add_timed_idea = {
-                        idea = YAN_UBE_Joint_Training_Idea
-                        days = 150
-                    }
-                    add_to_variable = {
-                        var = South_Zone_Tourism_Crisis
-                        value = 1
-                    }
-                }
-            }
-            remove_effect = {
-                custom_effect_tooltip = South_Invest_5_Complete_tt
-                army_experience = 100
-                air_experience = 100
-                add_to_variable = {
-                    var = South_Zone_Tourism_Crisis
-                    value = 1
-                }
-            }
-        }
-
-        South_Zone_Investiture_6 = { # further security for tourism
-
-            icon = generic_civil_war
-            custom_cost_trigger = {
-                has_equipment = { infantry_equipment < 1499 }
-            }
-            custom_cost_text = South_Zone_6_Custom_Cost_tt
-            allowed = {
-                original_tag = YAN
-            }
-            visible = {
-                custom_trigger_tooltip = {
-                    tooltip = South_Zone_6_trigger_tt
-                    has_country_flag = South_Zone_Situation_On_The_Ground_Completed
-                    check_variable = { South_Zone_Tourism_Crisis < 4 }
-                }
-            }
-            available = {
-
-            }
-            days_remove = 30
-            days_re_enable = 90
-            remove_effect = {
-                add_to_variable = {
-                    var = South_Zone_Tourism_Crisis
-                    value = 1
-                }
-            }
-        }
-
-        South_Zone_Buffer_2 = { # purely localisation
-            icon = generic_civil_war
-            cost = 0
-            visible = {
-                has_active_mission = South_Zone_Corruption_Mission_1
-            }
-            available = {
-                always = no
-            }
-        }
-
-        South_Zone_Corruption_Mission_1 = { # Corruption Mission Check
-            icon = generic_civil_war
-            cost = 0
-            allowed = {
-                original_tag = YAN
-            }
-            visible = {
-                NOT = {
-                    has_country_flag = South_Zone_Corruption_Chain_Completed
-                }
-            }
-            activation = {
-                always = no
-            }
-            selectable_mission = no
-            days_remove = 90
-            remove_effect = {
-                custom_effect_tooltip = Corruption_Mission_Check_Explainer_tt
-                activate_mission = South_Zone_Corruption_Mission_1
-                hidden_effect = {
-                    IF = {
-                        limit = {
-                            check_variable = { South_Zone_Corruption_Investigation > 29 }
-                            check_variable = { South_Zone_Corruption_Investigation < 59 }
-                        }
-                        random_list = {
-                            50 = {
-                                subtract_from_variable = {
-                                    var = South_Zone_Corruption_Investigation
-                                    value = 5
-                                }
-                            }
-                            10 = {
-                                subtract_from_variable = {
-                                    var = South_Zone_Corruption_Investigation
-                                    value = 10
-                                }
-                            }
-                        }
-                    }
-                    IF = {
-                        limit = { check_variable = { South_Zone_Corruption_Investigation > 59 } }
-                        random_list = {
-                            75 = {
-                                subtract_from_variable = {
-                                    var = South_Zone_Corruption_Investigation
-                                    value = 5
-                                }
-                            }
-                            25 = {
-                                subtract_from_variable = {
-                                    var = South_Zone_Corruption_Investigation
-                                    value = 10
-                                }
-                            }
-                            1 = {
-                                subtract_from_variable = {
-                                    var = South_Zone_Corruption_Investigation
-                                    value = 15
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-        }
-
-        South_Zone_Investiture_7 = { # investigate corruption enabled variables and south_zone_corruption events
-
-            icon = generic_civil_war
-            cost = 1
-            allowed = {
-                original_tag = YAN
-            }
-            visible = {
-                has_country_flag = South_Zone_Situation_On_The_Ground_Completed
-                NOT = {
-                    has_country_flag = South_Zone_Corruption_Chain_Started
-                }
-                NOT = {
-                    has_country_flag = South_Zone_Corruption_Chain_Completed
-                }
-            }
-            fire_only_once = yes
-            complete_effect = {
-                set_country_flag = South_Zone_Corruption_Chain_Started
-                country_event = { id = South_Zone_Crisis_Corruption.1 random = 30 }
-            }
-        }
-
-        South_Zone_Investiture_11 = { # final decision to complete the category
-
-            icon = generic_civil_war
-            cost = 1
-            allowed = {
-                original_tag = YAN
-            }
-            visible = {
-                AND = {
-                    has_country_flag = South_Zone_Situation_On_The_Ground_Completed
-                    has_country_flag = South_Zone_Corruption_Chain_Started
-                    has_country_flag = South_Zone_Corruption_Chain_Completed
-                }
-            }
-            fire_only_once = no
-            complete_effect = {
-                custom_effect_tooltip = Complete_SK_CW_Category_tt
-                hidden_effect = { set_global_flag = South_Zone_Crisis_Resolved }
             }
         }
     }
+
+    South_Zone_Investiture_Mission_2 = { # mercenary company strength
+        days_mission_timeout = 30
+        allowed = {
+            original_tag = YAN
+        }
+        available = {
+            always = no
+        }
+        activation = {
+            always = no
+        }
+        timeout_effect = {
+            custom_effect_tooltip = Merc_Power_Check_2_tt
+            activate_mission = South_Zone_Investiture_Mission_2
+            hidden_effect = {
+                IF = {
+                    limit = {
+                        OR = {
+                            check_variable = { South_Zone_Merc_Strength_Crisis = 0 }
+                            check_variable = { South_Zone_Merc_Strength_Crisis = 1 }
+                        }
+                    }
+                    add_command_power = 10
+                    add_political_power = 15
+                }
+                ELSE_IF = {
+                    limit = {
+                        check_variable = { South_Zone_Merc_Strength_Crisis > 1 }
+                    }
+                    add_to_variable = {
+                        var = South_Zone_Merc_Strength_Crisis
+                        value = 1
+                    }
+                }
+            }
+        }
+    }
+
+    South_Zone_Investiture_Mission_3 = { # Zebra tribal power mission
+        days_mission_timeout = 30
+        allowed = {
+            original_tag = YAN
+        }
+        available = {
+            always = no
+        }
+        activation = {
+            always = no
+        }
+        timeout_effect = {
+            custom_effect_tooltip = Zebra_Tribal_Power_Check_3_tt
+            activate_mission = South_Zone_Investiture_Mission_3
+            hidden_effect = {
+                IF = {
+                    limit = {
+                        OR = {
+                            check_variable = { South_Zone_Zebra_Tribes_Crisis = 0 }
+                            check_variable = { South_Zone_Zebra_Tribes_Crisis = 1 }
+                        }
+                    }
+                    add_command_power = 10
+                    add_political_power = 15
+                }
+                ELSE_IF = {
+                    limit = {
+                        OR = {
+                            check_variable = { South_Zone_Zebra_Tribes_Crisis > 1 }
+                        }
+                    }
+                    add_to_variable = {
+                            var = South_Zone_Zebra_Tribes_Crisis
+                            value = 1
+                        }
+                }
+            }
+
+        }
+    }
+
+    South_Zone_Investiture_Mission_4 = { # Air Supply must maintain
+        days_mission_timeout = 180
+
+        allowed = {
+            original_tag = YAN
+        }
+        available = {
+            always = no
+        }
+        activation = {
+            always = no
+        }
+        timeout_effect = {
+            activate_mission = South_Zone_Investiture_Mission_4
+        }
+    }
+
+    South_Zone_Investiture_0 = { #intelligence report on the south investment zone
+        icon = generic_civil_war
+        cost = 0
+        allowed = {
+            original_tag = YAN
+        }
+        fire_only_once = yes
+        available = {
+            has_intelligence_agency = yes
+            network_strength = {
+                target = UBE
+                state = 1139
+                value > 10
+            }
+        }
+        visible = {
+            NOT = {
+                has_country_flag = South_Zone_Intelligence_Report_Gained
+            }
+        }
+        complete_effect = {
+            custom_effect_tooltip = Intelligence_Report_Sud_Zebrika
+            hidden_effect = {
+                country_event = { id = South_Zone_Crisis.1 days = 1 } # intelligence report event
+            }
+        }
+    }
+
+    South_Zone_Investiture_1 = { # Situation on the Ground introductory event
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        fire_only_once = yes
+        complete_effect = {
+            hidden_effect = {
+                country_event = { id = South_Zone_Crisis.3 days = 1 } # large event chain
+                clamp_variable = {
+                    var = South_Zone_Helicopter_Investment
+                    min = 0
+                    max = 3
+                }
+                clamp_variable = {
+                    var = South_Zone_Tourism_Crisis
+                    min = 0
+                    max = 5
+                }
+            }
+
+        }
+    }
+
+    South_Zone_Investiture_2 = { # Investment in Boreasgrotte state - 1139
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            has_country_flag = South_Zone_Situation_On_The_Ground_Completed
+        }
+        days_remove = 30
+        days_re_enable = 30
+        remove_effect = {
+            custom_effect_tooltip = South_Zone_Investiture_2_custom_tt
+            hidden_effect = {
+                add_timed_idea = {
+                    idea = YAN_South_Zone_Invest_Boreasgrotte
+                    days = 30
+                }
+            }
+
+        }
+
+    }
+
+    South_Zone_Investiture_3 = { # Sponsor Helicopter Development
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            AND = {
+                has_country_flag = South_Zone_Situation_On_The_Ground_Completed
+                has_country_flag = South_Zone_Boreasgrotte_Explained
+            }
+        }
+        available = {
+            has_air_experience > 24
+            has_political_power > 24
+            NOT = {
+                UBE = {
+                    is_special_project_completed = sp:sp_air_helicopter
+                }
+            }
+            YAN = {
+                is_special_project_completed = sp:sp_air_helicopter
+            }
+            check_variable = { South_Zone_Helicopter_Investment > 2 }
+        }
+        complete_effect = {
+            add_timed_idea = {
+                idea = YAN_South_Zone_Helicopter_Designer
+                days = 28
+            }
+        }
+        days_remove = 14
+        days_re_enable = 21
+        fire_only_once = yes
+        remove_effect = {
+            IF = {
+                limit = {
+                    NOT = {
+                        UBE = {
+                            is_special_project_completed = sp:sp_air_helicopter
+                        }
+                    }
+                }
+                air_experience = -25
+                add_political_power = -25
+                add_to_variable = {
+                    var = South_Zone_Helicopter_Investment
+                    value = 1m
+                }
+            }
+            IF = {
+                limit = {
+                    check_variable = { South_Zone_Helicopter_Investment > 2 }
+                }
+                UBE = { complete_special_project = sp:sp_air_helicopter }
+                1139 = {
+                    add_building_construction = {
+                        type = air_facility
+                        level = 1
+                        instant_build = yes
+                        province = 16030
+                    }
+                }
+            }
+        }
+
+    }
+
+    South_Zone_Investiture_4 = { # sponsor industry in the colony
+
+        icon = generic_civil_war
+        custom_cost_trigger = {
+            has_political_power > 49
+            has_fuel > 49999
+        }
+        custom_cost_text = South_Zone_Decision_Invest_4_custom_cost_tt
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            has_country_flag = South_Zone_Situation_On_The_Ground_Completed
+            UBE = {
+                num_of_civilian_factories < 12
+                num_of_military_factories < 12
+            }
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = South_Zone_Sponsor_Industry_Available_tt
+                check_variable = {
+                    var = South_Zone_Crisis_Air_Supply
+                    value > 1
+                }
+                check_variable = {
+                    var = South_Zone_Helicopter_Investment
+                    value = 3
+                }
+                check_variable = {
+                    var = South_Zone_Merc_Strength_Crisis
+                    value < 3
+                }
+                check_variable = {
+                    var = South_Zone_Zebra_Tribes_Crisis
+                    value < 3
+                }
+            }
+            YAN = {
+                has_political_power > 49
+                has_fuel > 49999
+
+            }
+        }
+        days_remove = 21
+        days_re_enable = 42
+        complete_effect = {
+            YAN = {
+                add_fuel = -50000
+                add_political_power = -50
+            }
+            add_timed_idea = {
+                idea = YAN_Invest_In_South_Zone_Idea
+                days = 21
+            }
+            subtract_from_variable = { South_Zone_Crisis_Air_Supply = 1 }
+        }
+        remove_effect = {
+            custom_effect_tooltip = UBE_Receives_Industry_tt
+            hidden_effect = {
+                UBE = {
+                    random_list = {
+                        49 = {
+                            1139 = {
+                                add_extra_state_shared_building_slots = 1
+                                add_building_construction = {
+                                    type = industrial_complex
+                                    level = 1
+                                    instant_build = yes
+                                }
+                            }
+                        }
+                        49 = {
+                            1139 = {
+                                add_extra_state_shared_building_slots = 1
+                                add_building_construction = {
+                                    type = arms_factory
+                                    level = 1
+                                    instant_build = yes
+                                }
+                            }
+                        }
+                        2 = {
+                            1139 = {
+                                add_extra_state_shared_building_slots = 2
+                                add_building_construction = {
+                                    type = industrial_complex
+                                    level = 1
+                                    instant_build = yes
+                                }
+                                add_building_construction = {
+                                    type = arms_factory
+                                    level = 1
+                                    instant_build = yes
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    South_Zone_Investiture_5 = { # joint training exercise
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            has_country_flag = South_Zone_Situation_On_The_Ground_Completed
+        }
+        available = {
+            has_army_experience < 299
+            has_air_experience < 299
+        }
+        days_remove = 150
+        days_re_enable = 250
+        fire_only_once = no
+        complete_effect = {
+            custom_effect_tooltip = South_Invest_5_Complete_2_tt
+            hidden_effect ={
+                add_timed_idea = {
+                    idea = YAN_UBE_Joint_Training_Idea
+                    days = 150
+                }
+                add_to_variable = {
+                    var = South_Zone_Tourism_Crisis
+                    value = 1
+                }
+            }
+        }
+        remove_effect = {
+            custom_effect_tooltip = South_Invest_5_Complete_tt
+            army_experience = 100
+            air_experience = 100
+            add_to_variable = {
+                var = South_Zone_Tourism_Crisis
+                value = 1
+            }
+        }
+    }
+
+    South_Zone_Investiture_6 = { # further security for tourism
+
+        icon = generic_civil_war
+        custom_cost_trigger = {
+            has_equipment = { infantry_equipment < 1499 }
+        }
+        custom_cost_text = South_Zone_6_Custom_Cost_tt
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            custom_trigger_tooltip = {
+                tooltip = South_Zone_6_trigger_tt
+                has_country_flag = South_Zone_Situation_On_The_Ground_Completed
+                check_variable = { South_Zone_Tourism_Crisis < 4 }
+            }
+        }
+        available = {
+
+        }
+        days_remove = 30
+        days_re_enable = 90
+        remove_effect = {
+            add_to_variable = {
+                var = South_Zone_Tourism_Crisis
+                value = 1
+            }
+        }
+    }
+
+    South_Zone_Buffer_2 = { # purely localisation
+        icon = generic_civil_war
+        cost = 0
+        visible = {
+            has_active_mission = South_Zone_Corruption_Mission_1
+        }
+        available = {
+            always = no
+        }
+    }
+
+    South_Zone_Corruption_Mission_1 = { # Corruption Mission Check
+        icon = generic_civil_war
+        cost = 0
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            NOT = {
+                has_country_flag = South_Zone_Corruption_Chain_Completed
+            }
+        }
+        activation = {
+            always = no
+        }
+        selectable_mission = no
+        days_remove = 90
+        remove_effect = {
+            custom_effect_tooltip = Corruption_Mission_Check_Explainer_tt
+            activate_mission = South_Zone_Corruption_Mission_1
+            hidden_effect = {
+                IF = {
+                    limit = {
+                        check_variable = { South_Zone_Corruption_Investigation > 29 }
+                        check_variable = { South_Zone_Corruption_Investigation < 59 }
+                    }
+                    random_list = {
+                        50 = {
+                            subtract_from_variable = {
+                                var = South_Zone_Corruption_Investigation
+                                value = 5
+                            }
+                        }
+                        10 = {
+                            subtract_from_variable = {
+                                var = South_Zone_Corruption_Investigation
+                                value = 10
+                            }
+                        }
+                    }
+                }
+                IF = {
+                    limit = { check_variable = { South_Zone_Corruption_Investigation > 59 } }
+                    random_list = {
+                        75 = {
+                            subtract_from_variable = {
+                                var = South_Zone_Corruption_Investigation
+                                value = 5
+                            }
+                        }
+                        25 = {
+                            subtract_from_variable = {
+                                var = South_Zone_Corruption_Investigation
+                                value = 10
+                            }
+                        }
+                        1 = {
+                            subtract_from_variable = {
+                                var = South_Zone_Corruption_Investigation
+                                value = 15
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    South_Zone_Investiture_7 = { # investigate corruption enabled variables and south_zone_corruption events
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            has_country_flag = South_Zone_Situation_On_The_Ground_Completed
+            NOT = {
+                has_country_flag = South_Zone_Corruption_Chain_Started
+            }
+            NOT = {
+                has_country_flag = South_Zone_Corruption_Chain_Completed
+            }
+        }
+        fire_only_once = yes
+        complete_effect = {
+            set_country_flag = South_Zone_Corruption_Chain_Started
+            country_event = { id = South_Zone_Crisis_Corruption.1 random = 30 }
+        }
+    }
+
+    South_Zone_Investiture_11 = { # final decision to complete the category
+
+        icon = generic_civil_war
+        cost = 1
+        allowed = {
+            original_tag = YAN
+        }
+        visible = {
+            AND = {
+                has_country_flag = South_Zone_Situation_On_The_Ground_Completed
+                has_country_flag = South_Zone_Corruption_Chain_Started
+                has_country_flag = South_Zone_Corruption_Chain_Completed
+            }
+        }
+        fire_only_once = no
+        complete_effect = {
+            custom_effect_tooltip = Complete_SK_CW_Category_tt
+            hidden_effect = { set_global_flag = South_Zone_Crisis_Resolved }
+        }
+    }
+}

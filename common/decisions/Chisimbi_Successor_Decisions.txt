@@ -75,7 +75,7 @@ Chisimbi_Crisis_Investment_Decisions = { # TAG - GFS - Mukoza Taredna
         remove_effect = {
             custom_effect_tooltip = Intelligence_Report_Chisimbi_tt
             hidden_effect = {
-                country_event = { id = chisimbi_crisis.1 }
+                country_event = { id = chisimbi_intel.1 }
                 set_country_flag = Chisimbi_Intelligence_Report_Taken
             }
         }

@@ -4,7 +4,7 @@
  Storm_Kingdom_Map_Area_tt:0 "Click to jump to the §5Storm Isle§!"
 
  Storm_Kingdom_Investment_Decisions:0 "Intervention in the §5Rainband§!"
- Storm_Kingdom_Investment_Decisions_desc:0 "With the passing of the §RStorm King§! in his unfortunate folly, the seat of his Power, the Rainband - has collapsed into multiple Successor States of varying legitimacy.\n\nA Warlock, A confused Storm Creature, An armchair General relying on the good will of Zebras...\n\nAnd in the seat of Power, the §4Eye of the Storm§!, §5Ikvus Hailstorm§! sits atop the traditional throne and one of the most secure positions for our investments.\n\nIt is to our distinct advantage to keep him content so we may call in our Investments at a later date. §7Or perhaps, convene something greater; should we play our cards right.§!\n\n§5Ikvus Hailstorm's§! currently §G[ROOT.Get_Ikvus_Happiness]§!."
+ Storm_Kingdom_Investment_Decisions_desc:0 "With the passing of the §RStorm King§! in his unfortunate folly, the seat of his Power, the Rainband - has collapsed into multiple Successor States of varying legitimacy.\n\nA Warlock, A confused Storm Creature, An armchair General relying on the good will of Zebras...\n\nAnd in the seat of Power, the §4Eye of the Storm§!, §5Ikvus Hailstorm§! sits atop the traditional throne and one of the most secure positions for our investments.\n\nIt is to our distinct advantage to keep him content so we may call in our Investments at a later date. §7Or perhaps, convene something greater; should we play our cards right.§!\n\n§5Ikvus Hailstorm's§! currently §G[Ikvus_Happiness_key]§!."
 
  StormKing_Decision_0:0 "Intelligence Report: §5Ikvus Hailstorm§!"
 
@@ -47,7 +47,7 @@
  Saddle_Arabica_Map_Area_tt:0 "Click to jump to §6Trotgiers§!"
 
  Saddle_Arabia_Investment_Decisions:0 "Trouble in §7Arabica§!"
- Saddle_Arabia_Investment_Decisions_desc:0 "civil war intervention decision category todo\n\nFaisals Happiness Indicator - §6[?ROOT.Get_Faisal_Happiness]§!\nCurrent Light Weapon Storage is §9[ROOT.Get_SA_CW_LW_Stashes]§!\nCurrent Heavy Weapon Storage is §9[ROOT.Get_SA_CW_HW_Stashes]§!\nCurrent Light Armoured Storage is §9[ROOT.Get_SA_CW_LV_Stashes]§!\n\n§7The Oil Must Flow!§!"
+ Saddle_Arabia_Investment_Decisions_desc:0 "civil war intervention decision category todo\n\nFaisals Happiness Indicator - §6[Faisal_Happiness_key]§!\nCurrent Light Weapon Storage is §9[SA_CW_LW_Stashes_key]§!\nCurrent Heavy Weapon Storage is §9[SA_CW_HW_Stashes_key]§!\nCurrent Light Armoured Storage is §9[SA_CW_LV_Stashes_key]§!\n\n§7The Oil Must Flow!§!"
 
  saddle_arabia_keksimus_maximus_0:0 "Intelligence Report: §7Emir Faisal§! and the §7Pax Arabica§!"
  saddle_arabia_keksimus_maximus_1:0 "Introduce Ourselves to the Emir"
@@ -71,7 +71,7 @@
  Chisimbi_Crisis_Map_Area_tt:0 "Click to jump to §8Grinhval§!"
 
  Chisimbi_Crisis_Investment_Decisions:0 "The §8Chisimbi Successor§!"
- Chisimbi_Crisis_Investment_Decisions_desc:0 "chisimbi crisis stuff\n\ntodo\n\n[ROOT.Prince_Happiness] - Ikvus Happiness influence amount\n\n[ROOT.Griff_CW_Happiness] - Imba Zaru Griffons influence"
+ Chisimbi_Crisis_Investment_Decisions_desc:0 "chisimbi crisis stuff\n\ntodo\n\n[GFS_IZ_Happiness_key] - Ikvus Happiness influence amount\n\n[GFS_G_Happiness_key] - Imba Zaru Griffons influence"
 
  Chisimbi_Griff_Influence_Mission:0 "Griffon §YInfluence§! Increases!"
 
@@ -113,7 +113,7 @@
  South_Zone_Decision_Map_Area_tt:0 "Click to jump to §7Mexikstadt§!"
 
  South_Zone_Investment_Decisions:0 "Saving the Investment Zone"
- South_Zone_Investment_Decisions_desc:0 "todo saving investment zone\n\n\nvariables below\n\n§L[SZ_Tourism_Safety]§! Tourism Check\n\n§L[SZ_Merc_Strength]§! - merc strength check\n\n§L[SZ_Zebra_Strength]]§! zebra tribe strength\n\n§L[SZ_Air_Supply]§! air supply check\n\n§L[Get_South_Zone_Heli_Progress]§! - Helicopter Investment\n\ncorruption check §L[GET_SZ_Corruption]§!"
+ South_Zone_Investment_Decisions_desc:0 "todo saving investment zone\n\n\nvariables below\n\n§L[SZ_Tourism_Safety_key]§! Tourism Check\n\n§L[SZ_Merc_Strength_key]§! - merc strength check\n\n§L[SZ_Zebra_Strength_key]§! zebra tribe strength\n\n§L[SZ_Air_Supply_key]§! air supply check\n\n§L[SZ_Heli_P_key]§! - Helicopter Investment\n\ncorruption check §L[SZ_Corruption_key]§!"
 
  South_Zone_Investiture_Mission_1:0 "tourism mission"
  South_Zone_Investiture_Mission_1_desc:0 "todo"
@@ -210,7 +210,7 @@
  Cuban_Anger_Map_Area_tt:0 "Click to Jump to §1Cubanacan§!"
 
  Cubanacan_Anger_Decisions:0 "§1Cubanacan Fury!§!"
- Cubanacan_Anger_Decisions_desc:0 "Todo mission of Native co operation\n\nCurrent Cabanacan §RAnger§! is §7[?ROOT.Cuban_Anger]§!% out of a maximum of §7100%§!\n\nWe have currently taken §R[?ROOT.Cuban_Actions]§! Actions to appease them.\n\ntodo decision"
+ Cubanacan_Anger_Decisions_desc:0 "Todo mission of Native co operation\n\nCurrent Cabanacan §RAnger§! is §7[Cuban_Angry_key]§!% out of a maximum of §7100%§!\n\nWe have currently taken §R[?ROOT.Cuban_Actions]§! Actions to appease them.\n\ntodo decision"
 
  Cubanacan_Anger_Mission:0 "Cubanacani §RAnger§! Increases!"
  Cubanacan_Anger_Mission_desc:0 "todo"
@@ -254,5 +254,5 @@
  #### Debug Decisions ####
 
  YAN_Debug_Decisions:0 "Debug Decisions"
- YAN_Debug_Decisions_desc:0 "Debug Decisions - All Variables\n\nIkvus_CW_Happiness - §R[?ROOT.Ikvus_CW_Happiness]§!\n\nFaisal_CW_Happiness - §R[?ROOT.Faisal_CW_Happiness]§!\n\nPrince_CW_Happiness - §R[?ROOT.Prince.CW.Happiness]§!\n\n\nCuban Actions - §R[?ROOT.Cuban_Actions]§!\n\nCuban Anger - §R[?ROOT.Cuban_Anger]§!\n\n\nFrei Zebrikaan State Strength Meter - §R[?ROOT.FZS_Strength_Meter]§!\n\n\nScripted loc keys\n§C[ROOT.Get_SA_CW_LW_Stashes]§! Light Weapon stash , §C[ROOT.Get_SA_CW_HW_Stashes]§! Heavy Weapon artillery stash §C[ROOT.Get_SA_CW_LV_Stashes]§! light armoured vehicles\n\n[§LROOT.South_Zone_Tourism_Crisis]§! Tourism Check\n\n§L[ROOT.South_Zone_Merc_Strength_Crisis]§! - merc strength check\n\n§L[ROOT.South_Zone_Zebra_Tribes_Crisis]§! zebra tribe strength\n\n§L[GET.South_Zone_Crisis_Air_Supply]§! air supply check\n\n§L[GET.South_Zone_Helicopter_Investment]§! - Helicopter Investment\n\nmerc strength dynamic - [?ROOT.SZ_Merc_Strength]\n\nzeeb strength dynamic - [?ROOT.SZ_Zebra_Strength]\n\nHeli investment dynamic - [?ROOT.South_Zone_Heli_Progress]\n\nAir supply dynamic - [?ROOT.SZ_Air_Supply]\n\n\n[GET_SZ_Corruption] - corruption variable"
+ YAN_Debug_Decisions_desc:0 "Debug Decisions - All Variables\n\nIkvus_CW_Happiness - §R[?ROOT.Ikvus_CW_Happiness]§!\n\nFaisal_CW_Happiness - §R[?ROOT.Faisal_CW_Happiness]§!\n\nPrince_CW_Happiness - §R[?ROOT.Prince.CW.Happiness]§!\n\n\nCuban Actions - §R[?ROOT.Cuban_Actions]§!\n\nCuban Anger - §R[Cuban_Angry_key]§!\n\n\nFrei Zebrikaan State Strength Meter - §R[?ROOT.FZS_Strength_Meter]§!\n\n\nScripted loc keys\n§C[SA_CW_LW_Stashes_key]§! Light Weapon stash , §C[SA_CW_HW_Stashes_key]§! Heavy Weapon artillery stash §C[SA_CW_LV_Stashes_key]§! light armoured vehicles\n\n[§LROOT.South_Zone_Tourism_Crisis]§! Tourism Check\n\n§L[ROOT.South_Zone_Merc_Strength_Crisis]§! - merc strength check\n\n§L[SZ_Zebra_Strength_key]§! zebra tribe strength\n\n§L[GET.South_Zone_Crisis_Air_Supply]§! air supply check\n\n§L[GET.South_Zone_Helicopter_Investment]§! - Helicopter Investment\n\nmerc strength dynamic - [SZ_Merc_Strength_key]\n\nzeeb strength dynamic - [SZ_Zebra_Strength_key]\n\nHeli investment dynamic - [?ROOT.South_Zone_Heli_Progress]\n\nAir supply dynamic - [?ROOT.SZ_Air_Supply_key]\n\n\n[SZ_Corruption_key] - corruption variable"
  

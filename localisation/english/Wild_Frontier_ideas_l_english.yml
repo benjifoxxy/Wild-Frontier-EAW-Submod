@@ -63,7 +63,7 @@
  YAN_Local_Administration_Idea_desc:0 "local admin todo desc"
 
  YAN_Open_Defiance_Idea:0 "Defiant Self-Reliance"
- YAN_Open_Defiance_Idea_desc:0 "It has become common for the Cubanacan Zebras to savour the grace of their §1Mataram§!, '§1Cleo of the Kalinigo§!', who commands authority from her status as deity of her people. If she is not swayed to co-operation, neither are her citizens.\n\n§7Current Cubanacan Anger is§! §R[?ROOT.Cuban_Anger]§!\n\n§7We have taken§! §R[?ROOT.Cuban_Actions]§! §7Actions towards Reconciliation with§! §1Mataram Cleo.§!"
+ YAN_Open_Defiance_Idea_desc:0 "It has become common for the Cubanacan Zebras to savour the grace of their §1Mataram§!, '§1Cleo of the Kalinigo§!', who commands authority from her status as deity of her people. If she is not swayed to co-operation, neither are her citizens.\n\n§7Current Cubanacan Anger is§! §R[Cuban_Angry_key]§!\n\n§7We have taken§! §R[?ROOT.Cuban_Actions]§! §7Actions towards Reconciliation with§! §1Mataram Cleo.§!"
 
  YAN_MQA_1_Idea:0 "sambovato debt todo"
  YAN_MQA_1_Idea_desc:0 "sambovato debt todo desc"

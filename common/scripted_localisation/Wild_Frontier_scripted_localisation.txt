@@ -1,6 +1,6 @@
 
-defined_text = {
-    name = Get_SZ_Corruption
+defined_text = { # South Zone Corruption Loc
+    name = SZ_Corruption_key
     
     text = {
         trigger = { check_variable = { South_Zone_Corruption_Investigation = 0 } }
@@ -90,7 +90,7 @@ defined_text = {
 
 
 defined_text = {
-    name = Get_Ikvus_Happiness
+    name = Ikvus_Happiness_key
 
     text = {
         trigger = { check_variable = { Ikvus_CW_Happiness = 0 } }
@@ -139,7 +139,7 @@ defined_text = {
 }
 
 defined_text = {
-    name = Get_Faisal_Happiness
+    name = Faisal_Happiness_key
 
     text = {
         trigger = { check_variable = { Faisal_CW_Happiness = 0 } }
@@ -188,7 +188,7 @@ defined_text = {
 }
 
 defined_text = {
-    name = Get_Imba_Zaru_Happiness
+    name = GFS_IZ_Happiness_key
 
     text = {
         trigger = { check_variable = { Prince_CW_Happiness = 0 } }
@@ -217,7 +217,7 @@ defined_text = {
 }
 
 defined_text = {
-    name = Get_GFS_Griff_Happiness
+    name = GFS_G_Happiness_key
 
     text = {
         trigger = { check_variable = { Griff_CW_Happiness = 0 } }
@@ -246,7 +246,7 @@ defined_text = {
 }
 
 defined_text = {
-    name = Get_SA_CW_LW_Stashes
+    name = SA_CW_LW_Stashes_key
 
     text = {
         trigger = { check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Light_Weapons = 0 } }
@@ -278,7 +278,7 @@ defined_text = {
 }
 
 defined_text = {
-    name = Get_SA_CW_HW_Stashes
+    name = SA_CW_HW_Stashes_key
 
     text = {
         trigger = { check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Heavy_Weapons = 0 } }
@@ -310,7 +310,7 @@ defined_text = {
 }
 
 defined_text = {
-    name = Get_SA_CW_LV_Stashes
+    name = SA_CW_LV_Stashes_key
 
     text = {
         trigger = { check_variable = { Saddle_Arabia_CW_Weapon_Stashes_Mobile_Vehicles = 0 } }
@@ -342,7 +342,7 @@ defined_text = {
 }
 
 defined_text = {
-    name = Get_South_Zone_Heli_Progress
+    name = SZ_Heli_P_key
 
     text = {
         trigger = { check_variable = { South_Zone_Helicopter_Investment = 0 } }
@@ -363,7 +363,7 @@ defined_text = {
 }
 
 defined_text = {
-    name = SZ_Merc_Strength
+    name = SZ_Merc_Strength_key
     text = {
         trigger = { check_variable = { South_Zone_Merc_Strength_Crisis = 0 } }
         localization_key = SZ_Merc_Strength_0
@@ -391,7 +391,7 @@ defined_text = {
 }
 
 defined_text = {
-    name = SZ_Zebra_Strength
+    name = SZ_Zebra_Strength_key
     text = {
         trigger = { check_variable = { South_Zone_Zebra_Tribes_Crisis = 0 } }
         localization_key = SZ_Zebra_Strength_0
@@ -419,7 +419,7 @@ defined_text = {
 }
 
 defined_text = {
-    name = SZ_Air_Supply
+    name = SZ_Air_Supply_key
     text = {
         trigger = { check_variable = { South_Zone_Crisis_Air_Supply = 0 } }
         localization_key = SZ_Air_Supply_0
@@ -447,7 +447,7 @@ defined_text = {
 }
 
 defined_text = {
-    name = SZ_Tourism_Safety
+    name = SZ_Tourism_Safety_key
     text = {
         trigger = { check_variable = { South_Zone_Tourism_Crisis = 0 } }
         localization_key = SZ_Tourism_Crisis_0
@@ -471,5 +471,143 @@ defined_text = {
     text = {
         trigger = { check_variable = { South_Zone_Tourism_Crisis = 5 } }
         localization_key = SZ_Tourism_Crisis_5
+    }
+}
+
+defined_text = {
+    name = Cuban_Angry_key
+
+    text = {
+        trigger = { check_variable = { Cuban_Anger = 0 } }
+        localization_key = Cuban_Angry_0
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Anger = 5 } }
+        localization_key = Cuban_Angry_5
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Anger = 10 } }
+        localization_key = Cuban_Angry_10
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Anger = 15 } }
+        localization_key = Cuban_Angry_15
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Anger = 20 } }
+        localization_key = Cuban_Angry_20
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Anger = 25 } }
+        localization_key = Cuban_Angry_25
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Anger = 30 } }
+        localization_key = Cuban_Angry_30
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Anger = 35 } }
+        localization_key = Cuban_Angry_35
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Anger = 40 } }
+        localization_key = Cuban_Angry_40
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Anger = 45 } }
+        localization_key = Cuban_Angry_45
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Anger = 50 } }
+        localization_key = Cuban_Angry_50
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Anger = 55 } }
+        localization_key = Cuban_Angry_55
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Anger = 60 } }
+        localization_key = Cuban_Angry_60
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Anger = 65 } }
+        localization_key = Cuban_Angry_65
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Anger = 70 } }
+        localization_key = Cuban_Angry_70
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Anger = 75 } }
+        localization_key = Cuban_Angry_75
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Anger = 80 } }
+        localization_key = Cuban_Angry_80
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Anger = 85 } }
+        localization_key = Cuban_Angry_85
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Anger = 90 } }
+        localization_key = Cuban_Angry_90
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Anger = 95 } }
+        localization_key = Cuban_Angry_95
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Anger = 100 } }
+        localization_key = Cuban_Angry_100
+    }
+}
+
+defined_text = {
+    name = Cuban_Actions_key
+
+    text = {
+        trigger = { check_variable = { Cuban_Actions = 0 } }
+        localization_key = Cuban_Actions_0
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Actions = 1 } }
+        localization_key = Cuban_Actions_1
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Actions = 2 } }
+        localization_key = Cuban_Actions_2
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Actions = 3 } }
+        localization_key = Cuban_Actions_3
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Actions = 4 } }
+        localization_key = Cuban_Actions_4
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Actions = 5 } }
+        localization_key = Cuban_Actions_5
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Actions = 6 } }
+        localization_key = Cuban_Actions_6
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Actions = 7 } }
+        localization_key = Cuban_Actions_7
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Actions = 8 } }
+        localization_key = Cuban_Actions_8
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Actions = 9 } }
+        localization_key = Cuban_Actions_9
+    }
+    text = {
+        trigger = { check_variable = { Cuban_Actions = 10 } }
+        localization_key = Cuban_Actions_10
     }
 }

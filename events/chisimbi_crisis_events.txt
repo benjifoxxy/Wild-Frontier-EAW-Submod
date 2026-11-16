@@ -1,14 +1,85 @@
 add_namespace = chisimbi_crisis
+add_namespace = chisimbi_intel
 
 country_event = { # intelligence report on chisimbi - circular event
-    id = chisimbi_crisis.1
-    title = chisimbi_crisis.1.t
-    desc = chisimbi_crisis.1.d
+    id = chisimbi_intel.1
+    title = chisimbi_intel.1.t
+    desc = chisimbi_intel.1.desc
+    picture = GFX_report_event_generic_political
+    
+    is_triggered_only = yes
+    option = { # Tanganiyka and Roam
+        name = chisimbi_intel.1.a
+        trigger = {
+            NOT = {
+                has_country_flag = Chisimbi_Intel_Option_1_Taken
+            }
+        }
+        hidden_effect = {
+            country_event = { id = chisimbi.intel.2 }
+        }
+        set_country_flag = Chisimbi_Intel_Option_1_Taken
+    }
+    option = { # Roam , Tzhimane and the North
+        name = chisimbi_intel.1.b
+        trigger = {
+            NOT = {
+                has_country_flag = Chisimbi_Intel_Option_2_Taken
+            }
+        }
+        hidden_effect = {
+            country_event = { id = chisimbi.intel.3 }
+        }
+        set_country_flag = Chisimbi_Intel_Option_2_Taken
+    }
+    option = { # Zeblu, the Zongo, Melakha etc
+        name = chisimbi_intel.1.c
+        trigger = {
+            NOT = {
+                has_country_flag = Chisimbi_Intel_Option_3_Taken
+            }
+        }
+        hidden_effect = {
+            country_event = { id = chisimbi.intel.4 }
+        }
+        set_country_flag = Chisimbi_Intel_Option_3_Taken
+    }
+}
+
+country_event = { # Tanganiyka and the Giraffes
+    id = chisimbi_intel.2
+    title = chisimbi_intel.2.t
+    desc = chisimbi_intel.2.d
     picture = GFX_report_event_generic_political
     fire_only_once = yes
-    is_triggered_only =  yes
+    is_triggered_only = yes
     option = {
-        name = chisimbi_crisis.1.a
+        name = chisimbi_intel.2.a
+        country_event = { id = chisimbi_intel.1 }
+    }
+}
+
+country_event = { # - Central and North Chisimbi
+    id = chisimbi_intel.3
+    title = chisimbi_intel.3.t
+    desc = chisimbi_intel.3.d
+    picture = GFX_report_event_generic_political
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = chisimbi_intel.3.a
+    }
+}
+
+country_event = { # Zeblu and the Zongo
+    id = chisimbi_intel.4
+    title = chisimbi_intel.4.t
+    desc = chisimbi_intel.4.d
+    picture = GFX_report_event_generic_political
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = chisimbi_intel.4.a
     }
 }
 
