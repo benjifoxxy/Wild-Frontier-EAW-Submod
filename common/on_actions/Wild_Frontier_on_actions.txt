@@ -7,9 +7,9 @@ on_actions = {
 						is_ai = no
 					}
 				}
-				YAN = {
-				country_event = { id = debug_Wild_Frontier_Startup.2 }	# this doesnt work at the moment for some reason.
-				}
+				#YAN = {
+				#country_event = { id = debug_Wild_Frontier_Startup.2 }	# this doesnt work at the moment for some reason.
+				#}
 				
 			}
 			ELSE = {

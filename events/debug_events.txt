@@ -56,7 +56,7 @@ country_event = {
         }
     }
     option = {
-        name = debug_Wild_Frontier_Startup.3.c
+        name = debug_Wild_Frontier_Startup.2.c
         custom_effect_tooltip = Startup_Explanation_tt
         custom_effect_tooltip = Player_Force_Switched_To_YAN        
     }

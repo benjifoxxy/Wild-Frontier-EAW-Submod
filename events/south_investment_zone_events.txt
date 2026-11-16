@@ -223,7 +223,7 @@ country_event = { # Helicopter and Air Investment
     }
 }
 
-country_event = { # investigating corruption inside the investment zone - part 1
+country_event = { # investigating corruption inside the investment zone - starts a whole fuckass clusterfuck - vivziepop
     id = South_Zone_Crisis.9
     title = South_Zone_Crisis.9.t
     desc = South_Zone_Crisis.9.desc

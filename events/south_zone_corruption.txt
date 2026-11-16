@@ -1,5 +1,18 @@
 add_namespace = South_Zone_Crisis_Corruption
 add_namespace = South_Zone_Tasty
+add_namespace = South_Zone_Shawarma
+
+country_event = { # event failing the corruption category. game state fail. nada. oopsie poopsie.
+	id = South_Zone_Crisis_Corruption.0
+	title = South_Zone_Crisis_Corruption.0.t
+	desc = South_Zone_Crisis_Corruption.0.desc
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+
+	option = {
+		name = South_Zone_Crisis_Corruption.0.a
+	}
+}
 
 country_event = { # Event that determines how easy it will be to fix the corruption.
 	id = South_Zone_Crisis_Corruption.1
@@ -93,7 +106,7 @@ country_event = { # Event Hub - This event refires itself every 90 days and dete
         country_event = { id = South_Zone_Tasty.1 days = 14 } # every option always gets event 1 at 14 days - using random list from now on with just higher weights and mean time to happen instead of specifics
 		random_list = {
 			70 = {
-				 country_event = { id = South_Zone_Tasty.3 days = 21 random = 35 }
+				 country_event = { id = South_Zone_Tasty.2 days = 21 random = 35 }
 			}
 			15 = {
 
@@ -101,8 +114,8 @@ country_event = { # Event Hub - This event refires itself every 90 days and dete
 			15 = {
 
 			}
-			1 = {
-				country_event = { id = South_Zone_Tasty.33 days = 21 random = 45 }
+			5 = {
+				country_event = { id = South_Zone_Tasty.3 days = 21 random = 45 }
 			}
 		}
     }
@@ -120,11 +133,11 @@ country_event = { # Event Hub - This event refires itself every 90 days and dete
 
 			}
 			15 = {
-				country_event = { id = South_Zone_Tasty.44 days = 24 random = 50 }
+				country_event = { id = South_Zone_Tasty.4 days = 24 random = 50 }
 			}
 			5 = {
-				country_event = { id = South_Zone_Tasty.33 days = 20 random = 20 }
-				country_event = { id = South_Zone_Tasty.44 days = 24 random = 50 }
+				country_event = { id = South_Zone_Tasty.3 days = 20 random = 20 }
+				country_event = { id = South_Zone_Tasty.4 days = 24 random = 50 }
 			}
 		}
     }
@@ -140,17 +153,17 @@ country_event = { # Event Hub - This event refires itself every 90 days and dete
 			}
 			35 = {
 				country_event = { id = South_Zone_Tasty.4 days = 21 random = 35 }
-				country_event = { id = South_Zone_Tasty.55 days = 30 random = 40 }
+				country_event = { id = South_Zone_Tasty.5 days = 30 random = 40 }
 			}
 			15 = {
 				country_event = { id = South_Zone_Tasty.4 days = 21 random = 35 }
-				country_event = { id = South_Zone_Tasty.55 days = 30 random = 40 }
-				country_event = { id = South_Zone_Tasty.555 days = 40 random = 35 }
+				country_event = { id = South_Zone_Tasty.5 days = 30 random = 40 }
+				country_event = { id = South_Zone_Tasty.6 days = 40 random = 35 }
 			}
 			5 = {
 				country_event = { id = South_Zone_Tasty.4 days = 21 random = 35 }
-				country_event = { id = South_Zone_Tasty.55 days = 30 random = 40 }
-				country_event = { id = South_Zone_Tasty.555 days = 40 random = 35 }
+				country_event = { id = South_Zone_Tasty.5 days = 30 random = 40 }
+				country_event = { id = South_Zone_Tasty.6 days = 40 random = 35 }
 
 			}
 		}
@@ -167,17 +180,17 @@ country_event = { # Event Hub - This event refires itself every 90 days and dete
 			}
 			35 = {
 				country_event = { id = South_Zone_Tasty.4 days = 21 random = 35 }
-				country_event = { id = South_Zone_Tasty.55 days = 30 random = 40 }
+				country_event = { id = South_Zone_Tasty.5 days = 30 random = 40 }
 			}
 			15 = {
 				country_event = { id = South_Zone_Tasty.4 days = 21 random = 35 }
-				country_event = { id = South_Zone_Tasty.55 days = 30 random = 40 }
-				country_event = { id = South_Zone_Tasty.555 days = 40 random = 35 }
+				country_event = { id = South_Zone_Tasty.5 days = 30 random = 40 }
+				country_event = { id = South_Zone_Tasty.6 days = 40 random = 35 }
 			}
 			5 = {
 				country_event = { id = South_Zone_Tasty.4 days = 21 random = 35 }
-				country_event = { id = South_Zone_Tasty.55 days = 30 random = 40 }
-				country_event = { id = South_Zone_Tasty.555 days = 40 random = 35 }
+				country_event = { id = South_Zone_Tasty.5 days = 30 random = 40 }
+				country_event = { id = South_Zone_Tasty.6 days = 40 random = 35 }
 				
 			}
 		}
@@ -194,17 +207,17 @@ country_event = { # Event Hub - This event refires itself every 90 days and dete
 			}
 			35 = {
 				country_event = { id = South_Zone_Tasty.4 days = 21 random = 35 }
-				country_event = { id = South_Zone_Tasty.55 days = 30 random = 40 }
+				country_event = { id = South_Zone_Tasty.5 days = 30 random = 40 }
 			}
 			15 = {
 				country_event = { id = South_Zone_Tasty.4 days = 21 random = 35 }
-				country_event = { id = South_Zone_Tasty.55 days = 30 random = 40 }
-				country_event = { id = South_Zone_Tasty.555 days = 40 random = 35 }
+				country_event = { id = South_Zone_Tasty.5 days = 30 random = 40 }
+				country_event = { id = South_Zone_Tasty.6 days = 40 random = 35 }
 			}
 			5 = {
 				country_event = { id = South_Zone_Tasty.4 days = 21 random = 35 }
-				country_event = { id = South_Zone_Tasty.55 days = 30 random = 40 }
-				country_event = { id = South_Zone_Tasty.555 days = 40 random = 35 }
+				country_event = { id = South_Zone_Tasty.5 days = 30 random = 40 }
+				country_event = { id = South_Zone_Tasty.6 days = 40 random = 35 }
 				
 			}
 		}
@@ -218,18 +231,18 @@ country_event = { # Event Hub - This event refires itself every 90 days and dete
 		random_list = {
 			5 = {
 				country_event = { id = South_Zone_Tasty.4 days = 21 random = 35 }
-				country_event = { id = South_Zone_Tasty.55 days = 30 random = 40 }
+				country_event = { id = South_Zone_Tasty.5 days = 30 random = 40 }
 			}
 			5 = {
 				country_event = { id = South_Zone_Tasty.4 days = 21 random = 35 }
-				country_event = { id = South_Zone_Tasty.55 days = 30 random = 40 }
-				country_event = { id = South_Zone_Tasty.555 days = 40 random = 35 }
+				country_event = { id = South_Zone_Tasty.5 days = 30 random = 40 }
+				country_event = { id = South_Zone_Tasty.6 days = 40 random = 35 }
 			}
 			5 = {
 				country_event = { id = South_Zone_Tasty.4 days = 21 random = 35 }
-				country_event = { id = South_Zone_Tasty.55 days = 30 random = 40 }
-				country_event = { id = South_Zone_Tasty.555 days = 40 random = 35 }
-				country_event = { id = South_Zone_Tasty.5555 days = 35 random = 10 }
+				country_event = { id = South_Zone_Tasty.5 days = 30 random = 40 }
+				country_event = { id = South_Zone_Tasty.6 days = 40 random = 35 }
+				country_event = { id = South_Zone_Tasty.7 days = 35 random = 10 }
 			}
 		}
     }
@@ -238,39 +251,40 @@ country_event = { # Event Hub - This event refires itself every 90 days and dete
         trigger = {
             has_country_flag = South_Zone_Corruption_Option_G_Taken
         }
-		country_event = { id = South_Zone_Tasty.1 days = 14 }
+		country_event = { id = South_Zone_Tasty.1 days = 3 random = 11 }
 		random_list = {
-			2 = {
+			3 = {
 				country_event = { id = South_Zone_Tasty.4 days = 21 random = 35 }
-				country_event = { id = South_Zone_Tasty.55 days = 30 random = 40 }
+				country_event = { id = South_Zone_Tasty.5 days = 30 random = 40 }
 			}
-			2 = {
+			3 = {
 				country_event = { id = South_Zone_Tasty.4 days = 21 random = 35 }
-				country_event = { id = South_Zone_Tasty.55 days = 30 random = 40 }
-				country_event = { id = South_Zone_Tasty.555 days = 40 random = 35 }
+				country_event = { id = South_Zone_Tasty.5 days = 30 random = 40 }
+				country_event = { id = South_Zone_Tasty.6 days = 40 random = 35 }
 			}
-			2 = {
+			3 = {
 				country_event = { id = South_Zone_Tasty.4 days = 21 random = 35 }
-				country_event = { id = South_Zone_Tasty.55 days = 30 random = 40 }
-				country_event = { id = South_Zone_Tasty.555 days = 40 random = 35 }
-				country_event = { id = South_Zone_Tasty.5555 days = 35 random = 10 }
+				country_event = { id = South_Zone_Tasty.5 days = 30 random = 40 }
+				country_event = { id = South_Zone_Tasty.6 days = 40 random = 35 }
+				country_event = { id = South_Zone_Tasty.7 days = 35 random = 10 }
 			}
-			10 = {
+			21 = {
+				country_event = { id = South_Zone_Tasty.3 days = 20 random = 20 }
 				country_event = { id = South_Zone_Tasty.4 days = 21 random = 35 }
-				country_event = { id = South_Zone_Tasty.55 days = 30 random = 40 }
-				country_event = { id = South_Zone_Tasty.555 days = 40 random = 35 }
-				country_event = { id = South_Zone_Tasty.5555 days = 35 random = 10 }
-				country_event = { id = South_Zone_Tasty.33 days = 20 random = 20 }
-				country_event = { id = South_Zone_Tasty.44 days = 24 random = 50 }
+				country_event = { id = South_Zone_Tasty.5 days = 30 random = 40 }
+				country_event = { id = South_Zone_Tasty.6 days = 40 random = 35 }
+				country_event = { id = South_Zone_Tasty.7 days = 35 random = 10 }				
+				country_event = { id = South_Zone_Tasty.8 days = 24 random = 50 }
+				country_event = { id = South_Zone_Tasty.9 days = 7 random = 81 }
 			}
 		}
     }
 }
 
-country_event = { # fires when corruption reaches 35% (34) investigated
-	id = South_Zone_Crisis_Corruption.3
-	title = South_Zone_Crisis_Corruption.3.t
-	desc = South_Zone_Crisis_Corruption.3.desc
+country_event = { # fires when corruption reaches 35% (34) investigated, caps variable now at 30 minimum
+	id = South_Zone_Shawarma.1
+	title = South_Zone_Shawarma.1.t
+	desc = South_Zone_Shawarma.1.desc
 	picture = GFX_report_event_generic
 	is_triggered_only = yes
 	trigger = {
@@ -281,61 +295,69 @@ country_event = { # fires when corruption reaches 35% (34) investigated
 	immediate = {
 		clamp_variable = {
 			var = South_Zone_Corruption_Investigation
-			min = 35
+			min = 30
 			max = 100
 		}
 	}
 	option = {
-		name = South_Zone_Crisis_Corruption.3.a
+		name = South_Zone_Shawarma.1.a
 	}
 }
 
-country_event = { # fires when corruption reaches 55% (54) investigated
-	id = South_Zone_Crisis_Corruption.4
-	title = South_Zone_Crisis_Corruption.4.t
-	desc = South_Zone_Crisis_Corruption.4.desc
+country_event = { # fires when corruption reaches 50% (49) investigated
+	id = South_Zone_Shawarma.2
+	title = South_Zone_Shawarma.2.t
+	desc = South_Zone_Shawarma.2.desc
 	picture = GFX_report_event_generic
 	is_triggered_only = yes
 
 	option = {
-		name = South_Zone_Crisis_Corruption.4.a
+		name = South_Zone_Shawarma.2.a
+	}
+	immediate = {
+		clamp_variable = {
+			var = South_Zone_Corruption_Investigation
+			min = 50
+			max = 100
+		}
 	}
 }
 
-country_event = { # fires when corruption reaches 80% (79) investigated
-	id = South_Zone_Crisis_Corruption.5
-	title = South_Zone_Crisis_Corruption.5.t
-	desc = South_Zone_Crisis_Corruption.5.desc
+country_event = { # fires when corruption reaches 75% (74) investigated
+	id = South_Zone_Shawarma.3
+	title = South_Zone_Shawarma.3.t
+	desc = South_Zone_Shawarma.3.desc
 	picture = GFX_report_event_generic
 	is_triggered_only = yes
 
 	option = {
-		name = South_Zone_Crisis_Corruption.5.a
+		name = South_Zone_Shawarma.3.a
+	}
+	immediate = {
+		clamp_variable = {
+			var = South_Zone_Corruption_Investigation
+			min = 75
+			max = 100
+		}
 	}
 }
 
 country_event = { # event 100% corruption investigated
-	id = South_Zone_Crisis_Corruption.6
-	title = South_Zone_Crisis_Corruption.6.t
-	desc = South_Zone_Crisis_Corruption.6.desc
+	id = South_Zone_Shawarma.4
+	title = South_Zone_Shawarma.4.t
+	desc = South_Zone_Shawarma.4.desc
 	picture = GFX_report_event_generic
 	is_triggered_only = yes
-
-	option = {
-		name = South_Zone_Crisis_Corruption.6.a
+	immediate = {
+		set_variable = {
+			var = South_Zone_Corruption_Investigation
+			value = 100
+		}
+		set_country_flag = South_Zone_Corruption_Chain_Completed
 	}
-}
-
-country_event = { # event failing the corruption category. game state fail. nada. oopsie poopsie.
-	id = South_Zone_Crisis_Corruption.7
-	title = South_Zone_Crisis_Corruption.7.t
-	desc = South_Zone_Crisis_Corruption.7.desc
-	picture = GFX_report_event_generic
-	is_triggered_only = yes
-
 	option = {
-		name = South_Zone_Crisis_Corruption.7.a
-	}
+		name = South_Zone_Shawarma.4.a
+	}	
 }
 
 country_event = {
@@ -443,77 +465,5 @@ country_event = {
 
 	option = {
 		name = South_Zone_Tasty.9.a
-	}
-}
-
-country_event = {
-	id = South_Zone_Tasty.10
-	title = South_Zone_Tasty.10.t
-	desc = South_Zone_Tasty.10.desc
-	picture = GFX_report_event_generic
-	is_triggered_only = yes
-
-	option = {
-		name = South_Zone_Tasty.10.a
-	}
-}
-
-country_event = {
-	id = South_Zone_Tasty.11
-	title = South_Zone_Tasty.11.t
-	desc = South_Zone_Tasty.11.desc
-	picture = GFX_report_event_generic
-	is_triggered_only = yes
-
-	option = {
-		name = South_Zone_Tasty.11.a
-	}
-}
-
-country_event = {
-	id = South_Zone_Tasty.12
-	title = South_Zone_Tasty.12.t
-	desc = South_Zone_Tasty.12.desc
-	picture = GFX_report_event_generic
-	is_triggered_only = yes
-
-	option = {
-		name = South_Zone_Tasty.12.a
-	}
-}
-
-country_event = {
-	id = South_Zone_Tasty.13
-	title = South_Zone_Tasty.13.t
-	desc = South_Zone_Tasty.13.desc
-	picture = GFX_report_event_generic
-	is_triggered_only = yes
-
-	option = {
-		name = South_Zone_Tasty.13.a
-	}
-}
-
-country_event = {
-	id = South_Zone_Tasty.14
-	title = South_Zone_Tasty.14.t
-	desc = South_Zone_Tasty.14.desc
-	picture = GFX_report_event_generic
-	is_triggered_only = yes
-
-	option = {
-		name = South_Zone_Tasty.14.a
-	}
-}
-
-country_event = {
-	id = South_Zone_Tasty.15
-	title = South_Zone_Tasty.15.t
-	desc = South_Zone_Tasty.15.desc
-	picture = GFX_report_event_generic
-	is_triggered_only = yes
-
-	option = {
-		name = South_Zone_Tasty.15.a
 	}
 }

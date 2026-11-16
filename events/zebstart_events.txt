@@ -2,6 +2,7 @@ add_namespace = zebstart
 add_namespace = interim
 add_namespace = vocdebate
 add_namespace = beakavian_emergency
+add_namespace = sussybaka
 
 country_event = { # southern jewel
     id = zebstart.1

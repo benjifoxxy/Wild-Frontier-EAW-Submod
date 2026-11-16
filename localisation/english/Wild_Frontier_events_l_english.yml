@@ -1,314 +1,721 @@
 ﻿l_english:
- # §
+
  zebstart.1.t:0 "Old vs New"
+
  zebstart.1.d:0 "All was silent for what felt like eternity. But was in reality, but fifteen precious seconds before the possibilities of warfare were forever changed.\n\nFifteen seconds of dread, of the Civility of the Old World back in Griffonia, to perhaps reach out it’s Sharp Talons and squash out the flame of innovation.\n\nFifteen seconds of hope, of the Wild Ambition of the New World in Zebrika, to hold open it’s welcoming embrace, to all who would dare to dream.\n\nWhich followed, with a distant flash of light.\n\nThe crowd gasped, as the flash gave way to a gust of force that knocked one of the Polizeigriffs clean off his feet."
+
  zebstart.1.a:0 "And the good Doctor taking flight to the great gust, as if it was his true calling for the Sky."
 
+
+
  zebstart.2.t:0 "The Good Doctor"
+
  zebstart.2.d:0 "Dr. Isidor was always a Griff with an eye for the intricate.\n\nBut when one is to present to the Public, two different things; A brand new Radiography Institute with an adjoining University, or a Grand.. Expensive and towering hunk of thin metal that is said to communicate through the very air we breathe?\n\nThen of course, Isidor chose to present his Radar Array as the main attraction.\n\nBut how does one show something.. that... nogriff can see?\n\nWhy, a demonstration of course!\n\nOf Explosive Proportions!\n\n‘Gentlegriffs and Fairmares of the Audience, I present to thee, the ability to detect.. Through the usage of waves through the very spaces between you…’\n\nDr. Isidor spread his wings out, rearing up onto his hindlegs and revealing what appeared to be a piece of thin metal with a comically red button atop it, hundreds of wires leading from it to a box underneath his podium.\n\nTwo Feathisian Polizeigriffs raised their claws in caution to their pistol holsters, undoing the safety catch as they braced for whatever this lunatic was doing. But it was too slow to deter his efforts, or even gain his attention.\n\n‘.. the ability to communicate effortlessly, and with due haste… the very asset that all creatures possess!’\n\nA silence awaited the audience, as the Doctor bent his knee and bowed to the crowd, an audible snap of the button in his claw making even the furthest observer gulp."
+
  zebstart.2.a:0 "Eyr protect us..."
 
+
+
  zebstart.3.t:0 "second scientist arrival" 
+
  zebstart.3.d:0 "second scientist arrival"
+
  zebstart.3.a:0 "naval scientist"
+
  zebstart.3.b:0 "magic scientist"
+
  zebstart.3.c:0 "land scientist"
+
  zebstart.3.d:0 "greedy retard +200pp"
 
+
+
+
  zebstart.4.t:0 "The Land of Enchantment"
+
  zebstart.4.d:0 "The Grand Hall is a spectacle that dazzles everygriff it seats.\n\nEnchanted by mystique and history. It was here, Isaac regarded with a warm smile, that the famed Kommodore van Zebridehoff is said to have planted the first seeds of civilization on what was called by the Natives as ‘Boyano’.\n\nAn agreement between the Boyano and the Feathisian Zebridehoff established a Protectorate over the South of Zebrika.\n\nThat first meeting.. An open, protective claw ensuring the edification of the Zebras under the Kommodores protection. And by extent, the Emperor’s blessing.\n\nThat beacon, the mantle of responsibility passed down from the Kommodore down to each of his successors, and now, here Isaac was; appointed by the Emperor himself out of friendship and merit. What more could an eldergriff want…\n\n“Ah, Governor!”\n\nThe shimmer of light that entranced the Governor broke as he turned to the trio of well dressed patrons that had entered the hall. Zebrikaaners, by the look of the Orange napkins tucked neatly into their pinstripe suits.\n\nIsaac’s surprise quickly turned into a jovial embrace, an open palm beckoning to the bar, the eager clerk waiting to take their orders, not that it would be their only drinks for the night…"
+
  zebstart.4.a:0 "To the Kommodore! And to Grover V's continued good health!"
 
+
+
  zebstart.5.t:0 "Western Guests"
+
  zebstart.5.d:0 "The Grand Ball introduces the Zebrikaaner west nobles."
+
  zebstart.5.a:0 "Accept"
 
+
+
  zebstart.6.t:0 "Colonial Collaborators"
+
  zebstart.6.d:0 "Introduce the collaborating zebra houses: Wadangi and Mizor."
+
  zebstart.6.a:0 "Accept"
 
+
+
  zebstart.7.t:0 "An Awkward Compromise"
+
  zebstart.7.d:0 "Sailing into the Great Unknown is always a challenge on the Crew of the Ship. It’s not an easy feat to convince a large group of experienced sailors to partake in a voyage from Skyfall to South Zebrika. Especially those who have families to return to, homes to maintain and a future to think of.\n\nIt typically only takes a bad omen or rumour to begin a mutiny against an already conspiratorial crew. And when the Griffs, who were promised a City of Dreams, a Grand Jewel in the midst of a Foreign mist, and are instead granted what seems to be an untamed shoreline filled to the brim with aggressive Native Zebras; convinced via their holy Goddess that they were impervious to failure as long as their cause was just. That even a bullet from a Rifle would change its trajectory if Cleo of the Kalinigo decreed it so.\n\nReality has an odd humour to it.\n\nWhen the Crew of the (Ship Name Pending) disembarked - half-starved and leaderless, their Admiral’s pompous beak hanging loose from the end of the stern and the rest of him feeding the sharks, they took it upon themselves to show the Natives of the Island that they were here to take what they deserved.\n\nWhat resulted was a week of terror, an impromptu guerilla war between Sailors turned bandits and religious zealots commanded to deter all invaders. Thousands dead, villages burned.\n\nIf not for the prompt intervention from Beakavia and Governor Isaac personally, The Mataram Cleo would have declared an eternal feud against all Griffonkind.\n\nBut as they say…"
+
  zebstart.7.a:0 "Money Talks, And a Friendly Smile Helps."
 
+
+
  zebstart.8.t:0 "Friesendam Blues"
+
  zebstart.8.d:0 "The Western Zebride Archipeligo is home to the twin settlements of Reigershaven and Friesendaam. As well as a significant presence of Yaneoans. They are staunchly protective of their personal rights and sponsor a program of self-reliance and co-operation with the Natives."
+
  zebstart.8.a:0 "We'll keep an eye on them."
 
+
+
  zebstart.9.t:0 "Out West - which civil war / region to profiteer from"
+
  zebstart.9.desc:0 "out west desc todo"
+
  zebstart.9.a:0 "Investigate the Storm Kingdom."
+
  zebstart.9.b:0 "We Will Investigate Saddle Arabia"
+
  zebstart.9.c:0 "Investigate the Chisimbi Crisis"
+
  zebstart.9.d:0 "Our funds are better spent on Security in the Investment Zone"
+
  zebstart.9.e:0 "Hmm, why not all of them at once?"
 
+
+
  zebstart.10.t:0 "Introduce voc mandate , maybe A Day in Weijamardstadt?"
+
  zebstart.10.d:0 "Introduce the VOC. A day at the office."
+
  zebstart.10.a:0 "free factories"
 
+
+
  zebstart.11.t:0 "The Sambovato Affair, Part I"
+
  zebstart.11.d:0 "todo option A triggers another event , option B is the meanie option."
+
  zebstart.11.a:0 "option A - invest in sambo"
+
  zebstart.11.b:0 "option B - do not invest in sambo"
 
+
+
  zebstart.12.t:0 "The Sambovato Affair, Part II"
+
  zebstart.12.d:0 "Follow-up if Sambo was supported."
+
  zebstart.12.a:0 "Accept"
 
+
+
  zebstart.13.t:0 "Observing the East"
+
  zebstart.13.desc:0 "Explain Mizor and Pulapi."
+
  zebstart.13.a:0 "invest in mizor/kirtau todo"
+
  zebstart.13.b:0 "invest in cubanacanio"
+
  zebstart.13.c:0 "dont invest in either +75 pp"
+
  zebstart.13.d:0 "2 civ factory and -50 pp greedy decision"
+
  zebstart.13.e:0 "invest in everypony , wholesome chungus decision"
 
+
+
  zebstart.14.t:0 "Military Contract Expansions"
+
  zebstart.14.d:0 "option a intel agency and free divisions, option b intel agency and free divisions, option c greedy cunt"
+
  zebstart.14.a:0 "Found the KSP Intel Agency + Talon Company Divisions"
+
  zebstart.14.b:0 "Found the BGS Intel Agency + Talon Company Divisions"
+
  zebstart.14.c:0 "civ factories + pp + greedy idea"
 
+
+
  zebstart.15.t:0 "The Kirian Connection"
+
  zebstart.15.d:0 "A cultural clash in Fragrance. Beakavia uses it as a hopping point for supplies."
+
  zebstart.15.a:0 "Support Fickle Current and the Supremacists"
+
  zebstart.15.b:0 "Support Autumb Blaze and the Harmonists"
+
  zebstart.15.c:0 "Support neither, and work the Pirates of Auburn Isle"
 
+
+
  zebstart.16.t:0 "VOC Purchase of Wadangstadt"
+
  zebstart.16.d:0 "description todo Wadangstadt and Edi Zamine"
+
  zebstart.16.a:0 "Option A"
 
+
+
  zebstart.17.t:0 "Observing the Cerami People"
+
  zebstart.17.d:0 "Ceram has always been home to co-operative Zebras who happily accept the technological progress that Griffon rule brings. As a result, many contractors from Beakavia feel very comfortable investing in it's future."
+
  zebstart.17.a:0 "Good for them."
 
+
+
  zebstart.18.t:0 "todo"
+
  zebstart.18.d:0 "todo"
+
  zebstart.18.a:0 "todo"
+
  zebstart.18.b:0 "todo"
+
  zebstart.18.c:0 "todo"
 
+
+
  zebstart.19.t:0 "todo"
+
  zebstart.19.d:0 "todo"
+
  zebstart.19.a:0 "todo"
+
  zebstart.19.b:0 "todo"
+
  zebstart.19.c:0 "todo"
 
+
+
  zebstart.20.t:0 "The Death of a Friend"
+
  zebstart.20.d:0 "grover V dead event desc"
+
  zebstart.20.a:0 "..."
 
+
+
  sussybaka.1.t:0 "A Marvellous Address!"
- sussybaka.1.d:0 "if you are seeing this event please report as a bug report"
+
+ sussybaka.1.desc:0 "if you are seeing this event please report as a bug report"
+
  sussybaka.1.a:0 "you so"
+
  sussybaka.1.b:0 "fuckin special"
+
  sussybaka.1.c:0 "when you..."
+
  sussybaka.1.d:0 "smile..."
 
+
+
  voctroubles.1.t:0 "voc troubles introduction"
+
  voctroubles.1.d:0 "voc troubles event 1 description"
+
  voctroubles.1.a:0 "option A activates the development decision story category"
 
+
+
  voctroubles.2.t:0 "voc troubles event 2"
+
  voctroubles.2.d:0 "voc troubles event 2 description"
+
  voctroubles.2.a:0 "voc troubles event 2 decision category continue"
+
  voctroubles.2.b:0 "voc troubles event 2 decision category disable"
 
+
+
  voctroubles.12.t:0 "voc troubles 12 event todo"
+
  voctroubles.12.d:0 "voc troubles 12 event desc todo"
+
  voctroubles.12.a:0 "voc troubles option A civil war starts todo"
+
  voctroubles.12.b:0 "voc troubles option B available if south zone decision completed"
 
+
+
  debug_Wild_Frontier_Startup.2.t:0 "Welcome to the Wild Frontier!"
+
  debug_Wild_Frontier_Startup.2.desc:0 "mod credits and such todo"
+
  debug_Wild_Frontier_Startup.2.a:0 "I just want to play! le happy face startup option 1"
+
  debug_Wild_Frontier_Startup_2.b:0 "I just want to play! le angry face startup option 2"
- debug_Wild_Frontier_Startup_3_c:0 "staartup option 3"
+
+ debug_Wild_Frontier_Startup_2_c:0 "staartup option 3"
+
+
 
  South_Zone_Tasty.1.t:0 "Title 1"
+
  South_Zone_Tasty.1.desc:0 "Description 1"
+
  South_Zone_Tasty.1.a:0 "Option 1"
 
+
+
  South_Zone_Tasty.2.t:0 "Title 2"
+
  South_Zone_Tasty.2.desc:0 "Description 2"
+
  South_Zone_Tasty.2.a:0 "Option 2"
 
+
+
  South_Zone_Tasty.3.t:0 "Title 3"
+
  South_Zone_Tasty.3.desc:0 "Description 3"
+
  South_Zone_Tasty.3.a:0 "Option 3"
 
+
+
  South_Zone_Tasty.4.t:0 "Title 4"
+
  South_Zone_Tasty.4.desc:0 "Description 4"
+
  South_Zone_Tasty.4.a:0 "Option 4"
 
+
+
  South_Zone_Tasty.5.t:0 "Title 5"
+
  South_Zone_Tasty.5.desc:0 "Description 5"
+
  South_Zone_Tasty.5.a:0 "Option 5"
 
+
+
  South_Zone_Tasty.6.t:0 "Title 6"
+
  South_Zone_Tasty.6.desc:0 "Description 6"
+
  South_Zone_Tasty.6.a:0 "Option 6"
 
+
+
  South_Zone_Tasty.7.t:0 "Title 7"
+
  South_Zone_Tasty.7.desc:0 "Description 7"
+
  South_Zone_Tasty.7.a:0 "Option 7"
 
+
+
  South_Zone_Tasty.8.t:0 "Title 8"
+
  South_Zone_Tasty.8.desc:0 "Description 8"
+
  South_Zone_Tasty.8.a:0 "Option 8"
 
+
+
  South_Zone_Tasty.9.t:0 "Title 9"
+
  South_Zone_Tasty.9.desc:0 "Description 9"
+
  South_Zone_Tasty.9.a:0 "Option 9"
 
- South_Zone_Tasty.10.t:0 "Title 10"
- South_Zone_Tasty.10.desc:0 "Description 10"
- South_Zone_Tasty.10.a:0 "Option 10"
 
- South_Zone_Tasty.11.t:0 "Title 11"
- South_Zone_Tasty.11.desc:0 "Description 11"
- South_Zone_Tasty.11.a:0 "Option 11"
-
- South_Zone_Tasty.12.t:0 "Title 12"
- South_Zone_Tasty.12.desc:0 "Description 12"
- South_Zone_Tasty.12.a:0 "Option 12"
-
- South_Zone_Tasty.13.t:0 "Title 13"
- South_Zone_Tasty.13.desc:0 "Description 13"
- South_Zone_Tasty.13.a:0 "Option 13"
-
- South_Zone_Tasty.14.t:0 "Title 14"
- South_Zone_Tasty.14.desc:0 "Description 14"
- South_Zone_Tasty.14.a:0 "Option 14"
-
- South_Zone_Tasty.15.t:0 "Title 15"
- South_Zone_Tasty.15.desc:0 "Description 15"
- South_Zone_Tasty.15.a:0 "Option 15"
 
  hidden.1.t:0 "hidden country setup"
+
  hidden.1.d:0 "Describe this event."
+
  hidden.1.a:0 "Accept"
 
+
+
  interim.1.t:0 "Paying our Respects"
+
  interim.1.d:0 "Governor Isaac sheds a tear. He had met Grover V, and the last time he saw him was when he was assigned here. Now it is too late."
+
  interim.1.a:0 "Alas, one Griffs death sends shockwaves throughout the World."
 
  interim.2.t:0 "Our Next Step"
+
  interim.2.d:0 "The VOC steps in to bail out the chaos in Beakavia."
+
  interim.2.a:0 "The VOC vote to take over the Governate!"
+
  interim.2.b:0 "Beakavia in Chaos!"
 
+
+
  vocdebate.1.t:0 "VOC first meeting"
+
  vocdebate.1.d:0 "The VOC convenes. Liberals, traditionalists, and hardliners debate the colony's future. The player decides."
+
  vocdebate.1.a:0 "The Liberals win out!"
+
  vocdebate.1.b:0 "Neither side are convincing, we must compromise!"
+
  vocdebate.1.c:0 "The Radicals win out!"
 
+
+
  beakavian_emergency.1.t:0 "beakavian emergency begins todo"
+
  beakavian_emergency.1.d:0 "beakavian emergency desc todo event 1"
+
  beakavian_emergency.1.a:0 "option 1 , zebrikaner divs delete"
 
+
+
  beakavian_emergency.2.t:0 "The Free Zebrid Question"
+
  beakavian_emergency.2.desc:0 "A Zebrikaaner griffon mare protests that the new laws discriminate against \"Free Zebrids\".\n\nOption A: concede — political power and temporary bonuses.\nOption B: refuse — further chaos follows."
+
  beakavian_emergency.2.a:0 "Accept"
+
  beakavian_emergency.2.b:0 ""
+
  beakavian_emergency.2.c:0 ""
+
  beakavian_emergency.2.d:0 ""
+
  beakavian_emergency.2.e:0 ""
 
+
+
  beakavian_emergency.3.t:0 "Ultimatum"
+
  beakavian_emergency.3.d:0 "Appears if Hoorst dismissed the protest. An ultimatum demands he resign and restore a civilian government. The German and Dutch factions collide."
+
  beakavian_emergency.3.a:0 "Accept"
 
+
+
  beakavian_emergency.4.t:0 "Island Against Island"
+
  beakavian_emergency.4.d:0 "The two main islands turn on each other. The internal civil war begins."
+
  beakavian_emergency.4.a:0 "Accept"
 
+
+
  beakavian_emergency.5.t:0 "The Front"
+
  beakavian_emergency.5.d:0 "Option A: fight on the front lines — strong bonuses, but a first injury.\n\nOption B: lead from afar — safer, less glorious."
+
  beakavian_emergency.5.a:0 "Accept"
 
+
+
  beakavian_emergency.6.t:0 "Caesar's Mercy"
+
  beakavian_emergency.6.d:0 "Hoorst makes a show of forgiving his enemies. Cores return on the other islands, and decisions to reconquer them are unlocked."
+
  beakavian_emergency.6.a:0 "Accept"
 
- clawVShoof.1.t:0 "Claw and Shoof"
- clawVShoof.1.d:0 "Racial tensions are stirred. The coming civil war is now unlocked."
- clawVShoof.1.a:0 "Accept"
 
- insanity.1.t:0 "The Far Shore"
- insanity.1.d:0 "Leads to the extreme tree. Unlocked by having both the Wadangi general and the Mizor admiral as left- and right-hand zebras."
- insanity.1.a:0 "Accept"
 
  chuddie.1.t:0 "location of grand speech event" 
+
  chuddie.1.desc:0 "location of grand speech event description"
+
  chuddie.1.a:0 "cheap option"
+
  chuddie.1.b:0 "speech from atop a grand ship"
+
  chuddie.1.c:0 "speech with the backdrop of an air show!"
+
  chuddie.1.d:0 "speech at a griffon monument in beakavia"
 
+
+
  chuddie.2.t:0 "shifting administration to beakavia from mainland"
+
  chuddie.2.d:0 "shifting admin desc todo"
+
  chuddie.2.a:0 "ok cool"
 
+
+
  chuddie.3.t:0 "slash spending event todo"
+
  chuddie.3.desc:0 "slash epdnging todo description"
+
  chuddie.3.a:0 "privatize fleet or airforce depending on previous decision"
+
  chuddie.3.b:0 "piss off the natives decision"
+
  chuddie.3.c:0 "disband the army and rely on mercenaries"
+
  chuddie.3.d:0 "do nothing lol"
 
+
+
  chuddie.4.t:0 "brutalist economics todo"
+
  chuddie.4.d:0 "brutalist economics description"
+
  chuddie.4.a:0 "brutalist economics option 1"
+
  chuddie.4.b:0 "brutalist economics option 2"
+
  chuddie.4.c:0 "brutalist economics option 3 - loot ceram and sambo"
 
+
+
  chuddie.5.t:0 "eco austerity - voc colony is fucked"
+
  chuddie.5.d:0 "eco austerity chuddie 5 description"
+
  chuddie.5.a:0 "option a - try and save the southern zone"
+
  chuddie.5.b:0 "option b - welp, shids fucked"
 
  #### South Zone Crisis Events Localisation
 
- 
-
  South_Zone_Crisis.1.t:0 "South Zone Crisis Event 1 todo"
+
  South_Zone_Crisis.1.d:0 "South Zone Crisis Event 1 desc todo intelligence report"
+
  South_Zone_Crisis.1.a:0 "intelligence report todo"
 
+
+
  South_Zone_Crisis.2.t:0 "boreasgrotte event info loop event"
+
  South_Zone_Crisis.2.d:0 "description boreasgrotte"
+
  South_Zone_Crisis.2.a:0 "Return"
 
+
+
  South_Zone_Crisis.3.t:0 "Situation on the ground todo"
+
  South_Zone_Crisis.3.desc:0 "situation on the ground desc"
+
  South_Zone_Crisis.3.a:0 "option a - tell me about boreasgrotte"
+
  South_Zone_Crisis.3.b:0 "option b - tell me about weijmardstadt"
+
  South_Zone_Crisis.3.c:0 "option c - tell me about the south investment zone kiddo"
+
  South_Zone_Crisis.3.d:0 "tell me about the merc companies - option d"
+
  South_Zone_Crisis.3.e:0 "what of the zebras in the south? option e"
+
  South_Zone_Crisis.3.f:0 "Ive heard enough! (ends event chain)"
 
+
+
  South_Zone_Crisis.4.t:0 "weimar stadt info event"
+
  South_Zone_Crisis.4.d:0 "weimar info desc todo"
+
  South_Zone_Crisis.4.a:0 "Return"
 
+
+
  South_Zone_Crisis.5.t:0 "south investment zone todo"
+
  South_Zone_Crisis.5.d:0 "desc todo south investment"
+
  South_Zone_Crisis.5.a:0 "Return"
 
+
+
  South_Zone_Crisis.6.t:0 "tell me about the mercenary companies"
+
  South_Zone_Crisis.6.d:0 "desc company mercs return event"
+
  South_Zone_Crisis.6.a:0 "option a merc company return merc company A talon company"
+
  South_Zone_Crisis.6.b:0 "option a merc company return merc company b aquilean foreign legion"
+
  South_Zone_Crisis.6.c:0 "option a merc company return merc company c river fed pegasi mercs"
+ 
+
 
  South_Zone_Crisis.7.t:0 "various zebra tribes todo event title"
+
  South_Zone_Crisis.7.d:0 "description zebra tribes"
+
  South_Zone_Crisis.7.a:0 "Return"
 
 
+
+ South_Zone_Crisis_8.t:0 "helicopter air investment todo"
+
+ South_Zone_Crisis_8.d:0 "desc todo"
+
+ South_Zone_Crisis_8.a:0 "option a todo"
+
+
+
+ South_Zone_Crisis_9.t:0 ""
+
+ South_Zone_Crisis_9.desc:0 ""
+
+ South_Zone_Crisis_9.a:0 ""
+
+ South_Zone_Crisis_9.b:0 ""
+
+ South_Zone_Crisis_9.c:0 ""
+
+ South_Zone_Crisis_9.d:0 ""
+
+ South_Zone_Crisis_9.e:0 ""
+
+ South_Zone_Crisis_9.f:0 ""
+
+ South_Zone_Crisis_9.g:0 ""
+
+ South_Zone_Event_9_Effect_A_tt:0 ""
+
+ South_Zone_Event_9_Effect_B_tt:0 ""
+
+ South_Zone_Event_9_Effect_C_tt:0 ""
+
+ South_Zone_Event_9_Effect_D_tt:0 ""
+
+ South_Zone_Event_9_Effect_E_tt:0 ""
+
+ South_Zone_Event_9_Effect_F_tt:0 ""
+
+ South_Zone_Event_9_Effect_G_tt:0 ""
+
  
+
+ South_Zone_Corruption.0.t:0 ""
+
+ South_Zone_Corruption.0.desc:0 ""
+
+ South_Zone_Corruption.0.a:0 ""
+
+
+
+ South_Zone_Corruption.1.t:0 ""
+
+ South_Zone_Corruption.1.desc:0 ""
+
+ South_Zone_Corruption.1.a:0 ""
+
+ SZC_A_Result_tt:0 ""
+
+ South_Zone_Corruption.1.b:0 ""
+
+ SZC_B_Result_tt:0 ""
+ 
+ South_Zone_Corruption.1.c:0 ""
+
+ SZC_C_Result_tt:0 ""
+
+ South_Zone_Corruption.1.d:0 ""
+
+ SZC_D_Result_tt:0 ""
+
+ South_Zone_Corruption.1.e:0 ""
+
+ SZC_E_Result_tt:0 ""
+
+ South_Zone_Corruption.1.f:0 ""
+
+ SZC_F_Result:0 ""
+
+
+
+ South_Zone_Corruption.2.t:0 "these"
+
+ South_Zone_Corruption.2.desc:0 "are"
+
+ South_Zone_Corruption.2.a:0 "all"
+
+ South_Zone_Corruption.2.b:0 "hidden"
+
+ South_Zone_Corruption.2.c:0 "anyways"
+
+ South_Zone_Corruption.2.d:0 "so"
+
+ South_Zone_Corruption.2.e:0 "who"
+
+ South_Zone_Corruption.2.g:0 "gives a f"
+
+
+
+ South_Zone_Shawarma.1:0 "todo"
+ South_Zone_Shawarma.1:0 "todo"
+ South_Zone_Shawarma.1:0 "todo"
+
+
+
+ South_Zone_Shawarma.2:0 "todo"
+ South_Zone_Shawarma.2:0 "todo"
+ South_Zone_Shawarma.2:0 "todo"
+
+
+
+ South_Zone_Shawarma.3:0 "todo"
+ South_Zone_Shawarma.3:0 "todo"
+ South_Zone_Shawarma.3:0 "todo"
+
+
+
+ South_Zone_Shawarma.4:0 "todo"
+ South_Zone_Shawarma.4:0 "todo"
+ South_Zone_Shawarma.4:0 "todo"
+
+
+
+ South_Zone_Tasty.1.t:0 "todo"
+ South_Zone_Tasty.1.d:0 "todo"
+ South_Zone_Tasty.1.a:0 "todo"
+
+
+
+ South_Zone_Tasty.2.t:0 "todo"
+ South_Zone_Tasty.2.d:0 "todo"
+ South_Zone_Tasty.2.a:0 "todo"
+
+
+
+ South_Zone_Tasty.3.t:0 "todo"
+ South_Zone_Tasty.3.d:0 "todo"
+ South_Zone_Tasty.3.a:0 "todo"
+
+
+
+ South_Zone_Tasty.4.t:0 "todo"
+ South_Zone_Tasty.4.d:0 "todo"
+ South_Zone_Tasty.4.a:0 "todo"
+
+
+
+ South_Zone_Tasty.5.t:0 "todo"
+ South_Zone_Tasty.5.d:0 "todo"
+ South_Zone_Tasty.5.a:0 "todo"
+
+
+
+ South_Zone_Tasty.6.t:0 "todo"
+ South_Zone_Tasty.6.d:0 "todo"
+ South_Zone_Tasty.6.a:0 "todo"
+
+
+
+ South_Zone_Tasty.7.t:0 "todo"
+ South_Zone_Tasty.7.d:0 "todo"
+ South_Zone_Tasty.7.a:0 "todo"
+
+
+ South_Zone_Tasty.8.t:0 "todo"
+ South_Zone_Tasty.8.d:0 "todo"
+ South_Zone_Tasty.8.a:0 "todo"
+
+
+
+ South_Zone_Tasty.9.t:0 "todo"
+ South_Zone_Tasty.9.d:0 "todo"
+ South_Zone_Tasty.9.a:0 "todo"
