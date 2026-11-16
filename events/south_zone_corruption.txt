@@ -310,7 +310,10 @@ country_event = { # fires when corruption reaches 50% (49) investigated
 	desc = South_Zone_Shawarma.2.desc
 	picture = GFX_report_event_generic
 	is_triggered_only = yes
-
+	fire_only_once = yes
+	trigger = {
+		check_variable = { South_Zone_Corruption_Investigation > 49 }
+	}
 	option = {
 		name = South_Zone_Shawarma.2.a
 	}
@@ -329,9 +332,12 @@ country_event = { # fires when corruption reaches 75% (74) investigated
 	desc = South_Zone_Shawarma.3.desc
 	picture = GFX_report_event_generic
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = {
 		name = South_Zone_Shawarma.3.a
+	}
+	trigger = {
+		check_variable = { South_Zone_Corruption_Investigation > 75	}
 	}
 	immediate = {
 		clamp_variable = {
@@ -348,6 +354,7 @@ country_event = { # event 100% corruption investigated
 	desc = South_Zone_Shawarma.4.desc
 	picture = GFX_report_event_generic
 	is_triggered_only = yes
+	fire_only_once = yes
 	immediate = {
 		set_variable = {
 			var = South_Zone_Corruption_Investigation
@@ -355,12 +362,15 @@ country_event = { # event 100% corruption investigated
 		}
 		set_country_flag = South_Zone_Corruption_Chain_Completed
 	}
+	trigger = {
+		check_variable = { South_Zone_Corruption_Investigation = 100 }
+	}
 	option = {
 		name = South_Zone_Shawarma.4.a
 	}	
 }
 
-country_event = {
+country_event = { # wholesome chungus
 	id = South_Zone_Tasty.1
 	title = South_Zone_Tasty.1.t
 	desc = South_Zone_Tasty.1.desc

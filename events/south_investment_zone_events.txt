@@ -1,4 +1,5 @@
 add_namespace = South_Zone_Crisis
+add_namespace = South_Zone_Tourism
 
 country_event = { # intelligence report event
 	id = South_Zone_Crisis.1
@@ -362,6 +363,93 @@ country_event = { # investigating corruption inside the investment zone - starts
             set_country_flag = South_Zone_Corruption_Option_G_Taken
 
             
+        }
+    }
+}
+
+country_event = {
+    id = South_Zone_Tourism.1
+    title = South_Zone_Tourism.1.t
+    desc = event_desc
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+
+    option = {
+        name = South_Zone_Tourism.1.a
+        
+    }
+}
+
+country_event = {
+    id = South_Zone_Tourism.2
+    title = South_Zone_Tourism.2.t
+    desc = event_desc
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+
+    option = {
+        name = South_Zone_Tourism.2.a
+        
+    }
+}
+
+country_event = {
+    id = South_Zone_Tourism.3
+    title = South_Zone_Tourism.3.t
+    desc = event_desc
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+
+    option = {
+        name = South_Zone_Tourism.3.a
+        
+    }
+}
+
+country_event = {
+    id = South_Zone_Tourism.4
+    title = South_Zone_Tourism.4.t
+    desc = event_desc
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+
+    option = {
+        name = South_Zone_Tourism.4.a
+        
+    }
+}
+
+country_event = {
+    id = South_Zone_Tourism.5
+    title = South_Zone_Tourism.5.t
+    desc = event_desc
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+
+    option = {
+        name = South_Zone_Tourism.5.a
+        
+    }
+}
+
+country_event = { # yummy
+    id = South_Zone_Tourism.6
+    title = South_Zone_Tourism.6.t
+    desc = event_desc
+    picture = GFX_report_event_generic
+    is_triggered_only = yes
+    trigger = {
+        check_variable = { South_Zone_Tourism_Crisis = 3 }
+    }
+    immediate = {
+        clamp_variable = {
+            var = South_Zone_Tourism_Crisis
+            min = 3
+            max = 5
+        }
+        option = {
+            name = South_Zone_Tourism.6.a
+
         }
     }
 }

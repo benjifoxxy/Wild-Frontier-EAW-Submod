@@ -14,7 +14,61 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
             always = no
         }
         timeout_effect = {
-
+            custom_effect_tooltip = Tourism_Power_Check_1_tt
+            activate_mission = South_Zone_Investiture_Mission_1
+            hidden_effect = {
+                IF = {
+                    limit = { check_variable = { South_Zone_Tourism_Crisis = 0 } }
+                    random_list = { # 50/50 chance the tourism industry is gone donezo
+                        50 = {
+                            country_event = { id = South_Zone_Tourism.1 hours = 60 }
+                        }
+                        50 = {
+                            #world doesnt explode
+                        }
+                    }
+                }
+                ELSE_IF = {
+                    limit = {
+                        OR = { 
+                            check_variable = { South_Zone_Tourism_Crisis = 1 }
+                            check_variable = { South_Zone_Tourism_Crisis = 2 }
+                            check_variable = { South_Zone_Tourism_Crisis = 3 }
+                            check_variable = { South_Zone_Tourism_Crisis = 4 }
+                    
+                    }
+                        
+                    }
+                    random_list = {
+                        25 = {
+                            country_event = { id = South_Zone_Tourism.2 days = 5 random = 80 }
+                        }
+                        25 = {
+                            country_event = { id = South_Zone_Tourism.3 days = 5 random = 80 }
+                        }
+                        25 = {
+                            country_event = { id = South_Zone_Tourism.4 days = 5 random = 80 }
+                        }
+                        25 = {
+                            country_event = { id = South_Zone_Tourism.5 days = 5 random = 80 }
+                        }
+                        1 = {
+                            country_event = { id = South_Zone_Tourism.2 days = 5 random = 80 }
+                            country_event = { id = South_Zone_Tourism.3 days = 5 random = 80 }
+                            country_event = { id = South_Zone_Tourism.4 days = 5 random = 80 }
+                            country_event = { id = South_Zone_Tourism.5 days = 5 random = 80 }
+                        }
+                    }
+                }
+                ELSE_IF = {
+                    limit = {
+                        check_variable = { South_Zone_Tourism_Crisis = 5 } }
+                        country_event = { 
+                            id = South_Zone_Tourism.6 
+                            hours = 10
+                    }
+                }
+            }
         }
     }
 
@@ -30,7 +84,29 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
             always = no
         }
         timeout_effect = {
-
+            custom_effect_tooltip = Merc_Power_Check_2_tt
+            activate_mission = South_Zone_Investiture_Mission_2
+            hidden_effect = {
+                IF = {
+                    limit = {
+                        OR = {
+                            check_variable = { South_Zone_Merc_Strength_Crisis = 0 }
+                            check_variable = { South_Zone_Merc_Strength_Crisis = 1 }
+                        }
+                    }
+                    add_command_power = 10
+                    add_political_power = 15
+                }
+                ELSE_IF = {
+                    limit = {
+                        check_variable = { South_Zone_Merc_Strength_Crisis > 1 }
+                    }
+                    add_to_variable = {
+                        var = South_Zone_Merc_Strength_Crisis
+                        value = 1
+                    }
+                }
+            }
         }
     }
 
@@ -46,13 +122,38 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
             always = no
         }
         timeout_effect = {
+            custom_effect_tooltip = Zebra_Tribal_Power_Check_3_tt
+            activate_mission = South_Zone_Investiture_Mission_3
+            hidden_effect = {
+                IF = {
+                    limit = {
+                        OR = {
+                            check_variable = { South_Zone_Zebra_Tribes_Crisis = 0 }
+                            check_variable = { South_Zone_Zebra_Tribes_Crisis = 1 }
+                        }
+                        add_command_power = 10
+                        add_political_power = 15
+                    }
+                }
+                ELSE_IF = {
+                    limit = {
+                        OR = {
+                            check_variable = { South_Zone_Zebra_Tribes_Crisis > 1 }
+                        }
+                        add_to_variable = {
+                            var = South_Zone_Zebra_Tribes_Crisis
+                            value = 1
+                        }
+                    }
+                }
+            }
 
         }
     }
 
     South_Zone_Investiture_Mission_4 = { # Air Supply must maintain
         days_mission_timeout = 180
-        days_re_enable = 21000
+        
         allowed = {
             original_tag = YAN
         }
@@ -63,7 +164,7 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
             always = no
         }
         timeout_effect = {
-
+            activate_mission = South_Zone_Investiture_Mission_4
         }
     }
 
@@ -393,18 +494,69 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
         icon = generic_civil_war
         cost = 0
         allowed = {
-            original_tag = YAN 
+            original_tag = YAN
         }
         visible = {
-            always = no
+            NOT = {
+                has_country_flag = South_Zone_Corruption_Chain_Completed
+            }
         }
         activation = {
 
         }
-        
+        activation = {
+            always = no
+        }
+        selectable_mission = no
         days_remove = 90
         remove_effect = {
+            custom_effect_tooltip = Corruption_Mission_Check_Explainer_tt
             activate_mission = South_Zone_Corruption_Mission_1
+            hidden_effect = {
+                IF = {
+                    limit = { 
+                        check_variable = { South_Zone_Corruption_Investigation > 29 }
+                        check_variable = { South_Zone_Corruption_Investigation < 59 }
+                                 }
+                    random_list = {
+                        50 = {
+                            subtract_from_variable = {
+                                var = South_Zone_Corruption_Investigation
+                                value = 5
+                            }
+                        }
+                        10 = {
+                            subtract_from_variable = {
+                                var = South_Zone_Corruption_Investigation
+                                value = 10
+                            }
+                        }
+                    }
+                }
+                IF = {
+                    limit = { check_variable = { South_Zone_Corruption_Investigation > 59 } }
+                    random_list = {
+                        75 = {  
+                            subtract_from_variable = {
+                                var = South_Zone_Corruption_Investigation
+                                value = 5
+                            }
+                        }
+                        25 = {
+                            subtract_from_variable = {
+                                var = South_Zone_Corruption_Investigation
+                                value = 10
+                            }
+                        }
+                        1 = {
+                            subtract_from_variable = {
+                                var = South_Zone_Corruption_Investigation
+                                value = 15
+                            }
+                        }
+                    }
+                }
+            }
         }
 
     }
@@ -418,10 +570,17 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
         }
         visible = {
             has_country_flag = South_Zone_Situation_On_The_Ground_Completed
+            NOT = {
+                has_country_flag = South_Zone_Corruption_Chain_Started
+            }
+            NOT = {
+                has_country_flag = South_Zone_Corruption_Chain_Completed
+            }
         }
         fire_only_once = yes
         complete_effect = {
             set_country_flag = South_Zone_Corruption_Chain_Started
+            country_event = { id = South_Zone_Crisis_Corruption.1 random = 30 }
         }
     }
 
@@ -433,10 +592,14 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
             original_tag = YAN
         }
         visible = {
-
+            check_variable = { South_Zone_Corruption_Investigation > 39 }
+        }
+        available = {
+            check_variable = { South_Zone_Corruption_Investigation > 39 }
         }
         days_re_enable = 21000
-        complete_effect = {
+        days_remove = 7
+        remove_effect = {
             
         }
     }
@@ -449,10 +612,15 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
             original_tag = YAN
         }
         visible = {
-            
+            check_variable = { South_Zone_Corruption_Investigation > 74 }
+        }
+        available = {
+            check_variable = { South_Zone_Corruption_Investigation > 74 }
         }
         fire_only_once = yes
-        complete_effect = {
+        days_re_enable = 21000
+        days_remove = 7
+        remove_effect = {
             
         }
     }
@@ -464,11 +632,16 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
         allowed = {
             original_tag = YAN
         }
+        days_re_enable = 21000
+        days_remove = 7
         visible = {
-            
+            check_variable = { South_Zone_Corruption_Investigation = 100 }
+        }
+        available = {
+            check_variable = { South_Zone_Corruption_Investigation = 100 }
         }
         fire_only_once = yes
-        complete_effect = {
+        remove_effect = {
             
         }
     }
