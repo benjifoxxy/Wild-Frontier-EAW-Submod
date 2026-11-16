@@ -227,6 +227,8 @@
  Cubanacan_Decision_1:0 "Economic Investment in Magua Ezantsi"
 
  Cubanacan_Decision_2:0 "Provide Food Security for the Cubanacani Zebras"
+ 
+ Food_Aid_Cubans_tt:0 "This will give us 1 Action Completed and Reduce Cuban Anger by 10."
 
  Cubanacan_Decision_3:0 "Provide Relief to the Survivors of the Massacre"
 
@@ -246,11 +248,11 @@
 
  We_Have_Cleo_Favour_tt:0 "We have gained favour with the §1Mataram§!, that we can utilize."
 
- Cuban_Decision_1_tt:0 "We shall set to work investing in §1Cubanacan§!.\n\nThis decision has the following effects:\n\nAn equal chance to build either a §GCivilian Factory§!, a §GMilitary Factory§! or a §GLevel of Infrastructure§! in the state of §1Cubanacan§!.\n\nWe will also remove 10 §RAnger§! and receive 1 §RAction§!.\n\nThere is also a small chance of a §GMiracle§! where we will build all three at once for the price of one. And remove 30 §RAnger§! from the score and 3 §RActions§! taken.\n\n§GThis decision can be taken once every 120 days§!."
+ Cuban_Decision_1_tt:0 "We shall set to work investing in §1Cubanacan§!.\n\nThis decision has the following effects:\n\nAn equal chance to build either a §GCivilian Factory§!, a §GMilitary Factory§! or a §GLevel of Infrastructure§! in the state of §1Cubanacan§!.\n\nWe will also remove 10 §RAnger§! and receive 1 §RAction§!.\n\nThere is also a small chance of a §GMiracle§! where we will build all three at once for the price of one. And remove 20 §RAnger§! from the score and 3 §RActions§! taken.\n\n§GThis decision can be taken once every 120 days§!."
 
 
  #### Debug Decisions ####
 
  YAN_Debug_Decisions:0 "Debug Decisions"
- YAN_Debug_Decisions_desc:0 "Debug Decisions - All Variables\n\nIkvus_CW_Happiness - §R[?ROOT.Ikvus_CW_Happiness]§!\n\nFaisal_CW_Happiness - §R[?ROOT.Faisal_CW_Happiness]§!\n\nPrince_CW_Happiness - §R[?ROOT.Prince.CW.Happiness]§!\n\nSecurity_Zone_Safety - §R[?ROOT.Security_Zone_Safety]§!\n\n\nCuban Actions - §R[?ROOT.Cuban_Actions]§!\n\nCuban Anger - §R[?ROOT.Cuban_Anger]§!\n\n\nFrei Zebrikaan State Strength Meter - §R[?ROOT.FZS_Strength_Meter]§!\n\n\nScripted loc keys\n§C[ROOT.Get_SA_CW_LW_Stashes]§! Light Weapon stash , §C[ROOT.Get_SA_CW_HW_Stashes]§! Heavy Weapon artillery stash §C[ROOT.Get_SA_CW_LV_Stashes]§! light armoured vehicles\n\n[§LROOT.South_Zone_Tourism_Crisis]§! Tourism Check\n\n§L[ROOT.South_Zone_Merc_Strength_Crisis]§! - merc strength check\n\n§L[ROOT.South_Zone_Zebra_Tribes_Crisis]§! zebra tribe strength\n\n§L[GET.South_Zone_Crisis_Air_Supply]§! air supply check\n\n§L[GET.South_Zone_Helicopter_Investment]§! - Helicopter Investment\n\nmerc strength dynamic - [?ROOT.SZ_Merc_Strength]\n\nzeeb strength dynamic - [?ROOT.SZ_Zebra_Strength]\n\nHeli investment dynamic - [?ROOT.South_Zone_Heli_Progress]\n\nAir supply dynamic - [?ROOT.SZ_Air_Supply]\n\n\n[GET_SZ_Corruption] - corruption variable"
+ YAN_Debug_Decisions_desc:0 "Debug Decisions - All Variables\n\nIkvus_CW_Happiness - §R[?ROOT.Ikvus_CW_Happiness]§!\n\nFaisal_CW_Happiness - §R[?ROOT.Faisal_CW_Happiness]§!\n\nPrince_CW_Happiness - §R[?ROOT.Prince.CW.Happiness]§!\n\n\nCuban Actions - §R[?ROOT.Cuban_Actions]§!\n\nCuban Anger - §R[?ROOT.Cuban_Anger]§!\n\n\nFrei Zebrikaan State Strength Meter - §R[?ROOT.FZS_Strength_Meter]§!\n\n\nScripted loc keys\n§C[ROOT.Get_SA_CW_LW_Stashes]§! Light Weapon stash , §C[ROOT.Get_SA_CW_HW_Stashes]§! Heavy Weapon artillery stash §C[ROOT.Get_SA_CW_LV_Stashes]§! light armoured vehicles\n\n[§LROOT.South_Zone_Tourism_Crisis]§! Tourism Check\n\n§L[ROOT.South_Zone_Merc_Strength_Crisis]§! - merc strength check\n\n§L[ROOT.South_Zone_Zebra_Tribes_Crisis]§! zebra tribe strength\n\n§L[GET.South_Zone_Crisis_Air_Supply]§! air supply check\n\n§L[GET.South_Zone_Helicopter_Investment]§! - Helicopter Investment\n\nmerc strength dynamic - [?ROOT.SZ_Merc_Strength]\n\nzeeb strength dynamic - [?ROOT.SZ_Zebra_Strength]\n\nHeli investment dynamic - [?ROOT.South_Zone_Heli_Progress]\n\nAir supply dynamic - [?ROOT.SZ_Air_Supply]\n\n\n[GET_SZ_Corruption] - corruption variable"
  

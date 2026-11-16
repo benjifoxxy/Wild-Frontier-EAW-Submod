@@ -93,3 +93,24 @@ country_event = { # gold rush! really low chance of getting this
 		
 	}
 }
+
+country_event = { # Mataram Cleo Requests an Audience
+	id = cuban.8
+	title = cuban.8.t
+	desc = cuban.8.desc
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+
+	option = { # Why not? (Meet without a fuss)
+		name = cuban.8.a
+		
+	}
+	option = { # We would need some assurances. (Meet with a Fuss)
+		name = cuban.8.b
+		
+	}
+	option = { # Why are you bothering me? (Dont meet them)
+		name = cuban.8.c
+		
+	}
+}

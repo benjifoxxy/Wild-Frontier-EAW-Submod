@@ -36,7 +36,6 @@ YAN_Debug_Decisions = {
             set_variable = { Ikvus_CW_Happiness = 0 }
             set_variable = { Faisal_CW_Happiness = 0 }
             set_variable = { Prince_CW_Happiness = 0 }
-            set_variable = { Security_Zone_Safety = 0 }
             set_variable = { Griff_CW_Happiness = 0  }
             set_variable = { South_Zone_Tourism_Crisis = 0 }
             set_variable = { South_Zone_Merc_Strength_Crisis = 0 }
@@ -116,22 +115,15 @@ YAN_Debug_Decisions = {
             original_tag = YAN
         }
         complete_effect = {
-            set_variable = {
-                var = Ikvus_CW_Happiness
-                value = 0
-            }
-            set_variable = {
-                var = Faisal_CW_Happiness
-                value = 0
-            }
-            set_variable = {
-                var = Prince_CW_Happiness
-                value = 0
-            }
-            set_variable = {
-                var = Security_Zone_Safety
-                value = 0
-            }
+            set_variable = { Ikvus_CW_Happiness = 0 }
+            set_variable = { Faisal_CW_Happiness = 0 }
+            set_variable = { Prince_CW_Happiness = 0 }
+            set_variable = { Griff_CW_Happiness = 0 }
+            set_variable = { South_Zone_Tourism_Crisis = 0 }
+            set_variable = { South_Zone_Merc_Strength_Crisis = 0 }
+            set_variable = { South_Zone_Zebra_Tribes_Crisis = 0 }
+            set_variable = { South_Zone_Crisis_Air_Supply = 0 }
+            set_variable = { South_Zone_Helicopter_Investment = 0 }
         }
     }
 

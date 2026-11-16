@@ -79,7 +79,7 @@ country_event = {
     }
 }
 
-country_event = {
+country_event = { # early event hub , not changing unless it breaks things.
     id = debugCubanacan.2
     title = debugCubanacan.2.t
     desc = debugCubanacan.2.d
@@ -101,7 +101,7 @@ country_event = {
             15 = { # negative event
                 country_event = { id = cuban.6 days = 8}
             }
-            39 = { # nothing happens
+            5 = { # nothing happens
 
             }
             1 = { # gold rush!

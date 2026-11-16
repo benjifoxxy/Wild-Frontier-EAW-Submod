@@ -1,11 +1,12 @@
-state = {
+state = { # Renamed to Talonhoek
     id = 1158
     name = STATE_1158
     provinces = { 13371 13372 13374 13375 20086 20088 20089 20090 20091 20272 20290 20291 20292 20293 20294 20295 20296 20297 20298 }
     resources = {
-        aluminium = 10
-        rubber = 8
-        chromium = 2
+        aluminium = 12
+        rubber = 12
+        chromium = 6
+        steel = 24
     }
     history = {
         owner = YAN
@@ -19,7 +20,7 @@ state = {
                 naval_base = 6
             }
             20272 = {
-                naval_base = 2
+                naval_base = 3
             }
             20295 = {
                 naval_base = 2

@@ -280,6 +280,7 @@ country_event = { #compromise of 1004
         ai_chance = {
             factor = 1
         }
+        activate_mission = Cubanacan_Anger_Mission
         add_stability = -0.1
         add_political_power = -15
         add_popularity = {
@@ -295,12 +296,17 @@ country_event = { #compromise of 1004
             add_ideas = PUL_Scars_of_1004_Idea
             add_ideas = YAN_Open_Defiance_Idea
         }
+        clamp_variable = {
+            var = Cuban_Anger
+            min = 0
+            max = 100
+        }
         set_variable = {
             var = Cuban_Anger
             value = 25
         }
         set_country_flag = Cubanacan_Anger_Decisions_Enable
-        activate_mission = Cubanacan_Anger_Mission
+        
     }
 }
 
@@ -349,11 +355,11 @@ country_event = { # out west completion reward - civil war profiteering
         }
         add_equipment_to_stockpile = {
             type = infantry_equipment
-            amount = 1500
+            amount = 2500
         }
         add_equipment_to_stockpile = {
             type = support_equipment
-            amount = 150
+            amount = 200
         }
         add_equipment_to_stockpile = {
             type = convoy
@@ -366,6 +372,12 @@ country_event = { # out west completion reward - civil war profiteering
                 var = Ikvus_CW_Happiness
                 value = 0
             }
+            set_country_flag = SI_Invest_Decision_Cat_Activate
+            set_variable = { South_Zone_Tourism_Crisis = 0 }
+            set_variable = { South_Zone_Merc_Strength_Crisis = 0 }
+            set_variable = { South_Zone_Zebra_Tribes_Crisis = 0 }
+            set_variable = { South_Zone_Crisis_Air_Supply = 0 }
+            set_variable = { South_Zone_Helicopter_Investment = 0 }
         }
     }
     option = {
@@ -375,11 +387,11 @@ country_event = { # out west completion reward - civil war profiteering
         }
         add_equipment_to_stockpile = {
             type = infantry_equipment
-            amount = 1500
+            amount = 2500
         }
         add_equipment_to_stockpile = {
             type = support_equipment
-            amount = 150
+            amount = 200
         }
         add_equipment_to_stockpile = {
             type = convoy
@@ -392,21 +404,27 @@ country_event = { # out west completion reward - civil war profiteering
                 var = Faisal_CW_Happiness
                 value = 0
             }
+            set_country_flag = SI_Invest_Decision_Cat_Activate
+            set_variable = { South_Zone_Tourism_Crisis = 0 }
+            set_variable = { South_Zone_Merc_Strength_Crisis = 0 }
+            set_variable = { South_Zone_Zebra_Tribes_Crisis = 0 }
+            set_variable = { South_Zone_Crisis_Air_Supply = 0 }
+            set_variable = { South_Zone_Helicopter_Investment = 0 }
         }
     }
 
     option = {
-        name = zebstart.9.c #Chisimbi Crisis Decision Category - needed for schizo ending
+        name = zebstart.9.c #Chisimbi Crisis Decision Category - possible future for secret ending
         ai_chance = {
             factor = 1
         }
         add_equipment_to_stockpile = {
             type = infantry_equipment
-            amount = 1500
+            amount = 2500
         }
         add_equipment_to_stockpile = {
             type = support_equipment
-            amount = 150
+            amount = 200
         }
         add_equipment_to_stockpile = {
             type = convoy
@@ -423,33 +441,7 @@ country_event = { # out west completion reward - civil war profiteering
                 var = Griff_CW_Happiness
                 value = 0
             }
-        }
-    }
-
-    option = {
-        name = zebstart.9.d #invest in the south investment zone instead
-        ai_chance = {
-            factor = 1
-        }
-        add_equipment_to_stockpile = {
-            type = infantry_equipment
-            amount = 1500
-        }
-        add_equipment_to_stockpile = {
-            type = support_equipment
-            amount = 150
-        }
-        add_equipment_to_stockpile = {
-            type = convoy
-            amount = 20
-        }
-        custom_effect_tooltip = New_Decisions_Unlocked_YAN
-        hidden_effect = {
             set_country_flag = SI_Invest_Decision_Cat_Activate
-            set_variable = {
-                var = Security_Zone_Safety
-                value = 0
-            }
             set_variable = { South_Zone_Tourism_Crisis = 0 }
             set_variable = { South_Zone_Merc_Strength_Crisis = 0 }
             set_variable = { South_Zone_Zebra_Tribes_Crisis = 0 }
@@ -457,6 +449,7 @@ country_event = { # out west completion reward - civil war profiteering
             set_variable = { South_Zone_Helicopter_Investment = 0 }
         }
     }
+
     option = {
         name = zebstart.9.e #fuck it we ball ALL OF THEM AT ONCE
         ai_chance = {
@@ -492,10 +485,6 @@ country_event = { # out west completion reward - civil war profiteering
             }
             set_variable = {
                 var = Prince_CW_Happiness
-                value = 0
-            }
-            set_variable = {
-                var = Security_Zone_Safety
                 value = 0
             }
             set_variable = { South_Zone_Tourism_Crisis = 0 }

@@ -16,16 +16,17 @@ Cubanacan_Anger_Decisions = { # hidden events increase anger automatically.
         activation = {
             always = no
         }
+        priority = 1000
 
         timeout_effect = {
             hidden_effect = {
-                country_event = { id = debugCubanacan.1 }
+                country_event = { id = debugCubanacan.1 } # first method i tried to reactivate missions without realising i can just reactivate it in the mission itself. might as well leave it here as pointless to change unless it actually breaks something.
                 country_event = { id = debugCubanacan.2 }
-                clamp_variable = {
-                    var = Cuban_Anger
-                    min = 0
-                    max = 100
-                }                
+                #clamp_variable = {
+                #    var = Cuban_Anger
+                #    min = 0
+                #    max = 100
+                #}                
             }
         }
     }
@@ -38,6 +39,10 @@ Cubanacan_Anger_Decisions = { # hidden events increase anger automatically.
         }
         days_remove = 21
         days_re_enable = 120
+        visible = {
+            check_variable = { Cuban_Actions > 3 }
+            check_variable = { Cuban_Anger > 50 }
+        }
         complete_effect = {
             custom_effect_tooltip = Cuban_Decision_1_tt
             hidden_effect = {
@@ -90,7 +95,7 @@ Cubanacan_Anger_Decisions = { # hidden events increase anger automatically.
                                 level = 1
                                 instant_build = yes
                             }
-                            subtract_from_variable = { Cuban_Anger = 30 }
+                            subtract_from_variable = { Cuban_Anger = 20 }
                             add_to_variable = { Cuban_Actions = 3 }
                         }
                     }
@@ -110,11 +115,16 @@ Cubanacan_Anger_Decisions = { # hidden events increase anger automatically.
         }
         days_remove = 7
         days_re_enable = 21
+        visible = {
+            check_variable = { Cuban_Anger < 50 }
+            check_variable = { Cuban_Actions < 7 }
+        }
         complete_effect = {
             hidden_effect = {
                 subtract_from_variable = { Cuban_Anger = 10 }
                 add_to_variable = { Cuban_Actions = 1 }
             }
+            custom_effect_tooltip = Food_Aid_Cubans_tt
             add_timed_idea = {
                 idea = YAN_PUL_Food_Aid_Idea
                 days = 14
@@ -131,11 +141,16 @@ Cubanacan_Anger_Decisions = { # hidden events increase anger automatically.
         }
         days_remove = 7
         days_re_enable = 21
+        visible = {
+            check_variable = { Cuban_Anger < 50 }
+            check_variable = { Cuban_Actions < 7 }
+        }
         complete_effect = {
             hidden_effect = {
                 subtract_from_variable = { Cuban_Anger = 10 }
                 add_to_variable = { Cuban_Actions = 1 }
             }
+            custom_effect_tooltip = Food_Aid_Cubans_tt
             add_timed_idea = {
                 idea = YAN_PUL_Reparations_Idea
                 days = 14

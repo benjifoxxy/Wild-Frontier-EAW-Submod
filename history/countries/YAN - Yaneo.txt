@@ -320,13 +320,3 @@ set_popularities = {
 
 set_country_flag = Player_Selected_Country_Other_Than_YAN
 
-
-#set_variable = { Saddle_Arabia_CW_Weapon_Stashes_Light_Weapons = 0 }
-#set_variable = { Saddle_Arabia_CW_Weapon_Stashes_Heavy_Weapons = 0 }
-#set_variable = { Saddle_Arabia_CW_Weapon_Stashes_Mobile_Vehicles = 0 }
-#set_variable = { Ikvus_CW_Happiness = 0 }
-#set_variable = { Faisal_CW_Happiness = 0 }
-#set_variable = { Prince_CW_Happiness = 0 }
-#set_variable = { Security_Zone_Safety = 0 }
-#set_variable = { Griff_CW_Happiness = 0  }
-

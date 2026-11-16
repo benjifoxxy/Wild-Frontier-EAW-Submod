@@ -1,9 +1,9 @@
-state = {
+state = { # Zava is renamed to Clawtoria 
     id = 1157
     name = STATE_1157
     provinces = { 13370 20081 20082 20083 20084 20085 20087 }
     resources = {
-        steel = 10
+        steel = 40
         rubber = 4
     }
     history = {
