@@ -1,0 +1,84 @@
+
+focus_tree = { # Happens if Hoorst chooses to dedicate himself to saving the South Investment Zone, and is successful. Styling himself as the Savior of the Sud (Savior of the South) , the player will receive now some unique opportunities from the Chisimbi Griffs. (If he helped them.)
+	id = YAN_Hoorst_Path_A
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = TAG
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 2000 y = 2000 }
+
+    initial_show_position = { x = 0 y = 0 }
+
+	focus = {
+		id = Hoorst_Path_A_1
+		icon = GFX_zebra_factory
+		x = 4
+		y = 3
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = Hoorst_Path_A_2
+		icon = GFX_zebra_factory
+		x = 4
+		y = 4
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = Hoorst_Path_A_3
+		icon = GFX_zebra_factory
+		x = 4
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = Hoorst_Path_A_4
+		icon = GFX_zebra_factory
+		x = 2
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = Hoorst_Path_A_5
+		icon = GFX_zebra_factory
+		x = 4
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = Hoorst_Path_A_6
+		icon = GFX_zebra_factory
+		x = 6
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+}
+

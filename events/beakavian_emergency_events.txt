@@ -66,9 +66,11 @@ country_event = { #triggered automatically
         trigger = {
             NOT = {
                 IF = {
-                    has_country_flag = SK_Invest_Decision_Cat_Completed
-                    has_country_flag = SA_Invest_Decision_Cat_Completed
-                    has_country_flag = CC_Invest_Decision_Cat_Completed
+                    OR = { 
+                        has_country_flag = SK_Invest_Decision_Cat_Completed
+                        has_country_flag = SA_Invest_Decision_Cat_Completed
+                        has_country_flag = CC_Invest_Decision_Cat_Completed
+                    }
                 }
             }
         }

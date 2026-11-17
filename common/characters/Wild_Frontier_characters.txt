@@ -17,7 +17,7 @@ characters = {
         }
     }
 
-    Jan_Hoorst = {
+    Jan_Hoorst = { # big baddie
         name = "Stadtholder Jan Hoorst"
         portraits = {
             civilian = {
@@ -50,7 +50,7 @@ characters = {
 
 
 
-    Mataram_Cleo_1 = {
+    Mataram_Cleo_1 = { # zebra momma
         name = Mataram_Cleo_1
         portraits = {
             civilian = {
@@ -65,7 +65,7 @@ characters = {
         }
     }
 
-    admiral_ewal = {
+    admiral_ewal = { # pirate
         name = admiral_ewal
         portraits = {
             civilian = {
@@ -89,7 +89,7 @@ characters = {
         }
     }
 
-    Edi_Zamine = {
+    Edi_Zamine = { # Edi Amin
         name = Edi_Zamine
         portraits = {
             civilian = {
@@ -113,7 +113,7 @@ characters = {
         }
     }
 
-    Isaac_Reigers = {
+    Isaac_Reigers = { # wholesome incompetent chungus
         name = Isaac_Reigers
         portraits = {
             civilian = {

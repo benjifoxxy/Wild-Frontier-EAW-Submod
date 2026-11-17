@@ -18,7 +18,7 @@ South_Zone_Investment_Decisions = { # TAG - UBE -
             activate_mission = South_Zone_Investiture_Mission_1
             hidden_effect = {
                 IF = {
-                    limit = { check_variable = { South_Zone_Tourism_Crisis = 0 } }
+                    limit = { check_variable = { South_Zone_Tourism_Crisis = 0 } } 
                     random_list = { # 50/50 chance the tourism industry is gone donezo
                         50 = {
                             country_event = { id = South_Zone_Tourism.1 hours = 60 }

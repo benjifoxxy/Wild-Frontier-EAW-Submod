@@ -1,4 +1,4 @@
-
+######### Potentially going to cut this
 
 FZS_CW_Decisions = {
 
@@ -16,7 +16,7 @@ FZS_CW_Decisions = {
             }
         }
         days_mission_timeout = 30
-        days_re_enable = 18000
+        #days_re_enable = 18000
         activation = {
             always = no
         }

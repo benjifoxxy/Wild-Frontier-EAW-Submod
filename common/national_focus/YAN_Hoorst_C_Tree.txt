@@ -1,0 +1,84 @@
+
+focus_tree = { # Happens if Hoorst chooses to completely abandon the South Zone. But obtained allies elsewhere. This one will be focusing on reclaiming it through war rather than other means. If the Cubanacan havent been secured by the point of this tree, that mission will fail and the Cubanacan will declare independence.
+	id = YAN_Hoorst_Path_A
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = TAG
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 2000 y = 2000 }
+
+    initial_show_position = { x = 0 y = 0 }
+
+	focus = {
+		id = Hoorst_Path_C_1
+		icon = GFX_zebra_factory
+		x = 4
+		y = 3
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = Hoorst_Path_C_2
+		icon = GFX_zebra_factory
+		x = 4
+		y = 4
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = Hoorst_Path_C_3
+		icon = GFX_zebra_factory
+		x = 4
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = Hoorst_Path_C_4
+		icon = GFX_zebra_factory
+		x = 2
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = Hoorst_Path_C_5
+		icon = GFX_zebra_factory
+		x = 4
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = Hoorst_Path_C_6
+		icon = GFX_zebra_factory
+		x = 6
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+}
+

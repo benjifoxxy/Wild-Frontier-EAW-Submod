@@ -111,7 +111,7 @@ country_event = { # early event hub , not changing unless it breaks things.
     }
 }
 
-
+# unused for now
 country_event = {
     id = debugCW.1
     title = debugCW.1.t
@@ -143,7 +143,7 @@ country_event = {
         }
     }
 }
-
+# unused for now
 country_event = {
     id = debugCW.2
     title = debugCW.2.t
@@ -158,7 +158,7 @@ country_event = {
         activate_mission = FZS_Strength_Check        
     }
 }
-
+# unused for now
 country_event = {
     id = debugCW.3
     title = debugCW.3.t
@@ -172,7 +172,7 @@ country_event = {
         activate_mission = FZS_Strength_Check   
     }
 }
-
+# unused for now
 country_event = {
     id = debugCW.4
     title = debugCW.4.t
@@ -200,7 +200,7 @@ country_event = {
     }
     option = {
         name = debugYAN.a
-        load_focus_tree = All_is_fine_kek
+        load_focus_tree = YAN_Beginning_Tree
     }
     option = {
         name = debugYAN.b

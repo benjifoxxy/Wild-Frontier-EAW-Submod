@@ -6,11 +6,15 @@
 
  Sociopath_trait_desc:0 "A persistent lack of empathy or guilt, they may be seen by others as Charismatic and Intelligent, but underneath they will stop at nothing to achieve their goals, regardless of the consequences or misery of others."
 
+ Griffische_nationality:0 "Griffische Loyalist"
 
+ 
 
- Zebrikaaner_nationality:0 "Zebrikaaner"
+ Yaneoan_Nationality:0 "Native Yaneoan"
 
- Zebrikaaner_nationality_desc:0 "Zebrikaaner's are Griffon expats that have through many generations garnered a connection to the lands of the Zebrides and no longer see themselves as culturally similar to the mother country. Zebrikaaners are known for their desire for a Zebrikaaner society based on self-reliance and a strong militaristic ability."
+ Zebrikaaner_nationality:0 "Zebrikaaner Loyalist"
+
+ Zebrikaaner_nationality_desc:0 "Zebrikaaner's are Griffon expats that have through many generations garnered a connection to the lands of the Zebrides and no longer see themselves as culturally similar to the mother country. Zebrikaaners are known for their desire for a Zebrikaaner society based on self-reliance and a strong militaristic ability." # am i retarded? yes
 
  caring_claw:0 "A Caring Claw"
 
@@ -20,7 +24,7 @@
 
  Cerami_Nationality:0 "Native Cerami"
 
- Griffische_nationality:0 "Griffische"
+ 
 
  Mizor_Nationality:0 "Native Mizori"
 
@@ -28,4 +32,4 @@
  
  Wadangi_Nationality:0 "Native Wadangi "
 
- Yaneoan_Nationality:0 "Native Yaneoan"
+ 

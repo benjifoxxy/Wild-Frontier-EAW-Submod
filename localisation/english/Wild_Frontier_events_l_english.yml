@@ -419,61 +419,61 @@
 
 
 
- chuddie.1.t:0 "location of grand speech event" 
+ hoorst_main.1.t:0 "location of grand speech event" 
 
- chuddie.1.desc:0 "location of grand speech event description"
+ hoorst_main.1.desc:0 "location of grand speech event description"
 
- chuddie.1.a:0 "cheap option"
+ hoorst_main.1.a:0 "cheap option"
 
- chuddie.1.b:0 "speech from atop a grand ship"
+ hoorst_main.1.b:0 "speech from atop a grand ship"
 
- chuddie.1.c:0 "speech with the backdrop of an air show!"
+ hoorst_main.1.c:0 "speech with the backdrop of an air show!"
 
- chuddie.1.d:0 "speech at a griffon monument in beakavia"
-
-
-
- chuddie.2.t:0 "shifting administration to beakavia from mainland"
-
- chuddie.2.d:0 "shifting admin desc todo"
-
- chuddie.2.a:0 "ok cool"
+ hoorst_main.1.d:0 "speech at a griffon monument in beakavia"
 
 
 
- chuddie.3.t:0 "slash spending event todo"
+ hoorst_main.2.t:0 "shifting administration to beakavia from mainland"
 
- chuddie.3.desc:0 "slash epdnging todo description"
+ hoorst_main.2.d:0 "shifting admin desc todo"
 
- chuddie.3.a:0 "privatize fleet or airforce depending on previous decision"
-
- chuddie.3.b:0 "piss off the natives decision"
-
- chuddie.3.c:0 "disband the army and rely on mercenaries"
-
- chuddie.3.d:0 "do nothing lol"
+ hoorst_main.2.a:0 "ok cool"
 
 
 
- chuddie.4.t:0 "brutalist economics todo"
+ hoorst_main.3.t:0 "slash spending event todo"
 
- chuddie.4.d:0 "brutalist economics description"
+ hoorst_main.3.desc:0 "slash epdnging todo description"
 
- chuddie.4.a:0 "brutalist economics option 1"
+ hoorst_main.3.a:0 "privatize fleet or airforce depending on previous decision"
 
- chuddie.4.b:0 "brutalist economics option 2"
+ hoorst_main.3.b:0 "piss off the natives decision"
 
- chuddie.4.c:0 "brutalist economics option 3 - loot ceram and sambo"
+ hoorst_main.3.c:0 "disband the army and rely on mercenaries"
+
+ hoorst_main.3.d:0 "do nothing lol"
 
 
 
- chuddie.5.t:0 "eco austerity - voc colony is fucked"
+ hoorst_main.4.t:0 "brutalist economics todo"
 
- chuddie.5.d:0 "eco austerity chuddie 5 description"
+ hoorst_main.4.d:0 "brutalist economics description"
 
- chuddie.5.a:0 "option a - try and save the southern zone"
+ hoorst_main.4.a:0 "brutalist economics option 1"
 
- chuddie.5.b:0 "option b - welp, shids fucked"
+ hoorst_main.4.b:0 "brutalist economics option 2"
+
+ hoorst_main.4.c:0 "brutalist economics option 3 - loot ceram and sambo"
+
+
+
+ hoorst_main.5.t:0 "eco austerity - voc colony is fucked"
+
+ hoorst_main.5.d:0 "eco austerity hoorst_main 5 description"
+
+ hoorst_main.5.a:0 "option a - try and save the southern zone"
+
+ hoorst_main.5.b:0 "option b - welp, shids fucked"
 
  #### South Zone Crisis Events Localisation
 

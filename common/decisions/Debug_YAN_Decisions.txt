@@ -159,7 +159,7 @@ YAN_Debug_Decisions = {
             original_tag = YAN
         }
         complete_effect = {
-            load_focus_tree = All_is_fine_kek
+            load_focus_tree = YAN_Beginning_Tree
         }
     }
 
