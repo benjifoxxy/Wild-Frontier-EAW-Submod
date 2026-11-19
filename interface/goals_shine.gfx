@@ -30,69 +30,7 @@ spriteTypes = {
         }
         legacy_lazy_load = no
     }
-
-    spriteType = {
-        name = "GFX_Focus_west_pinkie_shine"
-        texturefile = "gfx/interface/goals/look_west_pinkie.dds"
-        effectFile = "gfx/FX/buttonstate.lua"
-        animation = {
-            animationmaskfile = "gfx/interface/goals/look_west_pinkie.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-            animationrotation = -90.0
-            animationlooping = no
-            animationtime = 0.75
-            animationdelay = 0
-            animationblendmode = "add"
-            animationtype = "scrolling"
-            animationrotationoffset = { x = 0.0 y = 0.0 }
-            animationtexturescale = { x = 1.0 y = 1.0 }
-        }
-        animation = {
-            animationmaskfile = "gfx/interface/goals/look_west_pinkie.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-            animationrotation = 90.0
-            animationlooping = no
-            animationtime = 0.75
-            animationdelay = 0
-            animationblendmode = "add"
-            animationtype = "scrolling"
-            animationrotationoffset = { x = 0.0 y = 0.0 }
-            animationtexturescale = { x = 1.0 y = 1.0 }
-        }
-        legacy_lazy_load = no
-    }
-
-    spriteType = {
-        name = "GFX_Focus_trixie_shine"
-        texturefile = "gfx/interface/goals/trixie_right.dds"
-        effectFile = "gfx/FX/buttonstate.lua"
-        animation = {
-            animationmaskfile = "gfx/interface/goals/trixie_right.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-            animationrotation = -90.0
-            animationlooping = no
-            animationtime = 0.75
-            animationdelay = 0
-            animationblendmode = "add"
-            animationtype = "scrolling"
-            animationrotationoffset = { x = 0.0 y = 0.0 }
-            animationtexturescale = { x = 1.0 y = 1.0 }
-        }
-        animation = {
-            animationmaskfile = "gfx/interface/goals/trixie_right.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-            animationrotation = 90.0
-            animationlooping = no
-            animationtime = 0.75
-            animationdelay = 0
-            animationblendmode = "add"
-            animationtype = "scrolling"
-            animationrotationoffset = { x = 0.0 y = 0.0 }
-            animationtexturescale = { x = 1.0 y = 1.0 }
-        }
-        legacy_lazy_load = no
-    }
-
+   
     spriteType = {
         name = "GFX_Focus_VOC_Lib_shine"
         texturefile = "gfx/interface/goals/voc_commie.dds"
@@ -173,68 +111,6 @@ spriteTypes = {
         }
         animation = {
             animationmaskfile = "gfx/interface/goals/voc_chud.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-            animationrotation = 90.0
-            animationlooping = no
-            animationtime = 0.75
-            animationdelay = 0
-            animationblendmode = "add"
-            animationtype = "scrolling"
-            animationrotationoffset = { x = 0.0 y = 0.0 }
-            animationtexturescale = { x = 1.0 y = 1.0 }
-        }
-        legacy_lazy_load = no
-    }
-
-    spriteType = {
-        name = "GFX_Focus_king_meme_shine"
-        texturefile = "gfx/interface/goals/king_not_meme.dds"
-        effectFile = "gfx/FX/buttonstate.lua"
-        animation = {
-            animationmaskfile = "gfx/interface/goals/king_not_meme.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-            animationrotation = -90.0
-            animationlooping = no
-            animationtime = 0.75
-            animationdelay = 0
-            animationblendmode = "add"
-            animationtype = "scrolling"
-            animationrotationoffset = { x = 0.0 y = 0.0 }
-            animationtexturescale = { x = 1.0 y = 1.0 }
-        }
-        animation = {
-            animationmaskfile = "gfx/interface/goals/king_not_meme.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-            animationrotation = 90.0
-            animationlooping = no
-            animationtime = 0.75
-            animationdelay = 0
-            animationblendmode = "add"
-            animationtype = "scrolling"
-            animationrotationoffset = { x = 0.0 y = 0.0 }
-            animationtexturescale = { x = 1.0 y = 1.0 }
-        }
-        legacy_lazy_load = no
-    }
-
-    spriteType = {
-        name = "GFX_Focus_Octaviamerc_shine"
-        texturefile = "gfx/interface/goals/octavia_meme.dds"
-        effectFile = "gfx/FX/buttonstate.lua"
-        animation = {
-            animationmaskfile = "gfx/interface/goals/octavia_meme.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-            animationrotation = -90.0
-            animationlooping = no
-            animationtime = 0.75
-            animationdelay = 0
-            animationblendmode = "add"
-            animationtype = "scrolling"
-            animationrotationoffset = { x = 0.0 y = 0.0 }
-            animationtexturescale = { x = 1.0 y = 1.0 }
-        }
-        animation = {
-            animationmaskfile = "gfx/interface/goals/octavia_meme.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
             animationrotation = 90.0
             animationlooping = no

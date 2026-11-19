@@ -301,26 +301,15 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideologies/military_communism.dds"
 	}
         spriteType = {
-
                 name = "GFX_ideology_divine_protectorate"
-
                 texturefile = "gfx/interface/ideologies/tribal_federation.dds"
-
         }
-
         spriteType = {
-
                 name = "GFX_ideology_concessionary_sov"
-
                 texturefile = "gfx/interface/ideologies/neofeudalism.dds"
-
         }
-
         spriteType = {
-
                 name = "GFX_ideology_warlord_militarism"
-
                 texturefile = "gfx/interface/ideologies/stratocracy.dds"
-
         }
 }

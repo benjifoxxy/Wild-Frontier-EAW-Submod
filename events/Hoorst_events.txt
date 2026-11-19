@@ -1,0 +1,329 @@
+add_namespace = hoorst_clique
+add_namespace = hoorst_main
+
+country_event = {
+    id = hoorst_clique.1
+    title = hoorst_clique.1.t
+    desc = hoorst_clique.1.d
+    picture = GFX_report_event_radar_01
+    fire_only_once = yes
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = hoorst_clique.1.a
+        hidden_effect = {
+            complete_national_focus = interim_hoorst_clique
+            set_politics = {
+                ruling_party = fascism
+                elections_allowed = no
+
+            }
+        }
+        mark_focus_tree_layout_dirty = yes
+        custom_effect_tooltip = unlocked_focuses_yan
+        add_stability = -0.1
+        add_manpower = 20000
+    }
+}
+
+country_event = { # grand speech event select effect - # location of speech
+    id = hoorst_main.1
+    title = hoorst_main.1.t
+    desc = hoorst_main.1.desc
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = { # cheap option
+        name = hoorst_main.1.a
+        ai_chance = {
+            factor = 1
+        }
+        set_global_flag = speech1cheap_f
+        hidden_effect = {
+            country_event = { 
+                id = hoorst_main.7 
+                days = 12 
+            }
+        }
+    }
+    option = { # grand navy parade option
+        name = hoorst_main.1.b
+        ai_chance = {
+            factor = 1
+        }
+        set_global_flag = speech1navy_f
+        hidden_effect = {
+            country_event = { id = hoorst_main.8 days = 12 }
+        }
+    }
+    option = { # air parade option
+        name = hoorst_main.1.c
+        ai_chance = {
+            factor = 1
+        }
+        set_global_flag = speech1air_f
+        hidden_effect = { 
+            country_event = {
+                id = hoorst_main.9 
+                days = 12 
+            }
+    }
+}
+    option = { # cultural option - focus on Zebridische
+        name = hoorst_main.1.d
+        ai_chance = {
+            factor = 1
+        }
+        set_global_flag = speech1racist_f
+        hidden_effect = { 
+            country_event = { hoorst_main.10 days = 12 } }
+    }
+}
+
+country_event = { # grand speech cheap
+    id = hoorst_main.7
+    title = hoorst_main.7.t
+    desc = hoorst_main.7.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = hoorst_main.7.a
+        ai_chance = {
+            factor = 1
+        }
+        add_timed_idea = {
+            idea = Hoorst_Grand_Speech_1_cheap
+            days = 35
+        }
+    }
+}
+
+country_event = { #grand speech navy focus
+    id = hoorst_main.8
+    title = hoorst_main.8.t
+    desc = hoorst_main.8.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = hoorst_main.8.a
+        ai_chance = {
+            factor = 1
+        }
+        add_timed_idea = {
+            idea = Hoorst_Grand_Speech_1_navy
+            days = 35
+        }
+    }
+}
+
+country_event = { #grand speech air focus
+    id = hoorst_main.9
+    title = hoorst_main.9.t
+    desc = hoorst_main.9.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = hoorst_main.9.a
+        ai_chance = {
+            factor = 1
+        }
+        add_timed_idea = {
+            idea = Hoorst_Grand_Speech_1_air
+            days = 35
+        }
+    }
+}
+
+country_event = { # grand speech cultural focus - schizo
+    id = hoorst_main.10
+    title = hoorst_main.10.t
+    desc = hoorst_main.10.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = {
+        name = hoorst_main.10.a
+        ai_chance = {
+            factor = 1
+        }
+        add_timed_idea = {
+            idea = Hoorst_Grand_Speech_1_cultural
+            days = 35
+        }
+    }
+}
+
+country_event = { # shifting VOC Radical administration from mainland to beakavia
+    id = hoorst_main.2
+    title = hoorst_main.2.t
+    desc = hoorst_main.2.d
+    picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = { # Yes, sure why not - WHAT could possibly could go wrong...
+        name = hoorst_main.2.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+    option = { # No, the mandate is still important.
+        name = hoorst_main.2.b
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+country_event = { # slash spending - sell off ships , or close unprofitable factories
+    id = hoorst_main.3
+    title = hoorst_main.3.t
+    desc = hoorst_main.3.desc
+    picture = GFX_report_event_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = { #sell off airforce decision
+        name = hoorst_main.3.a
+        ai_chance = {
+            factor = 1
+        }
+        add_political_power = -100
+
+        random_owned_controlled_state = {
+            limit = { industrial_complex > 1 }
+            remove_building = { type = industrial_complex level = 2 }
+        }
+        random_owned_controlled_state = {
+            limit = { arms_factory > 1 }
+            remove_building = { type = arms_factory level = 2 }
+        }
+        set_country_flag = slash_spending_airforce_fully_privatized
+    }
+    option = { # a horrendous economic decision (piss off the natives)
+        name = hoorst_main.3.b
+        ai_chance = {
+            factor = 1
+        }
+        1158 = {
+
+        }
+        set_country_flag = slash_spending_natives
+    }
+    option = { # disband the army, full reliance on mercenaries
+        name = hoorst_main.3.c
+        ai_chance = {
+            factor = 1
+        }
+        set_country_flag = slash_spending_removed_army
+    }
+    option = { # cut off social spending
+        name = hoorst_main.3.d
+        ai_chance = {
+            factor = 1
+        }
+        set_country_flag = slash_spending_social_spending
+    }
+}
+country_event = { # brutalist policy
+    id = hoorst_main.4
+    title = hoorst_main.4.t
+    desc = hoorst_main.4.desc
+    picture = GFX_report_event_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = { #sell off government holdings for capital
+        name = hoorst_main.4.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+    option = { # loot sambovato instead, available only if bailed out sambo
+        name = hoorst_main.4.b
+        ai_chance = {
+            factor = 1
+        }
+        trigger = {
+            
+        }
+    }
+    option = { # sell off government shares in Storm Kingdom , available if won CW
+        name = hoorst_main.4.c
+        ai_chance = {
+            factor = 1
+        }
+    }
+    option = { # sell off government shares in Saddle Arabia, available if won CW
+        name = hoorst_main.4.d
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+country_event = { # economic austerity/bottom line - final nail in the coffin for the VOC colony
+    id = hoorst_main.5
+    title = hoorst_main.5.t
+    desc = chuddle.5.d
+    picture = GFX_report_event_sign_treaty1
+    is_triggered_only = yes
+    trigger = {
+        original_tag = YAN
+    }
+    option = { # option that seals the deal for the colony.
+        name = hoorst_main.5.a
+        ai_chance = {
+            factor = 1
+        }
+        hidden_effect = {
+            country_event = {
+                id = hoorst_main.6 days = 10 }
+            }
+
+        }
+    }
+
+
+    country_event = { # zebrikaaners prepare event
+        id = hoorst_main.6
+        title = hoorst_main.6.t
+        desc = hoorst_main.6.d
+        picture = GFX_report_event_sign_treaty1
+        is_triggered_only = yes
+        trigger = {
+            original_tag = YAN
+        }
+        option = {
+            name = hoorst_main.6.a
+            ai_chance = {
+                factor = 1
+            }
+            mark_focus_tree_layout_dirty = yes
+            hidden_effect = {
+                country_event = {
+                    id = voctroubles.12 days = 5 }
+                }
+            }
+        }
+
+
+

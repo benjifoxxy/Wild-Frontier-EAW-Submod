@@ -482,8 +482,8 @@ Chisimbi_Crisis_7 = { # incite slave revolt in tanganiyka?
             }
         }
     }
-    days_remove = 30
-    remove_effect = {
+    days_re_enable = 900
+    complete_effect = {
         country_event = {
             id = chisimbi_crisis.6
             days = 2

@@ -1,5 +1,5 @@
 name="benjifox_submod"
-supported_version="1.19.*"
+supported_version="1.20.*"
 dependencies={
     "Equestria at War"
 }

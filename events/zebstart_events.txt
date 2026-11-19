@@ -1095,9 +1095,9 @@ country_event = {
 }
 
 country_event = { #backup event incase a silly cheater
-    id = sussybaka.1
-    title = sussybaka.1.t
-    desc = sussybaka.1.d
+    id = zebstart.30
+    title = zebstart.30.t
+    desc = zebstart.30.d
     picture = GFX_report_event_radar_01
     fire_only_once = yes
     is_triggered_only = yes
@@ -1105,7 +1105,7 @@ country_event = { #backup event incase a silly cheater
         original_tag = YAN
     }
     option = {
-        name = sussybaka.1.a
+        name = zebstart.30.a
         hidden_effect = {
             3 = { add_building_construction = {
                 dockyard
@@ -1116,7 +1116,7 @@ country_event = { #backup event incase a silly cheater
     }
 }
 option = {
-    name = sussybaka.1.b
+    name = zebstart.30.b
     hidden_effect = {
         3 = { add_building_construction = {
             dockyard
@@ -1127,7 +1127,7 @@ option = {
 }
 }
 option = {
-    name = sussybaka.1.c
+    name = zebstart.30.c
     hidden_effect = {
         3 = { add_building_construction = {
             dockyard
@@ -1138,7 +1138,7 @@ option = {
 }
 }
 option = {
-    name = sussybaka.1.d
+    name = zebstart.30.d
     hidden_effect = {
         3 = { add_building_construction = {
             dockyard

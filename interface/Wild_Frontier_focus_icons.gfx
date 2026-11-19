@@ -6,16 +6,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = GFX_Focus_west_pinkie
-		texturefile = "gfx/interface/goals/look_west_pinkie.dds"
-	}
-
-	spriteType = {
-		name = GFX_Focus_trixie
-		texturefile = "gfx/interface/goals/trixie_right.dds"
-	}
-
-	spriteType = {
 		name = GFX_Focus_VOC_Lib
 		texturefile = "gfx/interface/goals/voc_commie.dds"
 	}
@@ -28,16 +18,6 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_Focus_VOC_Chud
 		texturefile = "gfx/interface/goals/voc_chud.dds"
-	}
-
-	spriteType = {
-		name = GFX_Focus_king_meme
-		texturefile = "gfx/interface/goals/king_not_meme.dds"
-	}
-
-	spriteType = {
-		name = GFX_Focus_Octaviamerc
-		texturefile = "gfx/interface/goals/octavia_meme.dds"
 	}
 
 }

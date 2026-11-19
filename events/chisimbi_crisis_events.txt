@@ -173,8 +173,8 @@ country_event = { # Tanzo whatever the i can never spell it right the giraffe co
             days = 30
         }
         hidden_effect = {
-            country_event = { id = chisimbi_crisis.11 days = 5 } # Giraffe King offers submission for support. 
-            country_event = { id = chisimbi_crisis.7 days = 31 }
+            country_event = { id = chisimbi_crisis.11 days = 5 } # Giraffe King offers submission for support.
+            country_event = { id = chisimbi_crisis.7 days = 31 } # hidden event that starts the revolt
         }
 
     }
@@ -188,8 +188,8 @@ country_event = { # Tanzo whatever the i can never spell it right the giraffe co
             days = 30
         }
         hidden_effect = {
-            country_event = { id = chisimbi_crisis.11 days = 5 } # Giraffe King offers submission for support. 
-            country_event = { id = chisimbi_crisis.8 days = 31 }
+            country_event = { id = chisimbi_crisis.11 days = 5 } # Giraffe King offers submission for support.
+            country_event = { id = chisimbi_crisis.8 days = 31 } # hidden event that starts the revolt
         }
     }
     option = { # Option if the rest of Chisimbi is unified, the Imba Zaru/Griffs support the revolt and pretty much directly invade.
@@ -211,7 +211,7 @@ country_event = { # Tanzo whatever the i can never spell it right the giraffe co
         }
         hidden_effect = {
             country_event = { id = chisimbi.crisis.10 days = 7 random = 7 } # the hyenas offer their surrender.
-            country_event = { id = chisimbi_crisis.9 days = 22 }
+            country_event = { id = chisimbi_crisis.9 days = 22 } # hidden event that starts the revolt
         }
     }
 }
@@ -230,7 +230,7 @@ country_event = { # GIF revolt option 1 hidden
 
         }
         GFS = {
-            
+
         }
     }
 }
@@ -249,7 +249,7 @@ country_event = { # GIF revolt option 2 hidden
 
         }
         GFS = {
-            
+
         }
     }
 }
@@ -288,26 +288,58 @@ country_event = { # GIF revolt option 3 hidden
 country_event = { # Giraffe King offers submission for support
     id = chisimbi_crisis.11
     title = chisimbi_crisis.11.t
-    desc = chisimbi_crisis.11.d
+    desc = chisimbi_crisis.11.desc
     picture = GFX_report_event_generic
     is_triggered_only = yes
     fire_only_once = yes
     option = { # Of course, we are super wholesome chungus
         name = chisimbi_crisis.11.a
+        trigger = {
+            ROA = {
+                exists = yes
+            }
+            NOT = {
+                has_country_flag = GIF_Hyenas_Agreed_To_Submission
+            }
+        }
+        custom_effect_tooltip = Chis_Crisis_Option_A_tt
     }
     option = { # Demand heavy concessions
         name = chisimbi_crisis.11.b
+        trigger = {
+            ROA = {
+                exists = no
+            }
+            NOT = {
+                has_country_flag = GIF_Hyenas_Agreed_To_Submission
+            }
+        }
+        custom_effect_tooltip = Chis_Crisis_Option_B_tt
     }
     option = { # Interesting, let's see how the leader of GIF feels about securing our support.
         name = chisimbi_crisis.11.c
-        custom_effect_tooltip = Chi_Crisi_Option_3_tt
+        custom_effect_tooltip = Chis_Crisis_Option_C_tt
         set_country_flag = Chi_Crisis_Option_3_Taken
         trigger = {
             NOT = {
-                has_country_flag = Chi_Crisis_Option_3_Taken
+                has_country_flag = Chi_Crisis_Option_3_Taken # to prevent indefinite circular events
             }
         }
-        country_event = { id = chisimbi_crisis.12 hours = 8 }
+        country_event = { id = chisimbi_crisis.12 hours = 30 }
+    }
+    option = { # option to continue and just support the hyenas
+        name = chisimbi_crisis.11.d
+        trigger = {
+            has_country_flag = GIF_Hyenas_Agreed_To_Submission
+        }
+        custom_effect_tooltip = Chis_Crisis_Option_D_tt
+    }
+    option = { # option to offer support for the giraffes but double cross both of them.
+        name = chisimbi_crisis.11.e
+        trigger = {
+            has_country_flag = GIF_Hyenas_Agreed_To_Submission
+        }
+        custom_effect_tooltip = Chis_Crisis_Option_E_tt
     }
 }
 
@@ -333,7 +365,7 @@ country_event = { # meet with the hyenas, they offer submission as well, with th
             ELSE = {
                 random_list = {
                     50 = { # no
-                         country_event = { id = chisimbi_crisis.13 days = 5 }
+                        country_event = { id = chisimbi_crisis.13 days = 5 }
                     }
                     50 = { # yes
                         country_event = { id = chisimbi_crisis.14 days = 5 }
@@ -358,14 +390,14 @@ country_event = { # refers back to the giraffes if the hyenas say no.
 }
 
 country_event = { # refers back to the giraffes if the hyenas say yes. you can now betray them both
-    id = chisimbi_crisis.13
-    title = chisimbi_crisis.13.t
-    desc = chisimbi_crisis.13.d
+    id = chisimbi_crisis.14
+    title = chisimbi_crisis.14.t
+    desc = chisimbi_crisis.14.d
     picture = GFX_report_event_generic
     is_triggered_only = yes
     fire_only_once = yes
     option = {
-        name = chisimbi_crisis.13.a
+        name = chisimbi_crisis.14.a
         country_event = { id = chisimbi_crisis.11 }
         set_country_flag = GIF_Hyenas_Agreed_To_Submission
     }

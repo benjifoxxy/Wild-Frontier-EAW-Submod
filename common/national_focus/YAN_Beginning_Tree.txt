@@ -54,7 +54,7 @@ focus_tree = {
             custom_effect_tooltip = Out_West_Reward_Explanation_tt
             hidden_effect = {
                 country_event = { id = zebstart.9 }
-                country_event = { id = z_emigres.1 days = 1 random = 6 }
+                country_event = { id = z_emigres.1 days = 4 random = 6 }
                 country_event = { id = zebstart.16 days = 14 }
             }
         }
@@ -237,7 +237,7 @@ focus_tree = {
         }
         cancelable = no
         completion_reward = {
-            country_event = { id = sussybaka.1 }
+            country_event = { id = zebstart.30 }
             add_political_power = 200
             add_stability = 0.2
             add_popularity = {
