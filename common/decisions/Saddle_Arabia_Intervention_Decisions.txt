@@ -125,7 +125,9 @@ Saddle_Arabia_Investment_Decisions = { # TAG - SDL - Grand Prince Faisal ibn Sai
         remove_effect = {
             targeted_modifier = {
                 tag = SDL
-                modifier = YAN_SDL_Volunteer_Modifier
+                send_volunteers_tension = -1
+                send_volunteer_divisions_required = -1
+                send_volunteer_size = 3
             }
             hidden_effect = {
                 set_country_flag = Sent_Volunteers_to_SA_CW_Flag

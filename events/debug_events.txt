@@ -205,19 +205,19 @@ country_event = {
     }
     option = {
         name = debugYAN.b
-        load_focus_tree = beakavian_emergency_tree_hoorst
+        #load_focus_tree = beakavian_emergency_tree_hoorst
     }
     option = {
         name = debugYAN.c
-        load_focus_tree = corpo_chud
+        #load_focus_tree = corpo_chud
     }
     option = {
         name = debugYAN.d
-        load_focus_tree = hoorst_tree_2
+        #load_focus_tree = hoorst_tree_2
     }
     option = {
         name = debugYAN.e
-        load_focus_tree = VOC_Radical_Tree
+        #load_focus_tree = VOC_Radical_Tree
     }
 }
 
@@ -378,7 +378,15 @@ country_event = {
             }
             release = WAD
         }
-        country_event = { id = beakavian_emergency_debug.4 }
+        IF = {
+            limit = {
+                WAD = {
+                    exists = yes
+                }
+            }
+            country_event = { id = beakavian_emergency_debug.4 }
+        }
+        
     }
 }
 

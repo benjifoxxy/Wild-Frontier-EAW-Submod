@@ -1,177 +1,291 @@
 ﻿l_english:
  
+ ### Ubezi which is the tag for the ZSI
+
  UBE:0 "Ubezi"
+
  UBE_ADJ:0 "Ubezi"
+
  UBE_DEF:0 "Ubezi"
+
  UBE_democratic:0 "Disorganized Brigands"
+
  UBE_fascism:0 "Disorganized Brigands"
+
  UBE_communism:0 "Disorganized Brigands"
+
  UBE_neutrality:0 "Disorganized Brigands"
+
  UBE_cosmetic:0 "Zebrikanisches Südliches Investitionsgebiet"
+
  UBE_cosmetic_ADJ:0 "Zebrikanisches Südliches Investitionsgebiet"
+
  UBE_cosmetic_DEF:0 "Zebrikanisches Südliches Investitionsgebiet"
  
+ ### WAD Wadangstadt , Edi Zamine's country
+
  WAD_cosmetic:0 "Kampfgruppe Zamine"
 
- ZOO_Manual:0 "Manizongo"
+ ###
 
  VOC_cosmetic:0 "Talonkompanie Sicherheitszone"
 
+ ###
+
  CER:0 "Ceram"
+
  CER_ADJ:0 "Ceram"
+
  CER_DEF:0 "Ceram"
+
  CER_communism:0 "Ceram"
+
  CER_communism_ADJ:0 "Ceram"
+
  CER_communism_DEF:0 "Ceram"
+
  CER_communism_party:0 "No one"
+
  CER_communism_party_long:0 "No one"
+
  CER_democratic:0 "Ceram"
+
  CER_democratic_ADJ:0 "Ceram"
+
  CER_democratic_DEF:0 "Ceram"
+
  CER_democratic_party:0 "No one"
+
  CER_democratic_party_long:0 "No one"
+
  CER_fascism:0 "Ceram"
+
  CER_fascism_ADJ:0 "Ceram"
+
  CER_fascism_DEF:0 "Ceram"
+
  CER_fascism_party:0 "No one"
+
  CER_fascism_party_long:0 "No one"
+
  CER_neutrality:0 "Ceram"
+
  CER_neutrality_ADJ:0 "Ceram"
+
  CER_neutrality_DEF:0 "Ceram"
+
  CER_neutrality_party:0 "Idori Clique"
+
  CER_neutrality_party_long:0 "Idori Clique"
- FFF:0 "Grover Festung"
- FFF_ADJ:0 "Grover Festung"
- FFF_DEF:0 "Grover Festung"
- FFF_communism:0 "Grover Festung"
- FFF_communism_ADJ:0 "Grover Festung"
- FFF_communism_DEF:0 "Grover Festung"
- FFF_cosmetic:0 "Knights Hospitaller"
- FFF_cosmetic_ADJ:0 "Knights Hospitaller"
- FFF_cosmetic_DEF:0 "Knights Hospitaller"
- FFF_democratic:0 "Grover Festung"
- FFF_democratic_ADJ:0 "Grover Festung"
- FFF_democratic_DEF:0 "Grover Festung"
- FFF_fascism:0 "Grover Festung"
- FFF_fascism_ADJ:0 "Grover Festung"
- FFF_fascism_DEF:0 "Grover Festung"
- FFF_neutrality:0 "Grover Festung"
- FFF_neutrality_ADJ:0 "Grover Festung"
- FFF_neutrality_DEF:0 "Grover Festung"
- GRR:0 "Greifenhorst"
- GRR_ADJ:0 "Greifenhorst"
- GRR_DEF:0 "Greifenhorst"
- GRR_communism:0 "Greifenhorst"
- GRR_communism_ADJ:0 "Greifenhorst"
- GRR_communism_DEF:0 "Greifenhorst"
- GRR_democratic:0 "Greifenhorst"
- GRR_democratic_ADJ:0 "Greifenhorst"
- GRR_democratic_DEF:0 "Greifenhorst"
- GRR_fascism:0 "Greifenhorst"
- GRR_fascism_ADJ:0 "Greifenhorst"
- GRR_fascism_DEF:0 "Greifenhorst"
- GRR_neutrality:0 "Greifenhorst"
- GRR_neutrality_ADJ:0 "Greifenhorst"
- GRR_neutrality_DEF:0 "Greifenhorst"
+
+ ###
+
  MIZ:0 "Mizor"
+
  MIZ_ADJ:0 "Mizor"
+
  MIZ_DEF:0 "Mizor"
+
  MIZ_communism:0 "Mizor"
+
  MIZ_communism_ADJ:0 "Mizor"
+
  MIZ_communism_DEF:0 "Mizor"
+
  MIZ_communism_party:0 "Mizori Tribespeoples"
+
  MIZ_communism_party_long:0 "Mizori Tribespeoples"
+
  MIZ_cosmetic:0 "Kirchau Governate"
+
  MIZ_cosmetic_ADJ:0 "Kirchau Governate"
+
  MIZ_cosmetic_DEF:0 "Kirchau Governate"
+
  MIZ_democratic:0 "Mizor"
+
  MIZ_democratic_ADJ:0 "Mizor"
+
  MIZ_democratic_DEF:0 "Mizor"
+
  MIZ_democratic_party:0 "Unwilling Labourers"
+
  MIZ_democratic_party_long:0 "Unwilling Labourers"
+
  MIZ_fascism:0 "Kirchau Governate"
+
  MIZ_fascism_ADJ:0 "Kirchau Governate"
+
  MIZ_fascism_DEF:0 "Kirchau Governate"
+
  MIZ_fascism_party:0 "Kirchau Governate"
+
  MIZ_fascism_party_long:0 "Kirchau Governate"
+
  MIZ_neutrality:0 "Mizor"
+
  MIZ_neutrality_ADJ:0 "Mizor"
+
  MIZ_neutrality_DEF:0 "Mizor"
+
  MIZ_neutrality_party:0 "No one"
+
  MIZ_neutrality_party_long:0 "No one"
+
+ ###
+
  PUL:0 "Cubanacánio"
+
  PUL_ADJ:0 "Cubanacánio"
+
  PUL_DEF:0 "Cubanacánio"
+
  PUL_communism:0 "Cubanacánio"
+
  PUL_communism_ADJ:0 "Cubanacánio"
+
  PUL_communism_DEF:0 "Cubanacánio"
+
  PUL_communism_party:0 "No one"
+
  PUL_communism_party_long:0 "No one"
+
  PUL_democratic:0 "Cubanacánio"
+
  PUL_democratic_ADJ:0 "Cubanacánio"
+
  PUL_democratic_DEF:0 "Cubanacánio"
+
  PUL_democratic_party:0 "Cleo's Clique"
+
  PUL_democratic_party_long:0 "Cleo's Clique"
+
  PUL_fascism:0 "Cubanacánio"
+
  PUL_fascism_ADJ:0 "Cubanacánio"
+
  PUL_fascism_DEF:0 "Cubanacánio"
+
  PUL_fascism_party:0 "Cubanacáni Extremism"
+
  PUL_fascism_party_long:0 "Cubanacáni Extremism"
+
  PUL_neutrality:0 "Cubanacánio"
+
  PUL_neutrality_ADJ:0 "Cubanacánio"
+
  PUL_neutrality_DEF:0 "Cubanacánio"
+
  PUL_neutrality_party:0 "No one"
+
  PUL_neutrality_party_long:0 "No one"
+
+ ###
+
  WAD:0 "Wadang"
+
  WAD_cosmetic2:0 "Zamine Military Mission"
+
  WADZAM:0 "Zamine Junta"
+
  WADZAM_ADJ:0 "Zamine Junta"
+
  WADZAM_DEF:0 "Zamine Junta"
+
  WAD_ADJ:0 "Wadang"
+
  WAD_DEF:0 "Wadang"
+
  WAD_communism:0 "Wadang"
+
  WAD_communism_ADJ:0 "Wadang"
+
  WAD_communism_DEF:0 "Wadang"
+
  WAD_communism_party:0 "No one"
+
  WAD_communism_party_long:0 "No one"
+
  WAD_democratic:0 "Wadang"
+
  WAD_democratic_ADJ:0 "Wadang"
+
  WAD_democratic_DEF:0 "Wadang"
+
  WAD_democratic_party:0 "No one"
+
  WAD_democratic_party_long:0 "No one"
+
  WAD_fascism:0 "Wadang"
+
  WAD_fascism_ADJ:0 "Wadang"
+
  WAD_fascism_DEF:0 "Wadang"
+
  WAD_fascism_party:0 "Zamine Junta"
+
  WAD_fascism_party_long:0 "Zamine Junta"
+
  WAD_neutrality:0 "Wadang"
+
  WAD_neutrality_ADJ:0 "Wadang"
+
  WAD_neutrality_DEF:0 "Wadang"
+
  WAD_neutrality_party:0 "No one"
+
  WAD_neutrality_party_long:0 "No one"
+
+ ###
+
  YAN:0 "Zebrides"
+
  YAN_ADJ:0 "Zebridean"
+
  YAN_DEF:0 "the Zebrides"
+
  YAN_cosmetic:0 "Zuid Zebrikaan Staat"
+
  YAN_cosmetic_ADJ:0 "Zuid Zebrikaan Staat"
+
  YAN_cosmetic_DEF:0 "Zuid Zebrikaan Staat"
+
  YAN_communism:0 "Zebrides"
+
  YAN_communism_ADJ:0 "Zebridean"
+
  YAN_communism_DEF:0 "the Zebrides"
+
  YAN_communism_party:0 "No one"
+
  YAN_communism_party_long:0 "No one"
+
  YAN_democratic:0 "Zebrides"
+
  YAN_democratic_ADJ:0 "Zebridean"
+
  YAN_democratic_DEF:0 "the Zebrides"
+
  YAN_democratic_party:0 "VOC Beakavian Office"
+
  YAN_democratic_party_long:0 "Vereenigde Oost-Griffische Compagnie"
+
  YAN_fascism:0 "Zebrides"
+
  YAN_fascism_ADJ:0 "Zebridean"
+
  YAN_fascism_DEF:0 "the Zebrides"
+
  YAN_fascism_party:0 "SOC"
+
  YAN_fascism_party_long:0 "Society of the Open Claw"
+
  YAN_neutrality:0 "Zebrides"
+
  YAN_neutrality_ADJ:0 "Zebridean"
+
  YAN_neutrality_DEF:0 "the Zebrides"
+
  YAN_neutrality_party:0 "G-Z Congress"
+ 
  YAN_neutrality_party_long:0 "Griffische-Zebrikaan Congress"

@@ -1,24 +1,5 @@
 leader_traits = {
-    Sociopath_trait = {
-        random = no
-        sprite = 5
-        fascism_drift = 0.02
-        political_power_gain = 0.1
-        stability_weekly = 0.01
-        ai_will_do = {
-            factor = 1
-        }
-    }
-    Zebrikaaner_nationality = {
-        random = no
-        sprite = 5
-        ai_will_do = {
-            factor = 1
-        }
-    }
     caring_claw = {
-        random = no
-        sprite = 5
         neutrality_drift = -0.02
         fascism_drift = 0.01
         communism_drift = 0.01
@@ -26,57 +7,17 @@ leader_traits = {
         stability_weekly = 0.01
         monthly_population = 0.1
         non_core_manpower = 0.05
-        ai_will_do = {
-            factor = 1
-        }
     }
+    Zebrikaaner_nationality = {
+
+    }   
     Griffische_nationality = {
-        random = no
-        sprite = 5
-        ai_will_do = {
-            factor = 1
-        }
+
     }
     Yaneoan_Nationality = {
-        random = no
-        sprite = 5
-        ai_will_do = {
-            factor = 1
-        }
-    }
-    Wadangi_Nationality = {
-        random = no
-        sprite = 5
-        ai_will_do = {
-            factor = 1
-        }
-    }
-    Cerami_Nationality = {
-        random = no
-        sprite = 5
-        ai_will_do = {
-            factor = 1
-        }
-    }
-    Mizor_Nationality = {
-        random = no
-        sprite = 5
-        ai_will_do = {
-            factor = 1
-        }
-    }
-    Pulali_Nationality = {
-        random = no
-        sprite = 5
-        ai_will_do = {
-            factor = 1
-        }
+        
     }
     colonial_collaborator = {
-        random = no
-        sprite = 5
-        ai_will_do = {
-            factor = 1
-        }
+        
     }
 }

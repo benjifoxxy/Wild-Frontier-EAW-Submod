@@ -4,7 +4,7 @@ Chisimbi_Crisis_Investment_Decisions = { # TAG - GFS - Mukoza Taredna
 
     Chisimbi_Griff_Influence_Mission = { # activated after both factions have been met. reactives itself
         icon = generic_civil_war
-        
+
         allowed = {
             always = no
         }
@@ -25,10 +25,9 @@ Chisimbi_Crisis_Investment_Decisions = { # TAG - GFS - Mukoza Taredna
             }
         }
     }
-
     Chisimbi_Zaru_Influence_Mission = { # activated after both factions have been met. reactives itself
         icon = generic_civil_war
-        
+
         allowed = {
             always = no
         }
@@ -49,7 +48,6 @@ Chisimbi_Crisis_Investment_Decisions = { # TAG - GFS - Mukoza Taredna
             }
         }
     }
-
     Chisimbi_Crisis_0 = { # Intelligence Report on Chisimbi
 
         icon = generic_civil_war
@@ -80,7 +78,6 @@ Chisimbi_Crisis_Investment_Decisions = { # TAG - GFS - Mukoza Taredna
             }
         }
     }
-
     Chisimbi_Crisis_1 = { # Meeting with Principality Directorate
 
         icon = generic_civil_war
@@ -131,31 +128,6 @@ Chisimbi_Crisis_Investment_Decisions = { # TAG - GFS - Mukoza Taredna
             }
         }
     }
-    #Chisimbi_Crisis_2 = { # Meet with Griffon Community Leaders - now unused
-
-    #icon = generic_civil_war
-    #cost = 0
-    #allowed = {
-    #    original_tag = YAN
-    #}
-    #days_remove = 7
-    #days_re_enable = 21000
-    #visible = {
-    #    NOT = {
-    #        has_country_flag = GFS_Griffons_Met_Flag
-    #    }
-    #}
-    #available = {
-    #    has_country_flag = GFS_Prince_Met_Flag
-    #}
-    #remove_effect = {
-    #    hidden_effect = {
-    #        set_country_flag = GFS_Griffons_Met_Flag
-    #    }
-    #    country_event = { id = chisimbi_crisis.3 }
-    #}
-    #}
-
     Chisimbi_Crisis_3 = { # volunteer decision
 
         icon = generic_civil_war
@@ -180,7 +152,9 @@ Chisimbi_Crisis_Investment_Decisions = { # TAG - GFS - Mukoza Taredna
         remove_effect = {
             targeted_modifier = {
                 tag = GFS
-                modifier = YAN_GFS_Volunteer_Modifier
+                send_volunteers_tension = -1
+                send_volunteer_divisions_required = -1
+                send_volunteer_size = 3
             }
         }
     }
@@ -206,301 +180,299 @@ Chisimbi_Crisis_Investment_Decisions = { # TAG - GFS - Mukoza Taredna
                 }
             }
             YAN = {
-                    has_equipment = { infantry_equipment > 999
-                }
+                has_equipment = { infantry_equipment > 999
             }
-        }
-        days_re_enable = 21
-        complete_effect = {
-            custom_effect_tooltip = Rifle_Influence_Increase_Griffs
-            hidden_effect = {
-                add_to_variable = {
-                    var = Griff_CW_Happiness
-                    value = 2
-                }
-                set_country_flag = Sent_Rifles_To_Imba_Zaru_YAN_Flag
-                country_event = { id = chisimbi_crisis.5 days = 21 }
-                GFS = {
-                    add_equipment_to_stockpile = {
-                        type = infantry_equipment
-                        amount = 1000
-                    }
-                }
-                YAN = {
-                    add_equipment_to_stockpile = {
-                        type = infantry_equipment
-                        amount = -1000
-                    }
-                } 
-            }            
         }
     }
-
-    Chisimbi_Crisis_45 = { # rifles for influence to the imba zaru
-
-        icon = generic_civil_war
-        cost = 1
-        allowed = {
-            original_tag = YAN
-        }
-        visible = {
-            has_country_flag = GFS_Prince_Met_Flag
-        }
-        available = {
-            custom_trigger_tooltip = {
-                tooltip = Have_Met_Griffons_And_Prince_Regent_tt
-                AND = {
-                    has_country_flag = GFS_Prince_Met_Flag
-                    has_country_flag = GFS_Griffons_Met_Flag
-                    NOT = {
-                        has_country_flag = Sent_Rifles_To_Imba_Zaru_YAN_Flag
-                    }
-                }
-                YAN = {
-                    has_equipment = {
-                         infantry_equipment > 999
+    days_re_enable = 21
+    complete_effect = {
+        custom_effect_tooltip = Rifle_Influence_Increase_Griffs
+        hidden_effect = {
+            add_to_variable = {
+                var = Griff_CW_Happiness
+                value = 2
+            }
+            set_country_flag = Sent_Rifles_To_Imba_Zaru_YAN_Flag
+            country_event = { id = chisimbi_crisis.5 days = 21 }
+            GFS = {
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 1000
                 }
             }
-            }
-        }
-        days_re_enable = 21
-        complete_effect = {
-        custom_effect_tooltip = Rifle_Influence_Increase_Zaru  
-            hidden_effect = {
-                add_to_variable = {
-                    var = Prince_CW_Happiness
-                    value = 2
-                }
-                set_country_flag = Sent_Rifles_To_Imba_Zaru_YAN_Flag
-                country_event = { id = chisimbi_crisis.5 days = 21 }
-                GFS = {
-                    add_equipment_to_stockpile = {
-                        type = infantry_equipment
-                        amount = 1000
-                    }
-                }
-                YAN = {
-                    add_equipment_to_stockpile = {
-                        type = infantry_equipment
-                        amount = -1000
-                    }
+            YAN = {
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = -1000
                 }
             }
         }
     }
+}
+Chisimbi_Crisis_45 = { # rifles for influence to the imba zaru
 
-    Chisimbi_Crisis_5 = { # air volunteers for chisimbi
-
-        icon = generic_civil_war
-        cost = 1
-        allowed = {
-            original_tag = YAN
-        }
-        visible = {
-            has_country_flag = GFS_Prince_Met_Flag
-        }
-        available = {
-            custom_trigger_tooltip = {
-                tooltip = Have_Met_Griffons_And_Prince_Regent_tt
-                AND = {
-                    has_country_flag = GFS_Prince_Met_Flag
-                    has_country_flag = GFS_Griffons_Met_Flag
-                }
-            }
-        }
-        days_remove = 75
-        days_re_enable = 75
-        complete_effect = {
-            add_timed_idea = {
-                idea = YAN_Build_Air_For_Imba_Zaru
-                days = 75
-            }
-        }
-        # 911 Muromo Werizi
-        # 913 Ibellen
-        # 912 Grinhival
-        remove_effect = {
-            custom_effect_tooltip = Air_Vol_Chisimbi_CW_tt
-            hidden_effect = {
-                # Give planes to GFS
-                IF = {
-                    limit = { has_dlc = "By Blood Alone" }
-                    GFS = {
-                        add_equipment_to_stockpile = {
-                            type = small_plane_airframe_0
-                            variant_name = "Early Fighter"
-                            producer = YAN
-                            amount = 50
-                        }
-                    }
-                }
-                ELSE = {
-                    GFS = {
-                        add_equipment_to_stockpile = {
-                            type = fighter_equipment_1
-                            producer = YAN
-                            amount = 50
-                        }
-                    }
-                }
-                IF = {
-                    limit = {
-                        911 = { air_base < 1 }
-                    }
-                    911 = {
-                        add_building_construction = {
-                            type = air_base
-                            level = 1
-                            instant_build = yes
-                        }
-                    }
-                }
-                IF = {
-                    limit = {
-                        912 = { air_base < 1 }
-                    }
-                    912 = {
-                        add_building_construction = {
-                            type = air_base
-                            level = 1
-                            instant_build = yes
-                        }
-                    }
-                }
-                IF = {
-                    limit = {
-                        913 = { air_base < 1 }
-                    }
-                    913 = {
-                        add_building_construction = {
-                            type = air_base
-                            level = 1
-                            instant_build = yes
-                        }
-                    }
-                }
-            }
-        }
+    icon = generic_civil_war
+    cost = 1
+    allowed = {
+        original_tag = YAN
     }
-
-    Chisimbi_Crisis_6 = { # incite the zeblu?
-
-        icon = generic_civil_war
-        cost = 1
-        allowed = {
-            original_tag = YAN
-        }
-        visible = {
-            has_country_flag = GFS_Prince_Met_Flag
-        }
-        available = {
-            custom_trigger_tooltip = {
-                tooltip = Have_Met_Griffons_And_Prince_Regent_tt
-                AND = {
-                    has_country_flag = GFS_Prince_Met_Flag
-                    has_country_flag = GFS_Griffons_Met_Flag
-                    ROA = {
-                        exists = no
-                    }
-                }
-            }
-            has_intelligence_agency = yes
-            
-        }
-        complete_effect = {
-
-        }
+    visible = {
+        has_country_flag = GFS_Prince_Met_Flag
     }
-
-    Chisimbi_Crisis_66 = { # Force Imba Zaru to declare on nations in the North
-
-        icon = generic_civil_war
-        cost = 100
-        allowed = {
-            original_tag = YAN
-        }
-        visible = { # roam cant exist, imba zaru has to be controlled by griffs, ibz and tsv still exist
-            AND = {
-                ROA = {
-                    exists = no
-                }
-                GFS = {
-                    owns_state = 909
-                }
-                OR = {
-                    IBZ = {
-                        exists = yes
-                    }
-                    TSV = {
-                        exists = yes
-                    }
-                }
-                GFS = {
-                    has_government = fascism
-                }
-            }
-        }
-        days_remove = 30
-        days_re_enable = 90000
-        remove_effect = {
-            IF = {
-                limit = {
-                    IBZ = {
-                        exists = yes
-                    }
-                }
-                GFS = {
-                    declare_war_on = {
-                        target = IBZ
-                        type = annex_everything
-                    }
-                }
-            }
-            IF = {
-                limit = {
-                    TSV = {
-                        exists = yes
-                    }
-                }
-                GFS = {
-                    declare_war_on = {
-                        target = TSV
-                        type = annex_everything
-                    }
-                }
-            }
-        }
-    }
-
-    Chisimbi_Crisis_7 = { # incite slave revolt in tanganiyka?
-
-        icon = generic_civil_war
-        cost = 1
-        allowed = {
-            original_tag = YAN
-        }
-        visible = {
+    available = {
+        custom_trigger_tooltip = {
+            tooltip = Have_Met_Griffons_And_Prince_Regent_tt
             AND = {
                 has_country_flag = GFS_Prince_Met_Flag
-                ROA = {
-                    exists = no
+                has_country_flag = GFS_Griffons_Met_Flag
+                NOT = {
+                    has_country_flag = Sent_Rifles_To_Imba_Zaru_YAN_Flag
                 }
-                GFS = {
-                    owns_state = 909
-                    has_government = fascism
+            }
+            YAN = {
+                has_equipment = {
+                    infantry_equipment > 999
                 }
             }
         }
-        available = {
-            custom_trigger_tooltip = {
-                tooltip = Have_Met_Griffons_And_Prince_Regent_tt
-                AND = {
-                    has_country_flag = GFS_Prince_Met_Flag
-                    has_country_flag = GFS_Griffons_Met_Flag
-                    ROA = {
-                        exists = no
+    }
+    days_re_enable = 21
+    complete_effect = {
+        custom_effect_tooltip = Rifle_Influence_Increase_Zaru
+        hidden_effect = {
+            add_to_variable = {
+                var = Prince_CW_Happiness
+                value = 2
+            }
+            set_country_flag = Sent_Rifles_To_Imba_Zaru_YAN_Flag
+            country_event = { id = chisimbi_crisis.5 days = 21 }
+            GFS = {
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 1000
+                }
+            }
+            YAN = {
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = -1000
+                }
+            }
+        }
+    }
+}
+Chisimbi_Crisis_5 = { # air volunteers for chisimbi
+
+    icon = generic_civil_war
+    cost = 1
+    allowed = {
+        original_tag = YAN
+    }
+    visible = {
+        has_country_flag = GFS_Prince_Met_Flag
+    }
+    available = {
+        custom_trigger_tooltip = {
+            tooltip = Have_Met_Griffons_And_Prince_Regent_tt
+            AND = {
+                has_country_flag = GFS_Prince_Met_Flag
+                has_country_flag = GFS_Griffons_Met_Flag
+            }
+        }
+    }
+    days_remove = 75
+    days_re_enable = 75
+    complete_effect = {
+        add_timed_idea = {
+            idea = YAN_Build_Air_For_Imba_Zaru
+            days = 75
+        }
+    }
+    # 911 Muromo Werizi
+    # 913 Ibellen
+    # 912 Grinhival
+    remove_effect = {
+        custom_effect_tooltip = Air_Vol_Chisimbi_CW_tt
+        hidden_effect = {
+            # Give planes to GFS
+            IF = {
+                limit = { has_dlc = "By Blood Alone" }
+                GFS = {
+                    add_equipment_to_stockpile = {
+                        type = small_plane_airframe_0
+                        variant_name = "Early Fighter"
+                        producer = YAN
+                        amount = 50
                     }
                 }
+            }
+            ELSE = {
+                GFS = {
+                    add_equipment_to_stockpile = {
+                        type = fighter_equipment_1
+                        producer = YAN
+                        amount = 50
+                    }
+                }
+            }
+            IF = {
+                limit = {
+                    911 = { air_base < 1 }
+                }
+                911 = {
+                    add_building_construction = {
+                        type = air_base
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+            }
+            IF = {
+                limit = {
+                    912 = { air_base < 1 }
+                }
+                912 = {
+                    add_building_construction = {
+                        type = air_base
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+            }
+            IF = {
+                limit = {
+                    913 = { air_base < 1 }
+                }
+                913 = {
+                    add_building_construction = {
+                        type = air_base
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+            }
+        }
+    }
+}
+Chisimbi_Crisis_6 = { # incite the zeblu?
+
+    icon = generic_civil_war
+    cost = 1
+    allowed = {
+        original_tag = YAN
+    }
+    visible = {
+        has_country_flag = GFS_Prince_Met_Flag
+    }
+    available = {
+        custom_trigger_tooltip = {
+            tooltip = Have_Met_Griffons_And_Prince_Regent_tt
+            AND = {
+                has_country_flag = GFS_Prince_Met_Flag
+                has_country_flag = GFS_Griffons_Met_Flag
+                ROA = {
+                    exists = no
+                }
+            }
+        }
+        has_intelligence_agency = yes
+
+    }
+    complete_effect = {
+
+    }
+}
+Chisimbi_Crisis_66 = { # Force Imba Zaru to declare on nations in the North
+
+    icon = generic_civil_war
+    cost = 100
+    allowed = {
+        original_tag = YAN
+    }
+    visible = { # roam cant exist, imba zaru has to be controlled by griffs, ibz and tsv still exist
+        AND = {
+            ROA = {
+                exists = no
+            }
+            GFS = {
+                owns_state = 909
+            }
+            OR = {
+                IBZ = {
+                    exists = yes
+                }
+                TSV = {
+                    exists = yes
+                }
+            }
+            GFS = {
+                has_government = fascism
+            }
+        }
+    }
+    days_remove = 30
+    days_re_enable = 90000
+    remove_effect = {
+        IF = {
+            limit = {
+                IBZ = {
+                    exists = yes
+                }
+            }
+            GFS = {
+                declare_war_on = {
+                    target = IBZ
+                    type = annex_everything
+                }
+            }
+        }
+        IF = {
+            limit = {
+                TSV = {
+                    exists = yes
+                }
+            }
+            GFS = {
+                declare_war_on = {
+                    target = TSV
+                    type = annex_everything
+                }
+            }
+        }
+    }
+}
+Chisimbi_Crisis_7 = { # incite slave revolt in tanganiyka?
+
+    icon = generic_civil_war
+    cost = 1
+    allowed = {
+        original_tag = YAN
+    }
+    visible = {
+        AND = {
+            has_country_flag = GFS_Prince_Met_Flag
+            ROA = {
+                exists = no
+            }
+            GFS = {
+                owns_state = 909
+                has_government = fascism
+            }
+            NOT = {
+                    has_country_flag = YAN_GIF_Revolt_Started
+                }
+        }
+    }
+    available = {
+        custom_trigger_tooltip = {
+            tooltip = Have_Met_Griffons_And_Prince_Regent_tt
+            AND = {
+                has_country_flag = GFS_Prince_Met_Flag
+                has_country_flag = GFS_Griffons_Met_Flag
+                ROA = {
+                    exists = no
+                }
+
                 check_variable = {
                     Griff_CW_Happiness > 3
                 }
@@ -509,57 +481,56 @@ Chisimbi_Crisis_Investment_Decisions = { # TAG - GFS - Mukoza Taredna
                 }
             }
         }
-        days_remove = 30
-        days_re_enable = 19000
-        remove_effect = {
-            country_event = {
-                id = chisimbi_crisis.4
-                days = 1
-            }
-        }
     }
-
-    Chisimbi_Crisis_8 = { # Complete category of Chisimbi
-
-        icon = generic_civil_war
-        cost = 1
-        allowed = {
-            original_tag = YAN
+    days_remove = 30
+    remove_effect = {
+        country_event = {
+            id = chisimbi_crisis.6
+            days = 2
         }
-        visible = {
-            has_country_flag = GFS_Prince_Met_Flag
-        }
-        available = {
-            custom_trigger_tooltip = {
-                tooltip = Chisimbi_United_YAN_tt
-                AND = {
-                    has_country_flag = GFS_Prince_Met_Flag
-                    has_country_flag = GFS_Griffons_Met_Flag
-                    ROA = {
-                        exists = no
-                    }
-                    ZLU = {
-                        exists = no
-                    }
-                    GIF = {
-                        exists = no
-                    }
-                    IBZ = {
-                        exists = no
-                    }
-                    GFS = {
-                        exists = no
-                    }
+        set_country_flag = YAN_GIF_Revolt_Started
+    }
+}
+Chisimbi_Crisis_8 = { # Complete category of Chisimbi
+
+    icon = generic_civil_war
+    cost = 1
+    allowed = {
+        original_tag = YAN
+    }
+    visible = {
+        has_country_flag = GFS_Prince_Met_Flag
+    }
+    available = {
+        custom_trigger_tooltip = {
+            tooltip = Chisimbi_United_YAN_tt
+            AND = {
+                has_country_flag = GFS_Prince_Met_Flag
+                has_country_flag = GFS_Griffons_Met_Flag
+                ROA = {
+                    exists = no
+                }
+                ZLU = {
+                    exists = no
+                }
+                GIF = {
+                    exists = no
+                }
+                IBZ = {
+                    exists = no
+                }
+                GFS = {
+                    exists = no
                 }
             }
         }
-        complete_effect = {
-            custom_effect_tooltip = Complete_SK_CW_Category_tt
-            hidden_effect = {
-                set_global_flag = Chisimbi_Crisis_Resolved
-            }
-
-        }
     }
+    complete_effect = {
+        custom_effect_tooltip = Complete_SK_CW_Category_tt
+        hidden_effect = {
+            set_global_flag = Chisimbi_Crisis_Resolved
+        }
 
+    }
+}
 }

@@ -1,6 +1,19 @@
 ideas = {
     country = {
 
+        PUL_Entrenched_Tribalism = {
+            picture = gfx
+            modifier = {
+                add_stability = 0.3
+                research_speed_factor = -0.3
+                weekly_manpower = 150
+            }
+        }
+
+        PUL_Ancient_Danger = {
+            picture = gfx
+        }
+
         YAN_Build_Air_For_Imba_Zaru = {
             picture = gfx
             modifier = {

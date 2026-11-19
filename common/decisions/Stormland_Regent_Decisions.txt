@@ -131,7 +131,9 @@ Storm_Kingdom_Investment_Decisions = { # TAG - STM - Ikvus Hailstorm
     remove_effect = {
         targeted_modifier = {
             tag = STM
-            modifier = YAN_STM_Volunteer_Modifier
+            send_volunteers_tension = -1
+                send_volunteer_divisions_required = -1
+                send_volunteer_size = 3
         }
         hidden_effect = {
             add_to_variable = {

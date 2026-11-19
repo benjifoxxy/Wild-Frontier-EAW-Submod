@@ -22,6 +22,8 @@ actually_fix_weapon_techs = yes
 
 add_ideas = { 
     
+    PUL_Entrenched_Tribalism
+    PUL_Ancient_Danger
     tribal_society 
     poor_science_base 
     lack_of_scientists 
