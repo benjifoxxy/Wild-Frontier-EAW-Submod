@@ -28,31 +28,6 @@ Cubanacan_Anger_Decisions = {
     }
 }
 
-YAN_VOC_Mandate_Development_Decisions = {
-    icon = generic_civil_war
-    priority = 1000
-    allowed = {
-        original_tag = YAN
-
-    }
-    visible = {
-        has_country_flag = VOC_Mandate_Development_Decisions_Flag
-    }
-}
-
-FZS_CW_Decisions = {
-    icon = generic_civil_war
-    priority = 999
-    allowed = {
-        original_tag = YAN
-
-    }
-
-    visible = {
-        has_country_flag = FZS_Civil_War_Cat_Enable
-    }
-}
-
 Storm_Kingdom_Investment_Decisions = {
     icon = generic_civil_war
     priority = 700
@@ -67,32 +42,6 @@ Storm_Kingdom_Investment_Decisions = {
         name = Storm_Kingdom_Map_Area_tt
 
 
-    }
-    highlight_color_before_active = 2 # being raised as a false positive
-    highlight_states = {
-        state = 982
-        state = 983
-        state = 984
-        state = 985
-        state = 1025
-        state = 1024
-        state = 978
-        state = 979
-        state = 980
-        state = 981
-        state = 1026
-        state = 1027
-        state = 1028
-        state = 1140
-        state = 1033
-        state = 1034
-        state = 1035
-        state = 1031
-        state = 1032
-        state = 294
-        state = 1029
-        state = 220
-        state = 1030
     }
 }
 
@@ -110,37 +59,6 @@ Saddle_Arabia_Investment_Decisions = {
         name = Saddle_Arabica_Map_Area_tt
 
     }
-    highlight_color_before_active = 2 # being raised as a false positive
-    highlight_states = {
-        state = 868
-        state = 869
-        state = 866
-        state = 864
-        state = 863
-        state = 862
-        state = 865
-        state = 870
-        state = 871
-        state = 867
-        state = 859
-        state = 861
-        state = 858
-        state = 857
-        state = 856
-        state = 851
-        state = 849
-        state = 855
-        state = 854
-        state = 853
-        state = 841
-        state = 840
-        state = 842
-        state = 848
-        state = 847
-        state = 839
-        state = 838
-        state = 837
-    }
 }
 
 Chisimbi_Crisis_Investment_Decisions = {
@@ -156,35 +74,6 @@ Chisimbi_Crisis_Investment_Decisions = {
         state = 912
         name = Chisimbi_Crisis_Map_Area_tt
     }
-    highlight_color_before_active = 2 # being raised as a false positive 
-    highlight_states = {
-        state = 911
-        state = 912
-        state = 913
-        state = 915
-        state = 193
-        state = 329
-        state = 910
-        state = 909
-        state = 921
-        state = 934
-        state = 908
-        state = 907
-        state = 906
-        state = 922
-        state = 920
-        state = 1129
-        state = 1128
-        state = 1127
-        state = 1132
-        state = 1131
-        state = 1130
-        state = 914
-        state = 916
-        state = 919
-        state = 917
-        state = 918
-    }
 }
 
 South_Zone_Investment_Decisions = {
@@ -199,25 +88,6 @@ South_Zone_Investment_Decisions = {
     on_map_area = {
         state = 1139
         name = South_Zone_Decision_Map_Area_tt
-    }
-    highlight_color_before_active = 2 # being raised as a false positive
-    highlight_states = {
-        state = 1139
-        state = 1149
-        state = 1148
-        state = 1146
-        state = 1192
-        state = 1145
-        state = 1150
-        state = 1144
-        state = 1141
-        state = 1142
-        state = 1143
-        state = 1153
-        state = 1190
-        state = 1152
-        state = 1154
-        state = 1155
     }
 }
 

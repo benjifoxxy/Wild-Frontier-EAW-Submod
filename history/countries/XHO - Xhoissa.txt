@@ -3,7 +3,7 @@ set_research_slots = 2
 set_convoys = 0
 set_stability = 0.5
 set_war_support = 0.5
-load_focus_tree = "ZEB_SUBJECTS"
+load_focus_tree = "YAN_Subjects_Tree_Basic"
 # Politics selected in the builder
 set_research_slots = 2
 

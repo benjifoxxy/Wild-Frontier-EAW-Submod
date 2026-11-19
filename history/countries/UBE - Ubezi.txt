@@ -3,7 +3,7 @@ set_research_slots = 2
 set_convoys = 50
 set_stability = 0.35
 set_war_support = 0.3
-load_focus_tree = "ZEB_SUBJECTS"
+load_focus_tree = "YAN_Subjects_Tree_Basic"
 
 recruit_character = various_warlords_UBE
 recruit_character = UBE_Saviour_of_the_South

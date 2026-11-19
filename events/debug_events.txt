@@ -4,7 +4,7 @@ add_namespace = debugCW
 add_namespace = debugCubanacan
 add_namespace = debug_Wild_Frontier_Startup
 
-country_event = { # now ubused
+country_event = { # switches player to YAN
     id = debug_Wild_Frontier_Startup.1
     is_triggered_only = yes
     title = debug_Wild_Frontier_Startup.1.t
@@ -13,10 +13,10 @@ country_event = { # now ubused
         name = debug_Wild_Frontier_Startup.1.a
         YAN = {
             change_tag_from = ROOT
-            
+
         }
         set_global_flag = debugFlagStartup
-        
+
     }
     hidden = yes
 }
@@ -28,13 +28,9 @@ country_event = {
     picture = GFX_report_event_generic
     is_triggered_only = yes
     fire_only_once =  yes
-    immediate = {
-        set_global_flag = debug_Startup_Event_2_fired
-    }
     trigger = {
         YAN = {
             is_ai = no
-            has_country_flag = Player_Selected_Country_Other_Than_YAN
         }
     }
     option = {
@@ -43,7 +39,7 @@ country_event = {
         custom_effect_tooltip = Player_Force_Switched_To_YAN
         trigger = {
             NOT = {
-                has_country_flag = Player_Selected_Country_Other_Than_YAN
+                has_global_flag = debugFlagStartup
             }
         }
     }
@@ -52,13 +48,18 @@ country_event = {
         custom_effect_tooltip = Startup_Explanation_tt
         custom_effect_tooltip = Player_Force_Switched_To_YAN
         trigger = {
-            has_country_flag = debugFlagStartup
+            has_global_flag = debugFlagStartup
         }
     }
+}
+
+country_event = {
+    id = debug_Wild_Frontier_Startup.3
+    is_triggered_only = yes
+    hidden = yes
     option = {
-        name = debug_Wild_Frontier_Startup.2.c
-        custom_effect_tooltip = Startup_Explanation_tt
-        custom_effect_tooltip = Player_Force_Switched_To_YAN        
+        name = debug_Wild_Frontier_Startup.3.a
+        clr_global_flag = debugFlagStartup
     }
 }
 
@@ -90,10 +91,10 @@ country_event = { # early event hub , not changing unless it breaks things.
         name = debugCubanacan.2.a
         random_list = {
             15 = { # positive event
-                 country_event = { id = cuban.3 days = 14 }
+                country_event = { id = cuban.3 days = 14 }
             }
             15 = { # positive event
-                 country_event = { id = cuban.4 days = 7 }
+                country_event = { id = cuban.4 days = 7 }
             }
             15 = { # negative event
                 country_event = { id = cuban.5 days = 22}
@@ -155,7 +156,7 @@ country_event = {
         name = debugCW.2.a
         clr_country_flag = FZS_CW_Strength_Increase_Paid_Flag
         subtract_from_variable = { FZS_Strength_Meter = 3 }
-        activate_mission = FZS_Strength_Check        
+        activate_mission = FZS_Strength_Check
     }
 }
 # unused for now
@@ -169,7 +170,7 @@ country_event = {
     option = {
         name = debugCW.3.a
         add_to_variable = { FZS_Strength_Meter = 2 }
-        activate_mission = FZS_Strength_Check   
+        activate_mission = FZS_Strength_Check
     }
 }
 # unused for now
@@ -184,7 +185,7 @@ country_event = {
         name = debugCW.4.a
         clr_country_flag = FZS_CW_Based_Paid_Flag
         subtract_from_variable = { FZS_Strength_Meter = 6 }
-        activate_mission = FZS_Strength_Check        
+        activate_mission = FZS_Strength_Check
     }
 }
 

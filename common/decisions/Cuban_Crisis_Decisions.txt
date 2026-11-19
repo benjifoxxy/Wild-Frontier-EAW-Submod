@@ -1,6 +1,6 @@
 
 
-Cubanacan_Anger_Decisions = { # hidden events increase anger automatically.
+Cubanacan_Anger_Decisions = { 
 
     Cubanacan_Anger_Mission = {
 
@@ -9,7 +9,7 @@ Cubanacan_Anger_Decisions = { # hidden events increase anger automatically.
             original_tag = YAN
         }
         days_mission_timeout = 30
-        days_re_enable = 18000
+        
         available = {
             always = no
         }
@@ -17,16 +17,17 @@ Cubanacan_Anger_Decisions = { # hidden events increase anger automatically.
             always = no
         }
         priority = 1000
-
+        selectable_mission = no
         timeout_effect = {
             hidden_effect = {
-                country_event = { id = debugCubanacan.1 } # first method i tried to reactivate missions without realising i can just reactivate it in the mission itself. might as well leave it here as pointless to change unless it actually breaks something.
-                country_event = { id = debugCubanacan.2 }
-                #clamp_variable = {
-                #    var = Cuban_Anger
-                #    min = 0
-                #    max = 100
-                #}                
+                IF = {
+                    limit = {
+                        NOT = {
+                            has_country_flag = Cubanacan_Anger_Decisions_Completed
+                        }
+                    }
+                }
+                activate_mission = Cubanacan_Anger_Mission               
             }
         }
     }

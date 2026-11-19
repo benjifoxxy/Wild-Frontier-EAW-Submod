@@ -37,6 +37,7 @@ add_ideas = {
 
     YAN_Triple_Administration_Idea
     better_science_base
+    YAN_SQU_Trading_Post
     pre_industrial_society
     lack_of_scientists2
     poverty4
@@ -318,5 +319,5 @@ set_popularities = {
     neutrality = 65
 }
 
-set_country_flag = Player_Selected_Country_Other_Than_YAN
+
 

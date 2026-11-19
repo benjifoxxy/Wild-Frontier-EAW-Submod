@@ -14,6 +14,28 @@ country_event = { # intelligence report opening event
 	}
 }
 
+country_event = {
+	id = saddle_arabica.11
+	title = saddle_arabica.11.t
+	desc = saddle_arabica.11.d
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+	trigger = {
+		AND = {
+			tag = YAN
+			has_country_flag = YAN_Assisted_Faisal_Early
+			has_country_flag = Saddle_Arabia_Intelligence_Report_Decision_Taken
+		}
+	}
+	option = { # How are the Griffons doing in Trotgiers?
+		name = saddle_arabica.11.a
+		custom_effect_tooltip = Early_Faisal_Happy_tt
+		hidden_effect = {
+			add_to_variable = { Faisal_CW_Happiness = 2 }
+		}		
+	}
+}
+
 country_event = { # Meet with Faisal
 	id = saddle_arabica.2
 	title = saddle_arabica.2.t

@@ -1,0 +1,85 @@
+add_namespace = z_emigres
+
+country_event = {
+	id = z_emigres.1
+	title = z_emigres.1.t
+	desc = z_emigres.1.desc
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		goto_province = 13382
+	}
+	option = { # okay, the griffons can return home.
+		name = z_emigres.1.a
+		MTO = {
+			transfer_state = 873
+			
+		}
+		YAN = {
+			remove_ideas = YAN_SQU_Trading_Post
+			remove_state_core = 873
+		}
+		873 = {
+			add_manpower = -12000
+		}
+		add_political_power = 125
+		add_stability = 0.05
+
+	}
+	option = { # okay, the griffons will return to beakavia.
+		name = z_emigres.1.a
+		MTO = {
+			transfer_state = 873
+			
+		}
+		YAN = {
+			remove_ideas = YAN_SQU_Trading_Post
+			remove_state_core = 873
+		}
+		873 = {
+			add_manpower = -12000
+		}
+		1158 = {
+			add_manpower = 8500
+		}
+		1157 = {
+			add_manpower = 3000
+		}
+		1156 = {
+			add_manpower = 500
+		}
+
+	}
+	option = { # okay, the griffons should assist faisal.
+		name = z_emigres.1.a
+		MTO = {
+			transfer_state = 873
+			
+		}
+		873 = {
+			add_manpower = -12000
+		}
+		868 = {
+			add_manpower = 12000
+		}
+		SDL = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2500
+			}
+			add_political_power = 25
+			add_stability = 0.05
+			add_timed_idea = {
+				idea = YAN_Buff_Arabica
+				days = 30
+			} 
+		}
+		YAN = {
+			remove_ideas = YAN_SQU_Trading_Post
+			add_political_power = -25
+			add_stability = -0.05
+		}
+		set_country_flag = YAN_Assisted_Faisal_Early
+	}
+}

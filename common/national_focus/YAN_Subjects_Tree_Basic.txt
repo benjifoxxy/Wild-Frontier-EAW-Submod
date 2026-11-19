@@ -1,0 +1,27 @@
+# all subjects receive this tree to prevent shenanigans
+
+focus_tree = {
+    id = YAN_Subjects_Tree_Basic
+    default = no
+    country = {
+        factor = 0
+        modifier = {
+            add = 1      
+        }
+    }
+
+
+focus = { 
+          id = ZEB_SUB_1
+          icon = GFX_goal_ELF_arms
+          x = 0
+          y = 0
+          cost = 1
+          available = {
+            always = no
+          }
+          completion_reward = {
+                custom_effect_tooltip = nocontenyetfocus
+          }
+}
+}

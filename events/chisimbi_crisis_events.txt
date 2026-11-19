@@ -6,7 +6,6 @@ country_event = { # intelligence report on chisimbi - circular event
     title = chisimbi_intel.1.t
     desc = chisimbi_intel.1.desc
     picture = GFX_report_event_generic_political
-    
     is_triggered_only = yes
     option = { # Tanganiyka and Roam
         name = chisimbi_intel.1.a

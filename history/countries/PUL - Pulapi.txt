@@ -8,7 +8,7 @@ recruit_character = Mataram_Cleo_2
 recruit_character = PUL_Council
 
 # Additional starting history effects
-load_focus_tree = ZEB_SUBJECTS
+load_focus_tree = YAN_Subjects_Tree_Basic
 add_manpower = 60000
 set_oob = PUL_1007_Start
 

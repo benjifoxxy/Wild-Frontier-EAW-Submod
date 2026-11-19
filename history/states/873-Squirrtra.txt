@@ -1,0 +1,18 @@
+state={
+	id=873
+	name="STATE_873"
+	state_category = tiny_island
+	history = {
+		owner = YAN
+		add_core_of = YAN MTO
+		buildings = {
+			13382 = { naval_base = 2 }
+		}
+		victory_points = { 13382 1 }
+	}
+	provinces={
+		13382 
+	}
+	manpower=22458
+	buildings_max_level_factor=1.000
+}

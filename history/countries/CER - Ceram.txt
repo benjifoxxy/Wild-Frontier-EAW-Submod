@@ -9,7 +9,7 @@ recruit_character = luang_idori
 # Additional starting history effects
 add_manpower = 60000
 set_oob = CER_1007_Start
-load_focus_tree = ZEB_SUBJECTS
+load_focus_tree = YAN_Subjects_Tree_Basic
 set_technology = {
     zebra_race = 1
     melee_weapons = 1

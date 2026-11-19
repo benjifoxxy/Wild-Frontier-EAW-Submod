@@ -1,26 +1,26 @@
 on_actions = {
-	on_startup = {
-		effect = {
-			IF = {
-				limit = {
-					YAN = {
-						is_ai = no
-					}
-				}
-				#YAN = {
-				#country_event = { id = debug_Wild_Frontier_Startup.2 }	# this doesnt work at the moment for some reason.
-				#}
-				
-			}
-			ELSE = {
-				every_country = {
-					limit = {
-						is_ai = no
-					}
-					country_event = { id = debug_Wild_Frontier_Startup.1 } # forces the player to switch to YAN via event
-					goto_province = 13371
-				}
-			}
-		}
-	}
+    on_startup = {
+        effect = {
+            IF = {
+                limit = {
+                    YAN = {
+                        is_ai = no
+                    }
+                }
+                YAN = {
+                    country_event = { id = debug_Wild_Frontier_Startup.2 }
+                }
+
+            }
+            ELSE = {
+                every_country = {
+                    limit = {
+                        is_ai = no
+                    }
+                    country_event = { id = debug_Wild_Frontier_Startup.1 } # forces the player to switch to YAN via event
+                    goto_province = 13371
+                }
+            }
+        }
+    }
 }

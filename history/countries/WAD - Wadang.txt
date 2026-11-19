@@ -10,7 +10,7 @@ recruit_character = WAD_council
 set_cosmetic_tag = WAD_cosmetic
 add_manpower = 60000
 set_oob = Zebrides_Warriors_OOB
-load_focus_tree = ZEB_SUBJECTS
+load_focus_tree = YAN_Subjects_Tree_Basic
 
 set_cosmetic_tag = WAD_cosmetic
 set_technology = {
