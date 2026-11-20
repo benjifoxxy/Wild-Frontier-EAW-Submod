@@ -491,6 +491,34 @@ Chisimbi_Crisis_7 = { # incite slave revolt in tanganiyka?
         set_country_flag = YAN_GIF_Revolt_Started
     }
 }
+Chisimbi_GIF_Slave_Revolt_Mission_1 = {
+    icon = generic_civil_war
+    cost = 0
+    allowed = {
+        original_tag = YAN
+    }
+    selectable_mission = no
+    days_mission_timeout = 35
+    days_re_enable = 9000
+    is_good = yes
+    timeout_effect = {
+
+    }
+}
+Chisimbi_GIF_Slave_Revolt_Mission_2 = {
+    icon = generic_civil_war
+    cost = 0
+    allowed = {
+        original_tag = YAN
+    }
+    selectable_mission = no
+    days_mission_timeout = 14
+    days_re_enable = 9000
+    is_good = yes
+    timeout_effect = {
+
+    }
+}
 Chisimbi_Crisis_8 = { # Complete category of Chisimbi
 
     icon = generic_civil_war

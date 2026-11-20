@@ -15,7 +15,7 @@ country_event = { # intelligence report on chisimbi - circular event
             }
         }
         hidden_effect = {
-            country_event = { id = chisimbi.intel.2 }
+            country_event = { id = chisimbi_intel.2 }
         }
         set_country_flag = Chisimbi_Intel_Option_1_Taken
     }
@@ -27,7 +27,7 @@ country_event = { # intelligence report on chisimbi - circular event
             }
         }
         hidden_effect = {
-            country_event = { id = chisimbi.intel.3 }
+            country_event = { id = chisimbi_intel.3 }
         }
         set_country_flag = Chisimbi_Intel_Option_2_Taken
     }
@@ -39,7 +39,7 @@ country_event = { # intelligence report on chisimbi - circular event
             }
         }
         hidden_effect = {
-            country_event = { id = chisimbi.intel.4 }
+            country_event = { id = chisimbi_intel.4 }
         }
         set_country_flag = Chisimbi_Intel_Option_3_Taken
     }
@@ -90,18 +90,32 @@ country_event = { # meet with the prince regent of imba zaru and the griffs
     is_triggered_only = yes
 
     option = { # tell me more about the Imba Zaru
+        trigger = {
+            has_country_flag = Chi_Crisis_2_Option_A_Taken
+        }
         name = chisimbi_crisis.2.a
         hidden_effect = {
-
+            country_event = { id = chisimbi_crisis.4 }
+            set_country_flag = Chi_Crisis_2_Option_A_Taken
         }
     }
     option = { # Tell me more about the Aquilgriffs
+        trigger = {
+            has_country_flag = Chi_Crisis_2_Option_B_Taken
+        }
         name = chisimbi_crisis.2.b
         hidden_effect = {
-
+            country_event = { id = chisimbi_crisis.3 }
+            set_country_flag = Chi_Crisis_2_Option_B_Taken
         }
     }
     option = { # I've heard enough
+        trigger = {
+            OR = {
+                has_country_flag = Chi_Crisis_2_Option_A_Taken
+                has_country_flag = Chi_Crisis_2_Option_B_Taken
+            }
+        }
         name = chisimbi_crisis.2.c
         activate_mission = Chisimbi_Griff_Influence_Mission
         activate_mission = Chisimbi_Zaru_Influence_Mission
@@ -142,7 +156,7 @@ country_event = { # More info on Griffs
     }
 }
 
-country_event = { # hidden event to re enable the rifle  event
+country_event = { # hidden event to re enable the rifle event
     id = chisimbi_crisis.5
     title = chisimbi_crisis.5.t
     desc = chisimbi_crisis.5.d
@@ -166,122 +180,81 @@ country_event = { # Tanzo whatever the i can never spell it right the giraffe co
     option = { # basic option to incite revolt for King Retiuka (Non Aligned , older Giraffe monarch who aint take no shit) or his daughter Rungano (Harmonist adjacent who will not accept her people being exploited regardless of whos in charge. but to outside observers seems the easier option to control)
         name = chisimbi_crisis.6.a
         trigger = {
-
+            ROA = {
+                exists = yes
+            }
         }
+        activate_mission = Chisimbi_GIF_Slave_Revolt_Mission
         add_timed_idea = {
             idea = YAN_Funding_Giraffes_Revolt
             days = 30
         }
         hidden_effect = {
             country_event = { id = chisimbi_crisis.11 days = 5 } # Giraffe King offers submission for support.
-            country_event = { id = chisimbi_crisis.7 days = 31 } # hidden event that starts the revolt
         }
 
     }
     option = { # option that rewards the player for waiting until ROA was dealt with.
         name = chisimbi_crisis.6.b
         trigger = {
+            AND = {
+                ROA = {
+                    exists = no
+                }
+                OR = {
+                    TSV = {
+                        exists = yes
+                    }
+                    IBZ = {
+                        exists = yes
+                    }
+                    ZLU = {
+                        exists = yes
+                    }
+                }
+            }
 
         }
+        activate_mission = Chisimbi_GIF_Slave_Revolt_Mission
         add_timed_idea = {
             idea = YAN_Funding_Giraffes_Revolt
             days = 30
         }
         hidden_effect = {
             country_event = { id = chisimbi_crisis.11 days = 5 } # Giraffe King offers submission for support.
-            country_event = { id = chisimbi_crisis.8 days = 31 } # hidden event that starts the revolt
         }
     }
     option = { # Option if the rest of Chisimbi is unified, the Imba Zaru/Griffs support the revolt and pretty much directly invade.
         name = chisimbi_crisis.6.c
         trigger = {
-
+            AND = {
+                ROA = {
+                    exists = no
+                }
+                TSV = {
+                    exists = no
+                }
+                IBZ = {
+                    exists = no
+                }
+                ZLU = {
+                    exists = no
+                }
+            }
         }
+        activate_mission = Chisimbi_Gif_Slave_Revolt_Mission_2
         YAN = {
             add_timed_idea = {
                 idea = YAN_Joint_Mil_Ops_GIF
-                days = 21
+                days = 14
             }
         }
         GFS = {
             add_timed_idea = {
                 idea = YAN_Joint_Mil_Ops_GIF
-                days = 21
+                days = 14
             }
         }
-        hidden_effect = {
-            country_event = { id = chisimbi.crisis.10 days = 7 random = 7 } # the hyenas offer their surrender.
-            country_event = { id = chisimbi_crisis.9 days = 22 } # hidden event that starts the revolt
-        }
-    }
-}
-
-country_event = { # GIF revolt option 1 hidden
-    id = chisimbi_crisis.7
-    title = chisimbi_crisis.7.t
-    desc = chisimbi_crisis.7.d
-    picture = GFX_report_event_generic
-    is_triggered_only = yes
-    hidden = yes
-    fire_only_once = yes
-    option = {
-        name = chisimbi_crisis.7.a
-        YAN = {
-
-        }
-        GFS = {
-
-        }
-    }
-}
-
-country_event = { # GIF revolt option 2 hidden
-    id = chisimbi_crisis.8
-    title = chisimbi_crisis.8.t
-    desc = chisimbi_crisis.8.d
-    picture = GFX_report_event_generic
-    is_triggered_only = yes
-    hidden = yes
-    fire_only_once = yes
-    option = {
-        name = chisimbi_crisis.8.a
-        YAN = {
-
-        }
-        GFS = {
-
-        }
-    }
-}
-
-country_event = { # GIF revolt option 3 hidden
-    id = chisimbi_crisis.9
-    title = chisimbi_crisis.9.t
-    desc = chisimbi_crisis.9.d
-    picture = GFX_report_event_generic
-    is_triggered_only = yes
-    hidden = yes
-    fire_only_once = yes
-    option = {
-        name = chisimbi_crisis.9.a
-        YAN = {
-
-        }
-        GFS = {
-
-        }
-    }
-}
-
-country_event = { # GIF revolt option 3 hidden
-    id = chisimbi_crisis.10
-    title = chisimbi_crisis.10.t
-    desc = chisimbi_crisis.10.d
-    picture = GFX_report_event_generic
-    is_triggered_only = yes
-    fire_only_once = yes
-    option = {
-        name = chisimbi_crisis.10.a
     }
 }
 
@@ -383,9 +356,9 @@ country_event = { # refers back to the giraffes if the hyenas say no.
     picture = GFX_report_event_generic
     is_triggered_only = yes
     fire_only_once = yes
-    option = {
+    option = { # Hyenas said no, back to the Giraffes
         name = chisimbi_crisis.13.a
-        country_event = { id = chisimbi_crisis.11 }
+        country_event = { id = chisimbi_crisis.11 days = 2 }
     }
 }
 
@@ -396,9 +369,9 @@ country_event = { # refers back to the giraffes if the hyenas say yes. you can n
     picture = GFX_report_event_generic
     is_triggered_only = yes
     fire_only_once = yes
-    option = {
+    option = { # Hyenas said yes, now back to the Giraffes
         name = chisimbi_crisis.14.a
-        country_event = { id = chisimbi_crisis.11 }
+        country_event = { id = chisimbi_crisis.11 days = 2 }
         set_country_flag = GIF_Hyenas_Agreed_To_Submission
     }
 }
